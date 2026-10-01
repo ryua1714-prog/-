@@ -6,7 +6,12 @@
   --border: #e8dfd2;
   --accent: #e07a3f;
   --accent-soft: #fbe7da;
-  --type-color: #e07a3f;
+  /* 結果画面のタイプカラー（JSで上書き） */
+  --t-primary: #e07a3f;
+  --t-deep: #a8521f;
+  --t-soft: #fbe7da;
+  --t-bg-from: #fbefe4;
+  --t-bg-to: #faf6ef;
   --grid: #e3dacd;
 }
 
@@ -148,14 +153,84 @@ body {
 }
 .choice.selected .choice-mark { border: 6px solid var(--accent); }
 
-/* ---------- 結果画面 ---------- */
+/* ---------- ボタン（サブ） ---------- */
 
-.result-head { text-align: center; padding: 16px 0 8px; }
-.result-caption { margin: 0; color: var(--muted); font-size: .95rem; }
-.result-emoji { font-size: 5.5rem; line-height: 1.2; margin: 8px 0 4px; animation: pop .5s cubic-bezier(.2, 1.6, .5, 1); }
+.btn-secondary {
+  display: block;
+  width: 100%;
+  margin: 12px auto 0;
+  padding: 14px;
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-secondary:hover { border-color: var(--accent); }
+
+/* ---------- 均一回答の確認画面 ---------- */
+
+.notice-card {
+  margin-top: 40px;
+  padding: 32px 22px 24px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.notice-icon { font-size: 2.6rem; line-height: 1; margin-bottom: 12px; }
+.notice-card p { margin: 0 0 .8em; }
+.notice-card p:first-of-type { font-weight: 700; font-size: 1.1rem; }
+.notice-card .btn-primary { margin-top: 24px; }
+
+/* ---------- 同点時の二択質問 ---------- */
+
+.tiebreak-lead { margin: 16px 0 12px; text-align: center; color: var(--accent); font-weight: 700; }
+#t-choices .choice { align-items: flex-start; line-height: 1.6; }
+#t-choices .choice-mark { margin-top: 3px; }
+
+/* ---------- 結果画面（タイプカラー） ---------- */
+
+body.themed {
+  background:
+    radial-gradient(120% 60% at 50% 0%, var(--t-bg-from) 0%, transparent 70%),
+    linear-gradient(180deg, var(--t-bg-from) 0%, var(--t-bg-to) 45%, var(--bg) 100%);
+  background-attachment: fixed;
+}
+
+.result-head { text-align: center; padding: 8px 0 4px; }
+
+.result-illust {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  margin: 8px auto 12px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 40%, var(--surface) 0%, var(--t-soft) 72%);
+  box-shadow: 0 0 0 6px var(--t-soft), 0 0 0 8px color-mix(in srgb, var(--t-primary) 35%, transparent),
+    0 14px 30px color-mix(in srgb, var(--t-primary) 25%, transparent);
+  animation: pop .5s cubic-bezier(.2, 1.6, .5, 1);
+}
+.result-illust::before,
+.result-illust::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: var(--t-primary);
+  opacity: .5;
+}
+.result-illust::before { width: 14px; height: 14px; top: 6px; right: -10px; }
+.result-illust::after { width: 9px; height: 9px; bottom: 14px; left: -14px; opacity: .35; }
+.result-emoji { font-size: 5rem; line-height: 1; }
 @keyframes pop { from { transform: scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
-.result-title { margin: 0; font-size: 1.7rem; font-weight: 800; color: var(--type-color); }
-.result-title .sep { margin: 0 .2em; color: var(--muted); font-weight: 400; }
+
+.result-caption { margin: 0; color: var(--muted); font-size: 1rem; letter-spacing: .1em; }
+.result-title { margin: 0; font-size: 1.85rem; font-weight: 800; line-height: 1.4; color: var(--t-deep); }
+.result-title .sep { margin: 0 .15em; color: color-mix(in srgb, var(--t-primary) 55%, transparent); font-weight: 400; }
 
 .result-values { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 12px; }
 .values-label { font-size: .85rem; color: var(--muted); }
@@ -163,25 +238,37 @@ body {
 .value-tag {
   padding: 2px 14px;
   border-radius: 999px;
-  border: 1.5px solid var(--type-color);
-  color: var(--type-color);
+  background: var(--t-soft);
+  border: 1.5px solid color-mix(in srgb, var(--t-primary) 60%, transparent);
+  color: var(--t-deep);
   font-weight: 700;
   font-size: .9rem;
 }
 
 .card {
+  position: relative;
   margin-top: 20px;
-  padding: 22px 20px;
+  padding: 24px 20px 22px;
   border-radius: 20px;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--t-primary) 22%, var(--border));
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--t-primary) 9%, transparent);
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--t-primary), color-mix(in srgb, var(--t-primary) 35%, var(--surface)));
 }
 .card-title {
   margin: 0 0 12px;
   padding-left: 12px;
-  border-left: 4px solid var(--type-color);
+  border-left: 4px solid var(--t-primary);
   font-size: 1.1rem;
   line-height: 1.4;
+  color: var(--t-deep);
 }
 .card-body p { margin: 0 0 .9em; }
 .card-body p:last-child { margin-bottom: 0; }
@@ -189,9 +276,28 @@ body {
 .chart { display: flex; justify-content: center; }
 .radar { width: 100%; max-width: 340px; height: auto; overflow: visible; }
 .radar-grid { fill: none; stroke: var(--grid); stroke-width: 1; }
-.radar-grid.outer { stroke-width: 1.5; }
+.radar-grid.outer { fill: color-mix(in srgb, var(--t-soft) 55%, transparent); stroke-width: 1.5; }
 .radar-spoke { stroke: var(--grid); stroke-width: 1; }
-.radar-area { fill-opacity: .25; stroke-width: 2.5; stroke-linejoin: round; }
-.radar-dot { stroke: var(--surface); stroke-width: 2; }
+.radar-area { fill: var(--t-primary); fill-opacity: .28; stroke: var(--t-primary); stroke-width: 2.5; stroke-linejoin: round; }
+.radar-dot { fill: var(--t-primary); stroke: var(--surface); stroke-width: 2; }
 .radar-label { fill: var(--text); font-size: 15px; font-weight: 700; }
-.radar-value { fill: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.radar-value { fill: var(--t-deep); font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+body.themed .btn-primary {
+  background: linear-gradient(135deg, var(--t-primary), var(--t-deep));
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--t-primary) 35%, transparent);
+}
+
+/* ダークモードではタイプカラーを暗い背景になじませる */
+@media (prefers-color-scheme: dark) {
+  body.themed {
+    background:
+      radial-gradient(120% 60% at 50% 0%, color-mix(in srgb, var(--t-primary) 28%, var(--bg)) 0%, transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+  }
+  .result-illust { background: radial-gradient(circle at 50% 40%, var(--surface) 0%, color-mix(in srgb, var(--t-primary) 30%, var(--surface)) 75%); box-shadow: 0 0 0 6px color-mix(in srgb, var(--t-primary) 25%, var(--bg)), 0 0 0 8px color-mix(in srgb, var(--t-primary) 45%, transparent); }
+  .result-title, .card-title, .value-tag, .radar-value { color: color-mix(in srgb, var(--t-primary) 70%, white); fill: color-mix(in srgb, var(--t-primary) 70%, white); }
+  .value-tag { background: color-mix(in srgb, var(--t-primary) 20%, var(--surface)); }
+  .radar-grid.outer { fill: color-mix(in srgb, var(--t-primary) 8%, transparent); }
+}

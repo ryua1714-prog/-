@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>子育てタイプ診断</title>
-  <meta name="description" content="30の質問に答えて、あなたの子育てタイプを8種類の動物から診断します。">
+  <meta name="description" content="30の質問に答えて、あなたの子育てタイプを8つのタイプで診断します。">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
       <div class="hero">
         <div class="hero-animals" aria-hidden="true">🦉🐈🐴🐒🐕🐨🐯🦊</div>
         <h1>子育てタイプ診断</h1>
-        <p class="lead">30の質問に答えて、あなたが子育てで大切にしている価値観を8タイプの動物で診断します。</p>
+        <p class="lead">30の質問に答えて、あなたが子育てで大切にしている価値観を8つのタイプで診断します。</p>
         <ul class="hero-notes">
           <li>全30問・所要時間は約3分</li>
           <li>直感で、いちばん近いものを選んでください</li>
@@ -38,12 +38,32 @@
       <button id="btn-back" class="btn-text" type="button">← 前の質問に戻る</button>
     </section>
 
+    <!-- 均一回答の確認画面 -->
+    <section id="screen-notice" class="screen">
+      <div class="notice-card">
+        <div class="notice-icon" aria-hidden="true">💡</div>
+        <p>回答の傾向がかなり均一でした。</p>
+        <p>より自分に近い結果を出したい場合は、<br>“理想の親ならどう答えるか”ではなく、<br>普段の自分ならどうするかを基準に答えるのがおすすめです。</p>
+        <button id="btn-notice-continue" class="btn-primary" type="button">このまま結果を見る</button>
+        <button id="btn-notice-review" class="btn-secondary" type="button">回答を見直す</button>
+      </div>
+    </section>
+
+    <!-- 同点時の二択質問 -->
+    <section id="screen-tiebreak" class="screen" aria-live="polite">
+      <p class="tiebreak-lead">あと1問だけ答えてください</p>
+      <div id="tiebreak-card" class="question-card">
+        <h2 id="t-text" class="q-text"></h2>
+        <div id="t-choices" class="choices"></div>
+      </div>
+    </section>
+
     <!-- 結果画面 -->
     <section id="screen-result" class="screen">
       <div class="result-head">
-        <p class="result-caption">あなたの子育てタイプは</p>
-        <div id="r-emoji" class="result-emoji"></div>
-        <p class="result-title"><span id="r-animal"></span><span class="sep">｜</span><span id="r-name"></span></p>
+        <div class="result-illust" aria-hidden="true"><span id="r-emoji" class="result-emoji"></span></div>
+        <p class="result-caption">あなたは</p>
+        <h2 class="result-title"><span id="r-label"></span><span class="sep">｜</span><span id="r-role"></span></h2>
         <div class="result-values">
           <span class="values-label">価値観</span>
           <div id="r-values" class="value-tags"></div>
