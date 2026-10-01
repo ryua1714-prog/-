@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>子育てタイプ診断</title>
+  <meta name="description" content="30の質問に答えて、あなたの子育てタイプを8種類の動物から診断します。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+
+    <!-- スタート画面 -->
+    <section id="screen-start" class="screen active">
+      <div class="hero">
+        <div class="hero-animals" aria-hidden="true">🦉🐈🐴🐒🐕🐨🐯🦊</div>
+        <h1>子育てタイプ診断</h1>
+        <p class="lead">30の質問に答えて、あなたが子育てで大切にしている価値観を8タイプの動物で診断します。</p>
+        <ul class="hero-notes">
+          <li>全30問・所要時間は約3分</li>
+          <li>直感で、いちばん近いものを選んでください</li>
+        </ul>
+        <button id="btn-start" class="btn-primary" type="button">診断をはじめる</button>
+      </div>
+    </section>
+
+    <!-- 質問画面 -->
+    <section id="screen-question" class="screen" aria-live="polite">
+      <div class="progress">
+        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        <span id="progress-text" class="progress-text"></span>
+      </div>
+      <div id="question-card" class="question-card">
+        <p id="q-number" class="q-number"></p>
+        <h2 id="q-text" class="q-text"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+      <button id="btn-back" class="btn-text" type="button">← 前の質問に戻る</button>
+    </section>
+
+    <!-- 結果画面 -->
+    <section id="screen-result" class="screen">
+      <div class="result-head">
+        <p class="result-caption">あなたの子育てタイプは</p>
+        <div id="r-emoji" class="result-emoji"></div>
+        <p class="result-title"><span id="r-animal"></span><span class="sep">｜</span><span id="r-name"></span></p>
+        <div class="result-values">
+          <span class="values-label">価値観</span>
+          <div id="r-values" class="value-tags"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">子育てバランス</h3>
+        <div id="r-chart" class="chart"></div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">どんなタイプ？</h3>
+        <div id="r-about" class="card-body"></div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">どんな子どもに育ちやすい？</h3>
+        <div id="r-child" class="card-body"></div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">どんなことに気をつける？</h3>
+        <div id="r-caution" class="card-body"></div>
+      </div>
+
+      <button id="btn-retry" class="btn-primary" type="button">もう一度診断する</button>
+    </section>
+
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
