@@ -9,50 +9,52 @@ const CHOICES = [
   { label: "かなりそう思わない", score: 1, value: -2 },
 ];
 
-// weights: 各タイプへの重み（回答値 × 重み をタイプに加算）
+// weights: 各タイプへのウェイト（回答値 × ウェイト を各タイプの素点に加算）
 const QUESTIONS = [
-  { text: "子どもの将来の選択肢は、できるだけ多く残してあげたい。", weights: { education: 1 } },
-  { text: "苦手を平均まで伸ばすより、得意なことに時間を使ってほしい。", weights: { individuality: 1, education: -0.5 } },
-  { text: "子どもから相談されても、すぐに答えを教えるより本人に考えさせたい。", weights: { independence: 1 } },
-  { text: "多少失敗しそうでも、興味を持ったならまず経験させたい。", weights: { challenge: 1, security: -0.35 } },
-  { text: "能力や成績以上に、人から信頼される人に育ってほしい。", weights: { social: 1 } },
-  { text: "世間的に成功することより、本人が幸せだと思える人生の方が大切だ。", weights: { security: 1, strategy: -0.35 } },
-  { text: "本人が途中で嫌になっても、一度始めたことならある程度は続けてほしい。", weights: { effort: 1, security: -0.35 } },
-  { text: "子どもには、お金や仕事など社会の現実を早いうちから教えたい。", weights: { strategy: 1 } },
-  { text: "今は本人が嫌がっていても、将来必要になることならやらせることも必要だ。", weights: { education: 1, security: -0.5 } },
-  { text: "周りと少し違っていても、その子らしさがある方がいい。", weights: { individuality: 1, social: -0.35 } },
-  { text: "親から見て遠回りに思えても、本人が考えて決めた道なら尊重したい。", weights: { independence: 1, education: -0.35 } },
-  { text: "一つのことをやり抜くより、若いうちは色々な世界を経験することも大切だ。", weights: { challenge: 1, effort: -0.5 } },
-  { text: "子どもがどれだけ優秀でも、挨拶や礼儀ができなければ意味がないと思う。", weights: { social: 1 } },
-  { text: "成長につながりそうな経験でも、本人が本当につらそうなら無理に続けさせたくない。", weights: { security: 1, effort: -0.5 } },
-  { text: "才能があることより、努力を続けられることの方が将来の力になると思う。", weights: { effort: 1, individuality: -0.35 } },
-  { text: "子どもの夢を応援するときも、それで将来どう生活していくかまで考えたい。", weights: { strategy: 1 } },
-  { text: "学校や習い事は、本人の希望だけでなく親も情報を集めて選択肢を示すべきだと思う。", weights: { education: 1, independence: -0.35 } },
-  { text: "苦手を克服することより、その子にしかない強みを見つける方に惹かれる。", weights: { individuality: 1, effort: -0.35 } },
-  { text: "子どもが自分とは違う価値観で進路を決めても、それ自体は嬉しいことだと思う。", weights: { independence: 1 } },
-  { text: "準備が十分でなくても、面白そうなら一度やってみる経験には価値がある。", weights: { challenge: 1, strategy: -0.35 } },
-  { text: "自分の意見を通すことより、相手の立場を考えられる人になってほしい。", weights: { social: 1, independence: -0.35 } },
-  { text: "周囲から見ればもったいない選択でも、本人が納得して幸せならそれでいいと思う。", weights: { security: 1, education: -0.35, strategy: -0.35 } },
-  { text: "向いていないように見えても、すぐに諦めず努力してから判断してほしい。", weights: { effort: 1, individuality: -0.35 } },
-  { text: "大きな夢ほど、「どうすれば実現できるか」まで具体的に考えるべきだ。", weights: { strategy: 1 } },
-  { text: "基礎的な勉強は、本人が好きか嫌いかとは別に身につけておくべきだと思う。", weights: { education: 1, individuality: -0.35 } },
-  { text: "将来役に立つか分からなくても、本人が夢中ならとことんやらせてみたい。", weights: { individuality: 1, strategy: -0.35 } },
-  { text: "失敗を避けることより、自分で決めた結果を自分で経験することの方が大切だ。", weights: { independence: 1, security: -0.35 } },
-  { text: "安全な道だけを選ぶより、若いうちに失敗や挑戦を経験してほしい。", weights: { challenge: 1, security: -0.35 } },
-  { text: "自分のやりたいことだけでなく、周囲に迷惑をかけないことも同じくらい大切だ。", weights: { social: 1 } },
-  { text: "結果が出なかったとしても、本気で努力してやり抜いた経験には大きな価値がある。", weights: { effort: 1 } },
+  { text: "学歴は将来の選択肢に影響する。", weights: { education: 2, strategy: 1, individuality: -1 } },
+  { text: "苦手の克服より得意を伸ばしてほしい。", weights: { individuality: 2, education: -1, effort: -1 } },
+  { text: "親子の意見が分かれたら本人に決めさせたい。", weights: { independence: 2, individuality: 1, education: -1 } },
+  { text: "初めてのことには積極的に挑戦してほしい。", weights: { challenge: 2, security: -1, strategy: -1 } },
+  { text: "挨拶や礼儀は家庭で教えるものだ。", weights: { social: 2, education: 1, individuality: -1 } },
+  { text: "成功より本人が幸せであることを優先したい。", weights: { security: 2, effort: -1, strategy: -1 } },
+  { text: "一度始めたことは最後まで続けてほしい。", weights: { effort: 2, education: 1, challenge: -1 } },
+  { text: "子どもにもお金の話はした方がいい。", weights: { strategy: 2, education: 1, security: -1 } },
+  { text: "教育環境を選ぶときは、本人の希望だけでなく親の判断も必要だ。", weights: { education: 2, strategy: 1, independence: -2 } },
+  { text: "周囲と違うからといってやめる必要はない。", weights: { individuality: 2, independence: 1, social: -1 } },
+  { text: "親と違う考え方を持つことは成長の一つだ。", weights: { independence: 2, individuality: 1, education: -1 } },
+  { text: "一つを極めるよりもたくさんの経験を積んでほしい。", weights: { challenge: 2, effort: -1, education: -1 } },
+  { text: "意見が衝突したときは、正しさより関係を修復する方法を考えてほしい。", weights: { social: 2, security: 1, independence: -1 } },
+  { text: "子どもが安心できる家庭を最優先にしたい。", weights: { security: 2, effort: -1 } },
+  { text: "才能より努力を続けられる力を評価したい。", weights: { effort: 2, individuality: -1 } },
+  { text: "好きなことを仕事にするなら、収入を得る方法まで考えるべきだ。", weights: { strategy: 2, challenge: -1, individuality: -1 } },
+  { text: "自分が知らないことに子供が挑戦するのは怖い。", weights: { security: 2, strategy: 1, challenge: -2 } },
+  { text: "バランス良くできる子より、得意を伸ばす子の方が魅力的だ。", weights: { individuality: 2, education: -1, social: -1 } },
+  { text: "失敗すると分かっていても経験させた方がいいことがある。", weights: { challenge: 2, independence: 1, security: -1, strategy: -1 } },
+  { text: "子どもの「やってみたい」は尊重したい。", weights: { individuality: 2, challenge: 1, education: -1 } },
+  { text: "集団では周囲に合わせることも必要だ。", weights: { social: 2, individuality: -1, independence: -1 } },
+  { text: "競争で本人が苦しむなら、勝つことから離れる選択もある。", weights: { security: 2, effort: -2 } },
+  { text: "壁にぶつかったときは撤退することが大切だ。", weights: { strategy: 2, security: 1, effort: -2 } },
+  { text: "夢を実現するためには計画が必要だ。", weights: { strategy: 2, education: 1, challenge: -1 } },
+  { text: "好きなことだけでなく基礎的な勉強は必要だ。", weights: { education: 2, individuality: -1 } },
+  { text: "役に立たない遊びにも価値がある。", weights: { individuality: 2, security: 1, strategy: -1 } },
+  { text: "自分で決めたことの結果は、本人が受け止めるべきだ。", weights: { independence: 2, effort: 1, security: -1 } },
+  { text: "挑戦する前にリスクを考える習慣をつけてほしい。", weights: { strategy: 2, security: 1, challenge: -2 } },
+  { text: "納得できないルールでも、まず守るべきだ。", weights: { social: 2, independence: -1, individuality: -1 } },
+  { text: "子供が期待とは違う人生を選んでも、考え直してほしいとは思わない。", weights: { independence: 2, individuality: 1, education: -1 } },
+  { text: "もし今の記憶を持ったまま子ども時代に戻れるなら、当時の自分が望んでいたことより、今の自分が「やっておけばよかった」と思うことを優先して選び直したい。", weights: { education: 1, strategy: 1, effort: 1, independence: -1, individuality: -1, security: -1 } },
 ];
 
-// 5軸レーダーチャート（質問番号は1始まり。マイナスの重みは使わない）
+// 5軸レーダーチャート（質問番号は1始まり。8タイプ判定とは別に計算）
+// normal: 通常方向（かなりそう思う=100）／ reverse: 逆方向（かなりそう思う=0）
 const AXES = [
-  { key: "learning", name: "学び", questions: [1, 8, 9, 16, 17, 24, 25] },
-  { key: "individuality", name: "個性", questions: [2, 3, 10, 11, 18, 19, 26, 27] },
-  { key: "growth", name: "成長", questions: [4, 7, 12, 15, 20, 23, 28, 30] },
-  { key: "manners", name: "礼儀", questions: [5, 13, 21, 29] },
-  { key: "stability", name: "安定", questions: [6, 14, 22] },
+  { key: "learning", name: "学び", normal: [1, 8, 9, 16, 24, 25, 31], reverse: [] },
+  { key: "individuality", name: "個性", normal: [2, 3, 10, 11, 18, 20, 30], reverse: [21, 29, 31] },
+  { key: "growth", name: "成長", normal: [4, 7, 12, 15, 19, 20], reverse: [22, 23, 28] },
+  { key: "manners", name: "礼儀", normal: [5, 13, 21, 29], reverse: [] },
+  { key: "stability", name: "安定", normal: [6, 14, 17, 22, 23, 28], reverse: [4, 19] },
 ];
 
-// 同点が識別質問でも決まらないときに使う、タイプ間の二択質問。
+// 僅差の判定ルールをすべて使っても決まらないときに使う、タイプ間の二択質問。
 // 後から追加する場合は次の形式で書く（types の2タイプが同点のときに出題）:
 // {
 //   types: ["education", "strategy"],
@@ -65,7 +67,7 @@ const AXES = [
 const TIEBREAK_QUESTIONS = [];
 
 // 8タイプ
-// identifiers: 同点時に比較する識別質問 / theme: 結果画面のタイプカラー
+// identifiers: 1位と2位が僅差のときに比較する識別質問 / theme: 結果画面のタイプカラー
 const TYPES = [
   {
     key: "education",
@@ -73,7 +75,7 @@ const TYPES = [
     label: "教育型",
     role: "設計者",
     values: ["教育", "堅実"],
-    identifiers: [9, 25],
+    identifiers: [1, 9, 25],
     theme: { primary: "#2f5d9e", deep: "#1f3a6b", soft: "#e4ecf8", bgFrom: "#e9f0fb", bgTo: "#f8fafd" },
     about: [
       "教育や環境を重視し、子どもの将来の選択肢をできるだけ広く残したいタイプです。",
@@ -101,7 +103,7 @@ const TYPES = [
     label: "個性型",
     role: "プロデューサー",
     values: ["個性", "のびのび"],
-    identifiers: [2, 26],
+    identifiers: [2, 10, 18],
     theme: { primary: "#8b64c9", deep: "#5d3f96", soft: "#eee7fa", bgFrom: "#f1eafb", bgTo: "#fbf9fe" },
     about: [
       "子どもを決まった理想像に近づけるより、その子がもともと持っている個性、好きなこと、得意なことを見つけて伸ばしたいタイプです。",
@@ -127,7 +129,7 @@ const TYPES = [
     label: "自立型",
     role: "相談役",
     values: ["自立", "主体性"],
-    identifiers: [11, 27],
+    identifiers: [3, 11, 30],
     theme: { primary: "#2a9a7f", deep: "#17674f", soft: "#e0f3ec", bgFrom: "#e5f5ef", bgTo: "#f8fcfa" },
     about: [
       "子育ての最終目標を「自分で人生を決められる人にすること」だと考えるタイプです。",
@@ -154,7 +156,7 @@ const TYPES = [
     label: "挑戦型",
     role: "応援団長",
     values: ["挑戦", "経験"],
-    identifiers: [12, 28],
+    identifiers: [4, 12, 19],
     theme: { primary: "#ee7d1f", deep: "#ae570c", soft: "#fdecd9", bgFrom: "#fff0df", bgTo: "#fffaf4" },
     about: [
       "子どもの世界をできるだけ広げ、さまざまなことを実際に経験してほしいタイプです。",
@@ -180,7 +182,7 @@ const TYPES = [
     label: "社会型",
     role: "指導者",
     values: ["人間性", "社会性"],
-    identifiers: [13, 29],
+    identifiers: [5, 13, 29],
     theme: { primary: "#d4a21a", deep: "#87650a", soft: "#faf1d2", bgFrom: "#fcf4d9", bgTo: "#fffdf5" },
     about: [
       "子どもが何を達成するか以上に、「どんな人になるか」を大切にするタイプです。",
@@ -206,7 +208,7 @@ const TYPES = [
     label: "安心型",
     role: "保護者",
     values: ["幸福", "安心"],
-    identifiers: [14, 22],
+    identifiers: [6, 14, 22],
     theme: { primary: "#d98f93", deep: "#a45d63", soft: "#f9ebe6", bgFrom: "#fbeee9", bgTo: "#fdf9f4" },
     about: [
       "子育てにおいて、「この子自身が幸せか」をとても大切にするタイプです。",
@@ -232,7 +234,7 @@ const TYPES = [
     label: "努力型",
     role: "監督",
     values: ["成長", "努力"],
-    identifiers: [7, 23],
+    identifiers: [7, 15, 23],
     theme: { primary: "#d4422a", deep: "#962b19", soft: "#fbe2dc", bgFrom: "#fde6df", bgTo: "#fff8f5" },
     about: [
       "子どもに簡単に諦めない強さを身につけてほしいタイプです。",
@@ -258,7 +260,7 @@ const TYPES = [
     label: "戦略型",
     role: "戦略家",
     values: ["現実", "戦略"],
-    identifiers: [16, 24],
+    identifiers: [8, 16, 28],
     theme: { primary: "#4d8291", deep: "#2c5663", soft: "#e2edf0", bgFrom: "#e6f0f2", bgTo: "#f8fbfb" },
     about: [
       "子どもの夢や希望を大切にしながら、「それを現実の世界でどう実現するか」まで考えるタイプです。",

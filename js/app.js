@@ -3,56 +3,108 @@
 // ---------- 判定の設定値 ----------
 
 const CONFIG = {
-  // 1位とのnormalized scoreの差がこの値以下なら「ほぼ同点」とみなす（スコア範囲は -2〜+2）
-  nearTieMargin: 0.05,
+  // 1位と2位のnormalizedの差がこの値未満なら僅差とみなす（normalizedは0〜100）
+  closeGap: 3,
   // 「なんとも言えない」がこの数以上なら均一とみなす
   neutralThreshold: 24,
-  // 回答値の標準偏差がこの値未満、かつタイプ間スコアの最大差がこの値未満なら均一とみなす
+  // 回答値の標準偏差がこの値未満、かつタイプ間normalizedの最大差がこの値未満なら均一とみなす
   lowSpreadStdDev: 0.5,
-  flatTypeRange: 0.5,
+  flatTypeRange: 12.5,
 };
 
+const RECALC_EXCLUDED_QUESTION = 31; // 僅差時の再計算で除外する質問
+const MAX_ANSWER_VALUE = 2;
+
 const choiceByScore = (score) => CHOICES.find((c) => c.score === score);
+const typeByKey = (key) => TYPES.find((t) => t.key === key);
+const weightOf = (questionNumber, typeKey) => QUESTIONS[questionNumber - 1].weights[typeKey] || 0;
+const contribution = (values, questionNumber, typeKey) => values[questionNumber - 1] * weightOf(questionNumber, typeKey);
+const allQuestionNumbers = QUESTIONS.map((_, i) => i + 1);
 
 // ---------- タイプ判定 ----------
 
-// 各タイプの「重みの絶対値の合計」（normalizeの分母）
-const TYPE_WEIGHT_TOTALS = Object.fromEntries(TYPES.map((t) => [t.key, 0]));
-QUESTIONS.forEach((q) => {
-  for (const [key, w] of Object.entries(q.weights)) TYPE_WEIGHT_TOTALS[key] += Math.abs(w);
-});
-
-// 回答値 × 重み をタイプごとに加算し、重みの絶対値の合計で割る（内部保持用。画面には一覧表示しない）
-function calcTypeScores(values) {
-  const raw = Object.fromEntries(TYPES.map((t) => [t.key, 0]));
-  QUESTIONS.forEach((q, i) => {
-    for (const [key, w] of Object.entries(q.weights)) raw[key] += values[i] * w;
+// 指定した質問だけで各タイプの素点とnormalized（0〜100）を計算する
+// maxAbs = そのタイプが理論上取り得る最大絶対点（各ウェイトの絶対値 × 2 の合計）
+function calcTypeScores(values, questionNumbers = allQuestionNumbers) {
+  return TYPES.map((t) => {
+    let raw = 0;
+    let maxAbs = 0;
+    questionNumbers.forEach((q) => {
+      raw += contribution(values, q, t.key);
+      maxAbs += Math.abs(weightOf(q, t.key)) * MAX_ANSWER_VALUE;
+    });
+    const normalized = maxAbs === 0 ? 50 : ((raw / maxAbs + 1) / 2) * 100;
+    return { key: t.key, raw, maxAbs, normalized };
   });
-  return TYPES.map((t) => ({ key: t.key, raw: raw[t.key], score: raw[t.key] / TYPE_WEIGHT_TOTALS[t.key] }));
 }
 
-function identifierAverage(type, values) {
-  return type.identifiers.reduce((acc, q) => acc + values[q - 1], 0) / type.identifiers.length;
-}
+const EPS = 1e-9;
 
-// 1位を決める。決まらない場合は type: null と同点候補を返す
+// 1位と2位が僅差のときの比較ルール（順に適用し、差がついた時点で決定）
+const CLOSE_RULES = [
+  {
+    name: "identifier",
+    // 自タイプの識別質問から得た寄与点の合計
+    compare: (a, b, values) => {
+      const sum = (key) => typeByKey(key).identifiers.reduce((acc, q) => acc + contribution(values, q, key), 0);
+      return sum(a) - sum(b);
+    },
+  },
+  {
+    name: "without-q31",
+    // Q31を除いた30問だけで再計算したnormalized
+    compare: (a, b, values) => {
+      const qs = allQuestionNumbers.filter((q) => q !== RECALC_EXCLUDED_QUESTION);
+      const scores = calcTypeScores(values, qs);
+      const n = (key) => scores.find((s) => s.key === key).normalized;
+      return n(a) - n(b);
+    },
+  },
+  {
+    name: "extreme",
+    // 「かなりそう思う」「かなりそう思わない」から得た絶対寄与点
+    compare: (a, b, values) => {
+      const sum = (key) =>
+        allQuestionNumbers
+          .filter((q) => Math.abs(values[q - 1]) === MAX_ANSWER_VALUE)
+          .reduce((acc, q) => acc + Math.abs(contribution(values, q, key)), 0);
+      return sum(a) - sum(b);
+    },
+  },
+  {
+    name: "identifier-order",
+    // 両タイプの識別質問を質問番号順に見て、最初に寄与点の差が生じたタイプ
+    compare: (a, b, values) => {
+      const qs = [...new Set([...typeByKey(a).identifiers, ...typeByKey(b).identifiers])].sort((x, y) => x - y);
+      for (const q of qs) {
+        const diff = contribution(values, q, a) - contribution(values, q, b);
+        if (Math.abs(diff) > EPS) return diff;
+      }
+      return 0;
+    },
+  },
+];
+
+// メインタイプを決める。すべてのルールで決まらない場合は type: null と候補2タイプを返す
 function determineType(typeScores, values) {
-  const top = Math.max(...typeScores.map((s) => s.score));
-  const near = typeScores.filter((s) => top - s.score <= CONFIG.nearTieMargin + 1e-9).map((s) => s.key);
-  if (near.length === 1) return { type: typeByKey(near[0]), candidates: near, decidedBy: "score" };
+  // normalizedの降順（同値はTYPESの並び順）
+  const ranked = typeScores
+    .map((s, i) => ({ ...s, order: i }))
+    .sort((x, y) => y.normalized - x.normalized || x.order - y.order);
+  const [first, second] = ranked;
 
-  // 識別質問の平均回答値で比較
-  const idAvg = near.map((key) => ({ key, avg: identifierAverage(typeByKey(key), values) }));
-  const best = Math.max(...idAvg.map((s) => s.avg));
-  const remaining = idAvg.filter((s) => Math.abs(s.avg - best) < 1e-9).map((s) => s.key);
-  if (remaining.length === 1) return { type: typeByKey(remaining[0]), candidates: near, decidedBy: "identifier" };
-
-  // それでも完全同点 → 二択質問で決める（ここでは決めない）
-  return { type: null, candidates: remaining, decidedBy: null };
-}
-
-function typeByKey(key) {
-  return TYPES.find((t) => t.key === key);
+  if (first.normalized - second.normalized >= CONFIG.closeGap - EPS) {
+    return { type: typeByKey(first.key), candidates: [first.key], decidedBy: "score" };
+  }
+  for (const rule of CLOSE_RULES) {
+    const diff = rule.compare(first.key, second.key, values);
+    if (Math.abs(diff) > EPS) {
+      const winner = diff > 0 ? first.key : second.key;
+      return { type: typeByKey(winner), candidates: [first.key, second.key], decidedBy: rule.name };
+    }
+  }
+  // ランダムには決めず、二択質問で決める
+  return { type: null, candidates: [first.key, second.key], decidedBy: null };
 }
 
 // ---------- 均一回答の検出 ----------
@@ -64,7 +116,7 @@ function detectUniform(answers, values, typeScores) {
 
   const mean = values.reduce((a, b) => a + b, 0) / values.length;
   const sd = Math.sqrt(values.reduce((acc, v) => acc + (v - mean) ** 2, 0) / values.length);
-  const scores = typeScores.map((s) => s.score);
+  const scores = typeScores.map((s) => s.normalized);
   const range = Math.max(...scores) - Math.min(...scores);
   if (sd < CONFIG.lowSpreadStdDev && range < CONFIG.flatTypeRange) reasons.push("low-spread");
 
@@ -73,11 +125,14 @@ function detectUniform(answers, values, typeScores) {
 
 // ---------- 5軸 ----------
 
-// かなりそう思う=100 / そう思う=75 / なんとも言えない=50 / そう思わない=25 / かなりそう思わない=0
+// 通常方向：かなりそう思う=100 … かなりそう思わない=0 ／ 逆方向はその反対
 function calcAxisScores(answers) {
   return AXES.map((axis) => {
-    const sum = axis.questions.reduce((acc, q) => acc + (answers[q - 1] - 1) * 25, 0);
-    return { key: axis.key, name: axis.name, percent: sum / axis.questions.length };
+    const points = [
+      ...axis.normal.map((q) => (answers[q - 1] - 1) * 25),
+      ...axis.reverse.map((q) => (5 - answers[q - 1]) * 25),
+    ];
+    return { key: axis.key, name: axis.name, percent: points.reduce((a, b) => a + b, 0) / points.length };
   });
 }
 
