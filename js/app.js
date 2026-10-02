@@ -7,9 +7,6 @@ const CONFIG = {
   closeGap: 3,
   // 「なんとも言えない」がこの数以上なら均一とみなす
   neutralThreshold: 24,
-  // 回答値の標準偏差がこの値未満、かつタイプ間normalizedの最大差がこの値未満なら均一とみなす
-  lowSpreadStdDev: 0.5,
-  flatTypeRange: 12.5,
 };
 
 const RECALC_EXCLUDED_QUESTION = 31; // 僅差時の再計算で除外する質問
@@ -109,18 +106,12 @@ function determineType(typeScores, values) {
 
 // ---------- 均一回答の検出 ----------
 
-function detectUniform(answers, values, typeScores) {
+// 「なんとも言えない」が24問以上、または全問同じ回答なら均一とみなす
+function detectUniform(answers) {
   const reasons = [];
   if (answers.every((a) => a === answers[0])) reasons.push("all-same");
   if (answers.filter((a) => a === 3).length >= CONFIG.neutralThreshold) reasons.push("neutral");
-
-  const mean = values.reduce((a, b) => a + b, 0) / values.length;
-  const sd = Math.sqrt(values.reduce((acc, v) => acc + (v - mean) ** 2, 0) / values.length);
-  const scores = typeScores.map((s) => s.normalized);
-  const range = Math.max(...scores) - Math.min(...scores);
-  if (sd < CONFIG.lowSpreadStdDev && range < CONFIG.flatTypeRange) reasons.push("low-spread");
-
-  return { isUniform: reasons.length > 0, reasons, stdDev: sd, typeRange: range };
+  return { isUniform: reasons.length > 0, reasons };
 }
 
 // ---------- 5軸 ----------
@@ -143,7 +134,7 @@ function diagnose(answers) {
     ...determineType(typeScores, values),
     typeScores,
     axisScores: calcAxisScores(answers),
-    uniform: detectUniform(answers, values, typeScores),
+    uniform: detectUniform(answers),
   };
 }
 
@@ -392,17 +383,11 @@ function start() {
   showScreen("screen-question");
 }
 
-function review() {
-  state.current = 0;
-  renderQuestion();
-  showScreen("screen-question");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   $("btn-start").addEventListener("click", start);
   $("btn-retry").addEventListener("click", start);
   $("btn-notice-continue").addEventListener("click", proceedToResult);
-  $("btn-notice-review").addEventListener("click", review);
+  $("btn-notice-restart").addEventListener("click", start);
   $("btn-back").addEventListener("click", () => {
     if (state.current > 0) {
       state.current -= 1;
