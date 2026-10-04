@@ -70,6 +70,7 @@ const $ = (id) => document.getElementById(id);
 function showScreen(name) {
   document.querySelectorAll(".screen").forEach((s) => s.classList.toggle("active", s.id === name));
   document.body.classList.toggle("themed", name === "screen-result");
+  document.body.classList.toggle("wide", name === "screen-dashboard");
   window.scrollTo(0, 0);
 }
 
@@ -139,10 +140,16 @@ function finish() {
 function proceedToResult() {
   const result = state.result;
   if (result.type) {
-    showResult(result.type);
+    completeDiagnosis(result.type);
   } else {
-    resolveTie(result.candidates, showResult);
+    resolveTie(result.candidates, completeDiagnosis);
   }
+}
+
+// 診断の完了：結果を表示して、回答を1回だけ保存する
+function completeDiagnosis(type) {
+  showResult(type);
+  saveResult(type);
 }
 
 // ---------- 同点時の二択質問 ----------
@@ -265,6 +272,7 @@ function start() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  setupDashboardControls();
   $("btn-start").addEventListener("click", start);
   $("btn-retry").addEventListener("click", start);
   $("btn-notice-continue").addEventListener("click", proceedToResult);

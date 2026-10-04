@@ -4,7 +4,7 @@ const CONFIG = {
   // 上位2タイプの差がこの値未満なら僅差とみなす（スコアは0〜100）
   closeGap: 3,
   // 「なんとも言えない」がこの数以上なら均一とみなす
-  neutralThreshold: 24,
+  neutralThreshold: 45,
   // 同じ回答（どの選択肢でも）がこの数以上なら均一とみなす
   sameAnswerThreshold: 45,
 };
@@ -145,7 +145,7 @@ function determineType(typeScores, values) {
   return { type: null, candidates: [first.key, second.key], decidedBy: null };
 }
 
-// 「なんとも言えない」が24問以上、または同じ回答が45問以上なら均一とみなす
+// 「なんとも言えない」が45問以上、または同じ回答が45問以上なら均一とみなす
 function detectUniform(answers) {
   const reasons = [];
   const maxSame = Math.max(...CHOICES.map((c) => answers.filter((a) => a === c.score).length));
