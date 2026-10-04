@@ -1,142 +1,4 @@
-// 診断ロジックと画面制御
-
-// ---------- 判定の設定値 ----------
-
-const CONFIG = {
-  // 1位と2位のnormalizedの差がこの値未満なら僅差とみなす（normalizedは0〜100）
-  closeGap: 3,
-  // 「なんとも言えない」がこの数以上なら均一とみなす
-  neutralThreshold: 24,
-};
-
-const RECALC_EXCLUDED_QUESTION = 31; // 僅差時の再計算で除外する質問
-const MAX_ANSWER_VALUE = 2;
-
-const choiceByScore = (score) => CHOICES.find((c) => c.score === score);
-const typeByKey = (key) => TYPES.find((t) => t.key === key);
-const weightOf = (questionNumber, typeKey) => QUESTIONS[questionNumber - 1].weights[typeKey] || 0;
-const contribution = (values, questionNumber, typeKey) => values[questionNumber - 1] * weightOf(questionNumber, typeKey);
-const allQuestionNumbers = QUESTIONS.map((_, i) => i + 1);
-
-// ---------- タイプ判定 ----------
-
-// 指定した質問だけで各タイプの素点とnormalized（0〜100）を計算する
-// maxAbs = そのタイプが理論上取り得る最大絶対点（各ウェイトの絶対値 × 2 の合計）
-function calcTypeScores(values, questionNumbers = allQuestionNumbers) {
-  return TYPES.map((t) => {
-    let raw = 0;
-    let maxAbs = 0;
-    questionNumbers.forEach((q) => {
-      raw += contribution(values, q, t.key);
-      maxAbs += Math.abs(weightOf(q, t.key)) * MAX_ANSWER_VALUE;
-    });
-    const normalized = maxAbs === 0 ? 50 : ((raw / maxAbs + 1) / 2) * 100;
-    return { key: t.key, raw, maxAbs, normalized };
-  });
-}
-
-const EPS = 1e-9;
-
-// 1位と2位が僅差のときの比較ルール（順に適用し、差がついた時点で決定）
-const CLOSE_RULES = [
-  {
-    name: "identifier",
-    // 自タイプの識別質問から得た寄与点の合計
-    compare: (a, b, values) => {
-      const sum = (key) => typeByKey(key).identifiers.reduce((acc, q) => acc + contribution(values, q, key), 0);
-      return sum(a) - sum(b);
-    },
-  },
-  {
-    name: "without-q31",
-    // Q31を除いた30問だけで再計算したnormalized
-    compare: (a, b, values) => {
-      const qs = allQuestionNumbers.filter((q) => q !== RECALC_EXCLUDED_QUESTION);
-      const scores = calcTypeScores(values, qs);
-      const n = (key) => scores.find((s) => s.key === key).normalized;
-      return n(a) - n(b);
-    },
-  },
-  {
-    name: "extreme",
-    // 「かなりそう思う」「かなりそう思わない」から得た絶対寄与点
-    compare: (a, b, values) => {
-      const sum = (key) =>
-        allQuestionNumbers
-          .filter((q) => Math.abs(values[q - 1]) === MAX_ANSWER_VALUE)
-          .reduce((acc, q) => acc + Math.abs(contribution(values, q, key)), 0);
-      return sum(a) - sum(b);
-    },
-  },
-  {
-    name: "identifier-order",
-    // 両タイプの識別質問を質問番号順に見て、最初に寄与点の差が生じたタイプ
-    compare: (a, b, values) => {
-      const qs = [...new Set([...typeByKey(a).identifiers, ...typeByKey(b).identifiers])].sort((x, y) => x - y);
-      for (const q of qs) {
-        const diff = contribution(values, q, a) - contribution(values, q, b);
-        if (Math.abs(diff) > EPS) return diff;
-      }
-      return 0;
-    },
-  },
-];
-
-// メインタイプを決める。すべてのルールで決まらない場合は type: null と候補2タイプを返す
-function determineType(typeScores, values) {
-  // normalizedの降順（同値はTYPESの並び順）
-  const ranked = typeScores
-    .map((s, i) => ({ ...s, order: i }))
-    .sort((x, y) => y.normalized - x.normalized || x.order - y.order);
-  const [first, second] = ranked;
-
-  if (first.normalized - second.normalized >= CONFIG.closeGap - EPS) {
-    return { type: typeByKey(first.key), candidates: [first.key], decidedBy: "score" };
-  }
-  for (const rule of CLOSE_RULES) {
-    const diff = rule.compare(first.key, second.key, values);
-    if (Math.abs(diff) > EPS) {
-      const winner = diff > 0 ? first.key : second.key;
-      return { type: typeByKey(winner), candidates: [first.key, second.key], decidedBy: rule.name };
-    }
-  }
-  // ランダムには決めず、二択質問で決める
-  return { type: null, candidates: [first.key, second.key], decidedBy: null };
-}
-
-// ---------- 均一回答の検出 ----------
-
-// 「なんとも言えない」が24問以上、または全問同じ回答なら均一とみなす
-function detectUniform(answers) {
-  const reasons = [];
-  if (answers.every((a) => a === answers[0])) reasons.push("all-same");
-  if (answers.filter((a) => a === 3).length >= CONFIG.neutralThreshold) reasons.push("neutral");
-  return { isUniform: reasons.length > 0, reasons };
-}
-
-// ---------- 5軸 ----------
-
-// 通常方向：かなりそう思う=100 … かなりそう思わない=0 ／ 逆方向はその反対
-function calcAxisScores(answers) {
-  return AXES.map((axis) => {
-    const points = [
-      ...axis.normal.map((q) => (answers[q - 1] - 1) * 25),
-      ...axis.reverse.map((q) => (5 - answers[q - 1]) * 25),
-    ];
-    return { key: axis.key, name: axis.name, percent: points.reduce((a, b) => a + b, 0) / points.length };
-  });
-}
-
-function diagnose(answers) {
-  const values = answers.map((a) => choiceByScore(a).value);
-  const typeScores = calcTypeScores(values);
-  return {
-    ...determineType(typeScores, values),
-    typeScores,
-    axisScores: calcAxisScores(answers),
-    uniform: detectUniform(answers),
-  };
-}
+// 画面制御（判定ロジックは js/scoring.js）
 
 // ---------- レーダーチャート ----------
 
@@ -306,7 +168,7 @@ function resolveTie(candidates, done) {
   // 二択質問が未定義の組み合わせは、候補タイプの考え方から本人に選んでもらう
   askTiebreak(
     "次のうち、あなたの考えにより近いのはどちらですか？",
-    candidates.map((key) => ({ label: typeByKey(key).about[0], type: key })),
+    candidates.map((key) => ({ label: typeByKey(key).concept, type: key })),
     (winner) => done(typeByKey(winner))
   );
 }
@@ -339,13 +201,43 @@ function applyTheme(type) {
   document.body.dataset.type = type.key;
 }
 
-function renderParagraphs(id, paragraphs) {
-  const box = $(id);
+function paragraph(text, className) {
+  const p = document.createElement("p");
+  if (className) p.className = className;
+  p.textContent = text;
+  return p;
+}
+
+// 結果文章（js/content.js の RESULTS）を原稿の順番どおりにカードとして並べる
+function renderResultSections(key) {
+  const result = RESULTS[key];
+
+  const intro = $("r-intro");
+  intro.innerHTML = "";
+  result.intro.forEach((text, i) => intro.appendChild(paragraph(text, i === 0 ? "result-catch" : "")));
+
+  const box = $("r-sections");
   box.innerHTML = "";
-  paragraphs.forEach((text) => {
-    const p = document.createElement("p");
-    p.textContent = text;
-    box.appendChild(p);
+  result.sections.forEach((section) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    const title = document.createElement("h3");
+    title.className = "card-title";
+    title.textContent = section.title;
+    const body = document.createElement("div");
+    body.className = "card-body";
+    section.items.forEach((item) => {
+      if (item.name) {
+        const name = document.createElement("h4");
+        name.className = "card-subtitle";
+        name.textContent = item.name;
+        body.appendChild(name);
+      } else {
+        body.appendChild(paragraph(item.p));
+      }
+    });
+    card.append(title, body);
+    box.appendChild(card);
   });
 }
 
@@ -354,24 +246,13 @@ function showResult(type) {
   $("r-emoji").textContent = type.emoji;
   $("r-label").textContent = type.label;
   $("r-role").textContent = type.role;
-
-  const values = $("r-values");
-  values.innerHTML = "";
-  type.values.forEach((v) => {
-    const tag = document.createElement("span");
-    tag.className = "value-tag";
-    tag.textContent = v;
-    values.appendChild(tag);
-  });
+  $("r-role-emoji").textContent = type.emoji;
 
   const chart = $("r-chart");
   chart.innerHTML = "";
   chart.appendChild(renderRadar(state.result.axisScores));
 
-  renderParagraphs("r-about", type.about);
-  renderParagraphs("r-child", type.child);
-  renderParagraphs("r-caution", type.caution);
-
+  renderResultSections(type.key);
   showScreen("screen-result");
 }
 

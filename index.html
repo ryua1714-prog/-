@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>子育てタイプ診断</title>
-  <meta name="description" content="31の質問に答えて、あなたの子育てタイプを8つのタイプで診断します。">
+  <meta name="description" content="50の質問に答えて、あなたの子育てタイプを8つのタイプで診断します。">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,11 +13,11 @@
     <!-- スタート画面 -->
     <section id="screen-start" class="screen active">
       <div class="hero">
-        <div class="hero-animals" aria-hidden="true">🦉🐈🐴🐒🐕🐨🐯🦊</div>
+        <div class="hero-animals" aria-hidden="true">🦉🐱🐴🐒🐶🐨🐯🦊</div>
         <h1>子育てタイプ診断</h1>
-        <p class="lead">31の質問に答えて、あなたが子育てで大切にしている価値観を8つのタイプで診断します。</p>
+        <p class="lead">50の質問に答えて、あなたが子育てで大切にしている価値観を8つのタイプで診断します。</p>
         <ul class="hero-notes">
-          <li>全31問・所要時間は約3分</li>
+          <li>全50問・所要時間は約5分</li>
           <li>直感で、いちばん近いものを選んでください</li>
         </ul>
         <button id="btn-start" class="btn-primary" type="button">診断をはじめる</button>
@@ -63,11 +63,11 @@
       <div class="result-head">
         <div class="result-illust" aria-hidden="true"><span id="r-emoji" class="result-emoji"></span></div>
         <p class="result-caption">あなたは</p>
-        <h2 class="result-title"><span id="r-label"></span><span class="sep">｜</span><span id="r-role"></span></h2>
-        <div class="result-values">
-          <span class="values-label">価値観</span>
-          <div id="r-values" class="value-tags"></div>
-        </div>
+        <h2 class="result-title">
+          <span id="r-label" class="result-main"></span>
+          <span class="result-sub"><span id="r-role"></span> <span id="r-role-emoji" aria-hidden="true"></span></span>
+        </h2>
+        <div id="r-intro" class="result-intro"></div>
       </div>
 
       <div class="card">
@@ -75,27 +75,16 @@
         <div id="r-chart" class="chart"></div>
       </div>
 
-      <div class="card">
-        <h3 class="card-title">どんなタイプ？</h3>
-        <div id="r-about" class="card-body"></div>
-      </div>
-
-      <div class="card">
-        <h3 class="card-title">どんな子どもに育ちやすい？</h3>
-        <div id="r-child" class="card-body"></div>
-      </div>
-
-      <div class="card">
-        <h3 class="card-title">どんなことに気をつける？</h3>
-        <div id="r-caution" class="card-body"></div>
-      </div>
+      <div id="r-sections"></div>
 
       <button id="btn-retry" class="btn-primary" type="button">もう一度診断する</button>
     </section>
 
   </main>
 
+  <script src="js/content.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/scoring.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

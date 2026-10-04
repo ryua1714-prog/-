@@ -229,8 +229,21 @@ body.themed {
 @keyframes pop { from { transform: scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
 
 .result-caption { margin: 0; color: var(--muted); font-size: 1rem; letter-spacing: .1em; }
-.result-title { margin: 0; font-size: 1.85rem; font-weight: 800; line-height: 1.4; color: var(--t-deep); }
-.result-title .sep { margin: 0 .15em; color: color-mix(in srgb, var(--t-primary) 55%, transparent); font-weight: 400; }
+.result-title { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; color: var(--t-deep); }
+.result-main { font-size: 2.6rem; font-weight: 800; line-height: 1.25; letter-spacing: .06em; }
+.result-sub { font-size: 1.05rem; font-weight: 700; line-height: 1.5; color: var(--muted); letter-spacing: .04em; }
+
+.result-intro { max-width: 30em; margin: 16px auto 0; text-align: left; }
+.result-intro p { margin: 0 0 .6em; }
+.result-intro p:last-child { margin-bottom: 0; }
+.result-intro .result-catch {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: var(--t-soft);
+  color: var(--t-deep);
+  font-weight: 700;
+  line-height: 1.75;
+}
 
 .result-values { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 12px; }
 .values-label { font-size: .85rem; color: var(--muted); }
@@ -272,6 +285,12 @@ body.themed {
 }
 .card-body p { margin: 0 0 .9em; }
 .card-body p:last-child { margin-bottom: 0; }
+.card-subtitle {
+  margin: 1.2em 0 .4em;
+  font-size: 1rem;
+  color: var(--t-deep);
+}
+.card-subtitle:first-child { margin-top: 0; }
 
 .chart { display: flex; justify-content: center; }
 .radar { width: 100%; max-width: 340px; height: auto; overflow: visible; }
@@ -297,7 +316,8 @@ body.themed .btn-primary {
     background-attachment: fixed;
   }
   .result-illust { background: radial-gradient(circle at 50% 40%, var(--surface) 0%, color-mix(in srgb, var(--t-primary) 30%, var(--surface)) 75%); box-shadow: 0 0 0 6px color-mix(in srgb, var(--t-primary) 25%, var(--bg)), 0 0 0 8px color-mix(in srgb, var(--t-primary) 45%, transparent); }
-  .result-title, .card-title, .value-tag, .radar-value { color: color-mix(in srgb, var(--t-primary) 70%, white); fill: color-mix(in srgb, var(--t-primary) 70%, white); }
-  .value-tag { background: color-mix(in srgb, var(--t-primary) 20%, var(--surface)); }
+  .result-title, .card-title, .card-subtitle, .value-tag, .radar-value { color: color-mix(in srgb, var(--t-primary) 70%, white); fill: color-mix(in srgb, var(--t-primary) 70%, white); }
+  .value-tag, .result-intro .result-catch { background: color-mix(in srgb, var(--t-primary) 20%, var(--surface)); }
+  .result-intro .result-catch { color: color-mix(in srgb, var(--t-primary) 70%, white); }
   .radar-grid.outer { fill: color-mix(in srgb, var(--t-primary) 8%, transparent); }
 }
