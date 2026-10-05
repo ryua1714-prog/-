@@ -237,12 +237,12 @@ export const Demo: React.FC = () => (
     ))}
     {taps.map((t, i) => (
       <Sequence key={`c${i}`} from={t.frame - 1} durationInFrames={10}>
-        <Audio src={staticFile("click.wav")} volume={0.9} />
+        <Audio src={staticFile("click.wav")} volume={0.8} />
       </Sequence>
     ))}
     {SCROLLS.map(([s], i) => (
-      <Sequence key={`w${i}`} from={s - 2} durationInFrames={20}>
-        <Audio src={staticFile("whoosh.wav")} volume={0.8} />
+      <Sequence key={`w${i}`} from={s - 3} durationInFrames={22}>
+        <Audio src={staticFile("whoosh.wav")} volume={0.7} />
       </Sequence>
     ))}
     <Sequence from={RESULT_AT} durationInFrames={50}>

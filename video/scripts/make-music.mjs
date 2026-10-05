@@ -126,25 +126,33 @@ function sfx(seconds, fn) {
   for (let i = 0; i < n; i++) a[i] = fn(i / SR);
   return a;
 }
-// タップ音：マウスのような「カチッ」（押す音と、少し小さい離す音）
+// クリック音：短く軽い、ふつうの「クリッ」
 let hp = 0;
-const tick = (x) => {
-  if (x < 0) return 0;
+const click = sfx(0.03, (x) => {
   const n = rand();
-  const high = n - hp; // 高い成分だけ残して硬い音にする
+  const high = n - hp; // 低い成分を落としてこもらない音にする
   hp = n;
-  return high * Math.exp(-x * 900) * 0.9 + Math.sin(2 * Math.PI * 3800 * x) * Math.exp(-x * 500) * 0.5 + Math.sin(2 * Math.PI * 1500 * x) * Math.exp(-x * 350) * 0.25;
-};
-const click = sfx(0.08, (x) => tick(x) + 0.55 * tick(x - 0.032));
-writeWav("click.wav", click, click, { peakTo: 0.7 });
-// スワイプ音：ノイズがふわっと通り過ぎる
-let lp = 0;
-const whoosh = sfx(0.5, (x) => {
-  const cutoff = 0.02 + 0.25 * Math.sin(Math.PI * x / 0.5);
-  lp += cutoff * (rand() - lp);
-  return lp * Math.sin(Math.PI * x / 0.5);
+  return (high * 0.35 + Math.sin(2 * Math.PI * 2400 * x) * 0.8) * Math.exp(-x * 320) * Math.min(1, x * 8000);
 });
-writeWav("whoosh.wav", whoosh, whoosh, { peakTo: 0.5 });
+writeWav("click.wav", click, click, { peakTo: 0.6 });
+
+// スワイプ音：やわらかく流れる「スーッ」（なめらかなノイズを、山なりの音量で通す）
+const SWIPE = 0.7;
+const swipe = (seedOffset) => {
+  let a = 0;
+  let b = 0;
+  for (let i = 0; i < seedOffset; i++) rand();
+  return sfx(SWIPE, (x) => {
+    const k = x / SWIPE;
+    const cutoff = 0.015 + 0.05 * Math.sin(Math.PI * k); // 真ん中で少し明るく
+    a += cutoff * (rand() - a); // 2段のローパスで角を取る
+    b += cutoff * (a - b);
+    const env = Math.pow(Math.sin(Math.PI * Math.min(1, k * 1.25)), 2);
+    return b * env;
+  });
+};
+writeWav("whoosh.wav", swipe(0), swipe(7), { peakTo: 0.5 });
+
 // 結果発表：キラキラのアルペジオ
 const chimeNotes = [72, 76, 79, 84, 88];
 const chime = sfx(1.6, (x) => chimeNotes.reduce((acc, m, k) => {
