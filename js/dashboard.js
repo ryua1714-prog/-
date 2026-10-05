@@ -302,7 +302,7 @@ function setupDashboardControls() {
   $("btn-dash-reload").addEventListener("click", loadFromSheets);
 
   storage.ready.then(() => {
-    // claude.ai では管理者（編集者以上）にだけ入口を表示する
+    // claude.ai ではオーナー（このページの持ち主）にだけ入口を表示する
     if (storage.mode === "db" && storage.isAdmin) {
       document.querySelectorAll(".btn-admin").forEach((btn) => (btn.hidden = false));
     }

@@ -7,7 +7,7 @@
 // db の保存形式: responses/<回答者ID>（1人1ドキュメント）
 //   { latest: 最新の診断, runs: 直近20回までの診断, updatedAt }
 // 回答者IDは claude.ai が発行する匿名のIDで、名前やメールアドレスは保存しない。
-// 回答者は自分のドキュメントだけを書き込め、全員分を読めるのは管理者（編集者以上）だけ。
+// 回答者は自分のドキュメントだけを書き込め、全員分を読めるのはオーナー（このページの持ち主）だけ。
 // どちらも使えない環境（ファイルを直接開いた場合など）では保存しない。
 
 const MAX_RUNS_PER_RESPONDENT = 20;
@@ -47,7 +47,7 @@ storage.ready = (async () => {
       storage.db = db;
       if (user) {
         storage.userId = await user.id();
-        storage.isAdmin = await user.canEdit();
+        storage.isAdmin = await user.isOwner();
       }
       return;
     }
