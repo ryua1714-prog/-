@@ -1,0 +1,20 @@
+{
+  "name": "kosodate-promo-video",
+  "private": true,
+  "scripts": {
+    "music": "node scripts/make-music.mjs",
+    "studio": "remotion studio",
+    "render": "node scripts/make-music.mjs && remotion render Promo out/promo.mp4 --codec=h264"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^7.0.2"
+  }
+}
