@@ -178,12 +178,82 @@ function renderDashboard() {
   root.appendChild(qCard);
 }
 
+// ---------- データの読み込み ----------
+
+// スプレッドシートの行を、db と同じ形（回答者ごとの { id, latest, runs }）にまとめる
+function groupSheetRecords(records) {
+  const byRespondent = {};
+  records.forEach((r) => {
+    const rec = { ...r, answers: (r.answers || []).map((v) => v + 3) }; // 内部値 → 回答番号（1〜5）
+    (byRespondent[r.respondentId] = byRespondent[r.respondentId] || []).push(rec);
+  });
+  return Object.entries(byRespondent).map(([id, runs]) => {
+    runs.sort((x, y) => Date.parse(x.at) - Date.parse(y.at));
+    return { id, runs, latest: runs[runs.length - 1] };
+  });
+}
+
+function dashMessage(text) {
+  $("dash-body").innerHTML = "";
+  $("dash-body").appendChild(el("p", "dash-empty", text));
+}
+
+function readAdminKey() {
+  try {
+    return sessionStorage.getItem("kosodate-admin-key") || "";
+  } catch (e) {
+    return dashboard.adminKey || "";
+  }
+}
+
+function rememberAdminKey(key) {
+  dashboard.adminKey = key;
+  try {
+    if (key) sessionStorage.setItem("kosodate-admin-key", key);
+    else sessionStorage.removeItem("kosodate-admin-key");
+  } catch (e) {}
+}
+
+async function loadFromSheets() {
+  const key = readAdminKey();
+  $("dash-login").hidden = Boolean(key);
+  $("btn-dash-reload").hidden = !key;
+  if (!key) {
+    $("dash-body").innerHTML = "";
+    return;
+  }
+  dashMessage("スプレッドシートから回答データを読み込んでいます…");
+  try {
+    const res = await fetch(SHEETS_ENDPOINT + "?key=" + encodeURIComponent(key));
+    const json = await res.json();
+    if (!json.ok) {
+      rememberAdminKey("");
+      $("dash-login").hidden = false;
+      $("btn-dash-reload").hidden = true;
+      $("dash-login-error").hidden = false;
+      $("dash-body").innerHTML = "";
+      return;
+    }
+    dashboard.docs = groupSheetRecords(json.records || []);
+    dashboard.loaded = true;
+    renderDashboard();
+  } catch (e) {
+    dashMessage("スプレッドシートに接続できませんでした。js/config.js のURLと、Apps Script の公開設定を確認してください。");
+  }
+}
+
 // ---------- 開閉 ----------
 
 async function openDashboard() {
   await storage.ready;
+  if (storage.mode === "sheets") {
+    showScreen("screen-dashboard");
+    $("dash-source").textContent = "データ元：Googleスプレッドシート";
+    return loadFromSheets();
+  }
   if (!storage.db || !storage.isAdmin) return;
   showScreen("screen-dashboard");
+  $("dash-source").textContent = "データ元：このページに保存された回答";
   renderDashboard();
   if (!dashboard.unsubscribe) {
     dashboard.unsubscribe = storage.db
@@ -197,13 +267,11 @@ async function openDashboard() {
         },
         () => {
           dashboard.loaded = true;
-          $("dash-body").innerHTML = "";
-          $("dash-body").appendChild(el("p", "dash-empty", "回答データを読み込めませんでした。ページを開き直してください。"));
+          dashMessage("回答データを読み込めませんでした。ページを開き直してください。");
         }
       );
   }
 }
-
 function setupDashboardControls() {
   document.querySelectorAll("[data-dash-basis]").forEach((btn) =>
     btn.addEventListener("click", () => {
@@ -222,10 +290,26 @@ function setupDashboardControls() {
   $("btn-dash-close").addEventListener("click", () => showScreen("screen-start"));
   document.querySelectorAll(".btn-admin").forEach((btn) => btn.addEventListener("click", openDashboard));
 
-  // 管理者にだけ入口を表示する
+  $("dash-login").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const key = $("dash-key").value.trim();
+    if (!key) return;
+    $("dash-login-error").hidden = true;
+    rememberAdminKey(key);
+    $("dash-key").value = "";
+    loadFromSheets();
+  });
+  $("btn-dash-reload").addEventListener("click", loadFromSheets);
+
   storage.ready.then(() => {
-    if (!storage.db || !storage.isAdmin) return;
-    document.querySelectorAll(".btn-admin").forEach((btn) => (btn.hidden = false));
+    // claude.ai では管理者（編集者以上）にだけ入口を表示する
+    if (storage.mode === "db" && storage.isAdmin) {
+      document.querySelectorAll(".btn-admin").forEach((btn) => (btn.hidden = false));
+    }
+    // スプレッドシート連携では、URLの末尾に #admin を付けて開くと管理者キーの入力画面になる
     if (location.hash === "#admin") openDashboard();
+    window.addEventListener("hashchange", () => {
+      if (location.hash === "#admin") openDashboard();
+    });
   });
 }

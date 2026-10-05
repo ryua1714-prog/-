@@ -91,6 +91,17 @@
         </div>
         <button id="btn-dash-close" class="btn-text" type="button">← 診断に戻る</button>
       </div>
+      <p id="dash-source" class="dash-note"></p>
+      <form id="dash-login" class="dash-login" hidden>
+        <label for="dash-key">管理者キー</label>
+        <p class="dash-note">スプレッドシートの Apps Script で表示した管理者キーを入力してください。</p>
+        <div class="dash-login-row">
+          <input id="dash-key" type="password" autocomplete="off" required>
+          <button class="btn-dash" type="submit">表示する</button>
+        </div>
+        <p id="dash-login-error" class="dash-error" hidden>管理者キーが違います。もう一度入力してください。</p>
+      </form>
+      <button id="btn-dash-reload" class="btn-dash btn-dash-reload" type="button" hidden>最新のデータを読み込む</button>
       <div class="dash-filters">
         <div class="dash-segment" role="group" aria-label="集計の単位">
           <button type="button" data-dash-basis="respondent" aria-pressed="true">回答者ごと</button>
@@ -108,6 +119,7 @@
 
   </main>
 
+  <script src="js/config.js"></script>
   <script src="js/content.js"></script>
   <script src="js/data.js"></script>
   <script src="js/scoring.js"></script>

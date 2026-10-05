@@ -344,6 +344,22 @@ body.wide .app { max-width: 880px; }
 .dash-eyebrow { margin: 0; color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
 .dash-title { margin: 0; font-size: 1.5rem; line-height: 1.4; text-wrap: balance; }
 
+.dash-head + .dash-note { margin-top: 6px; }
+.dash-login { margin-top: 14px; padding: 18px 20px; border-radius: 18px; background: var(--surface); border: 1px solid var(--border); }
+.dash-login label { font-weight: 700; }
+.dash-login-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.dash-login input {
+  flex: 1 1 14em; min-width: 0; padding: 10px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--text); font: inherit;
+}
+.dash-login input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.dash-error { margin: 10px 0 0; color: var(--level-4); font-size: .85rem; font-weight: 700; }
+.btn-dash {
+  padding: 10px 18px; border: none; border-radius: 999px; background: var(--accent); color: #fff;
+  font: inherit; font-weight: 700; cursor: pointer;
+}
+.btn-dash:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+.btn-dash-reload { margin-top: 12px; background: var(--surface); color: var(--text); border: 1px solid var(--border); }
 .dash-filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 16px; }
 .dash-segment { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); padding: 3px; }
 .dash-segment button {
