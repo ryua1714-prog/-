@@ -1,7 +1,7 @@
 import { AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { AnimatedText } from "./AnimatedText";
 import { Background } from "./Background";
-import { AXES, TYPES, colors, fontFamily } from "./theme";
+import { AXES, TYPES, colors, fontFamily, usePortrait } from "./theme";
 
 export const PROMO_DURATION = 900; // 30秒 × 30fps
 
@@ -41,11 +41,19 @@ const Bob: React.FC<{ i: number; children: React.ReactNode; style?: React.CSSPro
 export const Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const q = usePop(62);
+  const portrait = usePortrait();
   return (
     <>
       <AnimatedText text="子育て、" size={150} color={colors.text} delay={6} stagger={4} />
-      <AnimatedText text="これでいいのかな？" size={150} color={colors.accent} delay={26} stagger={4} style={{ marginTop: 10 }} />
-      <div style={{ position: "absolute", right: 250, top: 170, fontSize: 160, transform: `scale(${q}) rotate(${Math.sin(frame / 6) * 10}deg)` }}>💭</div>
+      {portrait ? (
+        <>
+          <AnimatedText text="これで" size={150} color={colors.accent} delay={26} stagger={4} style={{ marginTop: 10 }} />
+          <AnimatedText text="いいのかな？" size={150} color={colors.accent} delay={38} stagger={4} />
+        </>
+      ) : (
+        <AnimatedText text="これでいいのかな？" size={150} color={colors.accent} delay={26} stagger={4} style={{ marginTop: 10 }} />
+      )}
+      <div style={{ position: "absolute", right: portrait ? 110 : 250, top: portrait ? 520 : 170, fontSize: 160, transform: `scale(${q}) rotate(${Math.sin(frame / 6) * 10}deg)` }}>💭</div>
     </>
   );
 };
@@ -54,14 +62,24 @@ export const Hook: React.FC = () => {
 export const Intro: React.FC = () => {
   const frame = useCurrentFrame();
   const badge = usePop(4);
+  const portrait = usePortrait();
+  const title = (text: string, delay: number, offset: number) => (
+    <AnimatedText
+      text={text}
+      size={portrait ? 180 : 190}
+      delay={delay}
+      stagger={5}
+      charStyle={(i) => ({ color: TYPES[(i + offset) % TYPES.length].color, textShadow: "0 8px 0 rgba(0,0,0,0.06)" })}
+    />
+  );
   return (
     <>
-      <div style={{ display: "flex", gap: 24, marginBottom: 40 }}>
+      <div style={{ display: "grid", gridTemplateColumns: `repeat(${portrait ? 4 : 8}, auto)`, gap: portrait ? 36 : 24, marginBottom: 40 }}>
         {TYPES.map((t, i) => {
           const p = spring({ frame: frame - 6 - i * 4, fps: 30, config: { damping: 8, stiffness: 150 } });
           return (
             <Bob key={i} i={i}>
-              <div style={{ fontSize: 110, transform: `scale(${p}) translateY(${(1 - p) * 80}px)` }}>{t.emoji}</div>
+              <div style={{ fontSize: portrait ? 150 : 110, transform: `scale(${p}) translateY(${(1 - p) * 80}px)` }}>{t.emoji}</div>
             </Bob>
           );
         })}
@@ -69,13 +87,14 @@ export const Intro: React.FC = () => {
       <div style={{ transform: `scale(${badge})`, background: colors.accent, color: "#fff", fontFamily, fontWeight: 800, fontSize: 44, padding: "10px 40px", borderRadius: 999, marginBottom: 24 }}>
         あなたの価値観がわかる
       </div>
-      <AnimatedText
-        text="子育てタイプ診断"
-        size={190}
-        delay={40}
-        stagger={5}
-        charStyle={(i) => ({ color: TYPES[i % TYPES.length].color, textShadow: "0 8px 0 rgba(0,0,0,0.06)" })}
-      />
+      {portrait ? (
+        <>
+          {title("子育て", 40, 0)}
+          {title("タイプ診断", 55, 3)}
+        </>
+      ) : (
+        title("子育てタイプ診断", 40, 0)
+      )}
     </>
   );
 };
@@ -90,7 +109,7 @@ const FEATURES = [
 export const Features: React.FC = () => (
   <>
     <AnimatedText text="ここがポイント！" size={110} color={colors.text} delay={2} stagger={3} style={{ marginBottom: 70 }} />
-    <div style={{ display: "flex", gap: 60 }}>
+    <div style={{ display: "flex", flexDirection: usePortrait() ? "column" : "row", gap: 60 }}>
       {FEATURES.map((f, i) => {
         const d = 30 + i * 28;
         return <FeatureCard key={i} f={f} delay={d} i={i} />;
@@ -101,6 +120,35 @@ export const Features: React.FC = () => (
 
 const FeatureCard: React.FC<{ f: (typeof FEATURES)[number]; delay: number; i: number }> = ({ f, delay, i }) => {
   const p = usePop(delay);
+  if (usePortrait()) {
+    return (
+      <Bob i={i}>
+        <div
+          style={{
+            width: 900,
+            height: 300,
+            background: "#fff",
+            borderRadius: 48,
+            border: `8px solid ${f.color}`,
+            boxShadow: "0 24px 50px rgba(224,122,63,0.15)",
+            display: "flex",
+            alignItems: "center",
+            gap: 40,
+            padding: "0 50px",
+            boxSizing: "border-box",
+            transform: `scale(${p}) rotate(${(1 - p) * -10}deg)`,
+            opacity: Math.min(1, p * 2),
+          }}
+        >
+          <div style={{ fontSize: 140 }}>{f.icon}</div>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+            <AnimatedText text={f.big} size={120} color={colors.text} delay={delay + 6} stagger={4} />
+            <AnimatedText text={f.small} size={46} weight={500} color={colors.muted} delay={delay + 16} stagger={2} />
+          </div>
+        </div>
+      </Bob>
+    );
+  }
   return (
     <Bob i={i}>
       <div
@@ -131,7 +179,7 @@ const FeatureCard: React.FC<{ f: (typeof FEATURES)[number]; delay: number; i: nu
 export const Types: React.FC = () => (
   <>
     <AnimatedText text="あなたはどのタイプ？" size={104} color={colors.text} delay={2} stagger={3} style={{ marginBottom: 56 }} />
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 380px)", gap: 36 }}>
+    <div style={{ display: "grid", gridTemplateColumns: usePortrait() ? "repeat(2, 440px)" : "repeat(4, 380px)", gap: 36 }}>
       {TYPES.map((t, i) => (
         <TypeCard key={i} t={t} i={i} delay={30 + i * 10} />
       ))}
@@ -215,7 +263,14 @@ export const Outro: React.FC = () => {
   const pulse = 1 + Math.max(0, Math.sin((frame - 60) / 5)) * 0.04 * (frame > 60 ? 1 : 0);
   return (
     <>
-      <AnimatedText text="さっそく診断してみよう！" size={110} color={colors.text} delay={2} stagger={3} />
+      {usePortrait() ? (
+        <>
+          <AnimatedText text="さっそく" size={130} color={colors.text} delay={2} stagger={3} />
+          <AnimatedText text="診断してみよう！" size={120} color={colors.text} delay={14} stagger={3} />
+        </>
+      ) : (
+        <AnimatedText text="さっそく診断してみよう！" size={110} color={colors.text} delay={2} stagger={3} />
+      )}
       <div
         style={{
           marginTop: 60,
@@ -233,7 +288,7 @@ export const Outro: React.FC = () => {
         👆 診断をはじめる
       </div>
       <AnimatedText text="ryua1714-prog.github.io/-/" size={56} weight={500} color={colors.muted} delay={62} stagger={1} style={{ marginTop: 70 }} />
-      <div style={{ position: "absolute", bottom: 60, display: "flex", gap: 30, fontSize: 70 }}>
+      <div style={{ position: "absolute", bottom: usePortrait() ? 330 : 60, display: "flex", gap: 30, fontSize: 70 }}>
         {TYPES.map((t, i) => (
           <Bob key={i} i={i}>
             {t.emoji}

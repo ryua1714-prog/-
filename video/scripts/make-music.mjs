@@ -126,8 +126,16 @@ function sfx(seconds, fn) {
   for (let i = 0; i < n; i++) a[i] = fn(i / SR);
   return a;
 }
-// タップ音：短い「ポッ」
-const click = sfx(0.09, (x) => (Math.sin(2 * Math.PI * (1800 - 9000 * x) * x) * 0.8 + rand() * 0.15) * Math.exp(-x * 60));
+// タップ音：マウスのような「カチッ」（押す音と、少し小さい離す音）
+let hp = 0;
+const tick = (x) => {
+  if (x < 0) return 0;
+  const n = rand();
+  const high = n - hp; // 高い成分だけ残して硬い音にする
+  hp = n;
+  return high * Math.exp(-x * 900) * 0.9 + Math.sin(2 * Math.PI * 3800 * x) * Math.exp(-x * 500) * 0.5 + Math.sin(2 * Math.PI * 1500 * x) * Math.exp(-x * 350) * 0.25;
+};
+const click = sfx(0.08, (x) => tick(x) + 0.55 * tick(x - 0.032));
 writeWav("click.wav", click, click, { peakTo: 0.7 });
 // スワイプ音：ノイズがふわっと通り過ぎる
 let lp = 0;

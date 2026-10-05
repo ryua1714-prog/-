@@ -1,14 +1,18 @@
 import { AbsoluteFill, Audio, Easing, Img, Sequence, interpolate, random, spring, staticFile, useCurrentFrame } from "remotion";
 import meta from "../public/capture/meta.json";
 import { AnimatedText } from "./AnimatedText";
-import { colors } from "./theme";
+import { colors, usePortrait } from "./theme";
 
 // 実際の診断ページ（scripts/capture.mjs で撮影）をスマホの中で操作して見せるシーン
 export const DEMO_DURATION = 960;
 
 const SCREEN_W = 390;
 const SCREEN_H = 844;
-const PHONE_SCALE = 1.08;
+// 横型は左に、縦型は字幕の下に大きく置く（縦型の下端はSNSのボタンに隠れるので、はみ出させる）
+const LAYOUT = {
+  landscape: { scale: 1.08, centerX: 600, top: (h: number) => 540 - h / 2 - 18, zoom: 1.32 },
+  portrait: { scale: 1.6, centerX: 540, top: () => 600, zoom: 1 },
+};
 
 type Point = { x: number; y: number };
 type Tap = { frame: number; at: Point };
@@ -179,20 +183,21 @@ const StatusBar: React.FC = () => (
 );
 
 // 回答している間はスマホに寄って、文字を読みやすくする
-const zoomAt = (frame: number) =>
-  interpolate(frame, [Q_BASE - 20, Q_BASE, RESULT_AT - 40, RESULT_AT - 20], [1, 1.32, 1.32, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
+const zoomAt = (frame: number, zoom: number) =>
+  interpolate(frame, [Q_BASE - 20, Q_BASE, RESULT_AT - 40, RESULT_AT - 20], [1, zoom, zoom, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
 
 const Phone: React.FC = () => {
   const frame = useCurrentFrame();
   const enter = spring({ frame, fps: 30, config: { damping: 14, stiffness: 90 } });
-  const zoom = zoomAt(frame);
-  const w = SCREEN_W * PHONE_SCALE;
-  const h = SCREEN_H * PHONE_SCALE;
+  const layout = LAYOUT[usePortrait() ? "portrait" : "landscape"];
+  const zoom = zoomAt(frame, layout.zoom);
+  const w = SCREEN_W * layout.scale;
+  const h = SCREEN_H * layout.scale;
   return (
-    <div style={{ position: "absolute", left: 600 - w / 2 - 18, top: 540 - h / 2 - 18, transform: `translateY(${(1 - enter) * 900}px) rotate(${(1 - enter) * 8}deg) scale(${zoom})`, transformOrigin: "50% 3%" }}>
+    <div style={{ position: "absolute", left: layout.centerX - w / 2 - 18, top: layout.top(h), transform: `translateY(${(1 - enter) * 900}px) rotate(${(1 - enter) * 8}deg) scale(${zoom})`, transformOrigin: "50% 3%" }}>
       <div style={{ padding: 18, background: "#2f2a26", borderRadius: 70, boxShadow: "0 40px 80px rgba(120,70,30,0.28), inset 0 0 0 3px #4a433d" }}>
         <div style={{ width: w, height: h, borderRadius: 54, overflow: "hidden", position: "relative", background: "#faf6ef" }}>
-          <div style={{ position: "absolute", width: SCREEN_W, height: SCREEN_H, transform: `scale(${PHONE_SCALE})`, transformOrigin: "0 0" }}>
+          <div style={{ position: "absolute", width: SCREEN_W, height: SCREEN_H, transform: `scale(${layout.scale})`, transformOrigin: "0 0" }}>
             <div style={{ position: "absolute", top: STATUS_BAR, width: SCREEN_W, height: SCREEN_H - STATUS_BAR, overflow: "hidden" }}>
               <ScreenContent />
               <Finger />
@@ -208,11 +213,15 @@ const Phone: React.FC = () => {
 
 const Caption: React.FC<{ len: number; lines: { text: string; color?: string }[] }> = ({ len, lines }) => {
   const frame = useCurrentFrame();
+  const portrait = usePortrait();
   const out = interpolate(frame, [len - 8, len], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const box: React.CSSProperties = portrait
+    ? { left: 40, right: 40, top: 130, height: 440, alignItems: "center" }
+    : { left: 950, right: 40, top: 0, bottom: 0, alignItems: "flex-start" };
   return (
-    <div style={{ position: "absolute", left: 950, right: 40, top: 0, bottom: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start", opacity: out }}>
+    <div style={{ position: "absolute", ...box, display: "flex", flexDirection: "column", justifyContent: "center", opacity: out }}>
       {lines.map((l, i) => (
-        <AnimatedText key={i} text={l.text} size={lines.length > 2 ? 88 : 96} color={l.color ?? colors.text} delay={4 + i * 16} stagger={3} />
+        <AnimatedText key={i} text={l.text} size={lines.length > 2 ? 88 : portrait ? 104 : 96} color={l.color ?? colors.text} delay={4 + i * 16} stagger={3} />
       ))}
     </div>
   );

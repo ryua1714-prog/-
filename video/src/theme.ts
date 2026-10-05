@@ -1,5 +1,5 @@
 import { loadFont } from "@remotion/fonts";
-import { staticFile } from "remotion";
+import { staticFile, useVideoConfig } from "remotion";
 
 // M PLUS Rounded 1c（SIL Open Font License）を public/fonts から読み込む
 const family = "M PLUS Rounded 1c";
@@ -33,3 +33,9 @@ export const TYPES = [
 ];
 
 export const AXES = ["学び", "個性", "成長", "礼儀", "安定"];
+
+// 縦型（9:16）かどうか
+export const usePortrait = () => {
+  const { width, height } = useVideoConfig();
+  return height > width;
+};
