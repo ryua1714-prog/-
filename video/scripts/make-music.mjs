@@ -1,8 +1,8 @@
-// 明るいBGM（120BPM・ハ長調・I–V–vi–IV）をその場で合成して public/bgm.wav に書き出す
+// 明るいBGM（120BPM・ハ長調・I–V–vi–IV）と効果音をその場で合成して public/ に書き出す
 import { writeFileSync } from "node:fs";
 
 const SR = 44100;
-const DURATION = 30;
+const DURATION = 60;
 const BPM = 120;
 const BEAT = 60 / BPM;
 const N = SR * DURATION;
@@ -58,9 +58,11 @@ const chords = [
 const melody = [
   [[0, 76, 1], [1, 79, 1], [2, 84, 1.5], [3.5, 83, 0.5], [4, 79, 1], [5, 81, 1], [6, 79, 2]],
   [[0, 81, 1], [1, 79, 1], [2, 76, 1], [3, 77, 1], [4, 79, 1.5], [5.5, 77, 0.5], [6, 76, 1], [7, 74, 1]],
+  [[0, 72, 0.5], [0.5, 74, 0.5], [1, 76, 1], [2, 79, 1], [3, 76, 1], [4, 81, 1], [5, 79, 1], [6, 77, 1], [7, 76, 1]],
+  [[0, 77, 1], [1, 76, 1], [2, 74, 1], [3, 72, 1], [4, 74, 1.5], [5.5, 76, 0.5], [6, 72, 2]],
 ];
 
-const bars = Math.ceil(DURATION / (BEAT * 4));
+const bars = Math.floor((DURATION - 2) / (BEAT * 4)); // 最後の2秒は締めの和音
 for (let bar = 0; bar < bars; bar++) {
   const t0 = bar * 4 * BEAT;
   const c = chords[bar % 4];
@@ -80,7 +82,7 @@ for (let bar = 0; bar < bars; bar++) {
     pluck(t0 + s * BEAT / 4, m, s % 2 ? 0.4 : -0.4, intro ? 0.07 : 0.09);
   }
   if (bar >= 2) {
-    const phrase = melody[Math.floor((bar - 2) / 2) % 2];
+    const phrase = melody[Math.floor((bar - 2) / 2) % melody.length];
     const offset = ((bar - 2) % 2) * 4;
     for (const [beat, m, len] of phrase) {
       if (beat >= offset && beat < offset + 4) bell(t0 + (beat - offset) * BEAT, m, len * BEAT);
@@ -88,20 +90,59 @@ for (let bar = 0; bar < bars; bar++) {
   }
 }
 
-// フェードとリミッター
-const buf = Buffer.alloc(44 + N * 4);
-let peak = 0;
-for (let i = 0; i < N; i++) peak = Math.max(peak, Math.abs(L[i]), Math.abs(R[i]));
-const gain = 0.85 / peak;
-for (let i = 0; i < N; i++) {
-  const t = i / SR;
-  const fade = Math.min(1, t / 0.3, (DURATION - t) / 2);
-  buf.writeInt16LE(Math.round(Math.tanh(L[i] * gain * fade) * 32767), 44 + i * 4);
-  buf.writeInt16LE(Math.round(Math.tanh(R[i] * gain * fade) * 32767), 46 + i * 4);
+// 正規化・フェードして16bitステレオのWAVに書き出す
+function writeWav(name, left, right, { peakTo = 0.85, fadeIn = 0, fadeOut = 0 } = {}) {
+  const n = left.length;
+  const dur = n / SR;
+  const buf = Buffer.alloc(44 + n * 4);
+  let peak = 1e-9;
+  for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(left[i]), Math.abs(right[i]));
+  const gain = peakTo / peak;
+  for (let i = 0; i < n; i++) {
+    const t = i / SR;
+    const fade = Math.min(1, fadeIn ? t / fadeIn : 1, fadeOut ? (dur - t) / fadeOut : 1);
+    buf.writeInt16LE(Math.round(Math.tanh(left[i] * gain * fade) * 32767), 44 + i * 4);
+    buf.writeInt16LE(Math.round(Math.tanh(right[i] * gain * fade) * 32767), 46 + i * 4);
+  }
+  buf.write("RIFF", 0); buf.writeUInt32LE(36 + n * 4, 4); buf.write("WAVE", 8);
+  buf.write("fmt ", 12); buf.writeUInt32LE(16, 16); buf.writeUInt16LE(1, 20); buf.writeUInt16LE(2, 22);
+  buf.writeUInt32LE(SR, 24); buf.writeUInt32LE(SR * 4, 28); buf.writeUInt16LE(4, 32); buf.writeUInt16LE(16, 34);
+  buf.write("data", 36); buf.writeUInt32LE(n * 4, 40);
+  writeFileSync(new URL(`../public/${name}`, import.meta.url), buf);
+  console.log(`public/${name} を書き出しました`);
 }
-buf.write("RIFF", 0); buf.writeUInt32LE(36 + N * 4, 4); buf.write("WAVE", 8);
-buf.write("fmt ", 12); buf.writeUInt32LE(16, 16); buf.writeUInt16LE(1, 20); buf.writeUInt16LE(2, 22);
-buf.writeUInt32LE(SR, 24); buf.writeUInt32LE(SR * 4, 28); buf.writeUInt16LE(4, 32); buf.writeUInt16LE(16, 34);
-buf.write("data", 36); buf.writeUInt32LE(N * 4, 40);
-writeFileSync(new URL("../public/bgm.wav", import.meta.url), buf);
-console.log("public/bgm.wav を書き出しました");
+
+// 最後の小節はジャーンと伸ばして終わる
+const endT = bars * 4 * BEAT;
+for (const m of [48, 60, 64, 67, 72, 76]) bell(endT, m, 1.6);
+kick(endT);
+
+writeWav("bgm.wav", L, R, { fadeIn: 0.3, fadeOut: 1.2 });
+
+// 効果音
+function sfx(seconds, fn) {
+  const n = Math.floor(seconds * SR);
+  const a = new Float32Array(n);
+  for (let i = 0; i < n; i++) a[i] = fn(i / SR);
+  return a;
+}
+// タップ音：短い「ポッ」
+const click = sfx(0.09, (x) => (Math.sin(2 * Math.PI * (1800 - 9000 * x) * x) * 0.8 + rand() * 0.15) * Math.exp(-x * 60));
+writeWav("click.wav", click, click, { peakTo: 0.7 });
+// スワイプ音：ノイズがふわっと通り過ぎる
+let lp = 0;
+const whoosh = sfx(0.5, (x) => {
+  const cutoff = 0.02 + 0.25 * Math.sin(Math.PI * x / 0.5);
+  lp += cutoff * (rand() - lp);
+  return lp * Math.sin(Math.PI * x / 0.5);
+});
+writeWav("whoosh.wav", whoosh, whoosh, { peakTo: 0.5 });
+// 結果発表：キラキラのアルペジオ
+const chimeNotes = [72, 76, 79, 84, 88];
+const chime = sfx(1.6, (x) => chimeNotes.reduce((acc, m, k) => {
+  const t = x - k * 0.07;
+  if (t < 0) return acc;
+  const f = midi(m);
+  return acc + (Math.sin(2 * Math.PI * f * t) + 0.3 * Math.sin(2 * Math.PI * f * 2.01 * t)) * Math.exp(-t * 3) * Math.min(1, t * 500);
+}, 0));
+writeWav("chime.wav", chime, chime, { peakTo: 0.6 });

@@ -1,3 +1,6 @@
 node_modules/
 out/
 public/bgm.wav
+public/click.wav
+public/whoosh.wav
+public/chime.wav

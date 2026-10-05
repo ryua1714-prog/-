@@ -15,7 +15,7 @@ const SCENES = [
 ];
 
 // シーンの出入り（ふわっと拡大して入り、少し縮んで消える）
-const Scene: React.FC<{ len: number; last?: boolean; children: React.ReactNode }> = ({ len, last, children }) => {
+export const Scene: React.FC<{ len: number; last?: boolean; children: React.ReactNode }> = ({ len, last, children }) => {
   const frame = useCurrentFrame();
   const inP = interpolate(frame, [0, 10], [0, 1], { extrapolateRight: "clamp" });
   const outP = last ? 0 : interpolate(frame, [len - 10, len], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -38,7 +38,7 @@ const Bob: React.FC<{ i: number; children: React.ReactNode; style?: React.CSSPro
 };
 
 // 1. つかみ
-const Hook: React.FC = () => {
+export const Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const q = usePop(62);
   return (
@@ -51,7 +51,7 @@ const Hook: React.FC = () => {
 };
 
 // 2. ツール紹介
-const Intro: React.FC = () => {
+export const Intro: React.FC = () => {
   const frame = useCurrentFrame();
   const badge = usePop(4);
   return (
@@ -87,7 +87,7 @@ const FEATURES = [
   { icon: "🎯", big: "8タイプ", small: "あなたのタイプを診断", color: colors.pink },
 ];
 
-const Features: React.FC = () => (
+export const Features: React.FC = () => (
   <>
     <AnimatedText text="ここがポイント！" size={110} color={colors.text} delay={2} stagger={3} style={{ marginBottom: 70 }} />
     <div style={{ display: "flex", gap: 60 }}>
@@ -128,7 +128,7 @@ const FeatureCard: React.FC<{ f: (typeof FEATURES)[number]; delay: number; i: nu
 };
 
 // 4. 8タイプ
-const Types: React.FC = () => (
+export const Types: React.FC = () => (
   <>
     <AnimatedText text="あなたはどのタイプ？" size={104} color={colors.text} delay={2} stagger={3} style={{ marginBottom: 56 }} />
     <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 380px)", gap: 36 }}>
@@ -209,7 +209,7 @@ const Radar: React.FC = () => {
 };
 
 // 6. 締め
-const Outro: React.FC = () => {
+export const Outro: React.FC = () => {
   const frame = useCurrentFrame();
   const btn = usePop(48);
   const pulse = 1 + Math.max(0, Math.sin((frame - 60) / 5)) * 0.04 * (frame > 60 ? 1 : 0);
@@ -249,7 +249,7 @@ export const Promo: React.FC = () => {
   return (
     <AbsoluteFill>
       <Background />
-      <Audio src={staticFile("bgm.wav")} />
+      <Audio src={staticFile("bgm.wav")} volume={(f) => interpolate(f, [PROMO_DURATION - 45, PROMO_DURATION], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
       {SCENES.map(({ from, len }, i) => {
         const Part = parts[i];
         return (

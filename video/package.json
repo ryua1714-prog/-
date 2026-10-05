@@ -2,9 +2,11 @@
   "name": "kosodate-promo-video",
   "private": true,
   "scripts": {
+    "capture": "node scripts/capture.mjs",
     "music": "node scripts/make-music.mjs",
     "studio": "remotion studio",
-    "render": "node scripts/make-music.mjs && remotion render Promo out/promo.mp4 --codec=h264"
+    "render": "node scripts/make-music.mjs && remotion render Promo out/promo.mp4",
+    "render:60": "node scripts/make-music.mjs && remotion render Promo60 out/promo-60s.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",
@@ -15,6 +17,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.31",
+    "playwright-core": "^1.63.0",
     "typescript": "^7.0.2"
   }
 }
