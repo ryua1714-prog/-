@@ -16,12 +16,14 @@ function renderRadar(axisScores) {
   const toPoints = (ratios) => ratios.map((ratio, i) => point(i, ratio).map((v) => v.toFixed(2)).join(",")).join(" ");
 
   const svg = document.createElementNS(ns, "svg");
-  svg.setAttribute("viewBox", `0 0 ${size} ${size}`);
+  // 日本語以外は軸の名前が長くなるので、左右に余白を取る
+  const pad = currentLang === "ja" ? 0 : 44;
+  svg.setAttribute("viewBox", `${-pad} 0 ${size + pad * 2} ${size}`);
   svg.setAttribute("class", "radar");
   svg.setAttribute("role", "img");
   svg.setAttribute(
     "aria-label",
-    "5軸レーダーチャート：" + axisScores.map((a) => `${a.name}${Math.round(a.percent)}`).join("、")
+    t("radarLabel") + axisScores.map((a) => `${axisName(a.key)} ${Math.round(a.percent)}`).join(t("radarSep"))
   );
 
   const el = (tag, attrs) => {
@@ -50,7 +52,7 @@ function renderRadar(axisScores) {
   // ラベル
   axisScores.forEach((a, i) => {
     const [x, y] = point(i, 1.28);
-    el("text", { x, y, class: "radar-label", "text-anchor": "middle" }).textContent = a.name;
+    el("text", { x, y, class: "radar-label", "text-anchor": "middle" }).textContent = axisName(a.key);
     el("text", { x, y: y + 17, class: "radar-value", "text-anchor": "middle" }).textContent = Math.round(a.percent);
   });
 
@@ -77,15 +79,15 @@ function showScreen(name) {
 function renderQuestion() {
   const i = state.current;
   $("q-number").textContent = `Q${i + 1}`;
-  $("q-text").textContent = QUESTIONS[i].text;
+  $("q-text").textContent = questionText(i);
   $("progress-text").textContent = `${i + 1} / ${QUESTIONS.length}`;
   $("progress-bar").style.width = `${(i / QUESTIONS.length) * 100}%`;
   $("btn-back").disabled = i === 0;
 
   const list = $("choices");
   list.innerHTML = "";
-  CHOICES.forEach((choice) => {
-    const btn = createChoiceButton(choice.label, () => selectAnswer(choice.score, btn));
+  CHOICES.forEach((choice, ci) => {
+    const btn = createChoiceButton(choiceLabel(ci), () => selectAnswer(choice.score, btn));
     btn.dataset.score = choice.score;
     if (state.answers[i] === choice.score) btn.classList.add("selected");
     list.appendChild(btn);
@@ -174,8 +176,8 @@ function resolveTie(candidates, done) {
 
   // 二択質問が未定義の組み合わせは、候補タイプの考え方から本人に選んでもらう
   askTiebreak(
-    "次のうち、あなたの考えにより近いのはどちらですか？",
-    candidates.map((key) => ({ label: typeByKey(key).concept, type: key })),
+    t("tiebreakQuestion"),
+    candidates.map((key) => ({ label: typeText(typeByKey(key)).concept, type: key })),
     (winner) => done(typeByKey(winner))
   );
 }
@@ -215,9 +217,9 @@ function paragraph(text, className) {
   return p;
 }
 
-// 結果文章（js/content.js の RESULTS）を原稿の順番どおりにカードとして並べる
+// 結果文章（日本語は js/content.js の RESULTS、ほかの言語は CONTENT_I18N）を原稿の順番どおりにカードとして並べる
 function renderResultSections(key) {
-  const result = RESULTS[key];
+  const result = resultContent(key);
 
   const intro = $("r-intro");
   intro.innerHTML = "";
@@ -251,8 +253,9 @@ function renderResultSections(key) {
 function showResult(type) {
   applyTheme(type);
   $("r-emoji").textContent = type.emoji;
-  $("r-label").textContent = type.label;
-  $("r-role").textContent = type.role;
+  const names = typeText(type);
+  $("r-label").textContent = names.label;
+  $("r-role").textContent = names.role;
   $("r-role-emoji").textContent = type.emoji;
 
   const chart = $("r-chart");
@@ -272,6 +275,7 @@ function start() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  setupLanguageMenu();
   setupDashboardControls();
   $("btn-start").addEventListener("click", start);
   $("btn-retry").addEventListener("click", start);

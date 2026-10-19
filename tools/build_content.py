@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
-"""content/questions.md と content/results.md から js/content.js を生成する。
+"""content/questions.md と content/results.md（日本語の原稿）、
+content/i18n/<言語>/（翻訳）から js/content.js を生成する。
 
 質問文・結果文章は原稿の文字をそのまま使う（加工しない）。
 使い方: python3 tools/build_content.py
+
+翻訳の書式（content/i18n/<言語>/）
+  questions.md  … 1行に1問。「Q1 質問文」
+  results*.md   … 「# タイプキー」で始め、最初の「## 1」までが冒頭文。
+                  「## 1」〜「## 10」が結果画面の10項目（見出しは js/i18n.js）。
+                  「@ 名前」はキャラ・有名人の名前（見出しとして表示）。
 """
 import json
 import re
@@ -100,18 +107,71 @@ def parse_results(text):
     return results
 
 
+TRANSLATION_LANGS = ["en", "zh", "ko", "es", "ru"]
+
+
+def parse_translation(lang):
+    base = ROOT / "content/i18n" / lang
+    qtext = (base / "questions.md").read_text(encoding="utf-8")
+    questions = re.findall(r"^Q(\d+)\s+(.+)$", qtext, flags=re.M)
+    assert [int(n) for n, _ in questions] == list(range(1, 51)), f"{lang}: 質問が1〜50になっていません"
+
+    results = {}
+    current = None
+    section = None
+    for path in sorted(base.glob("results*.md")):
+        for line in path.read_text(encoding="utf-8").split("\n"):
+            line = line.rstrip()
+            if not line:
+                continue
+            m = re.match(r"^# (\w+)$", line)
+            if m:
+                assert m.group(1) in TYPE_KEYS.values(), f"{lang}: 不明なタイプ {m.group(1)}"
+                current = {"intro": [], "sections": []}
+                results[m.group(1)] = current
+                section = None
+                continue
+            m = re.match(r"^## (\d+)$", line)
+            if m:
+                assert int(m.group(1)) == len(current["sections"]) + 1, f"{lang}: 項目番号の順番が違います ({line})"
+                section = []
+                current["sections"].append(section)
+                continue
+            if section is None:
+                current["intro"].append(line)
+            elif line.startswith("@ "):
+                section.append({"name": line[2:]})
+            else:
+                section.append({"p": line})
+
+    assert sorted(results) == sorted(TYPE_KEYS.values()), f"{lang}: 8タイプ分の翻訳がありません: {sorted(results)}"
+    for key, r in results.items():
+        assert r["intro"], f"{lang}/{key}: 冒頭文がありません"
+        assert len(r["sections"]) == len(SECTION_TITLES), f"{lang}/{key}: 項目が10個ではありません"
+        assert all(r["sections"]), f"{lang}/{key}: 空の項目があります"
+        names = [i["name"] for i in r["sections"][8] if "name" in i]
+        assert len(names) == 2, f"{lang}/{key}: キャラ・有名人が2件ではありません: {names}"
+    return {"questions": [t for _, t in questions], "results": results}
+
+
 def main():
     questions = parse_questions((ROOT / "content/questions.md").read_text(encoding="utf-8"))
     results = parse_results((ROOT / "content/results.md").read_text(encoding="utf-8"))
+    translations = {}
+    for lang in TRANSLATION_LANGS:
+        if (ROOT / "content/i18n" / lang / "questions.md").exists():
+            translations[lang] = parse_translation(lang)
     js = (
         "// このファイルは tools/build_content.py で content/*.md から生成しています。直接編集しないでください。\n\n"
         "// pos: 肯定方向（そう思う側）で加点するタイプ / neg: 否定方向（そう思わない側）で加点するタイプ\n"
         f"const QUESTIONS = {json.dumps(questions, ensure_ascii=False, indent=2)};\n\n"
         "// 結果文章（content/results.md が唯一の正式原稿）\n"
-        f"const RESULTS = {json.dumps(results, ensure_ascii=False, indent=2)};\n"
+        f"const RESULTS = {json.dumps(results, ensure_ascii=False, indent=2)};\n\n"
+        "// 翻訳（content/i18n/<言語>/）。questions: 質問文 / results: 冒頭文と10項目の本文\n"
+        f"const CONTENT_I18N = {json.dumps(translations, ensure_ascii=False, indent=2)};\n"
     )
     (ROOT / "js/content.js").write_text(js, encoding="utf-8")
-    print(f"js/content.js: {len(questions)} questions, {len(results)} result texts")
+    print(f"js/content.js: {len(questions)} questions, {len(results)} result texts, translations: {', '.join(translations) or 'none'}")
 
 
 if __name__ == "__main__":

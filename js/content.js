@@ -2933,3 +2933,11257 @@ const RESULTS = {
     ]
   }
 };
+
+// 翻訳（content/i18n/<言語>/）。questions: 質問文 / results: 冒頭文と10項目の本文
+const CONTENT_I18N = {
+  "en": {
+    "questions": [
+      "To broaden my child's possibilities, I think they sometimes need experiences they don't want.",
+      "If they keep at something because they love it, even the time without results has meaning.",
+      "The ability to fit in with others matters as much as the ability to stay true to yourself.",
+      "I don't think a child's future path is something they should decide entirely on their own.",
+      "There is value in sticking with something a little longer after you start wanting to quit.",
+      "I'd rather my child turn their strengths into a weapon than eliminate their weaknesses.",
+      "Sometimes it's necessary not to warn them in advance, even when you know they will fail.",
+      "I want my child to choose a place that stretches them over a place that feels comfortable.",
+      "If a once-in-a-lifetime chance came on the day of an important promise, I would accept them breaking the promise.",
+      "I want my child to give their all even to things whose usefulness is unclear.",
+      "Even if my child is satisfied with the present, I think parents should think about what comes next.",
+      "I want to increase my child's future options from an early age.",
+      "Facing things you dislike, instead of running away, is a necessary experience.",
+      "I worry more about my child not getting along with others than about them being different.",
+      "Even when I know the right way, it's better to quietly watch over them.",
+      "When I see my child working hard, I feel I don't need to demand results.",
+      "Even if my child chose the school themselves, I would encourage them to reconsider if I thought it wasn't a good fit.",
+      "Time spent continuing something you're not suited to is not wasted.",
+      "A day spent doing nothing is a waste.",
+      "I'd rather raise a child who can bounce back from failure than one who never fails.",
+      "Even on things my child can decide for themselves, I want to share my opinion.",
+      "If my child has something they can lose themselves in, it's fine if other things slip a little.",
+      "Sometimes changing your environment opens more doors than continuing to push on.",
+      "I think rebelling against parents is also part of growing up.",
+      "If it increases their future freedom, it's okay for my child to have a little less freedom now.",
+      "Rather than things they don't mind losing at, I want my child to experience something they desperately want to win.",
+      "Even if my child hates it, I want them to keep going until the point we first agreed on.",
+      "I would feel more at ease if my child were simply happy in an ordinary way than if they lived a life different from others.",
+      "Even if I notice my child is struggling, I want to wait until they come to me for help.",
+      "It's fine to have a period of taking a break from studying and playing to their heart's content.",
+      "If it would help my child develop their talent, I would consider changing schools or even where we live.",
+      "I don't think reducing failures by stepping in ahead of time is always good for children.",
+      "I can see even a year with no results at all as part of growing.",
+      "Before letting my child choose freely, I want them to build the ability to choose well.",
+      "If my child stands out at school but doesn't mind, I don't worry about it.",
+      "If my child is happy now, I don't need to push them toward the next stage of growth.",
+      "The fact that you've kept at something this long is a reason to keep going.",
+      "The less I know about a field, the more I want to trust my child's judgment.",
+      "I value my child having their own opinions more than adapting to those around them.",
+      "Even if I know it's a roundabout way, I want to leave it to my child if it's the path they chose.",
+      "Even if no talent is visible, I want to support my child as long as they can keep up their efforts.",
+      "Even if my child resents me now, I want to make choices they will later feel were right.",
+      "I'd rather my child experience many worlds than know one world deeply.",
+      "I want home to be a place where my child doesn't have to try hard.",
+      "If my child seriously chose a path, I would support them even in giving up stability.",
+      "When things aren't going well, I want my child to keep going a little longer before changing their approach.",
+      "Rather than suffer for the sake of growth, I want my child to choose happiness now.",
+      "I don't think leaving everything to the child is the only form of respect.",
+      "If it's a life my child chose, I think even the freedom to regret it belongs to them.",
+      "If I could go back to my childhood with my current memories, I would choose again by prioritizing what I now wish I had done, rather than what I wanted back then."
+    ],
+    "results": {
+      "education": {
+        "intro": [
+          "As an Architect, you are \"a devoted parent, full of love and gifted at thinking about your child's future.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "You are a parent who thinks not only about your child's present, but about what lies beyond it."
+            },
+            {
+              "p": "Rather than judging only by whether your child wants to do something or seems to be enjoying it right now, you think about where the experience might lead and what possibilities it will leave open. When it comes to schools, extracurricular activities, entrance exams and future paths, you don't leave everything to your child; you gather information yourself and try to find options your child doesn't even know about yet."
+            },
+            {
+              "p": "For you, education is not simply about getting good grades. It is closer to expanding future options by gaining knowledge and skills. That is why you sometimes recommend things even when your child isn't keen right now, if you believe they will be needed later."
+            },
+            {
+              "p": "At the root of this is a feeling that you never want your child's possibilities to shrink because you, as a parent, did nothing. Looking a little ahead of your child and shaping an environment that connects to their future: that is the Architect's way of parenting."
+            }
+          ],
+          [
+            {
+              "p": "In Education Type families, children tend to grow up able to do what needs to be done."
+            },
+            {
+              "p": "Through homework, deadlines and tackling things they find difficult, they naturally learn that it's not enough to do only what they want—making their wishes come true also takes preparation."
+            },
+            {
+              "p": "And because their parents actively gather information, they come into contact with schools, activities, jobs and experiences they could never have found on their own. Among them, they may discover strengths they didn't know they had."
+            },
+            {
+              "p": "On the other hand, the more good options parents prepare, the fewer chances children have to choose from scratch. Children who keep receiving good suggestions from their parents about schools and activities may later find themselves wondering, \"What do I actually want to do?\""
+            },
+            {
+              "p": "That's why, for the Education Type, accepting experiences that stray from the prepared path matters just as much as preparing a good path."
+            }
+          ],
+          [
+            {
+              "p": "The thing to watch most is whether your feeling of \"this is for my child's sake\" has grown bigger than your child's own feelings."
+            },
+            {
+              "p": "Most of what Education Type parents recommend comes from love. Studying increases your options, basic academic skills are worth having, and learning not to give up easily matters. Because these judgments are often actually correct, it can be hard to notice when you're going too far."
+            },
+            {
+              "p": "When your child says they want to quit an activity they've done for years, when they choose a different school from the one you thought best, when they become absorbed in something that seems useless for the future—in those moments, try separating two questions: will this choice really cause problems, or am I just feeling anxious?"
+            },
+            {
+              "p": "You have the power to see the future. That's exactly why it's important, from time to time, to look away from the future and spend time looking at your child as they are now."
+            }
+          ],
+          [
+            {
+              "p": "Education Type parents tend to clash with their children most when the child's thinking seems irrational to them."
+            },
+            {
+              "p": "Say your child suddenly announces they want to quit cram school. Your mind fills with what comes next: what will happen to their grades if they quit now, will they still be ready for entrance exams, could they keep going at a different school?"
+            },
+            {
+              "p": "Meanwhile, what your child may be looking at is the present: \"I don't want to go there tomorrow.\" In cases like this, neither of you is wrong; you are simply looking at different time frames."
+            },
+            {
+              "p": "The same thing happens with future paths. You think about life after attending that school, while your child thinks about wanting to attend it. You wonder whether that job can support a living, while your child thinks about wanting to try that job."
+            },
+            {
+              "p": "The more right you are, the harder it becomes for your child to argue back. But if this goes on, your child may gradually feel that you'll never understand anyway, and stop coming to you for advice altogether."
+            },
+            {
+              "p": "In those moments, before reaching a conclusion, try asking once: \"What made you think that?\" What matters is the attitude of trying to understand your child's thinking."
+            },
+            {
+              "p": "For a child, there is a big difference between being opposed before being understood and being opposed after being understood."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment with plenty of information that still leaves room for choice."
+            },
+            {
+              "p": "When choosing schools, cram schools or activities, you'll work best in an environment with several options, where you can compare their features and also consider your child's personality and interests, rather than one where a single answer is presented."
+            },
+            {
+              "p": "On the other hand, being told to simply let your child do as they like, without enough information, may make you anxious. That's because you don't want to control your child; you want to choose with solid material in hand."
+            },
+            {
+              "p": "Gathering information is one of your great strengths. On top of that, leave a little room at the end: the parent widens the options, and the child chooses from among them—or even from outside them. In an environment like that, it becomes easier to balance your strengths with your child's independence."
+            }
+          ],
+          [
+            {
+              "p": "Your greatest strength is that you can think about possibilities your child can't see yet."
+            },
+            {
+              "p": "A child's world is inevitably limited to what they already know. They can't aim for a school they've never heard of, or dream of a job they don't know exists. At times like that, you can gather information, find options and show your child a new world."
+            },
+            {
+              "p": "Another strength is that you don't judge only by the emotion of the moment. Even when your child says they hate something, you can think flexibly—what exactly they dislike, whether there's a reason to continue, whether there's another way—without clinging to a single method."
+            },
+            {
+              "p": "Being able to think about a future your child can't yet see: that is your strength as an Architect."
+            }
+          ],
+          [
+            {
+              "p": "Your weakness is that you can say the right thing."
+            },
+            {
+              "p": "Studying increases future options, basic academic skills are worth having, learning not to give up halfway matters. In most cases, your views are well founded and are usually sound arguments."
+            },
+            {
+              "p": "That's exactly why, when you disagree with your child, you may find yourself trying to make them do as you say simply because you have more experience and more information."
+            },
+            {
+              "p": "But what you want to raise through education is surely not a child who can faithfully carry out what their parents say, but a person who thinks for themselves, chooses for themselves and walks their own path in life."
+            },
+            {
+              "p": "Sometimes it's important to accept that your child having ideas different from yours is itself one of the fruits of education."
+            },
+            {
+              "p": "Another thing to watch is that your attention easily goes to growth you can confirm with numbers. Grades, test scores, qualifications, rankings and acceptances are results that make growth easy to see. But growth such as learning to express their own opinion or finding something they love has no numbers."
+            },
+            {
+              "p": "Growth that can't be written into the blueprint is still certainly happening inside your child."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Independence Type, The Counselor 🐴."
+            },
+            {
+              "p": "The Education Type finds options and widens the child's world, and the Independence Type then helps the child think about what they themselves want. When these two come together, it becomes easier for parents to set a direction while the child still decides their own life."
+            },
+            {
+              "p": "It's also a good idea to take in the perspective of the Individuality Type, The Producer 🐱."
+            },
+            {
+              "p": "While the Education Type thinks, \"What should this child learn?\", the Individuality Type thinks, \"What is this child drawn to?\" Precisely because it's a different viewpoint from yours, it can help you discover new sides of your child."
+            }
+          ],
+          [
+            {
+              "name": "Confucius"
+            },
+            {
+              "p": "A Chinese thinker who placed great value on learning. His idea that people grow as human beings not just by gaining knowledge but by continuing to learn overlaps with the values of the Education Type."
+            },
+            {
+              "name": "Nobita's Mom (Doraemon)"
+            },
+            {
+              "p": "A mother memorable for constantly reminding Nobita about homework, studying and daily habits. Her wish that he learn what he needs so he won't struggle later, even if he hates it now, makes her an easy image of an Education Type parent's heart."
+            }
+          ],
+          [
+            {
+              "p": "Confucius's Analects contains the famous line, \"Is it not a pleasure to learn and to practice what you have learned at due times?\" It expresses the idea that there is value in repeating what you've learned until it becomes your own."
+            },
+            {
+              "p": "You, too, are probably someone who wants your child to learn and master many things now, so they can live on their own strength in the future."
+            },
+            {
+              "p": "Nobita's mom also keeps urging Nobita to do his homework and study. In her, we can see the very Education Type parental love that wants him to learn what he needs, so he won't struggle later even if he hates it now."
+            },
+            {
+              "p": "However, the goal of education is not to make your child walk the right path their parents have worked out. Let them learn many things, show them many worlds and help them build the strength they need. Beyond that, it also matters that one day your child can say, \"This is the way I want to go.\""
+            },
+            {
+              "p": "Even if that path is different from what you imagined, you can accept that your child has grown to the point of thinking and choosing for themselves. That, too, is a great result of the education you have built up."
+            },
+            {
+              "p": "You are good at thinking about your child's future. So in the end, rather than completing the picture of the future you drew, let your child draw what comes next."
+            }
+          ]
+        ]
+      },
+      "individuality": {
+        "intro": [
+          "As a Producer, you are \"a big-hearted parent who values your child's uniqueness and can watch over their growth.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "Rather than shaping your child toward a finished image of \"the kind of person I want to raise,\" you want to find the individuality and talents already inside them and help those grow."
+            },
+            {
+              "p": "From studies and sports to personality and future careers, the world is full of standards about how things \"should\" be. But you don't believe that fitting your child to those standards is necessarily best."
+            },
+            {
+              "p": "Rather than spending lots of time raising weaknesses to average, you want your child to lose themselves in what they love and are good at, and grow it into a strength only they have. Even if they're a little different from those around them, as long as they seem happy, you can accept it as \"part of who they are.\""
+            },
+            {
+              "p": "That's why you tend to notice changes that grades and rankings can't show. Loving to draw, being good at making people laugh, not being able to stop once they start looking something up. You can find value in small traits like these."
+            },
+            {
+              "p": "What you value most in parenting may be \"raising a child to become someone only they can be.\""
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up able to express their likes, dislikes, strengths and weaknesses, with their own values and their own world."
+            },
+            {
+              "p": "They don't fear being different more than necessary, and find it easier to think \"What do I want to do?\" rather than \"Everyone else is doing it.\""
+            },
+            {
+              "p": "In particular, you can expect a lot from how they grow once they find something they love. They dive deep into whatever interests them, and it may become one of their great strengths."
+            },
+            {
+              "p": "Having their individuality accepted by their parents also builds self-esteem. Even if they aren't recognized outside, they are understood at home. That experience also leads to the ability, as adults, to accept people whose values differ from their own."
+            },
+            {
+              "p": "On the other hand, precisely because they grow up with their interests respected, the ability to face \"things I don't like but need to do\" has to be nurtured consciously."
+            },
+            {
+              "p": "Developing strengths and running away from weaknesses are not the same thing. Once you can tell them apart, the strengths of the Individuality Type shine even more."
+            }
+          ],
+          [
+            {
+              "p": "What you should watch most is believing you understand your child's individuality and, as a result, locking it in place."
+            },
+            {
+              "p": "\"This child is more about sports than studies.\" \"They're not the type to be in the spotlight.\" \"They seem like a science kid.\" \"This would suit them better.\""
+            },
+            {
+              "p": "These words come from watching your child closely, but your child is still growing. Something they were bad at when they were ten may be a strength by fifteen."
+            },
+            {
+              "p": "Something they started reluctantly can become something they love the moment they get good at it."
+            },
+            {
+              "p": "So when your child resists something, instead of immediately deciding \"this isn't right for them,\" take a moment to consider whether they dislike it, or just aren't enjoying it because they can't do it yet."
+            },
+            {
+              "p": "Valuing individuality does not mean freezing their current individuality."
+            },
+            {
+              "p": "It's important to accept who your child is now while leaving room for new sides of them to appear—sides even they don't know about yet."
+            }
+          ],
+          [
+            {
+              "p": "Because you basically respect your child's wishes, head-on clashes may not happen very often."
+            },
+            {
+              "p": "However, when your child starts wanting to be \"normal,\" unexpected misunderstandings can arise."
+            },
+            {
+              "p": "To you, the individuality only they have is charming. But for a child, there can be times when being different from everyone else is painful."
+            },
+            {
+              "p": "Words like \"You're fine just as you are\" can, to the child, feel like \"You don't understand how hard this is for me.\""
+            },
+            {
+              "p": "Conversely, when your child tries to escape from something they're bad at, the call also becomes difficult. Do you think, \"It doesn't suit them, so it's fine to quit,\" or \"This is the time to push them a little\"?"
+            },
+            {
+              "p": "In those moments, before deciding the answer for them, try asking, \"Do you want to quit because you dislike it? Or because you can't do it well yet?\""
+            },
+            {
+              "p": "What the Individuality Type needs is not to let the child do anything they like. It's being able to tell the moments to protect who they are from the moments to give them a push to expand their possibilities."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment where your child can encounter many different worlds and find what they love among them."
+            },
+            {
+              "p": "Not only studies, but sports, art, music, making things, reading, nature experiences and interacting with people—an environment where they can touch as many different kinds of experiences as possible."
+            },
+            {
+              "p": "That said, there's no need to leave everything up to your child from the start just because \"they should choose what they like.\""
+            },
+            {
+              "p": "Children can only choose from what they already know."
+            },
+            {
+              "p": "They can't fall in love with a sport they've never heard of, or dream of a job they don't know exists. Creating doorways into new worlds is something parents can do that matters greatly."
+            },
+            {
+              "p": "Parents widen the possibilities. What to choose is left to the child."
+            },
+            {
+              "p": "This division of roles suits the Producer very well."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that you don't judge your child by a single measuring stick."
+            },
+            {
+              "p": "At school, there are more and more moments of being judged by easy-to-read numbers like test scores and rankings. But not all of a person's charm or talent can be turned into numbers."
+            },
+            {
+              "p": "Being good at talking, making people laugh, being able to focus for hours, coming up with interesting ideas, being sensitive to others' feelings. Hidden in traits like these may be the great strengths that will support your child in the future."
+            },
+            {
+              "p": "You are the kind of person who can find them relatively early."
+            },
+            {
+              "p": "Even more important, you don't just find them—you affirm them."
+            },
+            {
+              "p": "Having someone who says \"That's interesting!\" or \"Why not do more of it?\" even before anyone else recognizes them. A single remark like that can turn a mere hobby into something that supports a child's whole life."
+            },
+            {
+              "p": "You can be the first person to understand a talent no one has recognized yet."
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that, in the name of \"being true to who they are,\" you may also avoid the challenges needed for growth."
+            },
+            {
+              "p": "\"They're bad at math, so maybe they're a humanities type.\" \"If they're not interested in sports, they must be the artistic type.\" \"They hate speaking in front of people, so they're an introvert.\""
+            },
+            {
+              "p": "Of course, that might really be the case. But whether it's individuality or simply a lack of experience isn't something you can tell right away."
+            },
+            {
+              "p": "Something they couldn't do becomes something they can do through practice. That experience itself can create a new side of your child's individuality."
+            },
+            {
+              "p": "Another thing to keep in mind is that strengths alone can't carry someone through all of life."
+            },
+            {
+              "p": "Studies they don't enjoy but need, promises to others, meeting deadlines, steady practice—even to express individuality, a minimum foundation is necessary."
+            },
+            {
+              "p": "That's why you should hold on to both \"protecting who they are\" and \"believing they can do a little more.\""
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Strategy Type, The Strategist 🦊."
+            },
+            {
+              "p": "While you discover talents and individuality—\"this child has this wonderful quality\"—the Strategist is good at thinking about what kind of education and environment are needed to develop that quality."
+            },
+            {
+              "p": "The Producer finds the appeal of the raw material, and the Strategist builds a path from there. It's a very compatible combination."
+            },
+            {
+              "p": "Another type that tends to complement you is the Effort Type, The Coach 🐯."
+            },
+            {
+              "p": "The \"loves\" and \"strengths\" you discover take time to take shape as real talent. When the Coach's perspective of \"believing in small, steady accumulation\" is added, it becomes easier to grow a child's interest into a true strength rather than a passing phase."
+            },
+            {
+              "p": "You don't have to hold every way of thinking by yourself. By borrowing the perspectives of types different from yours, the strengths of the Individuality Type shine even more."
+            }
+          ],
+          [
+            {
+              "name": "Sakamoto Ryoma"
+            },
+            {
+              "p": "Sakamoto Ryoma is known as a figure who, without being bound by the domain system of his time, sought new paths while engaging with people from different positions."
+            },
+            {
+              "p": "He placed no value on being the same as everyone else for its own sake, and searched for possibilities even outside existing frameworks. His way of life has much in common with the Individuality Type."
+            },
+            {
+              "name": "Koro-sensei (Assassination Classroom)"
+            },
+            {
+              "p": "Koro-sensei never tries to raise all his students by the same standard."
+            },
+            {
+              "p": "Students who are good at studying, students who are good at sports, students whose strength lies in communicating with people. He observes each one carefully and changes how he deals with them according to their personality and abilities."
+            },
+            {
+              "p": "Instead of making everyone the same person, he imagines a different finished form for each one."
+            },
+            {
+              "p": "This attitude closely resembles the Producer's style of parenting."
+            }
+          ],
+          [
+            {
+              "p": "Sakamoto Ryoma is said to have said, \"In this world there is never just one road. There are a hundred, a thousand, ten thousand roads.\""
+            },
+            {
+              "p": "There isn't a single right answer for your child's future either. It's not decided that if they're good at studies they take this road and if they're not they take that one, and there's no need to walk the same road as everyone else. The road that suits your child may lie somewhere neither you nor they can see yet."
+            },
+            {
+              "p": "Koro-sensei, too, says, \"There isn't just one kind of talent. Find the assassination that suits your talent.\""
+            },
+            {
+              "p": "What matters is not only learning to do what others can do, but finding what your child has and searching for the place where it can shine. You have the strength to look at your child as they are, without judging them only by other people's standards."
+            },
+            {
+              "p": "However, the individuality you see now is not necessarily your child's finished form. Something they're bad at now may become a strength in a few years, and touching a world they had no interest in may reveal a talent no one imagined."
+            },
+            {
+              "p": "So, just as much as you treasure who your child is now, let them meet sides of themselves you haven't seen yet."
+            },
+            {
+              "p": "You don't have to decide your child's possibilities. You can simply search together for the road that suits them."
+            }
+          ]
+        ]
+      },
+      "independence": {
+        "intro": [
+          "The Counselor is \"a reassuring presence who respects your child's thinking while reaching out a hand when needed.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "You believe that, in the end, a child's life is something the child decides for themselves."
+            },
+            {
+              "p": "Having lived longer, parents have more experience and knowledge. There are many situations where you could make better judgments than your child. Even so, you don't believe that a parent continually choosing the right answers makes for good parenting."
+            },
+            {
+              "p": "What you value is your child thinking for themselves. When they're unsure about something, rather than handing them an answer right away, you listen to their thoughts and look for the answer together."
+            },
+            {
+              "p": "Even if a choice looks like a detour to you, you may want to let them experience it as long as it can be undone. Not only the experience of choosing and succeeding, but also the experience of choosing wrongly and rethinking, becomes strength for living on their own someday."
+            },
+            {
+              "p": "Of course, you don't let them do whatever they want. You teach them what they don't know. You give advice when they're unsure. And if something is truly dangerous, you stop them as a parent."
+            },
+            {
+              "p": "For you, parenting is not about guiding your child's life forever. It is also about gradually handing over the lead in their life as they grow."
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up with their own opinions, able to make their own decisions."
+            },
+            {
+              "p": "From an early age, they have chances to think about what they want. So instead of only looking for answers their parents will like or that others consider correct, they find it easier to develop their own standards of judgment."
+            },
+            {
+              "p": "This isn't something gained only through big decisions like choosing a future path. Small everyday choices—what to wear, what to learn, how to spend the weekend—also become practice in finding meaning for themselves and moving their own life forward."
+            },
+            {
+              "p": "And because they decided for themselves, they also tend to develop the ability to accept the results. Even when things don't go well, rather than blaming someone else, they become able to think about what to do next."
+            },
+            {
+              "p": "On the other hand, the more used children are to thinking for themselves, the more they may try to solve even their worries alone."
+            },
+            {
+              "p": "What's truly needed in the future is not someone who can do everything alone. It's someone who thinks for themselves and can also borrow others' strength when needed."
+            },
+            {
+              "p": "If you teach them to consult others and ask for help as much as you teach them to decide, the strengths of the Independence Type shine even more."
+            }
+          ],
+          [
+            {
+              "p": "What you should be most careful about is not confusing independence with neglect."
+            },
+            {
+              "p": "Letting your child decide is important, but it requires material to decide with. You can't choose something you don't know exists. If you don't understand the differences between options, you can't judge which suits you."
+            },
+            {
+              "p": "For example, when choosing a high school, a child may only know the school's name and its academic ranking. Only when parents research things like the school culture, where graduates go, club activities and commuting time together does it become possible for the child to compare in their own way."
+            },
+            {
+              "p": "It's important not to leave it to them simply because it's their life, but to leave it to them after creating a situation in which they're able to choose."
+            },
+            {
+              "p": "Also, when your child comes to you for advice, just urging them to think for themselves may not be enough. Sometimes they don't want you to decide; they want someone to help them sort out their thoughts."
+            },
+            {
+              "p": "Sharing your opinion as a parent doesn't hinder independence. Hand over that opinion as one more piece of material, and let your child think it through in the end."
+            },
+            {
+              "p": "Independence doesn't mean deciding alone. It means using the information and opinions you need, and making the final decision yourself."
+            }
+          ],
+          [
+            {
+              "p": "Because you usually respect your child's wishes, clashes from pushing your views on them may be relatively rare."
+            },
+            {
+              "p": "What's harder is when your child can't decide on their own."
+            },
+            {
+              "p": "For example, facing a decision about their future, they may repeatedly ask your opinion about which to choose. You may think, \"It's their life, so I want them to decide in the end.\""
+            },
+            {
+              "p": "But what your child wants may not be the decision itself."
+            },
+            {
+              "p": "Maybe they're afraid of making the wrong choice. Maybe they just want to know what you think. Maybe they lack confidence in their own ideas and want a little push."
+            },
+            {
+              "p": "If you keep handing the question back to them in that state, they may feel not that they've been given freedom, but that they have to decide all alone."
+            },
+            {
+              "p": "In moments like this, try sorting through the options together. Tell them how you would think about it as a parent. And still, leave the final vote to them."
+            },
+            {
+              "p": "What you're aiming for isn't a child who never relies on their parents."
+            },
+            {
+              "p": "A child who can come to their parents for advice, but who in the end can decide for themselves."
+            },
+            {
+              "p": "Supporting them all the way there is what matters for the Counselor."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment where your child can choose for themselves and experience the results."
+            },
+            {
+              "p": "At home, too, gradually widen the range of things your child can decide as they grow. When they're young, let them choose from a few options. As they get older, have them come up with the options themselves."
+            },
+            {
+              "p": "It's also important to let them experience failures that can be recovered from."
+            },
+            {
+              "p": "Even the experience of finding that a method they thought up and chose didn't lead to results becomes material for making better choices next time."
+            },
+            {
+              "p": "At the same time, parents don't need to step all the way back."
+            },
+            {
+              "p": "In most cases, parents are better at gathering the information needed. With high-quality support, children can grow even more. Sometimes it's also important to share opinions from a different perspective, or to stop them if something is truly dangerous."
+            },
+            {
+              "p": "As a Counselor, you're suited to an environment where the information you need is easy to get and you can encounter a variety of ways of thinking."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that you can respect your child as a separate person from yourself."
+            },
+            {
+              "p": "Parents have experienced many things before their children. If there's something you regret, you'd rather your child not make the same mistake. If something worked for you, it's natural to want to recommend the same path."
+            },
+            {
+              "p": "But you can stop and pause right there."
+            },
+            {
+              "p": "You understand well that a life that was good for you is not necessarily a good life for your child."
+            },
+            {
+              "p": "The more experience children accumulate choosing for themselves, the more they can make their own judgments even when their parents aren't beside them."
+            },
+            {
+              "p": "What you're trying to raise is probably \"a person who chooses their own life and lives it with those choices as their own.\""
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that, out of respect for your child's wishes, you may hold back even the knowledge and experience you have as a parent."
+            },
+            {
+              "p": "Handing the decision to your child is different from a parent not giving an opinion."
+            },
+            {
+              "p": "There are worlds your child doesn't know yet. Schools, jobs, relationships—it's only natural that they can't judge what they haven't experienced."
+            },
+            {
+              "p": "At times like that, telling them what you know as a parent is not interference. Your experience, their teachers' opinions, their friends' stories—all of this information becomes material for them to decide."
+            },
+            {
+              "p": "Letting them experience failure also needs boundaries."
+            },
+            {
+              "p": "What they can learn by failing is not the same as what a parent should stop. Failures that can be recovered from can be left to them. But for things that are hard to recover from, such as health, safety or large sums of money, parents need to step in."
+            },
+            {
+              "p": "The range you entrust to them and the range you protect are not fixed. As your child grows, that boundary gradually moves outward."
+            },
+            {
+              "p": "More than giving freedom, growing the ability to use freedom."
+            },
+            {
+              "p": "Keeping that in mind makes the Counselor's weaknesses much easier to compensate for."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Education Type, The Architect 🦉."
+            },
+            {
+              "p": "While you try to respect your child's wishes and leave the final choice to them, the Architect is good at thinking about the future and preparing the education and options needed."
+            },
+            {
+              "p": "The Independence Type alone may let a child choose only within the world they already know. The Architect alone may prepare too many paths that the parent thinks are good."
+            },
+            {
+              "p": "The Architect widens the world, and the Independence Type lets the child choose from within it."
+            },
+            {
+              "p": "Combining the two makes it easier to build a relationship in which parents widen the possibilities and the child chooses their life."
+            },
+            {
+              "p": "You don't have to become an Architect yourself. Just asking from time to time, \"Before respecting their choice, have I shown them enough options?\" will make the Counselor's strengths shine even more."
+            }
+          ],
+          [
+            {
+              "name": "Yoshida Shoin"
+            },
+            {
+              "p": "Yoshida Shoin is known for nurturing many young people, including Takasugi Shinsaku and Ito Hirobumi, at his school, the Shoka Sonjuku."
+            },
+            {
+              "p": "What's remarkable is that he didn't try to make everyone think the way he did, but had his students think for themselves through dialogue and debate. He watched each one's strengths and ideas and placed importance on them taking action themselves."
+            },
+            {
+              "p": "A teacher doesn't hand over a finished answer and move students accordingly. He gives them material to think with, and in the end, they act themselves."
+            },
+            {
+              "p": "That attitude overlaps with the Counselor, who doesn't complete a child's life for them but tries to hand it over to them someday."
+            },
+            {
+              "name": "Shanks (One Piece)"
+            },
+            {
+              "p": "Shanks isn't the type to micromanage anyone's life either."
+            },
+            {
+              "p": "He shows Luffy his own way of life and the world of the sea, but leaves it to Luffy to choose what kind of life to live afterward."
+            },
+            {
+              "p": "Yet when it truly mattered, he protected Luffy even at the cost of his own arm."
+            },
+            {
+              "p": "Usually, he leaves the boy to his own life. But when there's real danger, he steps forward."
+            },
+            {
+              "p": "Letting someone be free is not the same as not protecting them."
+            },
+            {
+              "p": "This sense of distance captures the Counselor clearly."
+            }
+          ],
+          [
+            {
+              "p": "Yoshida Shoin is well known for the words, \"Gentlemen, go mad.\""
+            },
+            {
+              "p": "Rather than thinking only about fitting in with the common sense around you, act on what you yourself have thought through and believe in. That attitude also overlaps with your way of thinking, wanting your child to choose their own life."
+            },
+            {
+              "p": "Someday, your child may choose a path you can't understand."
+            },
+            {
+              "p": "As a parent, you may worry and want to recommend a different path."
+            },
+            {
+              "p": "But if your child has thought it through in their own way and can explain their reasons in their own words, that doesn't mean your parenting has failed. Rather, it's the moment they've become able to think about their own life for themselves."
+            },
+            {
+              "p": "And from Shanks, we can see one more important thing."
+            },
+            {
+              "p": "There is a famous scene with Shanks."
+            },
+            {
+              "p": "\"I'm leaving this hat with you. Bring it back to me someday. Once you've become a great pirate.\""
+            },
+            {
+              "p": "Shanks didn't give Luffy any advice. Without dismissing Luffy's dream as childish talk, he believed in the boy who said he would surpass them, and entrusted him with his hat."
+            },
+            {
+              "p": "This image overlaps with you, the Counselor."
+            },
+            {
+              "p": "Instead of a parent holding on to the answers of life, you gradually hand over the very role of thinking about those answers to your child."
+            },
+            {
+              "p": "You hand the lead in life to your child. But you are always there behind them."
+            },
+            {
+              "p": "Because of that reassurance, children find the courage to leave their parents and choose their own lives."
+            }
+          ]
+        ]
+      },
+      "challenge": {
+        "intro": [
+          "As a Cheerleader, you are \"a parent who treasures your child's curiosity, believes in their potential and can give them a push.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "You want to widen your child's possibilities through experience."
+            },
+            {
+              "p": "When your child becomes interested in something, rather than judging first whether it suits them, you'd like to let them try it once. You know there are many things you can't understand without actually experiencing them."
+            },
+            {
+              "p": "Even if it turns out to be less fun than expected, you don't consider it a waste. Finding out that they don't like something is also a valuable experience for getting to know themselves."
+            },
+            {
+              "p": "On the other hand, something started on a whim can lead to an unexpected talent. Without narrowing possibilities from the start, you increase your child's options by letting them touch many different worlds."
+            },
+            {
+              "p": "What you value is being able to take on challenges more than never failing."
+            },
+            {
+              "p": "Instead of always running ahead to keep them from falling, you support them so they can get back up even after they fall. The Cheerleader is someone who naturally chooses that way of being involved."
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up with little resistance to new things, able to take a step toward whatever interests them."
+            },
+            {
+              "p": "They don't fear new places or unfamiliar people more than necessary, and develop the strength to widen their own world. Because they feel safe knowing their parents won't reject them if they fail, they're less likely to freeze up out of fear of the outcome."
+            },
+            {
+              "p": "Through many experiences, they also come to understand their likes, dislikes, strengths and weaknesses from real feeling."
+            },
+            {
+              "p": "Children don't know themselves from the very start either. Sometimes they find they love something because they tried it, and sometimes they realize something they admired isn't really for them."
+            },
+            {
+              "p": "By piling up such experiences, they come to know a self they couldn't understand just by thinking."
+            },
+            {
+              "p": "On the other hand, in an environment of constantly encountering new things, they may move on to the next thing before going deep into any one. It's important to nurture not only the number of experiences, but also the ability to dig deep once they've found something they truly love."
+            }
+          ],
+          [
+            {
+              "p": "What you should watch out for is making experience itself the goal."
+            },
+            {
+              "p": "The stronger your wish to widen your child's world, the more experiences you'll want to give them. But more experiences are not always better."
+            },
+            {
+              "p": "It's important to pay attention to what your child actually felt."
+            },
+            {
+              "p": "Was it fun? Do they want to do it again? How was it different from what they expected? Just reflecting a little after an experience helps it stay with them."
+            },
+            {
+              "p": "Also, when your child says they don't want to try something, there's no need to immediately think they're being timid. They may simply not be interested, or they may not be ready yet."
+            },
+            {
+              "p": "Giving a push is the Cheerleader's strength, but sometimes waiting until your child moves on their own is also a form of cheering."
+            },
+            {
+              "p": "Not only giving experiences, but staying with them until those experiences take root inside them."
+            },
+            {
+              "p": "When you can do that, the many experiences you've given will connect to your child's growth."
+            }
+          ],
+          [
+            {
+              "p": "You and your child are most likely to clash when something looks like a good experience to you, but your child isn't keen."
+            },
+            {
+              "p": "\"It's a great opportunity, so just give it a try—you can always quit if it doesn't fit.\" That may feel natural to you, but your child may not feel the same way."
+            },
+            {
+              "p": "For a cautious child especially, stepping into a new environment takes a lot of energy."
+            },
+            {
+              "p": "If you keep demanding that they take on the challenge at such times, even though you think you're pushing them forward, they may feel rushed."
+            },
+            {
+              "p": "What matters is looking at why they don't want to take it on."
+            },
+            {
+              "p": "If they're simply not interested, perhaps there's no need to force the experience. But if they're interested yet frozen by fear of failure, taking just the first step together might change things."
+            },
+            {
+              "p": "Precisely because you're a Cheerleader, you don't always have to push forward."
+            },
+            {
+              "p": "Rather than making them take on challenges, raise a child who can move when they want to take one on."
+            },
+            {
+              "p": "Being aware of that difference turns your drive into strength for your child rather than a burden."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment where your child can come into contact with many different worlds."
+            },
+            {
+              "p": "Rather than limiting your child's world to school and home, it's good to have places like sports or cultural activities where they meet different values. More than what they choose there, it means a lot just to learn that worlds they didn't know exist."
+            },
+            {
+              "p": "But there's no need to fill up their schedule."
+            },
+            {
+              "p": "When they're strongly drawn to something, it's fine to have a period of spending time on one thing rather than adding new experiences. A time to experience widely and a time to dig deep into one thing can coexist."
+            },
+            {
+              "p": "An atmosphere that doesn't treat failure as overly bad also fits your way of thinking well."
+            },
+            {
+              "p": "When they try and it doesn't work out, they're not blamed but can think about what's next. In an environment like that, children can act without fearing only the results."
+            },
+            {
+              "p": "What you should prepare is not an environment where they can always succeed."
+            },
+            {
+              "p": "It's an environment where they can take on challenges with peace of mind."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that you don't judge your child's potential only by who they are now."
+            },
+            {
+              "p": "You don't close off possibilities early with thoughts like \"they can't do it now, so it doesn't suit them\" or \"they have no talent.\""
+            },
+            {
+              "p": "Children's abilities change through experience. Even if they can't do anything when they first try, finding it interesting can spark absorption, and before long it becomes a great strength."
+            },
+            {
+              "p": "And more important than talent itself is the chance to encounter it."
+            },
+            {
+              "p": "No matter how much potential they have, if they don't know that world exists, they can't even become interested. Parents creating doorways into new worlds matters greatly."
+            },
+            {
+              "p": "You also tend to accept failure as part of experience. When children know they won't be judged only by results, they can take a step forward with peace of mind."
+            },
+            {
+              "p": "Being able to give the first spark to possibilities not yet visible."
+            },
+            {
+              "p": "That is the great strength of the Cheerleader."
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that your attention may lean too much toward giving the next experience."
+            },
+            {
+              "p": "New experiences offer easy-to-see stimulation. Going somewhere for the first time or starting a new activity easily gives parents, too, a sense that their child is growing."
+            },
+            {
+              "p": "On the other hand, time spent continuing one thing for a long while looks like it has little change."
+            },
+            {
+              "p": "But once your child has found something they truly love, they need time repeating the same thing rather than adding new experiences. Little by little, what they couldn't do becomes possible, and beyond that there's a kind of fun that only then becomes visible."
+            },
+            {
+              "p": "And when your child says they want to quit partway, it's not always right to move on to the next thing right away."
+            },
+            {
+              "p": "Is it really not a fit? Or are they just going through a period when things aren't going well? That needs to be thought through together."
+            },
+            {
+              "p": "What you need is not fewer challenges."
+            },
+            {
+              "p": "After creating many doorways, it's also protecting the time to deepen the precious things they found there."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Effort Type, The Coach 🐯."
+            },
+            {
+              "p": "The Cheerleader is good at giving children many opportunities and creating that first step into new worlds. The Coach, on the other hand, values building up what they've found over a long time."
+            },
+            {
+              "p": "With the Challenge Type alone, experiences may keep spreading out, moving on before any one thing becomes real strength. With the Effort Type alone, the focus on building things up may reduce chances to step into new worlds."
+            },
+            {
+              "p": "Try first. Then, once you find something you love, keep at it."
+            },
+            {
+              "p": "Challenge discovers possibilities, and accumulation turns those possibilities into strength."
+            },
+            {
+              "p": "Combining the two will bring even better balance to your parenting."
+            }
+          ],
+          [
+            {
+              "name": "Toyotomi Hideyoshi"
+            },
+            {
+              "p": "Toyotomi Hideyoshi is known as a man who started from a low social standing and eventually unified the country."
+            },
+            {
+              "p": "He was not someone with a future path laid out from the start. Through many positions and roles, he kept widening the places where he could make his mark."
+            },
+            {
+              "p": "Without deciding his potential based only on where he stood, he moved whenever an opportunity came, and carved out new paths. That image overlaps with the Cheerleader, who seeks to widen possibilities through experience."
+            },
+            {
+              "name": "Professor Oak (Pokémon)"
+            },
+            {
+              "p": "Professor Oak isn't someone who guides children down one path from the start either."
+            },
+            {
+              "p": "He hands over the first Pokémon and entrusts them with a Pokédex, giving them the chance to go out into the wide world. What they meet and experience after that is up to them."
+            },
+            {
+              "p": "Instead of teaching answers from the start, he creates a doorway for stepping out into the world."
+            },
+            {
+              "p": "First go out and see the world with your own eyes."
+            },
+            {
+              "p": "That attitude of wanting to give children such experiences clearly represents the Cheerleader."
+            }
+          ],
+          [
+            {
+              "p": "Toyotomi Hideyoshi is said to have left the words, \"If you think you'll lose, you lose. If you think you'll win, you win. Even if it turns out the other way, tell others you will win.\""
+            },
+            {
+              "p": "Rather than freezing up while thinking about whether you can do it, believe in your own potential first and move. That attitude overlaps with your way of thinking as someone who gives your child a push."
+            },
+            {
+              "p": "Children don't know from the start what they're suited for."
+            },
+            {
+              "p": "Some things only become their passion once they actually try them. They may meet a precious friend at a place they bravely joined. And sometimes something they admired turns out not to be for them."
+            },
+            {
+              "p": "Both are meaningful experiences."
+            },
+            {
+              "p": "And what Professor Oak gave Ash was not a finished answer either. He handed over a first Pokémon and an incomplete Pokédex, and sent him off into a world he didn't yet know."
+            },
+            {
+              "p": "He prepared three starters, let him choose for himself and sent him off on his journey."
+            },
+            {
+              "p": "The experiences differ depending on the Pokémon chosen, and there are as many stories as there are Pokémon caught."
+            },
+            {
+              "p": "Giving children that kind of opportunity is exactly what a Cheerleader does."
+            },
+            {
+              "p": "Parents have a similar role."
+            },
+            {
+              "p": "You can't decide your child's future from the start. But you can show them the doorway, letting them know that such worlds exist."
+            },
+            {
+              "p": "What matters is not to keep them running all the way beyond that."
+            },
+            {
+              "p": "Precisely because you're good at giving your child a push, sometimes you also need to stay beside them when they stop. If, after many experiences, they become absorbed in one thing, it's fine to stop adding new stimulation and protect their time to stay there."
+            },
+            {
+              "p": "Try first. Treasure what you felt there. And once you find something you love, this time, stick with it patiently."
+            },
+            {
+              "p": "The greatest thing you can give your child is not success itself."
+            },
+            {
+              "p": "It's the courage to feel it's okay to step into a world you don't know."
+            },
+            {
+              "p": "With that courage, someday, even without a parent pushing them, your child will be able to walk into new worlds on their own."
+            }
+          ]
+        ]
+      },
+      "social": {
+        "intro": [
+          "As a Mentor, you are \"a sincere parent who values kindness and good manners and can nurture a caring heart.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "You value not only your child's abilities and achievements, but what kind of person they grow up to be."
+            },
+            {
+              "p": "Doing well in school or sports matters, but you don't believe that alone makes parenting a success. You believe that greeting people, keeping promises and being able to see things from others' point of view are also great strengths in life."
+            },
+            {
+              "p": "Someday your child will leave home and live while interacting with many people. What they'll need then is not only knowledge and ability."
+            },
+            {
+              "p": "No matter how capable someone is, if others don't trust them, there's a limit to what they can do alone. On the other hand, people who value those around them find others who will help them in hard times and friends who will achieve things together with them."
+            },
+            {
+              "p": "That's why you also value small, everyday behavior."
+            },
+            {
+              "p": "Rather than special education, you teach how to relate to society through everyday conversation and the way you treat people at home. Valuing the growth of character, not just ability: that is the Mentor."
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up considerate of those around them and easily trusted by others."
+            },
+            {
+              "p": "Instead of acting only on their own feelings, they develop the habit of thinking about how the other person might feel. So in friendships and group life, they become able to act in cooperation with others."
+            },
+            {
+              "p": "In a family that values manners and promises, children also naturally learn the basic behavior needed in society."
+            },
+            {
+              "p": "These abilities aren't visible like test scores. But when children grow up and go out into society, they matter greatly as the power to be trusted by others."
+            },
+            {
+              "p": "On the other hand, children who care about others may put their own feelings last."
+            },
+            {
+              "p": "Being unable to say no to things they dislike. Pushing themselves too hard to meet others' expectations. To prevent this, you need to tell them that it's okay to value their own feelings just as much as caring for others."
+            },
+            {
+              "p": "Becoming a kind person is different from always holding yourself back."
+            }
+          ],
+          [
+            {
+              "p": "What you should watch out for is not treating good manners and obedience as the same thing."
+            },
+            {
+              "p": "Greeting people. Keeping promises. Not hurting others. There certainly are things worth valuing in society."
+            },
+            {
+              "p": "But fitting in with others is not always right."
+            },
+            {
+              "p": "Sometimes they'll question school rules, or be unconvinced by an adult's opinion. They may also think differently from their friends."
+            },
+            {
+              "p": "If you keep demanding only that they fit in at such times, children may start choosing actions that won't get them scolded rather than thinking about what's right."
+            },
+            {
+              "p": "What you truly want to raise is surely not a child who simply does what they're told."
+            },
+            {
+              "p": "Why shouldn't they do that? Why should they value other people? If they can think that far, they can make their own judgments even where their parents can't see."
+            },
+            {
+              "p": "Valuing others and having your own opinions can go together."
+            },
+            {
+              "p": "Nurturing both at the same time is what matters for the Mentor."
+            }
+          ],
+          [
+            {
+              "p": "You and your child are most likely to clash when you're concerned about how their behavior looks to others."
+            },
+            {
+              "p": "Things you'd allow at home may make you want to correct them at school or in public. As a parent, you want them to learn behavior that will serve them well in society so they won't struggle later."
+            },
+            {
+              "p": "But your child may not see your intention."
+            },
+            {
+              "p": "Why do I have to worry about what others think? What's wrong if I'm not bothering anyone? They may have questions like these."
+            },
+            {
+              "p": "If you end it there with \"That's just how the world works,\" it may look to them as if you only care about what other people think."
+            },
+            {
+              "p": "What matters is thinking together about what the rule is for."
+            },
+            {
+              "p": "Is it to avoid hurting people? To help a group get along comfortably? Or is it something that has simply continued from the past and whose reason has faded?"
+            },
+            {
+              "p": "By showing that you yourself think about it, your child also becomes able to consider the meaning of social rules instead of just accepting them."
+            },
+            {
+              "p": "Raise a person who thinks about why rules are kept, rather than one who simply keeps them."
+            },
+            {
+              "p": "When you can convey that much, your values will also reach your child more easily."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment where your child has connections with people outside the home too."
+            },
+            {
+              "p": "It's good for them to interact not only with other children, but with people of different ages and positions. The sense of distance and consideration that's hard to learn at home alone develops little by little through relationships with people."
+            },
+            {
+              "p": "It's also important that the home itself is a place to learn how to value people."
+            },
+            {
+              "p": "If parents demand manners from their child while treating shop staff or family members rudely, their words carry no weight. On the other hand, the sight of parents naturally saying thank you, or apologizing when they're wrong, becomes a lesson for the child just as it is."
+            },
+            {
+              "p": "How to treat people isn't taught by explanation alone."
+            },
+            {
+              "p": "The adults children see at home every day are their first lesson in society."
+            },
+            {
+              "p": "And when your child makes a mistake outside the home, rather than just scolding, think together about how the other person felt. These accumulated moments lead to a kindness that is more than just a formality."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that you don't judge your child's life by ability alone."
+            },
+            {
+              "p": "Grades and schools are easy to express in numbers. But being able to value people and being trusted don't easily become numbers."
+            },
+            {
+              "p": "Even so, you understand that such strengths matter in life."
+            },
+            {
+              "p": "Being able to listen. Keeping promises. Being able to apologize when you were wrong. These small behaviors make a bigger and bigger difference as children grow."
+            },
+            {
+              "p": "And relationships touch every part of a child's life."
+            },
+            {
+              "p": "Whether at school or at work, no one can live entirely alone. Among people of equal ability, those others want to work hard with will be blessed with more opportunities."
+            },
+            {
+              "p": "You are not teaching your child manners just to be valued by society."
+            },
+            {
+              "p": "Being able to lay the foundation for living while building good relationships with others."
+            },
+            {
+              "p": "That is the great strength of the Mentor."
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that, in asking your child to be considerate of others, you may put their own feelings last."
+            },
+            {
+              "p": "Being able to care for others is a wonderful strength. But always giving way is not kindness."
+            },
+            {
+              "p": "Going along with friends even when you don't want to. Staying silent even when you doubt what a teacher says. Holding back alone so as not to hurt anyone. If this continues, it becomes self-sacrifice rather than consideration."
+            },
+            {
+              "p": "Sometimes saying no is necessary. Speaking up about something you don't agree with doesn't necessarily damage a relationship."
+            },
+            {
+              "p": "In fact, being able to express your own feelings while also listening to others is what truly gives a person the strength to live in society."
+            },
+            {
+              "p": "What you want to teach is not how to be seen as convenient by others."
+            },
+            {
+              "p": "It's how to respect others while respecting yourself in the same way."
+            },
+            {
+              "p": "Is your child holding back precisely because they're kind? Checking on that from time to time will help your strength be passed on in a healthier form."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Individuality Type, The Producer 🐱."
+            },
+            {
+              "p": "The Mentor values relationships with others and is good at nurturing the ability to live comfortably with people in society. The Producer, on the other hand, values protecting who a child is, even if they're different from others."
+            },
+            {
+              "p": "The Social Type alone may hold back a child's individuality in its focus on harmony. The Individuality Type alone may take relationships with others too lightly in its focus on being oneself."
+            },
+            {
+              "p": "Value people. But don't conform to others too much."
+            },
+            {
+              "p": "Having both the strength to live in society and the strength to live as yourself."
+            },
+            {
+              "p": "Combining the two makes it easier to raise someone who is kind and can still speak their mind."
+            }
+          ],
+          [
+            {
+              "name": "Jesus Christ"
+            },
+            {
+              "p": "The teachings of Jesus Christ are known for their great themes of loving your neighbor and forgiving others."
+            },
+            {
+              "p": "Not judging a person's worth by status or ability alone, and turning your eyes to those in weak positions. That way of thinking overlaps with the Mentor, who values how we relate to and care for others."
+            },
+            {
+              "p": "Not simply making people obey rules, but valuing the attitude of cherishing people that lies behind them."
+            },
+            {
+              "p": "Thinking not only about how to behave, but about why we should value people."
+            },
+            {
+              "p": "He is a figure who symbolizes such values."
+            },
+            {
+              "name": "Tanjiro Kamado (Demon Slayer)"
+            },
+            {
+              "p": "Tanjiro is a character known not only for his strength but for his compassion toward others."
+            },
+            {
+              "p": "He cherishes his friends, of course, and sometimes even turns his eyes to the backgrounds and suffering of his enemies. Yet he is not merely kind; he holds firm to his will for the sake of what he must protect."
+            },
+            {
+              "p": "Caring for those around him, while never letting go of what matters inside him."
+            },
+            {
+              "p": "Being kind to others and having your own convictions can go together. Tanjiro clearly embodies the way of relating to people that the Mentor wants to pass on to children."
+            }
+          ],
+          [
+            {
+              "p": "As words of Jesus Christ, the teaching \"Love your neighbor as yourself\" is well known."
+            },
+            {
+              "p": "What matters here is not just \"love your neighbor.\" It also includes the part \"as yourself.\""
+            },
+            {
+              "p": "You don't have to keep sacrificing yourself in order to value others."
+            },
+            {
+              "p": "This is also something you, as a Mentor, would want to tell your child."
+            },
+            {
+              "p": "Kind children are often the ones others rely on. They may hold back for a friend's sake, or swallow their opinion so as not to spoil the mood."
+            },
+            {
+              "p": "At such times, acknowledge that they were able to care for those around them, while also paying attention to their own feelings."
+            },
+            {
+              "p": "Tanjiro left words like, \"People's hearts are what drive them, so the heart can grow endlessly strong.\""
+            },
+            {
+              "p": "It is a scene that captures the growth of the human heart and its limitless potential."
+            },
+            {
+              "p": "Tanjiro, too, has deep kindness toward people, but he is not someone who gives up what he has decided to protect just to fit in with others."
+            },
+            {
+              "p": "That's why it's important that the manners and consideration you teach your child are not just for fitting in."
+            },
+            {
+              "p": "Think about the other person's position. But hold your own opinion on things you don't agree with. Help someone. But don't carry so much that it hurts you."
+            },
+            {
+              "p": "Only when they can do both does kindness become your child's strength."
+            },
+            {
+              "p": "Raise a child who can value people. And raise a child who, as one of those people, can value themselves too."
+            },
+            {
+              "p": "What you can teach is not mere manners."
+            },
+            {
+              "p": "It's the strength to live together with others."
+            },
+            {
+              "p": "With that strength, your child will not just conform to society, but grow into someone trusted by those around them who also values their own life."
+            }
+          ]
+        ]
+      },
+      "security": {
+        "intro": [
+          "As a Guardian, you are \"a gentle parent who values your child's happiness above all and can stand by them no matter what.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "You value your child living happily even more than their success."
+            },
+            {
+              "p": "Of course you also think it's important to go to a good school or find a stable job in the future. But if your child would have to keep suffering for that, you can stop and ask whether that is really happiness."
+            },
+            {
+              "p": "Rather than whether they're better than others, whether they can live each day feeling satisfied. You value not only the results, but even the feelings along the way."
+            },
+            {
+              "p": "At the root of this is a wish to make home a place where your child can feel safe."
+            },
+            {
+              "p": "In the outside world, there will be failures. There will be days when things don't go well with friends or when they lose confidence. If they kept being judged at home even then, they'd have nowhere to rest their hearts."
+            },
+            {
+              "p": "You want to be on their side regardless of results, not just accept them because they accomplished something."
+            },
+            {
+              "p": "No matter what happens outside, when they come home there's someone who accepts them."
+            },
+            {
+              "p": "The Guardian is someone who can give their child that kind of peace of mind."
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up able to express their feelings and ask others for help."
+            },
+            {
+              "p": "If they know they won't be harshly blamed when they fail, it becomes easier to tell their parents even about inconvenient things. They come to have the option of talking to someone instead of carrying problems alone."
+            },
+            {
+              "p": "The experience of being accepted at home also becomes a foundation for self-esteem."
+            },
+            {
+              "p": "With a sense that they have somewhere to come back to, they can take on the world outside home with confidence. In fact, a secure relationship with parents is what children need in order to grow away from them."
+            },
+            {
+              "p": "On the other hand, precisely because home is so comfortable, they may try to get away from hard things quickly."
+            },
+            {
+              "p": "When they hit something a little difficult, they may avoid even things they could overcome if they kept going."
+            },
+            {
+              "p": "What matters is not making them suffer, but helping them face difficulties while having a safe place to return to."
+            }
+          ],
+          [
+            {
+              "p": "What you should watch out for is not treating protecting your child and removing difficulties as the same thing."
+            },
+            {
+              "p": "It's natural to want to help when your child is suffering. Especially since you value their feelings, you'll probably be careful about pushing them too hard."
+            },
+            {
+              "p": "But growing up sometimes requires a little hardship."
+            },
+            {
+              "p": "Practicing without improving much. Disagreeing with friends. Studying without getting the results they hoped for. Experiences like these can't all be avoided."
+            },
+            {
+              "p": "What matters then is neither making them quit immediately because they seem to be struggling, nor making them grit their teeth and carry on."
+            },
+            {
+              "p": "It's seeing what they're actually finding hard."
+            },
+            {
+              "p": "Are they struggling now but still want to continue? Or are they wearing themselves down to keep going? The way a parent should be involved changes depending on that difference."
+            },
+            {
+              "p": "A safe home is not a place where nothing hard happens. It's a place you can come back to even when hard things happen."
+            },
+            {
+              "p": "With that sense, your kindness becomes a strength that supports your child's challenges rather than stopping them."
+            }
+          ],
+          [
+            {
+              "p": "You and your child are most likely to clash when your child is trying to keep going with something despite struggling."
+            },
+            {
+              "p": "Sometimes, even though they look clearly miserable to you, they say they don't want to quit. You'll want to tell them they don't have to push themselves."
+            },
+            {
+              "p": "But for a child, finding something hard and wanting to quit aren't always the same."
+            },
+            {
+              "p": "They may be frustrated at not getting to play in games, yet still love their club. Studying may be tough, but there may be a school they want to get into."
+            },
+            {
+              "p": "If parents keep creating escape routes ahead of time, the child may feel their parents don't believe they can overcome it."
+            },
+            {
+              "p": "On the other hand, there's no need to make them endure it \"for their growth\" when they've truly reached their limit."
+            },
+            {
+              "p": "What you need is not so much to judge their suffering, as to confirm together what they want to do."
+            },
+            {
+              "p": "If they want to continue, support them. If they want to step away, think together about a way that isn't running away. If they're unsure, don't rush to a conclusion."
+            },
+            {
+              "p": "Protecting doesn't always mean keeping them away from difficulty."
+            },
+            {
+              "p": "When they're trying to overcome something, believing in their strength and staying beside them is also an important role of the Guardian."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is a home where your child can fail without fear."
+            },
+            {
+              "p": "Not only being praised on days they bring home good results, but being able to come home as usual on days things went wrong. An environment like that brings out your strengths the most."
+            },
+            {
+              "p": "What's especially important is not making home too much a place of evaluation."
+            },
+            {
+              "p": "At school they're graded, in sports there's winning and losing, and among friends they worry about how they're seen. Outside the home, children are already exposed to plenty of evaluation."
+            },
+            {
+              "p": "That's why at home, they need time to be accepted for who they are, separate from whether they achieved something."
+            },
+            {
+              "p": "However, a safe place is different from a place where they don't have to do anything."
+            },
+            {
+              "p": "Because they could rest their hearts fully at home, they can go out again. Having failed and come back, they can try once more."
+            },
+            {
+              "p": "The home you make is not a place to hide your child from the outside world."
+            },
+            {
+              "p": "It's a place they can come back to even after going out, giving it their all and failing."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that results don't change your relationship with your child."
+            },
+            {
+              "p": "Children fail many times as they grow. Sometimes they can't achieve what their parents hoped for, and sometimes they lose confidence themselves."
+            },
+            {
+              "p": "At times like that, what they need isn't just more people evaluating them."
+            },
+            {
+              "p": "Knowing there's someone who accepts them even when they didn't succeed gives them the strength to stand up again."
+            },
+            {
+              "p": "When your child is down, you never lower their worth along with them."
+            },
+            {
+              "p": "And children who have a safe place don't fear failure more than necessary."
+            },
+            {
+              "p": "By creating a place they can always come back to, you actually make it possible for them to go farther."
+            },
+            {
+              "p": "That is the great strength of the Guardian."
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that you may feel your child's pain too much as your own."
+            },
+            {
+              "p": "The stronger your wish to spare them hardship, the more you may try to protect them before they get hurt, removing even difficulties they could have overcome themselves."
+            },
+            {
+              "p": "But children don't become strong by never failing."
+            },
+            {
+              "p": "They gradually gain confidence from experiences of being okay after failing and of getting through hard times in their own way."
+            },
+            {
+              "p": "If parents pick up every stone and make an easy path, they may not fall on that path. But someday, when they start walking alone, they'll trip on a stone they've never seen."
+            },
+            {
+              "p": "That's why there's no need to prevent even small failures."
+            },
+            {
+              "p": "If they're not asking for help, try watching over them a little. Just keep a place ready where they can come back when they're in trouble."
+            },
+            {
+              "p": "Protecting your child is not the same as removing hardship from their life."
+            },
+            {
+              "p": "Keeping that in mind will help your kindness lead to your child's strength as well."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Challenge Type, The Cheerleader 🐒."
+            },
+            {
+              "p": "The Guardian is good at creating a place where children feel safe. The Cheerleader, on the other hand, values creating chances to step into new worlds."
+            },
+            {
+              "p": "The Security Type alone may focus so much on protection that it reduces chances to go out into the unknown. The Challenge Type alone may give experience after experience until the child's heart can't keep up."
+            },
+            {
+              "p": "Because there's a safe place, they can take on challenges. And because they take on challenges, the safe place means even more."
+            },
+            {
+              "p": "Someone who gives a push, and someone who makes a place to come home to."
+            },
+            {
+              "p": "Combining these two ways of thinking makes it easier for children to step into the outside world without pushing themselves too hard."
+            }
+          ],
+          [
+            {
+              "name": "The Buddha (Shakyamuni)"
+            },
+            {
+              "p": "The Buddha is known for looking deeply at why people suffer and continuing to think about how to move away from that suffering."
+            },
+            {
+              "p": "Rather than ignoring suffering and pushing forward, first turning your eyes to the suffering itself. That attitude overlaps with the Guardian, who values a child's feelings."
+            },
+            {
+              "p": "Rather than evaluating someone from the outside, seeing what that person is feeling."
+            },
+            {
+              "p": "Seeing the person in front of you before seeing the results."
+            },
+            {
+              "p": "He is a figure who symbolizes that attitude."
+            },
+            {
+              "name": "Hiroshi Nohara (Crayon Shin-chan)"
+            },
+            {
+              "p": "Hiroshi Nohara is not portrayed as a perfect father. Still, he is someone with deep love for his family, who will protect them in the end whenever something happens."
+            },
+            {
+              "p": "He isn't a father who always demands high achievement from Shinnosuke or tries to raise him exactly as he imagines."
+            },
+            {
+              "p": "Usually easygoing, but stepping forward for his family when it really matters."
+            },
+            {
+              "p": "Rather than making home a perfect place, making it a place you can always come back to in the end, no matter what. That image overlaps with the reassurance of the Guardian."
+            }
+          ],
+          [
+            {
+              "p": "As words of the Buddha, the teaching \"Make yourself your light, make yourself your refuge\" is known."
+            },
+            {
+              "p": "Parents can't carry their child's suffering for them forever."
+            },
+            {
+              "p": "As children grow, they'll have more worries in places their parents don't know. They may fail at school or be hurt in relationships. Someday the day will come when they must stand up by themselves in a place their parents can't rush to."
+            },
+            {
+              "p": "That's why what you, as a Guardian, want to aim for is not only protecting your child for a lifetime."
+            },
+            {
+              "p": "It's turning the security they received into their own strength someday."
+            },
+            {
+              "p": "Hiroshi Nohara isn't a father who solves all his family's problems ahead of time either. He makes mistakes, and Shinnosuke does as he pleases. Still, when it really matters, he puts his family behind him and protects them."
+            },
+            {
+              "p": "What children need isn't a life where nothing happens."
+            },
+            {
+              "p": "They can come home after failing. They can talk after being hurt. They can get help when something is truly impossible. With that certainty, children can go out even into a slightly scary world."
+            },
+            {
+              "p": "Your kindness isn't for keeping your child inside the home."
+            },
+            {
+              "p": "It's for sending them out with peace of mind."
+            },
+            {
+              "p": "So when your child hits a wall, you don't have to break it down for them right away."
+            },
+            {
+              "p": "First see what they do. Stand beside them if needed. Think together when it's still hard. And protect them without hesitation if there's real danger."
+            },
+            {
+              "p": "With that sense of distance, your child can have both the security of being protected and the confidence of having overcome things themselves."
+            },
+            {
+              "p": "\"You'll be fine. Come home whenever you're tired.\""
+            },
+            {
+              "p": "Being able to send them off with that feeling is the parenting you, as a Guardian, can offer."
+            }
+          ]
+        ]
+      },
+      "effort": {
+        "intro": [
+          "As a Coach, you are \"a big-hearted parent who believes in your child's efforts and can watch their progress without rushing.\"",
+          "You value small, everyday accumulation more than quick results. Rather than deciding potential by talent alone, you want to nurture the strength to grow little by little by continuing."
+        ],
+        "sections": [
+          [
+            {
+              "p": "You believe that even great success lies at the end of small, everyday accumulation."
+            },
+            {
+              "p": "Studying a little every day rather than scoring well on a single test. Practicing today what you couldn't do yesterday rather than suddenly getting good. You find value in that kind of unglamorous accumulation."
+            },
+            {
+              "p": "That's why, even if your child can't produce results right away, you don't easily give up on their potential."
+            },
+            {
+              "p": "You can look at growth over a long span of time, not just the results in front of you."
+            },
+            {
+              "p": "The effort you value isn't pushing to the limit."
+            },
+            {
+              "p": "Rather than going all out on special days, moving forward a little even on ordinary days. You believe what's built up—better today than yesterday, better tomorrow than today—becomes great strength someday."
+            },
+            {
+              "p": "Even if today's step is small, continuing it has meaning."
+            },
+            {
+              "p": "The Coach is someone who can believe in a child's growth with that long view."
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up able to keep at things steadily, even when results don't come right away."
+            },
+            {
+              "p": "Instead of thinking \"it's not going well, so it doesn't suit me,\" they find it easier to think \"I just can't do it yet.\""
+            },
+            {
+              "p": "So they become able to face not only what they're good at from the start, but things that take time to learn."
+            },
+            {
+              "p": "And because their process is seen, not just their results, they come to feel value in effort itself."
+            },
+            {
+              "p": "Not being recognized because they scored 90, but being noticed for keeping up their studying better than last time. Even if they didn't shine in the game, someone knows they kept practicing every day."
+            },
+            {
+              "p": "Experiences like these lead to the strength to keep going even during periods without results."
+            },
+            {
+              "p": "On the other hand, children who conscientiously stick with things may feel guilty about quitting."
+            },
+            {
+              "p": "Continuing matters, but not everything has to be continued to the end. It's important to also nurture the ability to tell what's worth building up from what's better to change direction on."
+            }
+          ],
+          [
+            {
+              "p": "What you should watch out for is not letting continuing become the goal itself."
+            },
+            {
+              "p": "Effort certainly becomes great strength. But doing the same thing over and over doesn't always produce results."
+            },
+            {
+              "p": "If their grades don't change even though they've increased study time, perhaps it's the method, not the time, that needs changing. Even with a long-standing activity, if their goals change, they may choose a different path."
+            },
+            {
+              "p": "What's needed then is not only trying harder."
+            },
+            {
+              "p": "Is it really worth continuing?"
+            },
+            {
+              "p": "To keep making effort, it's also necessary to stop and think from time to time."
+            },
+            {
+              "p": "And children have periods when they just can't push themselves."
+            },
+            {
+              "p": "There are tired days and times when they're not motivated. What they've built up doesn't all disappear because they rested for a few days."
+            },
+            {
+              "p": "Having periods when they can't make an effort has nothing to do with their worth as a person."
+            },
+            {
+              "p": "Precisely because you value long-term persistence, try to see rest as part of that long accumulation too."
+            }
+          ],
+          [
+            {
+              "p": "You and your child are most likely to clash when they suddenly say they want to quit partway through."
+            },
+            {
+              "p": "If they've just started, you can understand. But if they suddenly want to quit something they've done for years, you'll feel it's a waste of everything they've built up."
+            },
+            {
+              "p": "If they get through this tough stretch, it might become fun again; you might not want them to form a habit of quitting here. You surely have such worries."
+            },
+            {
+              "p": "But children's reasons for wanting to quit aren't just one."
+            },
+            {
+              "p": "They may want to escape things not going well, or their interest may have moved to something else after enough experience. The environment itself may no longer suit them."
+            },
+            {
+              "p": "What matters is not deciding right away whether to continue or quit."
+            },
+            {
+              "p": "What have they gained so far? Why do they want to quit now? Is there something they want at the end of continuing? By thinking about these together, you can give meaning even to the choice of quitting."
+            },
+            {
+              "p": "What's been built up doesn't drop to zero the moment they quit."
+            },
+            {
+              "p": "It's important to nurture not only the strength to continue, but also the strength to draw a line yourself and move on to the next thing."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment where you can see small growth over a long span of time."
+            },
+            {
+              "p": "Rather than evaluating daily results in detail, it's good to look at what has changed compared with a while ago."
+            },
+            {
+              "p": "What they couldn't do six months ago, they now do as a matter of course. Things they used to give up on right away, they can now keep at a little longer. Such changes are hard to notice when you see them every day."
+            },
+            {
+              "p": "That's why taking time to look back now and then suits your parenting well."
+            },
+            {
+              "p": "An environment that makes effort easy to turn into a habit also matters."
+            },
+            {
+              "p": "Rather than setting a big goal each time, creating a form that's easy to continue, and a system that lets them do a little even on hard days, not only trying on days they can, will make accumulation steady."
+            },
+            {
+              "p": "And when results do come, look not only at the final outcome, but at the process that led there."
+            },
+            {
+              "p": "Rather than creating one special day, building up ordinary days."
+            },
+            {
+              "p": "That kind of atmosphere at home brings out the Coach's strengths the most."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that you can believe in your child's growth over a long span of time."
+            },
+            {
+              "p": "Children grow at different speeds."
+            },
+            {
+              "p": "Some produce results quickly, while others grow little by little over time. There may be periods when comparing with others makes you anxious."
+            },
+            {
+              "p": "Even then, you don't decide their potential based on current results."
+            },
+            {
+              "p": "Because you see what they keep doing every day, you can notice that they're gradually able to do more."
+            },
+            {
+              "p": "This gives children great reassurance."
+            },
+            {
+              "p": "If someone sees them keeping at it, they can keep moving forward even in periods without results."
+            },
+            {
+              "p": "You understand well that even a day of serious effort doesn't bring big change. And you also understand well that, if they believe in themselves and keep going, it will surely lead to results."
+            },
+            {
+              "p": "Being able to believe even in efforts that haven't become results yet."
+            },
+            {
+              "p": "That is the great strength of the Coach."
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that you may overvalue the act of continuing itself."
+            },
+            {
+              "p": "The longer you've continued, the harder it becomes to quit."
+            },
+            {
+              "p": "And while thinking \"we've come this far,\" you may miss that your child's feelings or circumstances have changed."
+            },
+            {
+              "p": "In effort, direction matters as well as quantity."
+            },
+            {
+              "p": "Even if they continue every day, they may not grow as hoped if the method doesn't suit them. If what they truly want to aim for has changed, it may be better to start making efforts in a different place."
+            },
+            {
+              "p": "And above all, it's important not to raise a child who blames themselves for being unable to make an effort."
+            },
+            {
+              "p": "If there are days they can try hard, there can be days they rest. If they come back again, the accumulation continues."
+            },
+            {
+              "p": "What you want to tell your child is not \"never quit.\""
+            },
+            {
+              "p": "It's that you want them to have the strength not to let go easily once they find something worth continuing."
+            },
+            {
+              "p": "Being aware of that difference makes your values about effort easier to pass on."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Challenge Type, The Cheerleader 🐒."
+            },
+            {
+              "p": "The Coach is good at nurturing the strength to build up one thing over a long time. The Cheerleader, on the other hand, values stepping into new worlds and discovering possibilities."
+            },
+            {
+              "p": "The Effort Type alone may focus so much on what's being continued that there are fewer chances to meet other possibilities. The Challenge Type alone may widen experiences while nothing lasts long enough to become real strength."
+            },
+            {
+              "p": "First, touch many different worlds. Then, once you find something you truly love, nurture it over time."
+            },
+            {
+              "p": "Challenge discovers possibilities, and accumulation turns those possibilities into strength."
+            },
+            {
+              "p": "Together, they let children know a wide world while also building their own weapons."
+            }
+          ],
+          [
+            {
+              "name": "Tokugawa Ieyasu"
+            },
+            {
+              "p": "Tokugawa Ieyasu is known as the man who built up strength over a long time and eventually took control of the country."
+            },
+            {
+              "p": "His path wasn't smooth from his youth. He survived an era in which Oda Nobunaga and Toyotomi Hideyoshi greatly expanded their power, and rather than rushing for results, he waited for his chance over a long time."
+            },
+            {
+              "p": "Not deciding everything by a single victory, but gradually changing the situation by persisting over time."
+            },
+            {
+              "p": "His trust in accumulation over flashy single strokes overlaps with the Coach's way of thinking."
+            },
+            {
+              "name": "Shinsuke Kita (Haikyu!!)"
+            },
+            {
+              "p": "Shinsuke Kita is a character who symbolizes daily accumulation in the series."
+            },
+            {
+              "p": "Not trying hard only on special days, but continuing to do the ordinary things properly every day. He doesn't change that attitude depending on whether results come or not."
+            },
+            {
+              "p": "For Shinsuke Kita, daily practice and daily life aren't done just to be evaluated. They're what he continues because they're what he should do."
+            },
+            {
+              "p": "Special results lie at the end of days that are not special."
+            },
+            {
+              "p": "That sense captures the Coach very clearly."
+            }
+          ],
+          [
+            {
+              "p": "Tokugawa Ieyasu is widely known for the words, \"Life is like walking a long road carrying a heavy load. Do not hurry.\""
+            },
+            {
+              "p": "Not trying to reach the destination right away, but moving forward little by little along a long road. That way of thinking overlaps well with you as a Coach."
+            },
+            {
+              "p": "Parenting is the same."
+            },
+            {
+              "p": "What you teach today won't necessarily be learned by tomorrow. There will be times when they can't do it no matter how many times you tell them, and times when they make an effort but get no results."
+            },
+            {
+              "p": "Even so, looking back a few years later, you'll find they've become able to do it before you knew it."
+            },
+            {
+              "p": "Shinsuke Kita is a person who truly embodies the words, \"Do it properly. Do it every day.\""
+            },
+            {
+              "p": "He isn't piling up each day to prove some special talent."
+            },
+            {
+              "p": "Brushing his teeth. Cleaning. Practicing. Quietly continuing what he has decided to do. Through that accumulation, he earned his uniform at the powerhouse Inarizaki."
+            },
+            {
+              "p": "The effort you can teach your child isn't endlessly enduring suffering either."
+            },
+            {
+              "p": "Building up each day, moving forward a little even on hard days. And the next day, building up again"
+            },
+            {
+              "p": "It's the strength to keep up those small actions."
+            },
+            {
+              "p": "That's why, even when results don't come, try not to get more anxious than your child."
+            },
+            {
+              "p": "Even if it hasn't turned into results yet, what was built up today remains."
+            },
+            {
+              "p": "And sometimes it's fine to change paths. The experience they've built up doesn't disappear."
+            },
+            {
+              "p": "Just because they did it today doesn't mean results must come tomorrow."
+            },
+            {
+              "p": "While believing in small daily steps, before they know it they'll have come to a completely different place from where they started."
+            },
+            {
+              "p": "Being able to believe in that long growth and wait for it is the parenting you, as a Coach, can offer."
+            }
+          ]
+        ]
+      },
+      "strategy": {
+        "intro": [
+          "As a Strategist, you are \"a forward-looking parent who keeps your child's future in view and can plan the education and environment they need.\""
+        ],
+        "sections": [
+          [
+            {
+              "p": "You value thinking about your child's future and mapping out the path toward it."
+            },
+            {
+              "p": "You don't just want them to go to a good school. You decide what kind of strengths you'd like them to have in the future, research what experiences and education are needed for that, and think about what can be done now."
+            },
+            {
+              "p": "What matters isn't each individual action, but the purpose beyond it."
+            },
+            {
+              "p": "That's why, rather than adopting trendy education methods as they are, you think about where they'll lead for your own child."
+            },
+            {
+              "p": "You're also good at thinking about where to spend limited time and money. Rather than giving everything, you shape the environment by choosing what's needed."
+            },
+            {
+              "p": "Working backward from the future to think about the present."
+            },
+            {
+              "p": "The Strategist is someone who can support a child's growth from that long-term perspective."
+            }
+          ],
+          [
+            {
+              "p": "Children tend to grow up able to think about purpose and act on it."
+            },
+            {
+              "p": "Rather than just getting through the task in front of them, they develop the habit of thinking about why they're doing it."
+            },
+            {
+              "p": "Even with studying, getting good grades isn't the only goal. If there's a school they want to attend or something they want to learn beyond it, it becomes easier to see what they should do now."
+            },
+            {
+              "p": "When making choices, too, they become able to think a little ahead, not just about immediate fun."
+            },
+            {
+              "p": "On the other hand, the more used they become to thinking things through in a planned way, the more they may avoid things that seem pointless."
+            },
+            {
+              "p": "But a child's growth includes experiences whose meaning only becomes clear looking back."
+            },
+            {
+              "p": "Unexpected interests can be born from play or detours whose usefulness is unclear."
+            },
+            {
+              "p": "The ability to plan, and the ability to enjoy the unplanned."
+            },
+            {
+              "p": "Letting them have both brings out the strengths of the Strategist even more."
+            }
+          ],
+          [
+            {
+              "p": "What you should watch out for is not letting the plan become your child's life itself."
+            },
+            {
+              "p": "Because you have the ability to think about the future, you're a type who easily sees what to do now."
+            },
+            {
+              "p": "So when your child takes a detour, you may want to teach them a more efficient way. You may also feel that a different path is more connected to the future than the one they're trying to choose."
+            },
+            {
+              "p": "But a child's growth doesn't always go according to the first plan."
+            },
+            {
+              "p": "Their interests may change, or they may discover they're better at something than expected. They may be drawn to a world their parents never imagined."
+            },
+            {
+              "p": "At such times, rather than sticking to the original plan, it may also be necessary to rethink the purpose itself."
+            },
+            {
+              "p": "Plans exist not to bind children, but to widen their possibilities."
+            },
+            {
+              "p": "A good plan is not one that never needs changing. It's one that can change as the child grows."
+            },
+            {
+              "p": "Precisely because you have the ability to see the future, try to welcome unplanned growth into your plans as well."
+            }
+          ],
+          [
+            {
+              "p": "You and your child are most likely to clash when they make a choice that doesn't seem to lead to the future."
+            },
+            {
+              "p": "\"If you're going to spend time, I want you to do something meaningful.\" There are moments when you feel that irrational time is a waste."
+            },
+            {
+              "p": "But children don't always live for the future."
+            },
+            {
+              "p": "They may suddenly become absorbed in something, or find great value in something whose usefulness you can't see."
+            },
+            {
+              "p": "If you seek only efficiency, your child may feel that your plans take priority over what they love."
+            },
+            {
+              "p": "What matters is not giving every moment a purpose."
+            },
+            {
+              "p": "Think as a parent about what's needed in the long term. But also leave some free time your child can use as they like."
+            },
+            {
+              "p": "Interests and talents you could never have planned may be born from that free space."
+            },
+            {
+              "p": "Designing a life is different from making a life go according to schedule."
+            },
+            {
+              "p": "Being aware of that difference lets your planning ability shine without taking away your child's freedom."
+            }
+          ],
+          [
+            {
+              "p": "What suits you is an environment where you can check the goal and the current position from time to time."
+            },
+            {
+              "p": "There's no need to manage things in detail every day. Looking at how your child is growing over slightly longer spans, like six months or a year, fits your way of thinking better."
+            },
+            {
+              "p": "An environment where you can compare options is also important."
+            },
+            {
+              "p": "When choosing schools or activities, rather than deciding after looking at only one, get to know several options. Then, by weighing them against what your family values, it becomes easier to make decisions you're satisfied with."
+            },
+            {
+              "p": "However, home doesn't always have to be a place for achieving goals."
+            },
+            {
+              "p": "By also leaving time to step off the plan and spend freely, your child's own interests become easier to see."
+            },
+            {
+              "p": "Think about the direction. But don't decide every step of the route."
+            },
+            {
+              "p": "In an environment with that much room, the Strategist's ability to look ahead is put to best use."
+            }
+          ],
+          [
+            {
+              "p": "A great strength of yours is that you can create an environment by thinking not only about what's in front of you, but several years ahead."
+            },
+            {
+              "p": "Children think mainly about what they want now and what's fun now. That's natural, but it's hard for young children to predict what they'll need in the future."
+            },
+            {
+              "p": "That's where you come in."
+            },
+            {
+              "p": "Realizing something is necessary only after the fact can leave too little time. That's why being able to look a little ahead and think about what can be done now is a great strength."
+            },
+            {
+              "p": "You also tend to notice the importance of environment, not just effort."
+            },
+            {
+              "p": "Not only making your child work hard, but thinking about growth including their surroundings: where they learn, who they spend time with and what experiences they encounter."
+            },
+            {
+              "p": "Thinking about a future your child can't yet see, and starting the necessary preparations ahead of time."
+            },
+            {
+              "p": "Being able to make sure they're in a position to choose when future options are needed."
+            },
+            {
+              "p": "That is the great strength of the Strategist."
+            }
+          ],
+          [
+            {
+              "p": "The flip side of your strength is that you may over-optimize your child's life."
+            },
+            {
+              "p": "Working backward from the future, you can see what's efficient."
+            },
+            {
+              "p": "If they take this activity, it would be better to spend the time on something else. Studying is more connected to the future than playing here. Such judgments probably have rational reasons."
+            },
+            {
+              "p": "But a child's life also needs time that can't be measured by efficiency."
+            },
+            {
+              "p": "Sometimes it's precisely because they took a detour that they find out what doesn't suit them."
+            },
+            {
+              "p": "And if parents prepare too many right paths, children have fewer chances to think for themselves."
+            },
+            {
+              "p": "Making plans isn't a problem in itself. What matters is that your child takes part in those plans."
+            },
+            {
+              "p": "As they grow, reduce the range parents decide and increase the part you think through together."
+            },
+            {
+              "p": "Not planning your child's life, but enabling your child to plan their own life."
+            },
+            {
+              "p": "When you can connect it that far, your strategic thinking becomes your child's own strength."
+            }
+          ],
+          [
+            {
+              "p": "You are especially compatible with the Individuality Type, The Producer 🐱."
+            },
+            {
+              "p": "The Strategist is good at thinking about the future and preparing the education and environment to get there. The Producer, on the other hand, values discovering the interests and individuality a child has right now."
+            },
+            {
+              "p": "The Strategy Type alone may work backward from the ideal the parents have in mind and miss the child's present feelings. The Individuality Type alone may value who the child is, but not think far enough about how to connect that individuality to the future."
+            },
+            {
+              "p": "The Individuality Type finds what's inside the child, and the Strategy Type thinks about an environment where it can be put to use."
+            },
+            {
+              "p": "Discovering talent, and creating a path where that talent can grow."
+            },
+            {
+              "p": "Together, they make it easier to connect who a child is to their future possibilities."
+            }
+          ],
+          [
+            {
+              "name": "Zhuge Liang (Kongming)"
+            },
+            {
+              "p": "Zhuge Liang is widely known, in Japan too, as the strategist who supported Liu Bei."
+            },
+            {
+              "p": "Rather than looking only at the battle in front of him, he built strategies while thinking about the situation that would follow. He's known as someone who, rather than breaking through by force himself, read the situation and created a path to victory."
+            },
+            {
+              "p": "What matters is not only what to do now, but where that action will lead."
+            },
+            {
+              "p": "Looking at the future while thinking about the move to make now."
+            },
+            {
+              "p": "That attitude represents the Strategist exactly."
+            },
+            {
+              "name": "Armin Arlert (Attack on Titan)"
+            },
+            {
+              "p": "Armin is not someone who solves problems by force either."
+            },
+            {
+              "p": "He observes the situation around him and, from limited information, thinks about what will happen next. Then, to achieve the goal, he works out who should do what, and where."
+            },
+            {
+              "p": "Not just reacting to what's in front of him, but moving after thinking several steps ahead."
+            },
+            {
+              "p": "Rather than raising his own power, he thinks about how to use what he has to get closer to the goal. That attitude overlaps with the Strategist's way of thinking."
+            }
+          ],
+          [
+            {
+              "p": "Zhuge Liang left the words, \"Without calm, learning cannot become talent; without aspiration, learning cannot be achieved.\""
+            },
+            {
+              "p": "Without the aspiration of why you learn, learning itself has trouble taking shape. These words, which start from purpose, overlap well with you as a Strategist."
+            },
+            {
+              "p": "When having your child do something, try thinking not only about what to do, but why."
+            },
+            {
+              "p": "Not making them study as the goal in itself, but what kind of choices you'd like them to be able to make in the future using that strength."
+            },
+            {
+              "p": "If the purpose is clear, the method can be changed."
+            },
+            {
+              "p": "And Armin isn't someone who sticks to a plan he has made no matter what. When new information comes in, he rethinks the situation and chooses again what he thinks is the best method at that moment."
+            },
+            {
+              "p": "\"Someone who can't sacrifice anything can never change anything.\""
+            },
+            {
+              "p": "These are Armin's words."
+            },
+            {
+              "p": "He thinks from the purpose, thinks about what is needed, and can cut away what's unnecessary just as decisively."
+            },
+            {
+              "p": "Parenting needs the same flexibility."
+            },
+            {
+              "p": "It's fine if the picture of the future you imagined when they were small differs from the child they grow into. If your child changes, the plan can change too."
+            },
+            {
+              "p": "Your strength isn't predicting the future."
+            },
+            {
+              "p": "It's choosing what you can do now while thinking about the future, and being able to rethink when the situation changes."
+            },
+            {
+              "p": "So there's no need to make a perfect life plan."
+            },
+            {
+              "p": "Use plans not to decide your child's future, but to increase their future options."
+            },
+            {
+              "p": "Being able to use that strength well is the parenting only you, as a Strategist, can offer."
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "zh": {
+    "questions": [
+      "为了拓宽孩子的可能性，我认为即使是孩子本人不愿意的经历也是必要的。",
+      "如果是因为喜欢而坚持，那么即使是没有成果的时间也有意义。",
+      "迎合周围的能力和坚持自我的能力同样重要。",
+      "我认为未来的出路不是只由孩子本人来决定的事。",
+      "在“想放弃”之后再多坚持一下的经历也很有价值。",
+      "比起消除短板，我更希望孩子把长处变成自己的武器。",
+      "即使知道孩子会失败，有时也需要不提前告诉他。",
+      "比起舒适的地方，我更希望孩子选择需要稍微踮起脚尖才能够到的地方。",
+      "如果在重要约定的那天来了一个千载难逢的机会，我愿意接受孩子选择违约。",
+      "即使是不知道有什么用的事情，我也希望孩子能认真投入。",
+      "即使孩子本人满足于现状，父母也应该考虑更长远的事。",
+      "我想尽早为孩子增加将来的选择。",
+      "不逃避讨厌的事、而是直面它的经历也是必要的。",
+      "比起和别人不一样，我更担心孩子和别人相处不好。",
+      "即使知道正确的方法，默默守望也更好。",
+      "看到孩子努力的样子，我觉得不必再要求结果。",
+      "即使是孩子自己选的学校，如果我觉得不合适，也会劝他重新考虑。",
+      "坚持做不适合自己的事，那段时间也不是白费的。",
+      "什么都不做的一天很可惜。",
+      "比起不失败的孩子，我更希望孩子成长为能从失败中重新站起来的人。",
+      "即使是孩子能自己决定的事，我也想把父母的想法告诉他。",
+      "如果有能让孩子全身心投入的事，其他事情稍微疏忽一些也没关系。",
+      "比起一直努力下去，有时改变环境反而能打开新的道路。",
+      "我认为反抗父母也是成长的一部分。",
+      "如果是为了增加将来的自由，现在的自由稍微少一点也没关系。",
+      "比起输了也无所谓的事，我更希望孩子经历无论如何都想赢的事。",
+      "即使孩子不愿意，我也希望他坚持到最初决定的地方。",
+      "比起走一条与众不同的人生道路，孩子平平凡凡地幸福更让我安心。",
+      "即使察觉到孩子有困难，我也想等到他主动来求助。",
+      "有一段放下学习、尽情玩耍的时期也没关系。",
+      "如果能让才能得到发展，我也会考虑换学校或搬家。",
+      "我认为抢先一步减少孩子的失败，未必就是为孩子好。",
+      "即使是一无所获的一年，我也能把它看作成长的一部分。",
+      "在让孩子自由选择之前，我想先让他具备能够做出选择的能力。",
+      "即使孩子在学校显得格格不入，只要他本人不在意，我就不担心。",
+      "如果孩子现在很幸福，就不必勉强要求他进一步成长。",
+      "“一直坚持到现在”这个事实，本身就是继续坚持下去的理由。",
+      "越是我不太了解的领域，我越想相信孩子的判断。",
+      "比起适应周围，我更重视孩子能有自己的主见。",
+      "即使明知是绕远路，只要是孩子自己选的路，我就想交给他。",
+      "即使看不出才能，只要孩子能坚持努力，我就想支持他。",
+      "即使现在被孩子讨厌，我也想做出将来能让他觉得“那样做是对的”的选择。",
+      "比起深入了解一个世界，我更希望孩子接触更多的世界。",
+      "我希望家是一个孩子不必努力的地方。",
+      "如果是孩子认真选择的道路，即使放弃安稳我也会支持。",
+      "越是不顺利的时候，我越希望孩子在改变方法之前再坚持一下。",
+      "与其为了成长而受苦，我更希望孩子选择现在的幸福。",
+      "我认为“全部交给孩子”并不是尊重的唯一方式。",
+      "如果是孩子自己选择的人生，那么连后悔的自由也属于他自己。",
+      "如果能带着现在的记忆回到童年，比起当时自己想做的事，我更想优先选择现在的自己觉得“当初要是做了就好了”的事，重新选择一次。"
+    ],
+    "results": {
+      "education": {
+        "intro": [
+          "设计师类型的你，是一位“充满爱心、善于为孩子的未来着想、无私奉献的人”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "你是一位不仅关注孩子的现在，更会思考孩子未来的父母。"
+            },
+            {
+              "p": "你不会只看孩子是否想做、现在是否开心来做判断，而是会考虑这段经历将来会带来什么、会保留哪些可能性。在学校、兴趣班、升学考试和未来出路等问题上，你也不会完全交给孩子，而是亲自收集信息，努力寻找孩子自己还不知道的选择。"
+            },
+            {
+              "p": "对你来说，教育不只是让孩子取得好成绩，而更接近于通过掌握知识和能力来增加将来的选择。所以即使孩子现在不太情愿，只要你认为将来需要，也会建议他去做。"
+            },
+            {
+              "p": "这背后，是一份“不想因为父母什么都没做而限制了孩子的可能性”的心情。走在孩子前面一点，为他打造通向未来的环境——这就是设计师类型的育儿方式。"
+            }
+          ],
+          [
+            {
+              "p": "在教育型的家庭里，孩子容易成长为能把该做的事踏实做好的人。"
+            },
+            {
+              "p": "通过作业、截止日期和面对不擅长的事情，孩子会自然地明白：不是只做想做的事就可以，要实现想做的事，还需要必要的准备。"
+            },
+            {
+              "p": "另外，因为父母积极收集信息，孩子更容易接触到凭自己无法了解的学校、兴趣班、职业和经历，接触到自己一个人遇不到的世界。在这当中，孩子也可能发现连自己都没意识到的特长。"
+            },
+            {
+              "p": "另一方面，父母准备的好选择越多，孩子自己从零开始选择的经历就越少。如果在学校和兴趣班等方面一直接受父母的好建议，长大后孩子可能会迷茫：“我到底想做什么呢？”"
+            },
+            {
+              "p": "所以对教育型来说，认可孩子偏离父母准备好的道路的经历，和准备一条好的道路同样重要。"
+            }
+          ],
+          [
+            {
+              "p": "最需要注意的，是“为了这个孩子”的心情是否已经大过了孩子本人的心情。"
+            },
+            {
+              "p": "教育型父母推荐某件事的理由，大多出于爱。学习能增加选择、基础学力最好要有、不轻易放弃的经历也很重要。正因为这些判断往往确实是对的，自己反而很难察觉到是否做得过头了。"
+            },
+            {
+              "p": "当孩子说想放弃坚持了很久的兴趣班、选择了和父母认为好的学校不同的学校、沉迷于看起来对将来没什么用的事情时，请试着把两件事分开想一想：这个选择真的会带来麻烦吗？还是只是自己感到不安？"
+            },
+            {
+              "p": "你有看见未来的能力。正因如此，偶尔把目光从未来移开，看看眼前的孩子，这样的时间也很重要。"
+            }
+          ],
+          [
+            {
+              "p": "教育型父母最容易和孩子发生冲突的，是觉得孩子的想法不合理的时候。"
+            },
+            {
+              "p": "比如，孩子突然说想退出补习班。你的脑海里会浮现出许多之后的事情：现在退出成绩会怎样、升学考试还来得及吗、换一家补习班能不能坚持下去。"
+            },
+            {
+              "p": "而孩子看到的，也许只是“明天不想再去那里”这个当下。这种情况下，不是哪一方错了，而是你们看待事情的时间轴不同。"
+            },
+            {
+              "p": "同样的事也会发生在未来出路上。你考虑的是上了那所学校之后的事，孩子想的是想去那所学校。你考虑的是那份工作能不能维持生活，孩子想的是想试试那份工作。"
+            },
+            {
+              "p": "你说得越对，孩子就越难反驳。但如果一直这样，孩子可能会渐渐觉得“反正说了你也不懂”，于是干脆不再找你商量。"
+            },
+            {
+              "p": "这种时候，在下结论之前，试着先问一句：“你为什么会这么想呢？”重要的是努力理解孩子想法的态度。"
+            },
+            {
+              "p": "在理解之前就反对，和理解之后再反对，对孩子来说有着很大的不同。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是信息充足、同时又保留了选择余地的环境。"
+            },
+            {
+              "p": "在选择学校、补习班或兴趣班时，比起只被告知一个答案，你更适合有多个选项、可以比较各自特点、还能结合孩子的性格和兴趣来考虑的环境。"
+            },
+            {
+              "p": "相反，如果在没有足够信息的情况下被告知“让孩子随心所欲就好”，你可能会感到不安。因为你并不是想管控孩子，而是想在掌握了让自己信服的材料之后再做选择。"
+            },
+            {
+              "p": "收集信息是你的一大武器。在此基础上，最后再留一点余地：由父母拓宽选择，孩子从中、或者从选项之外自己做出选择。在这样的环境里，你的优势和孩子的自立会更容易兼顾。"
+            }
+          ],
+          [
+            {
+              "p": "你最大的优势，是能想到孩子还看不到的可能性。"
+            },
+            {
+              "p": "孩子的世界，难免局限在自己知道的范围内。他们无法报考不知道的学校，也无法梦想不知道的职业。这时，你能收集信息、找到选择，让孩子看到新的世界。"
+            },
+            {
+              "p": "另一个优势是，你不会只凭眼前的情绪做判断。即使孩子说讨厌，你也能灵活地思考：到底讨厌什么、坚持下去有没有意义、有没有别的方法，而不会执着于一种手段。"
+            },
+            {
+              "p": "能够想到现在的孩子还看不见的未来——这就是作为设计师的你的力量。"
+            }
+          ],
+          [
+            {
+              "p": "你的弱点，是你总能说出正确的话。"
+            },
+            {
+              "p": "学习能增加将来的选择、基础学力最好要有、不半途而废的经历也很重要。很多时候，你的想法都有充分的理由，几乎都是正论。"
+            },
+            {
+              "p": "正因如此，当和孩子意见不同时，你可能会以“我比你更有经验、掌握更多信息”为理由，想让孩子听你的。"
+            },
+            {
+              "p": "但是，你希望通过教育培养的，应该不是能准确执行父母指示的孩子，而是能够自己思考、自己选择、走自己人生道路的人。"
+            },
+            {
+              "p": "有时，要学会坦然接受：孩子有和父母不同的想法，本身也是教育的成果之一。"
+            },
+            {
+              "p": "还有一点需要注意，你的目光容易集中在能用数字确认的成长上。成绩、偏差值、证书、名次、合格等，都是一目了然的成长结果。而能表达自己的意见了、找到了能投入的事情，这样的成长是没有数字的。"
+            },
+            {
+              "p": "无法写进设计图的成长，也一定正在孩子的身上发生着。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是自立型｜顾问🐴。"
+            },
+            {
+              "p": "教育型为孩子寻找选择、拓宽世界，自立型则在此基础上引导孩子思考自己想怎么做。两者结合，就更容易做到既由父母确定方向，又由孩子自己决定人生。"
+            },
+            {
+              "p": "另外，也很推荐吸收个性型｜制作人🐱的视角。"
+            },
+            {
+              "p": "教育型思考的是“这个孩子应该掌握什么”，而个性型思考的是“这个孩子被什么吸引”。正因为是和你不同的视角，才能成为发现孩子新一面的契机。"
+            }
+          ],
+          [
+            {
+              "name": "孔子"
+            },
+            {
+              "p": "孔子是非常重视学习的中国思想家。不只是获取知识，而是通过不断学习让人本身得到成长——这种思想与教育型的价值观相重合。"
+            },
+            {
+              "name": "大雄妈妈（哆啦A梦）"
+            },
+            {
+              "p": "她是一位总在提醒大雄写作业、学习和养成生活习惯的妈妈，令人印象深刻。即使孩子现在不情愿，也希望他掌握必要的东西、将来不吃苦——她的样子很容易让人联想到教育型父母的那份心意。"
+            }
+          ],
+          [
+            {
+              "p": "孔子的《论语》中有一句名言：“学而时习之，不亦说乎？”意思是把学到的东西反复温习，变成自己的东西，这样的积累是有价值的。"
+            },
+            {
+              "p": "你也一定希望孩子从现在开始学习、掌握很多东西，将来能凭自己的力量生活下去。"
+            },
+            {
+              "p": "大雄妈妈也会反复督促大雄写作业、学习。从中，我们能看到教育型特有的那份父母心：即使现在不喜欢，也希望孩子掌握必要的东西，将来不吃苦。"
+            },
+            {
+              "p": "不过，教育的目标并不是让孩子走父母认为正确的路。让孩子学习很多东西、看到各种各样的世界、掌握必要的能力，在此之后，有一天孩子能说出“我想往这边走”，这也很重要。"
+            },
+            {
+              "p": "即使那条路和你想象的不同，你也能接受：孩子已经成长到能自己思考、自己选择了。这同样是你一路积累下来的教育的巨大成果。"
+            },
+            {
+              "p": "你是一个擅长思考孩子未来的人。所以最后，不要去完成你画的那张未来蓝图，而是把后续的部分交给孩子自己去描绘吧。"
+            }
+          ]
+        ]
+      },
+      "individuality": {
+        "intro": [
+          "制作人类型的你，是一位“珍视孩子的独特之处、能够包容地守护孩子成长的人”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "比起让孩子接近“我想把他培养成这样的人”这样的完成形，你更想发现孩子身上原本就有的个性和才能，并帮助它成长。"
+            },
+            {
+              "p": "从学习、运动、性格到将来的工作，世上有许多“这样做比较好”的标准。但你并不认为让孩子去迎合这些标准就一定是最好的。"
+            },
+            {
+              "p": "与其花大量时间把短板提高到平均水平，不如让孩子沉浸在喜欢的事、擅长的事中，把它培养成只属于他的优势。即使和周围有些不同，只要孩子本人很开心，你就能接受“这也是这个孩子的特点”。"
+            },
+            {
+              "p": "正因如此，你容易察觉到成绩和名次无法体现的变化。喜欢画画、擅长逗别人笑、一查起不懂的东西就停不下来——你能在这些小小的特点中发现价值。"
+            },
+            {
+              "p": "你在育儿中最看重的，或许是“把孩子培养成一个只有他才能成为的人”。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为能坦率表达自己的喜好和擅长不擅长、拥有自己的价值观和世界的人。"
+            },
+            {
+              "p": "他们不会过分害怕和别人不同，更容易思考“我想怎么做”，而不是“因为大家都这么做”。"
+            },
+            {
+              "p": "特别是找到喜欢的事物之后，他们的成长值得期待。他们会深入钻研感兴趣的东西，这也可能成为他们的一大优势。"
+            },
+            {
+              "p": "另外，个性被父母认可的经历会带来自我肯定感。即使在外面得不到认可，在家里也能被理解。这样的经历，也会让孩子长大后更能接纳和自己价值观不同的人。"
+            },
+            {
+              "p": "另一方面，正因为在喜好被尊重的环境中长大，面对“虽然不喜欢但必须做的事”的能力，需要有意识地去培养。"
+            },
+            {
+              "p": "发挥长处和逃避短处并不是一回事。能把这两者区分开来，个性型的优点就会更加突出。"
+            }
+          ],
+          [
+            {
+              "p": "你最需要注意的，是自以为理解了孩子的个性，结果反而把它固定住了。"
+            },
+            {
+              "p": "“这孩子比起学习更适合运动”“他不是喜欢出风头的类型”“感觉像个理科生”“这孩子更适合这个”。"
+            },
+            {
+              "p": "这些话都是因为仔细观察孩子才说出来的，但孩子还在成长的途中。十岁时不擅长的事情，十五岁时也许就变成了擅长的事情。"
+            },
+            {
+              "p": "一开始不情不愿开始的事情，也可能在能做好的那一刻起就喜欢上了。"
+            },
+            {
+              "p": "所以，当孩子不愿意时，不要马上判断“这不适合这孩子”，请先想一想：他是讨厌，还是因为还做不好所以觉得没意思？"
+            },
+            {
+              "p": "重视个性，并不是把现在的个性固定下来。"
+            },
+            {
+              "p": "在认可孩子现在的特点的同时，为孩子连自己都还不知道的新的一面留出出现的余地，这一点很重要。"
+            }
+          ],
+          [
+            {
+              "p": "因为你基本上尊重孩子的意愿，所以正面冲突的情况也许并不多。"
+            },
+            {
+              "p": "但是，当孩子自己想要“变得普通”时，可能会出现意想不到的分歧。"
+            },
+            {
+              "p": "在你看来，只有这个孩子才有的个性是一种魅力。但对孩子来说，有时和周围不一样是一件痛苦的事。"
+            },
+            {
+              "p": "“你做你自己就好”这句话，对孩子来说，可能会被理解成“你不懂我的痛苦”。"
+            },
+            {
+              "p": "反过来，当孩子想逃避不擅长的事情时，判断也会变得困难。是认为“这不适合他，放弃也可以”，还是认为“这里应该让他努力一下”？"
+            },
+            {
+              "p": "这种时候，在父母决定答案之前，试着问问孩子：“你想放弃，是因为讨厌吗？还是因为现在还做不好？”"
+            },
+            {
+              "p": "个性型需要的，不是什么都让孩子自由去做，而是分辨出哪些时候要守护孩子的特点，哪些时候要为了拓宽孩子的可能性推他一把。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是孩子能接触各种各样的世界、并从中找到自己喜欢的东西的环境。"
+            },
+            {
+              "p": "不只是学习，还有运动、艺术、音乐、手工制作、阅读、自然体验、与人交流等，能尽可能接触不同种类经历的环境很适合你。"
+            },
+            {
+              "p": "不过，不必因为“让孩子选择喜欢的就好”，就从一开始把一切都交给孩子。"
+            },
+            {
+              "p": "因为孩子只能从自己知道的东西中做选择。"
+            },
+            {
+              "p": "他们无法喜欢上不知道的运动，也无法把不知道存在的职业当作将来的梦想。父母为孩子打开通往新世界的入口，有着很大的意义。"
+            },
+            {
+              "p": "父母拓宽可能性，选择什么交给孩子。"
+            },
+            {
+              "p": "这样的分工，非常适合制作人类型。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是不会只用一把尺子来评价孩子。"
+            },
+            {
+              "p": "在学校里，孩子不可避免地会越来越多地被考试分数、名次等一目了然的数字评价。但一个人的魅力和才能，并不都能变成数字。"
+            },
+            {
+              "p": "口才好、能逗人笑、一专注就能持续好几个小时、想法有趣、对别人的情绪很敏感。在这些特点中，可能隐藏着将来支撑这个孩子的巨大优势。"
+            },
+            {
+              "p": "你是那种能比较早发现这些的人。"
+            },
+            {
+              "p": "更重要的是，你不只是发现，还能给予肯定。"
+            },
+            {
+              "p": "在还没有得到周围认可的阶段，就有人对他说“这很有意思”“要不要再多做做看？”。这样一句话，可能会让原本只是爱好的东西，变成支撑孩子一生的东西。"
+            },
+            {
+              "p": "你能成为孩子尚未被任何人认可的才能的第一个理解者。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你可能会以“这就是这孩子的特点”为由，连成长所必需的压力也一并回避了。"
+            },
+            {
+              "p": "数学不好所以也许是文科生、对运动没兴趣那就是艺术型、不愿意在人前讲话所以是内向的孩子——你可能会这样想。"
+            },
+            {
+              "p": "当然，也许真的是这样。但那到底是个性，还是单纯经验不足，并不能马上判断出来。"
+            },
+            {
+              "p": "做不到的事情通过练习变得能做到，这样的经历本身，也可能塑造出孩子新的个性。"
+            },
+            {
+              "p": "还有一点需要注意：仅凭擅长的事情，并不能应对人生的一切。"
+            },
+            {
+              "p": "即使不喜欢也必须学的知识、和别人的约定、遵守期限、踏实的练习等，为了发挥个性，也需要最基本的基础。"
+            },
+            {
+              "p": "所以，请同时怀有“守护这孩子的特点”和“相信这孩子还能再进一步”这两种心情。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是战略型｜军师🦊。"
+            },
+            {
+              "p": "你善于发现“这孩子有这样的优点”这样的才能和个性，而军师类型则擅长思考“要发展这个优点，需要怎样的教育和环境”。"
+            },
+            {
+              "p": "制作人发现素材的魅力，军师从中规划出道路。这是一个非常合拍的组合。"
+            },
+            {
+              "p": "另一个容易形成互补关系的，是努力型｜教练🐯。"
+            },
+            {
+              "p": "你发现的“喜欢”和“擅长”，要成为真正的才能，也需要时间。加上教练类型“相信点滴积累”的视角，就更容易把孩子的兴趣培养成真正的优势，而不是一时的热情。"
+            },
+            {
+              "p": "你不需要一个人拥有所有的思考方式。借助和自己不同类型的视角，个性型的优点会更加突出。"
+            }
+          ],
+          [
+            {
+              "name": "坂本龙马"
+            },
+            {
+              "p": "坂本龙马以不拘泥于当时“藩”的框架、与不同立场的人交往、探索新道路的人物而闻名。"
+            },
+            {
+              "p": "不把“和周围一样”本身当作价值，在既有框架之外也去寻找可能性。他的生活方式与个性型有许多重合之处。"
+            },
+            {
+              "name": "杀老师（暗杀教室）"
+            },
+            {
+              "p": "杀老师从不试图用同一个标准培养所有学生。"
+            },
+            {
+              "p": "擅长学习的学生、擅长运动的学生、在与人沟通方面有优势的学生。他仔细观察每一个人，根据本人的性格和能力改变相处的方式。"
+            },
+            {
+              "p": "不是把所有人都变成同样的人，而是为每个人设想不同的完成形。"
+            },
+            {
+              "p": "这种态度与制作人类型的育儿方式非常相似。"
+            }
+          ],
+          [
+            {
+              "p": "坂本龙马有一句话：“人世间的道路不止一条。道路有百条、千条、万条。”"
+            },
+            {
+              "p": "孩子的将来也没有唯一的正确答案。并不是说擅长学习就走这条路、不擅长就走那条路，也没有必要和周围的人走同一条路。适合这个孩子的道路，也许在父母和孩子都还看不到的地方。"
+            },
+            {
+              "p": "另外，杀老师也说过：“才能的种类不止一种。请找到适合你才能的暗杀方式。”"
+            },
+            {
+              "p": "重要的不只是能做到和别人一样的事，而是发现孩子所拥有的东西，并寻找能让它发挥作用的地方。你有一种力量，能不只用周围的标准来评价孩子，而是看到孩子本身。"
+            },
+            {
+              "p": "不过，现在看到的个性，并不一定就是孩子的完成形。现在不擅长的事情，几年后也许会变得擅长；接触到原本没有兴趣的世界，也可能发现意想不到的才能。"
+            },
+            {
+              "p": "所以，在珍视孩子现在的特点的同时，也请让孩子遇见他还未曾展现过的另一面。"
+            },
+            {
+              "p": "你不需要去决定孩子的可能性。只要和孩子一起，寻找适合他的道路就好。"
+            }
+          ]
+        ]
+      },
+      "independence": {
+        "intro": [
+          "顾问类型是“尊重孩子的想法、在需要时伸出援手的可靠存在”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "你认为，孩子的人生最终是由孩子自己决定的。"
+            },
+            {
+              "p": "父母活得更久，经验和知识自然更多。在很多场合，父母都能做出比孩子更好的判断。即便如此，你也不认为由父母一直选择正确答案就是好的育儿。"
+            },
+            {
+              "p": "你重视的是孩子自己去思考。当孩子迷茫时，你不会马上给出答案，而是一边倾听孩子的想法，一边和他一起寻找答案。"
+            },
+            {
+              "p": "即使在父母看来是绕远路的选择，只要还能挽回，你也会想让孩子去经历。不只是自己选择并成功的经历，选错之后重新思考的经历，也会成为孩子有一天独立生活的力量。"
+            },
+            {
+              "p": "当然，你并不是什么都让孩子随心所欲。不知道的事情会教，迷茫时会给建议，真正危险的时候会作为父母去阻止。"
+            },
+            {
+              "p": "对你来说，育儿不是一直引导孩子的人生，而是随着孩子的成长，一点一点地把人生的主导权交给孩子本人。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为有自己的主见、能自己做决定的人。"
+            },
+            {
+              "p": "从小就有思考“我想怎么做”的机会，所以孩子不会只去寻找父母喜欢的答案或周围认为正确的答案，而更容易形成自己的判断标准。"
+            },
+            {
+              "p": "这并不只是通过升学这样的大决定才能获得的。穿什么、学什么、周末怎么过，日常中的这些小选择，也是孩子自己赋予意义、推动人生的练习。"
+            },
+            {
+              "p": "另外，正因为是自己决定的事，接受结果的能力也更容易培养。即使不顺利，孩子也不会怪罪别人，而是能思考下一步怎么办。"
+            },
+            {
+              "p": "另一方面，越是习惯自己思考的孩子，越可能连烦恼也想一个人解决。"
+            },
+            {
+              "p": "将来真正需要的，不是什么都能一个人做到的人，而是能自己思考、并在需要时借助他人力量的人。"
+            },
+            {
+              "p": "在教会孩子自己做决定的同时，也同样教会他与人商量、向人求助，自立型的优点会更加突出。"
+            }
+          ],
+          [
+            {
+              "p": "你最需要注意的，是不要把自立和放任混为一谈。"
+            },
+            {
+              "p": "让孩子自己做决定很重要，但这需要判断的材料。不知道存在的东西，是无法选择的。如果不了解各个选项的区别，也无法判断哪个适合自己。"
+            },
+            {
+              "p": "比如选择高中时，孩子可能只知道校名和偏差值。只有父母和孩子一起去了解校风、升学去向、社团活动和通学时间等，孩子才能用自己的方式去比较。"
+            },
+            {
+              "p": "重要的不是“因为是孩子的人生所以交给孩子”，而是在创造出孩子能够选择的状态之后，再交给孩子。"
+            },
+            {
+              "p": "另外，当孩子来找你商量时，只是督促他自己思考，有时是不够的。孩子可能不是想让你替他决定，而是在寻找一个能帮他理清思路的人。"
+            },
+            {
+              "p": "表达父母的意见，并不会妨碍孩子自立。把这个意见也作为一种材料交给孩子，最后由孩子自己思考就好。"
+            },
+            {
+              "p": "自立不是一个人做决定，而是借助必要的信息和他人的意见，最后由自己来决定。"
+            }
+          ],
+          [
+            {
+              "p": "因为你平时就尊重孩子的意愿，所以因单方面强加父母想法而发生冲突的情况可能相对较少。"
+            },
+            {
+              "p": "真正难的，反而是孩子无法自己做决定的时候。"
+            },
+            {
+              "p": "比如面对升学，孩子可能一次又一次地问你该选哪个。你可能会想：这是孩子的人生，最后还是希望他自己决定。"
+            },
+            {
+              "p": "但孩子想要的，也许并不是决定本身。"
+            },
+            {
+              "p": "也许他害怕做出错误的选择，也许只是想知道父母是怎么想的，也许是对自己的想法没有信心，希望有人推自己一把。"
+            },
+            {
+              "p": "在这种状态下，如果一直把问题抛回给孩子，孩子可能会觉得自己不是被给予了自由，而是不得不一个人做决定。"
+            },
+            {
+              "p": "这种时候，请试着和孩子一起整理选项，也告诉他如果是父母会怎么想。即便如此，最后的那一票还是留给孩子本人。"
+            },
+            {
+              "p": "你想要的，并不是不依赖父母的孩子。"
+            },
+            {
+              "p": "能和父母商量，但最后能自己做决定。"
+            },
+            {
+              "p": "一直支持到这一步，对顾问类型来说很重要。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是孩子能自己选择、并能亲身经历结果的环境。"
+            },
+            {
+              "p": "在家里，也可以随着孩子的成长，一点点扩大孩子能自己决定的范围。小时候让他从几个选项中选择，随着成长，再让他自己去思考选项本身。"
+            },
+            {
+              "p": "另外，让孩子经历可以挽回的失败也很重要。"
+            },
+            {
+              "p": "即使是“自己想出并决定的方法没有带来结果”这样的经历，也会成为下次做出更好选择的材料。"
+            },
+            {
+              "p": "另一方面，父母也不必完全退到后面。"
+            },
+            {
+              "p": "在收集必要信息的能力上，父母大多更强。获得高质量的支持，孩子能成长得更多。有时从不同角度表达意见、在真正危险时阻止孩子，也很重要。"
+            },
+            {
+              "p": "作为顾问类型的你，适合容易获取必要信息、能接触到各种想法的环境。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是能把孩子当作与自己不同的独立个体来尊重。"
+            },
+            {
+              "p": "父母比孩子先经历了很多事情。如果自己有后悔的事，就不希望孩子犯同样的错；如果有成功的经验，想推荐孩子走同样的路也很自然。"
+            },
+            {
+              "p": "但你能在这里先停下来。"
+            },
+            {
+              "p": "你很清楚，对自己来说好的人生，未必对孩子来说也是好的人生。"
+            },
+            {
+              "p": "自己选择的经历积累得越多，孩子在父母不在身边的时候也越能自己做出判断。"
+            },
+            {
+              "p": "你想培养的，大概是“能自己选择人生、并把这个选择当作自己的东西活下去的人”。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你可能会因为太尊重孩子的意愿，连父母拥有的知识和经验也收了起来。"
+            },
+            {
+              "p": "把决定权交给孩子，和父母不发表意见是两回事。"
+            },
+            {
+              "p": "孩子还有很多不知道的世界。升学、工作、人际关系，没有经历过的事情无法判断，这是理所当然的。"
+            },
+            {
+              "p": "这种时候，把父母知道的事情告诉孩子并不是干涉。你的经验、老师的意见、朋友的话，所有信息都会成为孩子做决定的材料。"
+            },
+            {
+              "p": "另外，让孩子经历失败也需要界限。"
+            },
+            {
+              "p": "失败了能学到东西的事，和父母应该阻止的事，并不相同。能挽回的失败可以交给孩子。但像健康、安全、大笔金钱这样难以挽回的事情，父母需要站出来。"
+            },
+            {
+              "p": "交给孩子的范围和需要守护的范围并不是固定的。随着孩子的成长，这条界线也会一点点向外移动。"
+            },
+            {
+              "p": "比起给予自由，更重要的是培养运用自由的能力。"
+            },
+            {
+              "p": "意识到这一点，顾问类型的弱点就会比较容易弥补。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是教育型｜设计师🦉。"
+            },
+            {
+              "p": "你尊重孩子的意愿，想把最终的选择交给孩子本人；而设计师类型擅长为将来考虑，准备必要的教育和选项。"
+            },
+            {
+              "p": "只有自立型的话，可能只让孩子在他已知的世界里做选择。反过来，只有设计师的话，可能会准备太多父母认为好的道路。"
+            },
+            {
+              "p": "设计师拓宽世界，自立型让孩子从中选择。"
+            },
+            {
+              "p": "把两者结合起来，就更容易建立起“父母拓宽可能性，孩子选择人生”的关系。"
+            },
+            {
+              "p": "你不必自己成为设计师。在尊重孩子的选择之前，是否已经给孩子看到了足够的选项？偶尔想一想这个问题，顾问类型的优点就会更加突出。"
+            }
+          ],
+          [
+            {
+              "name": "吉田松阴"
+            },
+            {
+              "p": "吉田松阴以在松下村塾培养了高杉晋作、伊藤博文等众多年轻人而闻名。"
+            },
+            {
+              "p": "他的特点是，并不想让所有人都和自己的想法一样，而是通过对话和讨论让门生自己思考。他看重每个人的长处和想法，重视本人的行动。"
+            },
+            {
+              "p": "老师不是把完成的答案交给学生，让学生照做；而是给予思考的材料，最后由学生自己行动。"
+            },
+            {
+              "p": "这种态度，与不是由父母来完成孩子的人生、而是想着有一天交给孩子本人的顾问类型相重合。"
+            },
+            {
+              "name": "香克斯（海贼王）"
+            },
+            {
+              "p": "香克斯也不是那种会细致管理别人人生的人。"
+            },
+            {
+              "p": "他让路飞看到自己的生活方式和大海的世界，而之后选择怎样的人生，则交给路飞自己。"
+            },
+            {
+              "p": "另一方面，在真正需要守护的时候，他甚至不惜失去自己的手臂来保护路飞。"
+            },
+            {
+              "p": "平时交给本人的人生。但在真正危险的时候，自己会站到前面。"
+            },
+            {
+              "p": "让人自由，和不去守护是两回事。"
+            },
+            {
+              "p": "这种距离感，生动地体现了顾问类型。"
+            }
+          ],
+          [
+            {
+              "p": "吉田松阴有一句广为人知的话：“诸君，狂起来吧。”"
+            },
+            {
+              "p": "不只是想着迎合周围的常识，而是朝着自己思考过、相信的东西去行动。这种态度，也和你希望孩子自己选择人生的想法相重合。"
+            },
+            {
+              "p": "也许有一天，孩子会选择一条你无法理解的道路。"
+            },
+            {
+              "p": "作为父母，你可能会担心，想劝他走别的路。"
+            },
+            {
+              "p": "但如果孩子用自己的方式思考过，并能用自己的话说明理由，那并不意味着你的育儿失败了。恰恰相反，那是孩子已经能够自己思考自己人生的时刻。"
+            },
+            {
+              "p": "而从香克斯的身上，我们还能看到另一件重要的事。"
+            },
+            {
+              "p": "说到香克斯，有一个很有名的场景。"
+            },
+            {
+              "p": "“这顶帽子交给你了。将来一定要还给我。等你成为了不起的海贼的时候。”"
+            },
+            {
+              "p": "香克斯没有给路飞任何建议。他没有把路飞的梦想当成小孩子的话来嘲笑，而是相信这个说要超越他们的少年，把帽子托付给了他。"
+            },
+            {
+              "p": "这个身影，和身为顾问类型的你相重合。"
+            },
+            {
+              "p": "父母不是一直握着人生的答案，而是有一天把思考答案这个角色本身交给孩子。"
+            },
+            {
+              "p": "人生的主导权交给孩子。但在他身后，你永远都在。"
+            },
+            {
+              "p": "正因为有这份安心，孩子才能鼓起勇气离开父母，选择自己的人生。"
+            }
+          ]
+        ]
+      },
+      "challenge": {
+        "intro": [
+          "啦啦队长类型的你，是一位“珍视孩子的好奇心、相信孩子的可能性、能推孩子一把的人”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "你希望通过经历来拓宽孩子的可能性。"
+            },
+            {
+              "p": "当孩子对某件事产生兴趣时，比起先判断适不适合，你更想让他试一次。因为你知道，很多事情不亲身经历是不会明白的。"
+            },
+            {
+              "p": "即使尝试的结果没有想象中那么有趣，你也不会认为是白费。知道自己不喜欢，也是了解自己的宝贵经历。"
+            },
+            {
+              "p": "反过来，随意开始的事情也可能带来意想不到的才能。你不会一开始就缩小可能性，而是让孩子接触各种各样的世界，从而增加孩子的选择。"
+            },
+            {
+              "p": "你重视的，是能够挑战，而不是不失败。"
+            },
+            {
+              "p": "不是一直抢在前面保护孩子不摔倒，而是支持孩子摔倒了也能再站起来。能自然而然地选择这种相处方式的，就是啦啦队长类型。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为对新事物抵触少、能向感兴趣的事情迈出一步的人。"
+            },
+            {
+              "p": "他们不会过分害怕陌生的地方和陌生的人，容易培养出拓宽自己世界的能力。因为知道失败了也不会被父母否定，所以也很少因为害怕结果而不敢行动。"
+            },
+            {
+              "p": "另外，通过许多经历，孩子能从实际感受中理解自己的喜好和擅长不擅长。"
+            },
+            {
+              "p": "孩子自己也不是一开始就了解自己的。有时是试过之后才知道自己喜欢，有时是发现憧憬的东西其实并不适合自己。"
+            },
+            {
+              "p": "通过积累这样的经历，孩子会了解到只靠脑子想无法明白的自己。"
+            },
+            {
+              "p": "另一方面，在不断接触新事物的环境里，孩子可能在深入一件事之前就转向了下一件。不只是经历的数量，当孩子找到真正喜欢的东西时，培养他深入投入的能力也很重要。"
+            }
+          ],
+          [
+            {
+              "p": "你需要注意的，是不要让“让孩子经历”本身变成目的。"
+            },
+            {
+              "p": "想拓宽孩子世界的心情越强烈，就越想给孩子各种经历。但经历并不是越多越好。"
+            },
+            {
+              "p": "重要的是关注孩子感受到了什么。"
+            },
+            {
+              "p": "开心吗？还想再做一次吗？和想象的哪里不一样？经历之后稍微回顾一下，那件事就更容易留在孩子心里。"
+            },
+            {
+              "p": "另外，当孩子说不想挑战时，也不必马上认为他消极。可能只是单纯没兴趣，也可能是还没做好心理准备。"
+            },
+            {
+              "p": "推孩子一把是啦啦队长类型的优势，但有时等待孩子自己动起来，也是一种加油。"
+            },
+            {
+              "p": "不只是给予经历，而是陪伴孩子，直到那份经历留在他的心里。"
+            },
+            {
+              "p": "做到这一步，你给予的许多经历都会和孩子的成长连接起来。"
+            }
+          ],
+          [
+            {
+              "p": "你和孩子最容易发生冲突的，是在父母看来是很好的经历、孩子本人却不感兴趣的时候。"
+            },
+            {
+              "p": "“难得的机会，试试看就好，不合适再放弃就行。”对你来说这是很自然的想法，但孩子未必也这样觉得。"
+            },
+            {
+              "p": "特别是对谨慎的孩子来说，进入一个陌生的环境需要很大的能量。"
+            },
+            {
+              "p": "这种时候如果一直要求孩子挑战，在父母看来是在推孩子一把，孩子却可能觉得被催促。"
+            },
+            {
+              "p": "重要的是看清孩子不想挑战的理由。"
+            },
+            {
+              "p": "如果是没兴趣，也许没必要勉强去经历。但如果是有兴趣却因为害怕失败而不敢行动，那么一起迈出第一步，情况也许就会改变。"
+            },
+            {
+              "p": "正因为是啦啦队长类型，才不必总是往前推。"
+            },
+            {
+              "p": "比起让孩子挑战，更重要的是把孩子培养成想挑战的时候就能行动的人。"
+            },
+            {
+              "p": "意识到这个区别，你的行动力就会成为孩子的力量，而不是负担。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是孩子能接触各种各样世界的环境。"
+            },
+            {
+              "p": "不要让孩子的世界只局限于学校和家里，最好有运动、文化活动等能遇见不同价值观的地方。比起在那里选择什么，首先知道“还有自己不知道的世界”本身就有意义。"
+            },
+            {
+              "p": "不过，不必把日程排满。"
+            },
+            {
+              "p": "当孩子被某件事强烈吸引时，比起增加新的经历，可以有一段专注于一件事的时期。广泛经历的时期和深入钻研一件事的时期，是可以并存的。"
+            },
+            {
+              "p": "另外，不把失败看得过于负面的氛围，也和你的想法很契合。"
+            },
+            {
+              "p": "挑战失败时不会被责备，而是能思考下一步。有这样的环境，孩子就能不只害怕结果而勇于行动。"
+            },
+            {
+              "p": "你应该准备的，不是随时都能成功的环境。"
+            },
+            {
+              "p": "而是能安心挑战的环境。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是不会只凭孩子现在的样子来判断他的可能性。"
+            },
+            {
+              "p": "你不会因为“现在做不到”，就早早地认定“不适合”“没有才能”，关闭可能性。"
+            },
+            {
+              "p": "孩子的能力会因经历而改变。即使第一次接触时什么都做不到，也可能因为觉得有趣而投入其中，不知不觉变成了很大的特长。"
+            },
+            {
+              "p": "而比才能本身更重要的，是遇见的机会。"
+            },
+            {
+              "p": "无论拥有多少可能性，如果不知道那个世界的存在，孩子连产生兴趣都做不到。父母为孩子打开通往新世界的入口，有着很大的意义。"
+            },
+            {
+              "p": "另外，你也是容易把失败当作经历的一部分来接受的人。孩子知道自己不会只被结果评价，就能安心地迈出一步。"
+            },
+            {
+              "p": "能为尚未显现的可能性，提供最初的契机。"
+            },
+            {
+              "p": "这就是啦啦队长类型的一大优势。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你的注意力可能会过多地放在给予下一个经历上。"
+            },
+            {
+              "p": "新的经历有显而易见的刺激。第一次去的地方、新的兴趣班，在父母看来也容易有孩子在成长的感觉。"
+            },
+            {
+              "p": "而长期坚持一件事的时间，看起来变化很少。"
+            },
+            {
+              "p": "但当孩子找到真正喜欢的东西之后，比起增加新的经历，更需要反复做同一件事的时间。一开始做不到的事情一点点变得能做到，在那之后，才能看到新的乐趣。"
+            },
+            {
+              "p": "另外，当孩子说想中途放弃时，也并不是什么都马上转向下一个就好。"
+            },
+            {
+              "p": "是真的不适合，还是只是正处在不顺利的时期？这需要一起思考。"
+            },
+            {
+              "p": "你需要的不是减少挑战。"
+            },
+            {
+              "p": "而是在打开了许多入口之后，也要守护孩子在其中找到的珍贵事物得以深入的时间。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是努力型｜教练🐯。"
+            },
+            {
+              "p": "啦啦队长类型擅长给孩子许多契机，创造迈向新世界的第一步。而教练类型重视的是，把从中找到的东西花很长时间积累起来。"
+            },
+            {
+              "p": "只有挑战型的话，经历会不断扩散，可能在一件事成为力量之前就转向了下一件。只有努力型的话，可能会因为过于重视积累，而减少迈向新世界的机会。"
+            },
+            {
+              "p": "先试试看。然后找到喜欢的东西，就坚持下去。"
+            },
+            {
+              "p": "挑战发现可能性，积累把可能性变成力量。"
+            },
+            {
+              "p": "把两者结合起来，你的育儿会更加平衡。"
+            }
+          ],
+          [
+            {
+              "name": "丰臣秀吉"
+            },
+            {
+              "p": "丰臣秀吉是以从低微的身份起步、最终实现天下统一而闻名的人物。"
+            },
+            {
+              "p": "他并不是从一开始就被安排好将来道路的人。他在经历各种立场和角色的过程中，不断拓宽自己能够大显身手的地方。"
+            },
+            {
+              "p": "不只用现在所处的位置来决定自己的可能性，有机会就行动起来，在此之后开辟出新的道路。这样的身影，与想通过经历拓宽可能性的啦啦队长类型相重合。"
+            },
+            {
+              "name": "大木博士（精灵宝可梦）"
+            },
+            {
+              "p": "大木博士也不是从一开始就把孩子引向一条路的人。"
+            },
+            {
+              "p": "他把第一只宝可梦交给孩子，托付给他图鉴，创造了走向广阔世界的契机。之后会遇见什么、经历什么，取决于本人。"
+            },
+            {
+              "p": "不是一开始就教给答案，而是为孩子打开迈向世界的入口。"
+            },
+            {
+              "p": "先走出去，用自己的眼睛看看这个世界。"
+            },
+            {
+              "p": "想要给孩子这样的经历——这种态度生动地体现了啦啦队长类型。"
+            }
+          ],
+          [
+            {
+              "p": "丰臣秀吉留下过这样的话：“认为会输就会输，认为会赢就会赢。即使结果相反，也要对别人说会赢。”"
+            },
+            {
+              "p": "与其因为考虑能不能做到而不敢行动，不如先相信自己的可能性，行动起来。这种态度，也和推孩子一把的你的想法相重合。"
+            },
+            {
+              "p": "孩子并不是从一开始就知道自己适合什么。"
+            },
+            {
+              "p": "有些东西是真正接触之后才开始着迷的。也可能在鼓起勇气参加的地方遇见重要的朋友。反过来，也可能发现憧憬而开始的东西并不适合自己。"
+            },
+            {
+              "p": "这些都是有意义的经历。"
+            },
+            {
+              "p": "而大木博士给小智的，也不是完成的答案。他交给小智第一只宝可梦和尚未完成的图鉴，把他送进还不了解的世界。"
+            },
+            {
+              "p": "准备好最初的三只，让孩子从中自己选择，然后送他踏上旅程。"
+            },
+            {
+              "p": "选择的宝可梦不同，得到的经历也不同；捕捉到多少只宝可梦，就有多少个故事。"
+            },
+            {
+              "p": "把这样的机会给予孩子的身影，正可以说是啦啦队长类型。"
+            },
+            {
+              "p": "父母也有相似的角色。"
+            },
+            {
+              "p": "父母无法从一开始就决定孩子的将来。但可以告诉孩子“还有这样的世界”，为他打开入口。"
+            },
+            {
+              "p": "重要的是，不要让父母一直推着孩子跑到最后。"
+            },
+            {
+              "p": "正因为你擅长推孩子一把，有时也需要陪在停下脚步的孩子身边。经历了许多之后，如果孩子沉迷于一件事，那么这次不必再增加新的刺激，守护他留在那里的时间也可以。"
+            },
+            {
+              "p": "先试试看。珍视在那里感受到的东西。然后找到喜欢的东西，这次就踏踏实实地陪他坚持下去。"
+            },
+            {
+              "p": "你能给孩子的最大的东西，并不是成功本身。"
+            },
+            {
+              "p": "而是相信自己即使踏入未知的世界也没关系的勇气。"
+            },
+            {
+              "p": "有了这份勇气，总有一天，即使父母不再推，孩子也能自己走向新的世界。"
+            }
+          ]
+        ]
+      },
+      "social": {
+        "intro": [
+          "导师类型的你，是一位“重视善良和礼貌、能培养孩子体贴之心的真诚的人”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "你不仅重视孩子的能力和成绩，也重视孩子会成长为怎样的人。"
+            },
+            {
+              "p": "在学习和运动中取得好成绩固然重要，但你并不认为仅凭这些育儿就算成功。你认为，能打招呼、遵守约定、能站在对方的立场上思考，这些在人生中也是很大的力量。"
+            },
+            {
+              "p": "孩子总有一天会走出家门，在与许多人的交往中生活。到那时需要的，不只是知识和能力。"
+            },
+            {
+              "p": "无论多么优秀，如果得不到别人的信任，一个人能做到的事情是有限的。相反，能珍惜身边人的人，会有在困难时帮助自己的人，也会有一起成就事情的伙伴。"
+            },
+            {
+              "p": "正因如此，你也很重视日常的小小举止。"
+            },
+            {
+              "p": "与其说是进行特别的教育，不如说是通过家里的对话和待人接物，教孩子如何与社会相处。不只培养能力，也重视培养人品，这就是导师类型。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为善于体察周围、容易得到别人信任的人。"
+            },
+            {
+              "p": "他们不只凭自己的心情行动，而是容易养成思考“对方会怎么想”的习惯。所以在朋友关系和集体生活中，也能和周围的人一起协作行动。"
+            },
+            {
+              "p": "另外，在重视礼貌和约定的家庭里，孩子也会自然地掌握社会中所需的基本举止。"
+            },
+            {
+              "p": "这些能力不像考试分数那样看得见。但当孩子长大走向社会时，它会作为赢得别人信任的力量，发挥很大的作用。"
+            },
+            {
+              "p": "另一方面，越是能珍惜周围的孩子，越可能把自己的心情放在后面。"
+            },
+            {
+              "p": "不喜欢的事也无法拒绝，为了回应周围的期待而勉强自己。为了不陷入这样的状态，需要告诉孩子：在体谅别人的同时，也可以同样珍视自己的心情。"
+            },
+            {
+              "p": "成为一个善良的人，和一直忍耐自己，是两回事。"
+            }
+          ],
+          [
+            {
+              "p": "你需要注意的，是不要把礼貌和顺从混为一谈。"
+            },
+            {
+              "p": "打招呼、遵守约定、不伤害别人。在社会中，确实有值得珍视的东西。"
+            },
+            {
+              "p": "但是，迎合周围并不总是正确的。"
+            },
+            {
+              "p": "孩子有时会对学校的规定产生疑问，有时会对大人的意见不服气，也可能有和朋友不同的想法。"
+            },
+            {
+              "p": "这种时候如果只一味要求孩子迎合周围，孩子可能会不再思考什么是正确的行为，而是选择不会被骂的行为。"
+            },
+            {
+              "p": "你真正想培养的，应该不是只会遵守别人吩咐的孩子。"
+            },
+            {
+              "p": "为什么不能那样做？为什么需要珍惜对方？如果孩子能思考到这一步，即使在父母看不到的地方，也能自己做出判断。"
+            },
+            {
+              "p": "珍惜别人和拥有自己的想法，是可以并存的。"
+            },
+            {
+              "p": "同时培养这两者，对导师类型来说很重要。"
+            }
+          ],
+          [
+            {
+              "p": "你和孩子最容易发生冲突的，是在意孩子的行为在别人眼中是什么样子的时候。"
+            },
+            {
+              "p": "在家里可以容忍的事情，在学校或人前做时，你就会想提醒孩子。作为父母，你希望孩子学会在社会上行得通的举止，将来不吃苦。"
+            },
+            {
+              "p": "但是，孩子可能并没有理解你的用意。"
+            },
+            {
+              "p": "为什么必须在意周围？明明没有给任何人添麻烦，到底哪里不对？孩子可能会有这样的疑问。"
+            },
+            {
+              "p": "如果这时用“社会上就是这样”来结束话题，在孩子看来，父母只是在在意别人的眼光。"
+            },
+            {
+              "p": "重要的是，一起思考这条规则是为了什么。"
+            },
+            {
+              "p": "是为了不伤害别人？是为了让集体相处得舒服？还是只是从过去延续下来、理由已经变得淡薄的东西？"
+            },
+            {
+              "p": "父母展示出自己思考的样子，孩子也会不只是接受社会的规则，而是能思考它的意义。"
+            },
+            {
+              "p": "与其培养能遵守规则的人，不如培养能思考为什么要遵守的人。"
+            },
+            {
+              "p": "能传达到这一步，你的价值观也会更容易传递给孩子。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是在家庭之外也有人际交往的环境。"
+            },
+            {
+              "p": "最好不只是孩子之间，还有和年龄、立场不同的人接触的经历。只在家里很难学到的距离感和体贴，也会在人际关系中一点点掌握。"
+            },
+            {
+              "p": "另外，家庭本身成为学习珍惜他人态度的地方也很重要。"
+            },
+            {
+              "p": "如果父母一边要求孩子讲礼貌，一边自己对店员或家人态度傲慢，话语就没有说服力。相反，父母自然地表达感谢、做错时道歉的样子，本身就会成为孩子的学习。"
+            },
+            {
+              "p": "待人接物，不是只靠说明就能教会的。"
+            },
+            {
+              "p": "孩子每天在家里看到的大人的样子，就是孩子最初的社会教育。"
+            },
+            {
+              "p": "另外，当孩子在家庭之外犯错时，不要只是批评了事，而是一起思考对方是怎样的感受。这样的积累，会带来不流于形式的体贴。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是不只用能力来评价孩子的人生。"
+            },
+            {
+              "p": "成绩和升学去向很容易用数字表现出来。但能珍惜别人、被人信任，却不容易变成数字。"
+            },
+            {
+              "p": "即便如此，你也明白这些力量在人生中很重要。"
+            },
+            {
+              "p": "能倾听别人说话、遵守约定、自己做错时能道歉。这些小小的举止，随着成长会形成越来越大的差距。"
+            },
+            {
+              "p": "而且，人际关系关系到孩子人生的方方面面。"
+            },
+            {
+              "p": "无论在学校还是工作中，都不可能只靠一个人生活。在能力相同的情况下，让人想一起努力的人会得到更多的机会。"
+            },
+            {
+              "p": "你教给孩子的，不只是为了得到社会评价的礼貌。"
+            },
+            {
+              "p": "而是能为孩子打下一边建立良好人际关系、一边生活下去的基础。"
+            },
+            {
+              "p": "这就是导师类型的一大优势。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你可能会因为要求孩子体谅周围，而把孩子自己的心情放在了后面。"
+            },
+            {
+              "p": "能体贴别人是很了不起的力量。但总是让步并不等于善良。"
+            },
+            {
+              "p": "明明不愿意却迎合朋友，对老师的话有疑问也保持沉默，为了不伤害别人只有自己忍耐。如果这样的状态持续下去，就不是体贴，而是自我牺牲了。"
+            },
+            {
+              "p": "有时拒绝也是必要的。对不认同的事情表达意见，也不一定就会破坏人际关系。"
+            },
+            {
+              "p": "反而，能一边表达自己的心情、一边倾听对方，才是真正意义上在社会中生活的力量。"
+            },
+            {
+              "p": "你想教的，不是被周围认为“好用”的方法。"
+            },
+            {
+              "p": "而是在尊重对方的同时，也同样尊重自己的方法。"
+            },
+            {
+              "p": "孩子是不是正因为善良而在忍耐？时不时关注一下这一点，你的优势就会以更健康的形式传递下去。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是个性型｜制作人🐱。"
+            },
+            {
+              "p": "导师类型重视与周围的关系，擅长培养孩子在社会中与人愉快相处的能力。而制作人类型重视的是，即使和周围不同，也要守护孩子的特点。"
+            },
+            {
+              "p": "只有社会型的话，可能会因为太在意与周围的和谐而压抑孩子的个性。只有个性型的话，可能会因为太看重做自己而轻视与周围的关系。"
+            },
+            {
+              "p": "珍惜别人，但不过分迎合周围。"
+            },
+            {
+              "p": "同时拥有在社会中生活的力量，和做自己生活下去的力量。"
+            },
+            {
+              "p": "把两者结合起来，就更容易把孩子培养成既善良、又能表达自己意见的人。"
+            }
+          ],
+          [
+            {
+              "name": "耶稣基督"
+            },
+            {
+              "p": "耶稣基督的教导中，“爱邻人”和“宽恕他人”是广为人知的重大主题。"
+            },
+            {
+              "p": "不只用地位和能力来判断一个人的价值，也关注处于弱势的人。这种思想，与重视待人方式和体贴之心的导师类型相重合。"
+            },
+            {
+              "p": "不是单纯让人遵守规则，而是重视规则背后珍惜他人的态度。"
+            },
+            {
+              "p": "不只思考如何举止，还要思考为什么要珍惜他人。"
+            },
+            {
+              "p": "他是象征这种价值观的人物。"
+            },
+            {
+              "name": "灶门炭治郎（鬼灭之刃）"
+            },
+            {
+              "p": "炭治郎是一个不只强大、更以对他人的体贴令人印象深刻的人物。"
+            },
+            {
+              "p": "他不仅珍惜同伴，有时甚至会关注敌人的背景和痛苦。但他并不只是温柔，为了守护重要的东西，他也会坚持自己的意志。"
+            },
+            {
+              "p": "在体贴周围的同时，不放弃自己内心重要的东西。"
+            },
+            {
+              "p": "善待他人和拥有自己的信念是可以并存的。炭治郎的身影，生动地体现了导师类型想传达给孩子的与人相处之道。"
+            }
+          ],
+          [
+            {
+              "p": "作为耶稣基督的话，“要爱人如己”这一教导广为人知。"
+            },
+            {
+              "p": "这里重要的，不只是“要爱邻人”，还包含了“如己”这一部分。"
+            },
+            {
+              "p": "为了珍惜别人，并不需要一直牺牲自己。"
+            },
+            {
+              "p": "这也是希望身为导师类型的你，能传达给孩子的事。"
+            },
+            {
+              "p": "越是善良的孩子，越容易被周围依赖。他们可能会为了朋友而忍耐，或者为了不破坏气氛而把自己的意见咽下去。"
+            },
+            {
+              "p": "这种时候，请在认可孩子体谅了周围的同时，也关注一下孩子本人的心情。"
+            },
+            {
+              "p": "炭治郎说过这样的话：“人以心为原动力，所以心可以变得无比强大。”"
+            },
+            {
+              "p": "这是简洁地展现人心的成长和无限可能性的一幕。"
+            },
+            {
+              "p": "炭治郎也是一样，他对人怀有强烈的温柔，却不是会为了迎合周围而放弃自己决定守护之物的人。"
+            },
+            {
+              "p": "所以，你教给孩子的礼貌和体贴，也不能只是为了迎合周围，这一点很重要。"
+            },
+            {
+              "p": "站在对方的立场思考，但对不认同的事情要有自己的意见。帮助别人，但不要背负到让自己痛苦的程度。"
+            },
+            {
+              "p": "两者都能做到，善良才会成为孩子的力量。"
+            },
+            {
+              "p": "把孩子培养成能珍惜别人的人。同时，作为其中的一员，也能珍惜自己。"
+            },
+            {
+              "p": "你能教给孩子的，不只是礼貌。"
+            },
+            {
+              "p": "而是和他人一起生活下去的力量。"
+            },
+            {
+              "p": "有了这份力量，孩子就不只是迎合社会，而能成长为既被周围信任、又珍惜自己人生的人。"
+            }
+          ]
+        ]
+      },
+      "security": {
+        "intro": [
+          "守护者类型的你，是一位“把孩子的幸福放在第一位、无论何时都能站在孩子一边的温柔的人”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "比起孩子的成功，你更重视孩子本人是否幸福地生活着。"
+            },
+            {
+              "p": "进好学校、将来找到稳定的工作，你当然也认为很重要。但如果孩子要为此一直受苦，你能停下来想一想：那真的是幸福吗？"
+            },
+            {
+              "p": "比起和周围相比是否优秀，更重要的是孩子能否满意地度过每一天。你不只重视结果，连过程中的心情也同样珍惜。"
+            },
+            {
+              "p": "这背后，是想让家成为孩子能安心的地方的愿望。"
+            },
+            {
+              "p": "在外面的世界，孩子也会失败。也会有和朋友相处不好、失去自信的日子。如果连这种时候在家里也一直被评价，孩子就没有能让心休息的地方了。"
+            },
+            {
+              "p": "你不是因为孩子做到了什么才认可他，而是无论结果如何都想站在他一边。"
+            },
+            {
+              "p": "无论在外面发生了什么，回到家就有接纳自己的人。"
+            },
+            {
+              "p": "能给孩子这样的安心，就是守护者类型。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为能表达自己的心情、能向别人求助的人。"
+            },
+            {
+              "p": "如果知道失败时不会被严厉责备，即使是对自己不利的事，孩子也更容易告诉父母。困难时不会一个人扛着，而是能有“找人商量”这个选择。"
+            },
+            {
+              "p": "另外，在家里被接纳的经历，也会成为自我肯定感的基础。"
+            },
+            {
+              "p": "有了“自己有可以回去的地方”这种感觉，孩子也能安心地走出家门去挑战。为了离开父母独立，其实也需要与父母之间安心的关系。"
+            },
+            {
+              "p": "另一方面，正因为有舒适的环境，孩子也可能会想尽早离开痛苦的事情。"
+            },
+            {
+              "p": "遇到稍微困难的事情时，可能连坚持下去就能克服的事也会回避。"
+            },
+            {
+              "p": "重要的不是让孩子受苦，而是让孩子在拥有安心之所的同时，也能直面困难。"
+            }
+          ],
+          [
+            {
+              "p": "你需要注意的，是不要把守护孩子和消除困难等同起来。"
+            },
+            {
+              "p": "孩子痛苦的时候想帮他，这是很自然的事。特别是你很重视孩子的心情，所以对勉强孩子应该会很慎重。"
+            },
+            {
+              "p": "但在成长的过程中，有时也需要一些痛苦的时间。"
+            },
+            {
+              "p": "练习了也总是进步不大，和朋友意见冲突，学习了也没有得到想要的结果。这些经历是无法全部避免的。"
+            },
+            {
+              "p": "这时重要的，既不是因为看起来痛苦就马上让孩子放弃，也不是让孩子忍着继续下去。"
+            },
+            {
+              "p": "而是看清孩子到底对什么感到痛苦。"
+            },
+            {
+              "p": "是现在很苦但本人也想坚持？还是在消耗身心勉强坚持？根据这个区别，父母的介入方式也会改变。"
+            },
+            {
+              "p": "能让人安心的家，不是不会发生痛苦之事的地方，而是即使发生了痛苦的事也能回来的地方。"
+            },
+            {
+              "p": "有了这种感觉，你的温柔就不会阻止孩子挑战，而会成为支持孩子的力量。"
+            }
+          ],
+          [
+            {
+              "p": "你和孩子最容易发生冲突的，是孩子一边痛苦一边还想坚持某件事的时候。"
+            },
+            {
+              "p": "在父母看来明明很痛苦，孩子本人却说不想放弃。你会想告诉孩子“不用勉强自己”。"
+            },
+            {
+              "p": "但对孩子来说，痛苦和想放弃未必是一回事。"
+            },
+            {
+              "p": "也许是因为上不了场而不甘心，但仍然喜欢社团活动；也许学习很辛苦，但有想去的学校。"
+            },
+            {
+              "p": "如果父母总是提前准备好退路，孩子可能会觉得父母不相信自己能克服。"
+            },
+            {
+              "p": "反过来，在真正到了极限的时候，也没有必要以“为了成长”为由让孩子忍耐。"
+            },
+            {
+              "p": "你需要的，与其说是判断孩子的痛苦，不如说是和孩子一起确认他想怎么做。"
+            },
+            {
+              "p": "想坚持就支持，想离开就一起思考不是逃避的方法，还在犹豫就不急着下结论。"
+            },
+            {
+              "p": "守护，并不总是让孩子远离困难。"
+            },
+            {
+              "p": "当孩子想要克服的时候，相信他的力量、陪在他身边，也是守护者类型的重要角色。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是孩子能安心失败的家。"
+            },
+            {
+              "p": "不只在带着好结果回家的日子被表扬，在不顺利的日子也能像平常一样回家。这样的环境最能发挥你的优点。"
+            },
+            {
+              "p": "特别重要的是，不要让家过于成为被评价的地方。"
+            },
+            {
+              "p": "在学校有成绩，在运动中有胜负，在朋友关系中也会在意自己被怎么看。孩子在家庭之外已经承受了很多评价。"
+            },
+            {
+              "p": "正因如此，在家里，需要有不论是否做成了什么、都接纳孩子本身的时间。"
+            },
+            {
+              "p": "不过，能安心的地方和什么都不用做的地方是不同的。"
+            },
+            {
+              "p": "因为在家里充分让心休息了，所以能再次走出去；失败后回来了，就能再挑战一次。"
+            },
+            {
+              "p": "你营造的家，不是把孩子藏起来、躲避外面世界的地方。"
+            },
+            {
+              "p": "而是在外面尽情挑战、即使失败也能回来的地方。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是不会因为结果而改变与孩子的关系。"
+            },
+            {
+              "p": "孩子在成长中会失败很多次。有时达不到父母期待的结果，有时孩子自己也会失去自信。"
+            },
+            {
+              "p": "这种时候孩子需要的，不只是进一步评价自己的人。"
+            },
+            {
+              "p": "“即使是不顺利的自己，也有人接纳”这种感觉，会成为再次站起来的力量。"
+            },
+            {
+              "p": "在孩子脆弱的时候，你不会连他的价值也一起贬低。"
+            },
+            {
+              "p": "而且，拥有安心之所的孩子，不会过分害怕失败。"
+            },
+            {
+              "p": "通过营造随时都能回来的地方，反而让孩子能走得更远。"
+            },
+            {
+              "p": "这就是守护者类型的一大优势。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你可能会把孩子的痛苦过度当作自己的痛苦来感受。"
+            },
+            {
+              "p": "不想让孩子吃苦的心情越强烈，就越可能在孩子受伤之前就想保护他，连孩子自己能克服的困难也由父母替他清除了。"
+            },
+            {
+              "p": "但孩子并不是因为不失败才变得坚强的。"
+            },
+            {
+              "p": "从失败了也没关系的经历、以自己的方式熬过痛苦时期的经历中，孩子才会一点点获得自信。"
+            },
+            {
+              "p": "如果父母捡走所有石头，铺出一条好走的路，孩子在那条路上也许不会摔倒。但总有一天，当孩子开始一个人走路时，会被第一次见到的石头绊倒。"
+            },
+            {
+              "p": "所以，没有必要连小小的失败都去预防。"
+            },
+            {
+              "p": "如果孩子没有求助，就试着稍微守望一下。只要准备好困难时能回来的地方就好。"
+            },
+            {
+              "p": "守护孩子，和从孩子的人生中消除痛苦，是不同的。"
+            },
+            {
+              "p": "意识到这一点，你的温柔也会和孩子的坚强连接起来。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是挑战型｜啦啦队长🐒。"
+            },
+            {
+              "p": "守护者类型擅长营造让孩子安心的地方。而啦啦队长类型重视创造迈向新世界的契机。"
+            },
+            {
+              "p": "只有安心型的话，守护的意识会变强，可能减少孩子走向未知世界的机会。只有挑战型的话，可能会接连不断地给予经历，让孩子的心跟不上。"
+            },
+            {
+              "p": "因为有安心之所，所以能挑战。而因为去挑战，安心之所的意义也会变大。"
+            },
+            {
+              "p": "推孩子一把的人，和营造归属之处的人。"
+            },
+            {
+              "p": "把这两种思考方式结合起来，孩子就更容易在不过度勉强的情况下走向外面的世界。"
+            }
+          ],
+          [
+            {
+              "name": "释迦"
+            },
+            {
+              "p": "释迦以注视人为什么会痛苦、并不断思考如何从痛苦中解脱的人物而闻名。"
+            },
+            {
+              "p": "不是无视痛苦让人向前走，而是首先关注痛苦本身。这种态度，与珍视孩子心情的守护者类型相重合。"
+            },
+            {
+              "p": "不是从外部去评价对方，而是看那个人在感受什么。"
+            },
+            {
+              "p": "比起结果，首先看眼前的人。"
+            },
+            {
+              "p": "他是象征这种态度的人物。"
+            },
+            {
+              "name": "野原广志（蜡笔小新）"
+            },
+            {
+              "p": "野原广志并没有被塑造成一个完美的父亲。但他对家庭怀有强烈的爱，家人有什么事时，最后总会去保护他们。"
+            },
+            {
+              "p": "他也不是那种总对小新要求很高的成绩、想按照理想来培养他的父亲。"
+            },
+            {
+              "p": "平时自由自在，但在真正重要的时刻，会为了家人站到前面。"
+            },
+            {
+              "p": "与其说是把家变成完美的地方，不如说是让家成为无论发生什么最后都能回来的地方。这个身影，与守护者类型的安心感相重合。"
+            }
+          ],
+          [
+            {
+              "p": "作为释迦的话，“以自己为明灯，以自己为依靠”这一教导广为人知。"
+            },
+            {
+              "p": "父母不可能永远替孩子背负痛苦。"
+            },
+            {
+              "p": "孩子长大后，在父母不知道的地方烦恼的事情也会增多。可能在学校失败，也可能在人际关系中受伤。总有一天，孩子必须在父母无法马上赶去帮忙的地方，自己站起来。"
+            },
+            {
+              "p": "所以，身为守护者类型的你想要的，不只是一辈子守护孩子。"
+            },
+            {
+              "p": "而是有一天，把被守护的那份安心，变成孩子自己的力量。"
+            },
+            {
+              "p": "野原广志也不是会提前解决家人所有问题的父亲。他平时也会失败，小新也会自由行动。但在真正重要的时候，他会把家人护在身后。"
+            },
+            {
+              "p": "孩子需要的，也不是什么都不会发生的人生。"
+            },
+            {
+              "p": "失败了也能回家，受伤了也能倾诉，实在不行就能得到帮助。有了这样的确信，孩子就能走向有点可怕的世界。"
+            },
+            {
+              "p": "你的温柔，不是为了把孩子留在家里。"
+            },
+            {
+              "p": "而是为了安心地把孩子送出去。"
+            },
+            {
+              "p": "所以当孩子碰壁时，不必马上替他把墙推倒。"
+            },
+            {
+              "p": "先看看孩子会怎么做。需要的话站在他身边。仍然困难的时候一起思考。真正危险的时候毫不犹豫地守护他。"
+            },
+            {
+              "p": "有了这样的距离感，孩子就能同时拥有被守护的安心和自己克服困难的自信。"
+            },
+            {
+              "p": "“你一定没问题的。累了的话随时回来。”"
+            },
+            {
+              "p": "能怀着这样的心情送孩子出发，这就是身为守护者类型的你能做到的育儿。"
+            }
+          ]
+        ]
+      },
+      "effort": {
+        "intro": [
+          "教练类型的你，是一位“相信孩子的努力、能不急不躁地守望孩子脚步的心胸宽广的人”。",
+          "比起马上出结果，你更重视每天点滴的积累。你不只用才能来决定可能性，而是想培养孩子通过坚持一点点成长的力量。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "你认为，即使是巨大的成功，也是在每天点滴积累的尽头。"
+            },
+            {
+              "p": "比起一次考试考出好分数，更重要的是每天学一点；比起突然进步，更重要的是今天也练习昨天还做不到的事。你在这些不起眼的积累中感受到价值。"
+            },
+            {
+              "p": "所以，即使孩子不能马上出结果，你也不会轻易放弃他的可能性。"
+            },
+            {
+              "p": "你不只看眼前的结果，而能在长时间里看待孩子的成长。"
+            },
+            {
+              "p": "你重视的努力，不是拼到极限。"
+            },
+            {
+              "p": "比起在特别的日子里拼尽全力，更重要的是在普通的日子里也往前走一点点。你相信，比昨天更好的今天、比今天更好的明天，这样积累下来的东西，总有一天会成为很大的力量。"
+            },
+            {
+              "p": "即使今天的一步很小，坚持下去也有意义。"
+            },
+            {
+              "p": "能以这样长远的眼光相信孩子成长的，就是教练类型。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为即使不能马上出结果，也能踏踏实实坚持下去的人。"
+            },
+            {
+              "p": "他们不会因为不顺利就认为不适合，而容易理解为“只是还没做到而已”。"
+            },
+            {
+              "p": "所以，孩子不只能面对一开始就擅长的事，也能面对需要花时间掌握的事。"
+            },
+            {
+              "p": "另外，因为不只结果、连过程也被看到，孩子容易在努力本身中感受到价值。"
+            },
+            {
+              "p": "不是因为考了90分才被认可，而是比上次更坚持学习这件事也被看到。即使在比赛中没有表现出色，坚持每天练习这件事也被知道。"
+            },
+            {
+              "p": "这样的经历，会成为在没有结果的时期也能坚持下去的力量。"
+            },
+            {
+              "p": "另一方面，越是认真坚持的孩子，越可能对放弃抱有罪恶感。"
+            },
+            {
+              "p": "坚持很重要，但并不是所有事情都必须坚持到最后。培养孩子分辨“值得积累的东西”和“最好改变方向的东西”的能力，也很重要。"
+            }
+          ],
+          [
+            {
+              "p": "你需要注意的，是不要让坚持本身变成目的。"
+            },
+            {
+              "p": "努力确实会成为很大的力量。但一直做同样的事，并不一定会出结果。"
+            },
+            {
+              "p": "如果增加了学习时间成绩却没有变化，也许需要改变的不是时间而是方法。即使是长期坚持的兴趣班，如果孩子的目标变了，也可能选择别的道路。"
+            },
+            {
+              "p": "这种时候需要的，不只是更加努力。"
+            },
+            {
+              "p": "真的有坚持下去的意义吗？"
+            },
+            {
+              "p": "为了继续努力，也需要时不时停下来想一想。"
+            },
+            {
+              "p": "另外，孩子也会有怎么都努力不起来的时期。"
+            },
+            {
+              "p": "有累的日子，也有提不起劲的时期。之前积累的东西，并不会因为休息了几天就全部消失。"
+            },
+            {
+              "p": "有努力不了的时期，和这个孩子本身的价值，是两回事。"
+            },
+            {
+              "p": "正因为你重视长期坚持，请把休息也看作长期积累的一部分。"
+            }
+          ],
+          [
+            {
+              "p": "你和孩子最容易发生冲突的，是孩子中途说想放弃的时候。"
+            },
+            {
+              "p": "如果是刚开始还可以理解。但如果坚持了好几年的事情突然说要放弃，你会觉得之前积累的东西太可惜了。"
+            },
+            {
+              "p": "也许熬过这段辛苦的时期，又会变得开心；也许你不想让孩子在这里养成放弃的习惯。你一定会有这样的担心。"
+            },
+            {
+              "p": "但孩子想放弃的理由不止一个。"
+            },
+            {
+              "p": "可能是想逃避不顺利的事，也可能是充分经历之后兴趣转向了别的事情。也可能是环境本身已经不适合孩子了。"
+            },
+            {
+              "p": "重要的不是马上决定是继续还是放弃。"
+            },
+            {
+              "p": "到现在为止得到了什么？为什么现在想放弃？坚持下去的尽头，有没有孩子想要的东西？一起思考这些，就能让“放弃”这个选择也变得有意义。"
+            },
+            {
+              "p": "积累下来的东西，并不会在放弃的那一刻归零。"
+            },
+            {
+              "p": "培养孩子坚持的力量，同样也要培养孩子自己划清界限、迈向下一步的力量。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是能用长时间来看待小小成长的环境。"
+            },
+            {
+              "p": "比起细致地评价每天的成果，最好看看和一段时间之前相比有什么变化。"
+            },
+            {
+              "p": "半年前做不到的事，现在能理所当然地做到了；以前马上就会放弃的事，现在能多坚持一会儿了。这样的变化，每天看反而不容易察觉。"
+            },
+            {
+              "p": "所以，时不时拥有回顾的时间，和你的育儿方式很契合。"
+            },
+            {
+              "p": "另外，容易把努力变成习惯的环境也很重要。"
+            },
+            {
+              "p": "比起每次都定下很大的目标，不如营造容易坚持的形式；比起只在能努力的日子努力，不如建立即使在痛苦的日子也能做一点的机制，这样积累就会稳定下来。"
+            },
+            {
+              "p": "而当结果出来时，不只看最后的成果，也要关注到达那里的过程。"
+            },
+            {
+              "p": "比起创造特别的一天，不如积累普通的每一天。"
+            },
+            {
+              "p": "这样的家庭氛围，最能发挥教练类型的优点。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是能用长时间去相信孩子的成长。"
+            },
+            {
+              "p": "孩子的成长速度各不相同。"
+            },
+            {
+              "p": "有的孩子很快就出结果，有的孩子花时间一点点成长。和周围比较，也会有让人着急的时期。"
+            },
+            {
+              "p": "即使这种时候，你也不会只用现在的结果来断定孩子的可能性。"
+            },
+            {
+              "p": "正因为看着孩子每天坚持的样子，你才能察觉到孩子能做的事情在一点点增多。"
+            },
+            {
+              "p": "这对孩子来说是很大的安心。"
+            },
+            {
+              "p": "有人看着坚持的自己，在没有结果的时期也能继续前进。"
+            },
+            {
+              "p": "你很清楚，即使认真努力一天，也不会有很大的变化。你也很清楚，即便如此，只要相信自己、坚持下去，就一定会带来结果。"
+            },
+            {
+              "p": "连尚未变成结果的努力也能相信。"
+            },
+            {
+              "p": "这就是教练类型的一大优势。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你可能会过高评价坚持这件事本身。"
+            },
+            {
+              "p": "坚持得越久，就越难放弃。"
+            },
+            {
+              "p": "而在想着“难得坚持到现在”的时候，你可能会忽略孩子的心情和环境已经发生了变化。"
+            },
+            {
+              "p": "努力不只需要量，方向也很重要。"
+            },
+            {
+              "p": "即使每天坚持，如果方法不合适，也可能无法如愿成长。如果孩子真正想追求的东西变了，在与以前不同的地方开始努力，有时会更好。"
+            },
+            {
+              "p": "而最重要的是，不要让孩子变成责怪无法努力的自己的人。"
+            },
+            {
+              "p": "既然有能努力的日子，有休息的日子也没关系。只要再回来，积累就会继续下去。"
+            },
+            {
+              "p": "你想告诉孩子的，不是“绝对不能放弃”。"
+            },
+            {
+              "p": "而是希望孩子在找到值得坚持的东西时，有不轻易放手的力量。"
+            },
+            {
+              "p": "意识到这个区别，你重视努力的价值观就会更容易传达给孩子。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是挑战型｜啦啦队长🐒。"
+            },
+            {
+              "p": "教练类型擅长培养长期积累一件事的力量。而啦啦队长类型重视迈向新世界、发现可能性。"
+            },
+            {
+              "p": "只有努力型的话，可能会因为太珍惜现在坚持的东西，而减少遇见其他可能性的机会。只有挑战型的话，经历在不断扩展，却可能没有一件事能坚持到成为力量。"
+            },
+            {
+              "p": "先接触各种各样的世界。在其中找到真正喜欢的东西后，再花时间去培养它。"
+            },
+            {
+              "p": "挑战发现可能性，积累把可能性变成力量。"
+            },
+            {
+              "p": "两者结合，孩子就能在了解广阔世界的同时，打造出自己的武器。"
+            }
+          ],
+          [
+            {
+              "name": "德川家康"
+            },
+            {
+              "p": "德川家康是以花很长时间积蓄力量、最终夺取天下而闻名的人物。"
+            },
+            {
+              "p": "他并不是从年轻时起就一帆风顺。在织田信长和丰臣秀吉大幅扩张势力的时代，他也生存了下来，不急于求成，而是在漫长的时间里等待时机。"
+            },
+            {
+              "p": "不以眼前的一次胜利决定一切，而是在长期坚持中一点点改变局势。"
+            },
+            {
+              "p": "比起华丽的一击，更相信积累的身影，与教练类型的思考方式相重合。"
+            },
+            {
+              "name": "北信介（排球少年!!）"
+            },
+            {
+              "p": "北信介是作品中象征日常积累的人物。"
+            },
+            {
+              "p": "不是只在特别的日子努力，而是平时就把理所当然的事理所当然地坚持下去。他也不会因为能否出结果而改变这种态度。"
+            },
+            {
+              "p": "对北信介来说，每天的练习和生活，并不只是为了被评价而做的事。而是因为是自己该做的事，所以坚持下去。"
+            },
+            {
+              "p": "特别的结果，在并不特别的每一天的尽头。"
+            },
+            {
+              "p": "这种感觉，非常生动地体现了教练类型。"
+            }
+          ],
+          [
+            {
+              "p": "德川家康有一句广为人知的话：“人的一生，如负重远行，不可急躁。”"
+            },
+            {
+              "p": "不想马上到达目的地，而是在漫长的道路上一点点前进。这种思考方式，和身为教练类型的你很相似。"
+            },
+            {
+              "p": "育儿也是一样。"
+            },
+            {
+              "p": "今天教的事情，明天不一定就能学会。有怎么说都做不到的时期，也有努力了却没有结果的时期。"
+            },
+            {
+              "p": "即便如此，几年后回头看，会发现孩子不知不觉已经能做到了。"
+            },
+            {
+              "p": "北信介是一个非常适合“好好做，每天做”这句话的人物。"
+            },
+            {
+              "p": "他并不是为了证明特别的才能而积累每一天。"
+            },
+            {
+              "p": "刷牙、打扫、练习。把自己决定要做的事淡然地坚持下去。凭借这样的积累，他在稻荷崎这样的强队中拿到了队服。"
+            },
+            {
+              "p": "你能教给孩子的努力，也不是一直忍受痛苦。"
+            },
+            {
+              "p": "积累每一天，痛苦的日子也一点点前进。然后，第二天再继续积累"
+            },
+            {
+              "p": "是坚持这些小小行动的力量。"
+            },
+            {
+              "p": "所以，即使没有结果，也请不要比孩子更着急。"
+            },
+            {
+              "p": "即使现在还没有变成成果，今天积累的东西也会留下来。"
+            },
+            {
+              "p": "而且，有时换一条路也没关系。积累下来的经验并不会消失。"
+            },
+            {
+              "p": "今天做了，并不需要明天就出结果。"
+            },
+            {
+              "p": "在相信每天小小一步的过程中，不知不觉就走到了和最初完全不同的地方。"
+            },
+            {
+              "p": "能相信这漫长的成长并耐心等待，这就是身为教练类型的你能做到的育儿。"
+            }
+          ]
+        ]
+      },
+      "strategy": {
+        "intro": [
+          "军师类型的你，是一位“着眼于孩子的将来、能有计划地准备必要的教育和环境的有远见的人”。"
+        ],
+        "sections": [
+          [
+            {
+              "p": "你重视一边思考孩子的将来，一边规划通往那里的道路。"
+            },
+            {
+              "p": "你并不只是希望孩子上一所好学校。你会确定希望孩子将来成为拥有怎样能力的人，调查为此需要怎样的经历和教育，并思考现在能做的事。"
+            },
+            {
+              "p": "重要的不是每一个具体行动，而是行动背后的目的。"
+            },
+            {
+              "p": "所以，比起把流行的教育原样照搬，你会思考它对自己的孩子来说会带来什么。"
+            },
+            {
+              "p": "另外，你也擅长思考有限的时间和金钱应该用在哪里。不是什么都给，而是一边选择必要的东西，一边整顿环境。"
+            },
+            {
+              "p": "从未来倒推，思考现在。"
+            },
+            {
+              "p": "能以这样长远的视角支持孩子成长的，就是军师类型。"
+            }
+          ],
+          [
+            {
+              "p": "孩子容易成长为能思考目的并据此行动的人。"
+            },
+            {
+              "p": "他们不只是完成眼前的任务，而是容易养成思考“是为了什么而做”的习惯。"
+            },
+            {
+              "p": "即使是学习，目的也不只是考出好分数。如果之后有想去的学校、想学的东西，就更容易看清现在应该做什么。"
+            },
+            {
+              "p": "另外，在做选择时，孩子也能不只考虑眼前的乐趣，而是多想一步。"
+            },
+            {
+              "p": "另一方面，越是习惯有计划地思考，越可能回避看起来没有意义的事情。"
+            },
+            {
+              "p": "但孩子的成长中，也有事后回顾才明白意义的经历。"
+            },
+            {
+              "p": "从不知道有什么用的玩耍和绕路中，也可能产生意想不到的兴趣。"
+            },
+            {
+              "p": "计划的能力，和享受计划之外的能力。"
+            },
+            {
+              "p": "让孩子同时拥有这两者，军师类型的优点会更加突出。"
+            }
+          ],
+          [
+            {
+              "p": "你需要注意的，是不要让计划变成孩子的人生本身。"
+            },
+            {
+              "p": "正因为有思考未来的能力，你是容易看清现在该做什么的类型。"
+            },
+            {
+              "p": "所以当孩子绕远路时，你可能会想教他更有效率的方法。也可能觉得，比起孩子想选的路，这条路更能通向将来。"
+            },
+            {
+              "p": "但孩子的成长，不一定会按照最初的计划进行。"
+            },
+            {
+              "p": "兴趣可能会变，也可能发现比预想中更擅长的事情。孩子还可能被父母从未想象过的世界吸引。"
+            },
+            {
+              "p": "这种时候，比起一直坚守最初的计划，有时也需要重新审视目的本身。"
+            },
+            {
+              "p": "计划不是为了束缚孩子，而是为了拓宽可能性。"
+            },
+            {
+              "p": "好的计划，不是不需要改变的计划，而是能随着孩子的成长而改变的计划。"
+            },
+            {
+              "p": "正因为你有看见未来的能力，也请把计划外的成长纳入计划之中。"
+            }
+          ],
+          [
+            {
+              "p": "你和孩子最容易发生冲突的，是孩子做出看起来与将来无关的选择的时候。"
+            },
+            {
+              "p": "“既然要花时间，就希望他做有意义的事。”你会有觉得不合理的时间很可惜的时候。"
+            },
+            {
+              "p": "但孩子并不是总为了未来而活。"
+            },
+            {
+              "p": "孩子可能突然迷上某件事，也可能在父母看来不知道有什么用的事情上感受到很大的价值。"
+            },
+            {
+              "p": "如果只追求效率，孩子可能会觉得父母的计划比自己喜欢的事更优先。"
+            },
+            {
+              "p": "重要的是，不要让所有的时间都带有目的。"
+            },
+            {
+              "p": "长期需要的东西由父母来考虑。另一方面，也要留出孩子能自由使用的空白。"
+            },
+            {
+              "p": "在这片空白中，可能会产生父母无法规划的兴趣和才能。"
+            },
+            {
+              "p": "设计人生，和让人生按预定进行，是不同的。"
+            },
+            {
+              "p": "意识到这个区别，你的计划性就能在不剥夺孩子自由的情况下发挥作用。"
+            }
+          ],
+          [
+            {
+              "p": "适合你的，是能时不时确认目标和现状的环境。"
+            },
+            {
+              "p": "没有必要每天细致管理。用半年或一年这样稍长的单位，来看孩子是如何成长的，更适合你的思考方式。"
+            },
+            {
+              "p": "另外，能比较选项的环境也很重要。"
+            },
+            {
+              "p": "选择学校或兴趣班时，比起只看一个就做决定，不如了解多个选项。在此基础上，对照家庭所重视的东西，就更容易做出令人信服的判断。"
+            },
+            {
+              "p": "不过，没有必要让家一直成为达成目标的地方。"
+            },
+            {
+              "p": "留出脱离计划、自由度过的时间，孩子自己的兴趣会更容易显现出来。"
+            },
+            {
+              "p": "方向要考虑，但不把路线全部定死。"
+            },
+            {
+              "p": "在留有这种程度余地的环境里，军师类型看清未来的能力会得到最好的发挥。"
+            }
+          ],
+          [
+            {
+              "p": "你的一大优势，是不只考虑眼前，还能考虑到几年之后来营造环境。"
+            },
+            {
+              "p": "孩子会以现在想要的东西、现在开心的事情为中心来思考。这本身很自然，但让年幼的孩子预测将来需要的东西是很难的。"
+            },
+            {
+              "p": "能弥补这一点的就是你。"
+            },
+            {
+              "p": "等到事后才意识到需要，有时时间已经不够了。所以，能稍微看得远一点、思考现在能做的事，是很大的优势。"
+            },
+            {
+              "p": "而且，你也是容易意识到环境重要性的类型，而不只是努力。"
+            },
+            {
+              "p": "不只是让孩子努力，还能把在哪里学习、和谁一起度过、接触怎样的经历这些周围的环境也纳入考虑来思考成长。"
+            },
+            {
+              "p": "思考孩子还看不到的未来，提前开始必要的准备。"
+            },
+            {
+              "p": "当需要将来的选择时，能让孩子处于可以选择的状态。"
+            },
+            {
+              "p": "这就是军师类型的一大优势。"
+            }
+          ],
+          [
+            {
+              "p": "作为优势的另一面，你可能会把孩子的人生优化过头。"
+            },
+            {
+              "p": "从将来倒推，就能看清做什么最有效率。"
+            },
+            {
+              "p": "“如果学这个兴趣班，不如把时间用在别的事情上更好。”“与其在这里玩，不如学习更能通向将来。”这样的判断应该都有合理的理由。"
+            },
+            {
+              "p": "但孩子的人生中，也需要无法用效率衡量的时间。"
+            },
+            {
+              "p": "正因为绕了远路，才发现了不适合自己的东西，这样的事也是有的。"
+            },
+            {
+              "p": "而且，父母准备了太多正确的道路，孩子自己思考的机会就会变少。"
+            },
+            {
+              "p": "你制定计划本身并不是问题。重要的是，孩子本人也参与到那个计划中。"
+            },
+            {
+              "p": "随着孩子的成长，减少父母决定的范围，增加和孩子一起思考的部分。"
+            },
+            {
+              "p": "不是规划孩子的人生，而是让孩子能够规划自己的人生。"
+            },
+            {
+              "p": "能做到这一步，你的战略性就会成为孩子自己的力量。"
+            }
+          ],
+          [
+            {
+              "p": "和你特别合拍的，是个性型｜制作人🐱。"
+            },
+            {
+              "p": "军师类型擅长思考将来，整顿通往那里的教育和环境。而制作人类型重视发现孩子现在拥有的兴趣和个性。"
+            },
+            {
+              "p": "只有战略型的话，可能会从父母设想的理想倒推，忽略孩子现在的心情。只有个性型的话，在珍视孩子特点的同时，可能想不到如何把这份个性和将来连接起来。"
+            },
+            {
+              "p": "个性型发现孩子身上的东西，战略型思考能让它发挥作用的环境。"
+            },
+            {
+              "p": "发现才能，和打造让才能成长的道路。"
+            },
+            {
+              "p": "两者结合，就更容易把孩子的特点和将来的可能性连接起来。"
+            }
+          ],
+          [
+            {
+              "name": "诸葛孔明"
+            },
+            {
+              "p": "诸葛孔明作为辅佐刘备的军师，在日本也广为人知。"
+            },
+            {
+              "p": "他不只看眼前的战斗，而是一边考虑之后的局势一边制定战略。比起自己冲在前面用力量突破，他更以一边洞察形势一边开辟取胜之道而闻名。"
+            },
+            {
+              "p": "重要的不只是现在做什么，还有这个行动之后会带来什么。"
+            },
+            {
+              "p": "一边看着未来，一边思考现在该下的那一步棋。"
+            },
+            {
+              "p": "这种态度，正是军师类型的写照。"
+            },
+            {
+              "name": "阿尔敏·阿诺德（进击的巨人）"
+            },
+            {
+              "p": "阿尔敏也不是用力量解决问题的人物。"
+            },
+            {
+              "p": "他观察周围的状况，从有限的信息中思考接下来会发生什么。然后为了达成目的，规划出谁应该在哪里做什么。"
+            },
+            {
+              "p": "不只是对眼前的事情做出反应，而是思考好几步之后再行动。"
+            },
+            {
+              "p": "比起提高自己一个人的力量，他更思考如何使用手中的东西来接近目的。这样的身影，与军师类型的思考方式相重合。"
+            }
+          ],
+          [
+            {
+              "p": "诸葛孔明有一句话：“非学无以广才，非志无以成学。”（原意：不学习就无法增长才能，没有志向就无法成就学业。）"
+            },
+            {
+              "p": "如果没有为什么而学的志向，学习本身也难以成形。这句从目的出发思考的话，和身为军师类型的你很相似。"
+            },
+            {
+              "p": "让孩子做某件事时，也请不只思考做什么，还要思考为了什么而做。"
+            },
+            {
+              "p": "目的不是让孩子学习，而是希望孩子将来能用这份力量做出怎样的选择。"
+            },
+            {
+              "p": "只要目的清楚，方法就可以改变。"
+            },
+            {
+              "p": "而阿尔敏也不是无论发生什么都坚守一次想好的作战计划的人物。有了新的信息，他就重新思考局势，重新选择当时认为最好的方法。"
+            },
+            {
+              "p": "“什么都无法舍弃的人，什么都无法改变。”"
+            },
+            {
+              "p": "这是阿尔敏的话。"
+            },
+            {
+              "p": "从目的出发思考，思考需要什么，同时也能同样果断地舍弃不需要的东西。"
+            },
+            {
+              "p": "育儿也需要同样的灵活。"
+            },
+            {
+              "p": "小时候描绘的将来的样子，和长大后孩子的样子不同也没关系。孩子变了，计划也可以变。"
+            },
+            {
+              "p": "你的优势不是猜中未来。"
+            },
+            {
+              "p": "而是一边思考未来一边选择现在能做的事，当情况变化时能重新思考。"
+            },
+            {
+              "p": "所以，没有必要制定完美的人生规划。"
+            },
+            {
+              "p": "计划不是为了决定孩子的未来，而是为了增加未来的选择。"
+            },
+            {
+              "p": "能正确运用这份力量，这就是只有身为军师类型的你才能做到的育儿。"
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "ko": {
+    "questions": [
+      "아이의 가능성을 넓히기 위해서라면, 본인이 원하지 않는 경험도 필요하다고 생각한다.",
+      "좋아서 계속하는 일이라면 결과가 나오지 않는 시간에도 의미가 있다.",
+      "자신을 지키는 힘만큼 주위에 맞추는 힘도 중요하다.",
+      "진로는 본인 혼자서만 정하는 것이 아니라고 생각한다.",
+      "‘그만두고 싶다’고 생각한 뒤에 조금 더 계속해 보는 경험에도 가치가 있다.",
+      "약점을 없애기보다 강점을 무기로 삼았으면 좋겠다.",
+      "실패할 것을 알고 있어도 미리 알려 주지 않는 것이 필요하다.",
+      "편안한 곳보다 조금 발돋움해야 하는 곳을 선택했으면 좋겠다.",
+      "중요한 약속이 있는 날에 두 번 다시 없을 기회가 온다면, 약속을 어기는 선택도 인정하고 싶다.",
+      "무슨 도움이 될지 모르는 일에도 진심으로 임했으면 좋겠다.",
+      "아이가 지금에 만족하고 있더라도, 부모는 그다음을 생각해야 한다고 생각한다.",
+      "장래의 선택지는 일찍부터 늘려 두고 싶다.",
+      "싫어하는 일에서 도망치지 않고 마주하는 경험도 필요하다.",
+      "남들과 다른 것보다 남들과 잘 지내지 못하는 것이 더 걱정된다.",
+      "올바른 방법을 알고 있어도 말없이 지켜보는 편이 좋다.",
+      "노력하는 모습을 보고 있으면 결과까지 요구하지 않아도 된다고 생각하게 된다.",
+      "아이가 스스로 고른 학교라도 맞지 않는다고 생각되면 다시 생각해 보라고 권하고 싶다.",
+      "맞지 않는 일을 계속하는 시간도 헛된 것은 아니다.",
+      "아무것도 하지 않는 하루는 아깝다.",
+      "실패하지 않는 아이보다 실패에서 다시 일어설 수 있는 아이로 자랐으면 좋겠다.",
+      "스스로 정할 수 있는 일이라도 부모의 생각은 전하고 싶다.",
+      "푹 빠질 수 있는 것이 있다면 다른 일이 조금 소홀해져도 괜찮다.",
+      "계속 노력하는 것보다 환경을 바꾸는 것으로 열리는 길도 있다.",
+      "부모에게 반항하는 것도 성장의 하나라고 생각한다.",
+      "장래의 자유를 늘리기 위해서라면 지금의 자유가 조금 줄어들어도 괜찮다.",
+      "져도 괜찮다고 생각하는 일보다, 어떻게든 이기고 싶다고 생각하는 일을 경험했으면 좋겠다.",
+      "아이가 싫어하더라도 처음에 정한 곳까지는 계속했으면 좋겠다.",
+      "남과 다른 인생을 걷는 것보다 평범하게 행복하게 지내 주는 편이 안심이 된다.",
+      "아이가 곤란해하는 것을 알아차려도 본인이 도움을 청할 때까지는 기다리고 싶다.",
+      "공부를 쉬고 마음껏 노는 시기가 있어도 좋다.",
+      "재능을 키울 수 있다면 학교나 사는 곳을 바꾸는 것도 생각한다.",
+      "앞질러서 실패를 줄여 주는 것이 반드시 아이를 위한 일이라고는 생각하지 않는다.",
+      "아무런 결과가 나오지 않은 1년도 성장의 일부라고 생각할 수 있다.",
+      "자유롭게 고르게 하기 전에, 고를 수 있을 만큼의 힘을 길러 주고 싶다.",
+      "학교에서 겉돌더라도 본인이 신경 쓰지 않는다면 걱정하지 않는다.",
+      "지금이 행복하다면 무리하게 다음 성장을 요구하지 않아도 된다.",
+      "지금까지 계속해 왔다는 사실은 앞으로도 계속할 이유가 된다.",
+      "내가 잘 모르는 세계일수록 아이의 판단을 믿고 싶다.",
+      "주위에 순응하는 것보다 자기 의견을 가질 수 있는 것을 소중히 하고 싶다.",
+      "돌아가는 길인 줄 알면서도 본인이 고른 길이라면 맡기고 싶다.",
+      "재능이 보이지 않더라도 노력을 계속할 수 있다면 응원하고 싶다.",
+      "지금은 미움을 받더라도, 나중에 ‘그때 그러길 잘했다’고 생각할 수 있는 선택을 하고 싶다.",
+      "하나의 세계를 깊이 아는 것보다 많은 세계를 접했으면 좋겠다.",
+      "가정은 아이가 애쓰지 않아도 되는 곳이었으면 좋겠다.",
+      "진지하게 고른 길이라면 안정을 내려놓는 것도 응원하고 싶다.",
+      "일이 잘 풀리지 않을 때일수록 방법을 바꾸기 전에 조금 더 계속해 봤으면 좋겠다.",
+      "성장을 위해 괴로워할 바에는 지금의 행복을 선택했으면 좋겠다.",
+      "본인에게 맡기는 것만이 존중은 아니라고 생각한다.",
+      "스스로 고른 인생이라면 후회할 자유까지 본인의 것이라고 생각한다.",
+      "만약 지금의 기억을 가진 채로 어린 시절로 돌아갈 수 있다면, 당시의 내가 원했던 것보다 지금의 내가 ‘해 둘걸’ 하고 생각하는 것을 우선해서 다시 고르고 싶다."
+    ],
+    "results": {
+      "education": {
+        "intro": [
+          "설계자 유형인 당신은 ‘사랑이 깊고, 아이의 미래를 생각하는 힘이 뛰어난 헌신적인 분’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이의 지금뿐만 아니라 그 앞날까지 생각하는 부모입니다."
+            },
+            {
+              "p": "본인이 하고 싶어 하는지, 지금 즐거워 보이는지만으로 판단하지 않고, 그 경험이 장래에 무엇으로 이어질지, 어떤 가능성이 남을지까지 생각합니다. 학교나 학원, 입시나 진로에 대해서도 아이에게 전부 맡기지 않고, 스스로 정보를 모아 아이가 아직 모르는 선택지까지 찾으려 할 것입니다."
+            },
+            {
+              "p": "당신에게 교육이란 단순히 좋은 성적을 받게 하는 것이 아니라, 지식과 능력을 갖춤으로써 장래의 선택지를 늘리는 것에 가까울 것입니다. 그래서 아이가 지금은 내키지 않아 하더라도, 장래를 위해 필요하다고 생각하면 권하기도 합니다."
+            },
+            {
+              "p": "그 밑바탕에 있는 것은, 부모가 아무것도 하지 않아서 아이의 가능성을 좁히고 싶지 않다는 마음입니다. 아이보다 조금 앞을 내다보며 장래로 이어지는 환경을 갖추어 간다. 그것이 설계자 유형의 육아입니다."
+            }
+          ],
+          [
+            {
+              "p": "교육형 가정에서는 필요한 일을 제대로 해낼 수 있는 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "숙제나 마감, 서툰 것에 대한 노력 등을 통해, 하고 싶은 것만 하면 되는 것이 아니라 하고 싶은 것을 이루기 위해서는 필요한 준비도 있다는 것을 자연스럽게 배워 갑니다."
+            },
+            {
+              "p": "또한 부모가 적극적으로 정보를 모으기 때문에, 아이 혼자서는 알 수 없었던 학교나 학원, 직업이나 경험 등 스스로는 만날 수 없었던 세계를 접하기 쉬워집니다. 그중에서 자신도 몰랐던 잘하는 것을 발견하게 될 수도 있습니다."
+            },
+            {
+              "p": "한편으로 부모가 좋은 선택지를 준비해 줄수록, 아이 스스로 처음부터 고르는 경험은 줄어듭니다. 학교나 학원 등에서 부모에게 좋은 제안을 계속 받다 보면, 커서 ‘나는 정말로 무엇을 하고 싶은 걸까?’ 하고 헤매게 될 수도 있습니다."
+            },
+            {
+              "p": "그래서 교육형에게는 좋은 길을 준비하는 것만큼, 준비된 길에서 벗어나는 경험을 인정해 주는 것도 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "가장 조심해야 할 것은 ‘이 아이를 위해서’라는 마음이 아이 본인의 마음보다 커지지 않았는가 하는 점입니다."
+            },
+            {
+              "p": "교육형 부모가 무언가를 권하는 이유는 대부분 사랑입니다. 공부해 두면 선택지가 늘어난다, 기초 학력은 있는 편이 좋다, 쉽게 포기하지 않는 경험도 중요하다. 실제로 그 판단이 옳은 경우도 적지 않기 때문에, 스스로도 지나치다는 것을 알아차리기 어려운 면이 있습니다."
+            },
+            {
+              "p": "오래 다녀온 학원을 그만두고 싶다고 할 때, 부모가 좋다고 생각한 학교와 다른 학교를 골랐을 때, 장래에 도움이 될 것 같지 않은 일에 푹 빠졌을 때. 그런 순간에는 한 번, 이 선택으로 정말 곤란해지는 것인지, 아니면 내가 불안을 느끼고 있는 것인지를 나누어 생각해 보세요."
+            },
+            {
+              "p": "당신에게는 미래를 보는 힘이 있습니다. 그렇기에 가끔은 미래에서 눈을 떼고 지금의 아이를 바라보는 시간도 소중합니다."
+            }
+          ],
+          [
+            {
+              "p": "교육형이 특히 부딪히기 쉬운 것은 아이의 생각이 합리적이지 않다고 느낄 때입니다."
+            },
+            {
+              "p": "예를 들어 아이가 갑자기 학원을 그만두고 싶다고 했다고 합시다. 당신의 머릿속에는 지금 그만두면 성적은 어떻게 될지, 입시에는 늦지 않을지, 다른 학원이라면 계속할 수 있지 않을지 등 그다음의 일이 잔뜩 떠오릅니다."
+            },
+            {
+              "p": "한편 아이가 보고 있는 것은 ‘내일도 거기에 가기 싫다’는 지금일지도 모릅니다. 이런 경우는 어느 한쪽이 틀린 것이 아니라, 보고 있는 시간 축이 다른 것입니다."
+            },
+            {
+              "p": "같은 일은 진로에서도 일어납니다. 당신은 그 학교에 간 뒤를 생각하고, 아이는 그 학교에 가고 싶다고 생각합니다. 당신은 그 일로 생활할 수 있을지를 생각하고, 아이는 그 일을 해 보고 싶다고 생각합니다."
+            },
+            {
+              "p": "당신의 말이 옳을수록 아이는 반론하기 어려워집니다. 하지만 그것이 계속되면 아이는 점점 어차피 말해도 이해받지 못한다고 생각해서, 상담 자체를 그만두어 버릴지도 모릅니다."
+            },
+            {
+              "p": "그럴 때는 결론을 내리기 전에 “왜 그렇게 생각했어?” 하고 한 번 물어봐 주세요. 중요한 것은 아이의 생각을 이해하려는 자세입니다."
+            },
+            {
+              "p": "이해하기 전부터 반대하는 것과, 이해하고 나서 반대하는 것은 아이에게 크게 다릅니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 정보가 있으면서도 선택의 여백이 남아 있는 환경입니다."
+            },
+            {
+              "p": "학교나 학원, 배움을 고를 때도 하나의 답만 제시받기보다는, 여러 선택지가 있고 각각의 특징을 비교하면서 아이의 성격이나 흥미까지 생각할 수 있는 환경과 잘 맞을 것입니다."
+            },
+            {
+              "p": "반대로 충분한 정보가 없는 채로 아이가 하고 싶은 대로 하게 두면 된다는 말을 들으면 불안을 느낄지도 모릅니다. 당신은 아이를 관리하고 싶은 것이 아니라, 납득할 수 있는 자료를 가진 다음에 고르고 싶은 사람이기 때문입니다."
+            },
+            {
+              "p": "정보를 모으는 것은 당신의 큰 무기입니다. 그 위에 마지막에 조금만 여백을 남기고, 부모가 선택지를 넓히고 그 안에서, 혹은 그 바깥에서 아이 스스로 고른다. 그런 환경이라면 당신의 강점과 아이의 자립을 함께 이루기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 가장 큰 강점은 아이가 아직 보지 못하는 가능성까지 생각할 수 있다는 것입니다."
+            },
+            {
+              "p": "아이의 세계는 아무래도 자신이 알고 있는 범위에 한정됩니다. 모르는 학교를 지망할 수는 없고, 모르는 직업을 꿈꿀 수도 없습니다. 그럴 때 당신은 정보를 모아 선택지를 찾고, 아이에게 새로운 세계를 보여 줄 수 있습니다."
+            },
+            {
+              "p": "또 하나의 강점은 눈앞의 감정만으로 판단하지 않는다는 것입니다. 아이가 싫다고 했을 때도 무엇이 싫은지, 계속할 의미는 있는지, 다른 방법은 없는지 등 하나의 수단에 집착하지 않고 유연하게 생각할 수 있습니다."
+            },
+            {
+              "p": "지금의 아이에게는 보이지 않는 미래까지 생각할 수 있다는 것. 그것이 설계자인 당신의 강함입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 약점은 옳은 말을 할 수 있다는 것입니다."
+            },
+            {
+              "p": "공부하는 편이 장래의 선택지가 늘어난다, 기초 학력은 있는 편이 좋다, 도중에 포기하지 않는 경험도 중요하다. 대부분의 경우 그 생각에는 제대로 된 이유가 있고, 옳은 말인 경우가 거의 대부분입니다."
+            },
+            {
+              "p": "그렇기 때문에 아이와 의견이 다를 때, 내가 경험도 정보도 더 가지고 있다는 이유로 말을 듣게 하려 할 때가 있을 것입니다."
+            },
+            {
+              "p": "하지만 당신이 교육을 통해 키우고 싶은 것은 부모의 말을 정확하게 실행하는 아이가 아니라, 스스로 생각하고 스스로 고르고 자신의 인생을 걸어갈 수 있는 사람일 것입니다."
+            },
+            {
+              "p": "때로는 아이가 부모와 다른 생각을 갖는 것도 교육의 성과 중 하나라고 받아들이는 것이 중요합니다."
+            },
+            {
+              "p": "또 하나 주의할 점은 숫자로 확인할 수 있는 성장에 눈이 가기 쉽다는 것입니다. 성적이나 편차치, 자격증, 순위, 합격 등은 성장이 알기 쉬운 결과입니다. 반면 자기 의견을 말할 수 있게 되었다, 푹 빠질 수 있는 것을 찾았다 같은 성장에는 숫자가 없습니다."
+            },
+            {
+              "p": "설계도에 적을 수 없는 성장도 아이 안에서는 분명히 일어나고 있습니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 자립형｜상담자🐴입니다."
+            },
+            {
+              "p": "교육형이 아이의 선택지를 찾아 세계를 넓히고, 자립형이 그 위에서 본인은 어떻게 하고 싶은지를 생각하게 한다. 이 둘이 합쳐지면 부모가 방향을 정하는 것과 아이 스스로 인생을 결정하는 것을 함께 이루기 쉬워집니다."
+            },
+            {
+              "p": "또한 개성형｜프로듀서🐱의 시각을 받아들이는 것도 추천합니다."
+            },
+            {
+              "p": "교육형이 ‘이 아이는 무엇을 익히는 것이 좋을까’를 생각하는 데 비해, 개성형은 ‘이 아이는 무엇에 끌리고 있을까’를 생각합니다. 당신과는 다른 시각이기에 아이의 새로운 일면을 발견하는 계기가 됩니다."
+            }
+          ],
+          [
+            {
+              "name": "공자"
+            },
+            {
+              "p": "배우는 것을 무척 소중히 여긴 중국의 사상가입니다. 지식을 얻는 것뿐만 아니라 계속 배움으로써 인간 자체가 성장해 간다는 생각은 교육형의 가치관과 겹칩니다."
+            },
+            {
+              "name": "노진구 엄마(도라에몽)"
+            },
+            {
+              "p": "진구에게 숙제와 공부, 생활 습관에 대해 주의를 주는 모습이 인상적인 엄마입니다. 지금은 싫어하더라도 장래에 곤란하지 않도록 필요한 것은 익혀 주었으면 하는 모습은 교육형 부모의 마음을 떠올리기 쉬운 존재입니다."
+            }
+          ],
+          [
+            {
+              "p": "공자의 『논어』에는 “배우고 때때로 익히면 또한 기쁘지 아니한가”라는 유명한 말이 있습니다. 배운 것을 반복해서 자신의 것으로 만들어 간다. 그 쌓아 올림에 가치가 있다는 생각입니다."
+            },
+            {
+              "p": "당신도 아이가 장래에 자신의 힘으로 살아갈 수 있도록, 지금부터 많은 것을 배우고 익혀 주었으면 하고 생각하는 사람일 것입니다."
+            },
+            {
+              "p": "진구 엄마도 진구에게 숙제와 공부를 하라고 거듭 말합니다. 거기에서는 지금은 싫어도 장래에 곤란하지 않도록 필요한 것은 익혀 주었으면 하는 교육형다운 부모의 마음을 볼 수 있습니다."
+            },
+            {
+              "p": "다만 교육의 목표는 부모가 생각한 올바른 길을 걷게 하는 것이 아닙니다. 많은 것을 배우게 하고, 다양한 세계를 보여 주고, 필요한 힘을 기르게 한다. 그 끝에서 언젠가 아이 스스로 “나는 이쪽으로 가고 싶어”라고 말할 수 있게 되는 것도 중요합니다."
+            },
+            {
+              "p": "그 길이 당신이 상상했던 것과 다르더라도, 스스로 생각하고 고를 수 있을 만큼 자랐다고 받아들일 수 있다. 그것도 당신이 쌓아 온 교육의 큰 성과입니다."
+            },
+            {
+              "p": "당신은 아이의 미래를 생각하는 것을 잘하는 사람입니다. 그러니 마지막에는 당신이 그린 미래 예상도를 완성하는 것이 아니라, 그 뒷부분을 아이 스스로 그리게 해 주세요."
+            }
+          ]
+        ]
+      },
+      "individuality": {
+        "intro": [
+          "프로듀서 유형인 당신은 ‘그 아이다움을 소중히 여기고, 성장을 지켜볼 수 있는 포용력 있는 분’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이를 ‘이런 사람으로 키우고 싶다’는 완성형에 가깝게 만들기보다, 그 아이 안에 이미 있는 개성이나 재능을 찾아내 그것을 키워 주고 싶은 유형입니다."
+            },
+            {
+              "p": "공부, 운동, 성격, 장래의 직업까지 세상에는 ‘이렇게 하는 편이 좋다’는 기준이 많이 있습니다. 다만 그 기준에 아이를 맞추는 것이 반드시 가장 좋다고는 생각하지 않습니다."
+            },
+            {
+              "p": "서툰 것을 평균까지 끌어올리기 위해 많은 시간을 쓰기보다, 좋아하는 것이나 잘하는 것에 푹 빠져 그 아이만의 강점으로 키워 간다. 주위와 조금 다르더라도 본인이 즐거워 보이면 ‘그것도 이 아이다움’이라고 받아들일 수 있는 것이 당신입니다."
+            },
+            {
+              "p": "그렇기에 성적이나 순위만으로는 보이지 않는 변화도 알아차리기 쉬울 것입니다. 그림 그리는 것을 좋아한다, 사람을 웃기는 것을 잘한다, 모르는 것을 찾아보기 시작하면 멈추지 않는다. 그런 작은 특징에서도 가치를 느낄 수 있습니다."
+            },
+            {
+              "p": "당신이 육아에서 소중히 여기는 것은 ‘이 아이만이 될 수 있는 사람으로 키우는 것’일지도 모릅니다."
+            }
+          ],
+          [
+            {
+              "p": "자신의 좋고 싫음이나 잘하고 못하는 것을 표현하기 쉽고, 자기만의 가치관과 세계를 가진 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "주위와 다른 것을 필요 이상으로 두려워하지 않고, ‘모두가 하니까’가 아니라 ‘나는 어떻게 하고 싶은가’를 생각하기 쉬워집니다."
+            },
+            {
+              "p": "특히 무언가 좋아하는 것을 발견했을 때의 성장은 기대할 수 있습니다. 흥미를 가진 것에 깊이 파고들어, 그것이 본인의 큰 강점이 되기도 할 것입니다."
+            },
+            {
+              "p": "또한 자신의 개성을 부모에게 인정받은 경험은 자기긍정감으로 이어집니다. 밖에서 평가받지 못하더라도 가정에서는 자신을 이해받을 수 있다. 그 경험은 어른이 되어 자신과 다른 가치관을 가진 사람을 받아들이는 힘으로도 이어져 갑니다."
+            },
+            {
+              "p": "한편으로 좋아하는 것을 존중받으며 자라기 때문에, ‘좋아하지는 않지만 필요한 것’에 마주하는 힘은 의식해서 키워야 합니다."
+            },
+            {
+              "p": "강점을 키우는 것과 약점에서 도망치는 것은 같지 않습니다. 이것을 구별할 수 있으면 개성형의 장점이 더욱 살아납니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 가장 조심해야 할 것은 아이의 개성을 이해하고 있다고 생각하면서 오히려 그 개성을 고정해 버리는 것입니다."
+            },
+            {
+              "p": "“이 아이는 공부보다 운동” “남 앞에 나서는 타입이 아니야” “이과 같아” “이 아이에게는 이쪽이 더 맞아”"
+            },
+            {
+              "p": "모두 아이를 잘 보고 있기에 나오는 말이지만, 아이는 아직 성장하는 도중입니다. 열 살 때 서툴렀던 것이 열다섯 살에는 잘하는 것이 되어 있을지도 모릅니다."
+            },
+            {
+              "p": "처음에는 마지못해 시작한 것이 한 번 잘할 수 있게 된 순간부터 좋아지기도 합니다."
+            },
+            {
+              "p": "그러니 아이가 싫어할 때 ‘이 아이에게는 맞지 않아’라고 바로 판단하기보다, ‘싫어하는 것일까, 아직 잘 못해서 즐겁지 않은 것일까’를 한 번 생각해 보세요."
+            },
+            {
+              "p": "개성을 소중히 한다는 것은 지금의 개성을 고정하는 것이 아닙니다."
+            },
+            {
+              "p": "지금의 그 아이다움을 인정하면서, 아직 본인도 모르는 새로운 일면이 나올 여백을 남겨 두는 것이 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "당신은 기본적으로 아이의 의사를 존중하기 때문에, 정면으로 부딪히는 장면은 그다지 많지 않을지도 모릅니다."
+            },
+            {
+              "p": "다만 아이 스스로 ‘평범해지고 싶다’고 생각할 때는 뜻밖의 엇갈림이 생길 수 있습니다."
+            },
+            {
+              "p": "당신이 보기에 그 아이만이 가진 개성은 매력입니다. 하지만 아이에게는 주위와 다르다는 것이 괴로운 시기도 있습니다."
+            },
+            {
+              "p": "“너는 너대로 괜찮아”라는 말이, 본인에게는 ‘이 괴로움을 이해받지 못한다’고 느껴질 때도 있습니다."
+            },
+            {
+              "p": "또 반대로 아이가 서툰 것에서 도망치려 할 때도 판단이 어려워집니다. ‘이 아이에게는 맞지 않으니 그만둬도 된다’고 생각할지, ‘여기서는 한 번 노력하게 하는 편이 좋다’고 생각할지."
+            },
+            {
+              "p": "그럴 때는 부모가 답을 정하기 전에 “그만두고 싶은 건 싫어서야? 아니면 지금 잘 안 돼서야?” 하고 물어봐 주세요."
+            },
+            {
+              "p": "개성형에게 필요한 것은 무엇이든 자유롭게 하게 하는 것이 아닙니다. 그 아이다움을 지켜 줄 장면과, 그 아이의 가능성을 넓히기 위해 등을 밀어 줄 장면을 구별하는 것입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신과 잘 맞는 것은 아이가 여러 세계를 접하고, 그 안에서 자신이 좋아하는 것을 찾을 수 있는 환경입니다."
+            },
+            {
+              "p": "공부뿐만 아니라 운동, 예술, 음악, 만들기, 독서, 자연 체험, 사람과의 교류 등 가능한 한 다양한 종류의 경험을 접할 수 있는 환경이 어울립니다."
+            },
+            {
+              "p": "다만 ‘본인이 좋아하는 것을 고르면 된다’며 처음부터 모든 것을 아이에게 맡길 필요는 없습니다."
+            },
+            {
+              "p": "아이는 자신이 알고 있는 것 중에서만 고를 수 있기 때문입니다."
+            },
+            {
+              "p": "모르는 운동을 좋아하게 될 수는 없고, 존재를 모르는 직업을 장래의 꿈으로 삼을 수도 없습니다. 부모가 새로운 세계로 가는 입구를 만들어 주는 것에는 큰 의미가 있습니다."
+            },
+            {
+              "p": "부모는 가능성을 넓힌다. 무엇을 고를지는 아이에게 맡긴다."
+            },
+            {
+              "p": "이 역할 분담이 프로듀서 유형에게 잘 맞습니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 아이를 하나의 잣대로만 평가하지 않는다는 것입니다."
+            },
+            {
+              "p": "학교에서는 아무래도 시험 점수나 순위 등 알기 쉬운 숫자로 평가받는 장면이 늘어납니다. 하지만 사람의 매력이나 재능이 전부 숫자가 되는 것은 아닙니다."
+            },
+            {
+              "p": "말을 잘한다, 사람을 웃긴다, 집중하면 몇 시간이고 계속할 수 있다, 재미있는 발상을 한다, 사람의 마음에 민감하다. 그런 특징 안에 장래에 그 아이를 지탱할 큰 강점이 숨어 있을 때가 있습니다."
+            },
+            {
+              "p": "당신은 그것을 비교적 이른 단계에서 찾아 줄 수 있는 유형입니다."
+            },
+            {
+              "p": "더 큰 것은 찾아낼 뿐만 아니라 그것을 긍정해 줄 수 있다는 것입니다."
+            },
+            {
+              "p": "주위에서 평가받지 못하는 단계에서도 “그거 재미있다” “더 해 보지 그래?”라고 말해 주는 사람이 있다. 그 한마디로 단순한 취미였던 것이 그 아이의 인생을 지탱하는 것이 되기도 합니다."
+            },
+            {
+              "p": "당신은 아직 아무에게도 평가받지 못한 재능의 첫 번째 이해자가 될 수 있는 사람입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, ‘그 아이다움’이라는 말로 성장에 필요한 부담까지 피해 버릴 가능성이 있습니다."
+            },
+            {
+              "p": "수학을 못하니까 문과일지도 모른다, 운동에 흥미가 없으면 예술 타입이다, 남 앞에서 말하기를 싫어하니까 내성적인 아이라고 생각한다."
+            },
+            {
+              "p": "물론 정말로 그럴지도 모릅니다. 다만 그것이 개성인지, 단순히 아직 경험이 부족할 뿐인지는 바로 알 수 없습니다."
+            },
+            {
+              "p": "못하던 것이 연습으로 할 수 있게 된다. 그 경험 자체가 아이의 새로운 개성을 만들기도 합니다."
+            },
+            {
+              "p": "또 하나 주의할 것은, 잘하는 것만으로 인생의 모든 것을 헤쳐 나갈 수 있는 것은 아니라는 점입니다."
+            },
+            {
+              "p": "좋아하지 않아도 필요한 공부, 사람과의 약속, 기한을 지키는 것, 꾸준한 연습 등 개성을 발휘하기 위해서도 최소한의 토대는 필요합니다."
+            },
+            {
+              "p": "그러니 ‘이 아이다움을 지킨다’와 ‘이 아이라면 조금 더 할 수 있다고 기대한다’를 둘 다 가져 주세요."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 전략형｜책사🦊입니다."
+            },
+            {
+              "p": "당신이 ‘이 아이에게는 이런 장점이 있다’며 재능이나 개성을 찾아내는 데 비해, 책사 유형은 ‘그 장점을 키우려면 어떤 교육이나 환경이 필요한가’를 생각하는 것을 잘합니다."
+            },
+            {
+              "p": "프로듀서가 소재의 매력을 발견하고, 책사가 거기에서 길을 만든다. 꽤 잘 맞는 조합입니다."
+            },
+            {
+              "p": "또 하나 보완 관계가 되기 쉬운 것이 노력형｜감독🐯입니다."
+            },
+            {
+              "p": "당신이 발견한 ‘좋아하는 것’이나 ‘잘하는 것’도 재능으로 형태가 되기까지는 시간이 걸립니다. 감독 유형의 ‘작은 쌓아 올림을 믿는다’는 시각이 더해지면, 아이의 흥미를 일시적인 것이 아니라 진짜 강점으로 키워 가기 쉬워집니다."
+            },
+            {
+              "p": "당신 혼자서 모든 생각을 가질 필요는 없습니다. 자신과 다른 유형의 시각을 빌림으로써 개성형의 장점은 더욱 살아납니다."
+            }
+          ],
+          [
+            {
+              "name": "사카모토 료마"
+            },
+            {
+              "p": "사카모토 료마는 당시의 ‘번(藩)’이라는 틀에 얽매이지 않고, 서로 다른 입장의 사람들과 관계를 맺으며 새로운 길을 찾은 인물로 알려져 있습니다."
+            },
+            {
+              "p": "주위와 같다는 것 자체에 가치를 두지 않고, 기존의 틀 바깥에서도 가능성을 찾아 간다. 그 삶의 방식에는 개성형과 겹치는 부분이 있습니다."
+            },
+            {
+              "name": "살선생(암살교실)"
+            },
+            {
+              "p": "살선생은 학생 모두를 같은 기준으로 키우려 하지 않습니다."
+            },
+            {
+              "p": "공부를 잘하는 학생, 운동을 잘하는 학생, 사람과의 소통에 강점을 가진 학생. 각자를 잘 관찰하고, 본인의 성격과 능력에 맞추어 대하는 방식을 바꾸어 갑니다."
+            },
+            {
+              "p": "모두를 같은 사람으로 만드는 것이 아니라, 한 사람 한 사람 다른 완성형을 생각한다."
+            },
+            {
+              "p": "이 자세는 프로듀서 유형의 육아와 매우 닮아 있습니다."
+            }
+          ],
+          [
+            {
+              "p": "사카모토 료마에게는 “세상에 길이 하나뿐이라는 법은 없다. 길은 백 개도, 천 개도, 만 개도 있다”라는 말이 있습니다."
+            },
+            {
+              "p": "아이의 장래에도 하나의 정답이 있는 것은 아닙니다. 공부를 잘하면 이 길, 못하면 저 길로 정해져 있는 것도 아니고, 주위와 같은 길을 걸을 필요도 없습니다. 그 아이에게 맞는 길은 아직 부모에게도 본인에게도 보이지 않는 곳에 있을지도 모릅니다."
+            },
+            {
+              "p": "또한 살선생의 말에도 “재능의 종류는 하나가 아니다. 너의 재능에 맞는 암살을 찾아보거라”라는 말이 있습니다."
+            },
+            {
+              "p": "중요한 것은 누군가와 같은 것을 할 수 있게 되는 것만이 아니라, 그 아이가 가진 것을 찾아내 그것이 살아날 곳을 찾아 가는 것입니다. 당신에게는 주위의 기준만으로 아이를 평가하지 않고, 그 아이 자신을 봐 줄 수 있는 강함이 있습니다."
+            },
+            {
+              "p": "다만 지금 보이는 개성이 그 아이의 완성형이라고는 할 수 없습니다. 지금은 서툰 것이 몇 년 뒤에는 잘하는 것이 될지도 모르고, 흥미가 없던 세계를 접한 것으로 생각지도 못한 재능이 발견되기도 합니다."
+            },
+            {
+              "p": "그러니 지금의 그 아이다움을 소중히 하는 것만큼, 아직 본 적 없는 그 아이다움과도 만나게 해 주세요."
+            },
+            {
+              "p": "당신이 아이의 가능성을 정할 필요는 없습니다. 그 아이에게 맞는 길을 함께 찾아 가면 되는 것입니다."
+            }
+          ]
+        ]
+      },
+      "independence": {
+        "intro": [
+          "상담자 유형은 ‘아이의 생각을 존중하면서, 필요할 때는 손을 내밀어 줄 수 있는 든든한 존재’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이의 인생은 결국 아이 스스로 정하는 것이라고 생각하는 유형입니다."
+            },
+            {
+              "p": "부모가 더 오래 살아온 이상 경험도 지식도 많을 것입니다. 아이보다 좋은 판단을 할 수 있는 장면도 많이 있습니다. 그래도 부모가 올바른 답을 계속 골라 주는 것이 좋은 육아라고는 생각하지 않습니다."
+            },
+            {
+              "p": "소중히 여기는 것은 아이 스스로 생각하는 것입니다. 무언가에 망설일 때도 바로 답을 주는 것이 아니라, 본인의 생각을 들으면서 함께 답을 찾아 갑니다."
+            },
+            {
+              "p": "부모가 보기에는 돌아가는 길로 보이는 선택이라도, 되돌릴 수 있는 범위라면 경험하게 해 주고 싶다고 생각하기도 할 것입니다. 스스로 골라서 성공한 경험뿐만 아니라, 선택을 잘못해서 다시 생각한 경험도 언젠가 혼자서 살아가기 위한 힘이 됩니다."
+            },
+            {
+              "p": "물론 무엇이든 마음대로 하게 두는 것은 아닙니다. 모르는 것은 가르쳐 줍니다. 망설이고 있으면 상담에 응합니다. 정말 위험하면 부모로서 멈추게 합니다."
+            },
+            {
+              "p": "당신에게 육아란 아이의 인생을 계속 이끌어 가는 것이 아닙니다. 성장에 맞추어 조금씩 인생의 주도권을 본인에게 넘겨 가는 것이기도 합니다."
+            }
+          ],
+          [
+            {
+              "p": "자기 의견을 가지고, 스스로 일을 결정할 수 있는 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "어릴 때부터 자신이 어떻게 하고 싶은지를 생각할 기회가 있습니다. 그래서 부모가 좋아할 만한 답이나 주위에서 말하는 정답을 찾을 뿐만 아니라, 자기 나름의 판단 기준을 갖기 쉬워집니다."
+            },
+            {
+              "p": "이것은 진로 같은 큰 결정만으로 몸에 붙는 것이 아닙니다. 무엇을 입을지, 무엇을 배울지, 휴일을 어떻게 보낼지 등 일상에 있는 작은 선택도 스스로 의미를 찾아 인생을 움직이는 연습이 됩니다."
+            },
+            {
+              "p": "또한 스스로 정한 일이기에 그 결과를 받아들이는 힘도 자라기 쉬워집니다. 잘 풀리지 않았을 때도 누군가의 탓으로 돌리지 않고, 다음에는 어떻게 할지를 생각할 수 있게 될 것입니다."
+            },
+            {
+              "p": "한편으로 스스로 생각하는 데 익숙한 아이일수록 고민까지 혼자서 해결하려 할 때가 있습니다."
+            },
+            {
+              "p": "장래에 정말 필요한 것은 무엇이든 혼자서 할 수 있는 사람이 아닙니다. 스스로 생각한 위에, 필요할 때는 남의 힘도 빌릴 수 있는 사람입니다."
+            },
+            {
+              "p": "스스로 정하는 힘만큼, 상담하는 것이나 도움을 청하는 것도 가르쳐 주면 자립형의 장점이 더욱 살아납니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 가장 조심해야 할 것은 자립과 방임을 혼동하지 않는 것입니다."
+            },
+            {
+              "p": "본인에게 정하게 하는 것은 중요하지만, 그러려면 판단할 자료가 필요합니다. 존재를 모르는 것은 고를 수 없습니다. 각각의 차이를 모르면 어느 쪽이 자신에게 맞는지도 판단할 수 없습니다."
+            },
+            {
+              "p": "예를 들어 고등학교를 고른다고 해도, 아이는 학교 이름이나 편차치밖에 모를지도 모릅니다. 교풍이나 진학처, 동아리 활동이나 통학 시간 등을 부모가 함께 조사함으로써 비로소 자기 나름대로 비교할 수 있게 됩니다."
+            },
+            {
+              "p": "본인의 인생이니까 본인에게 맡기는 것이 아니라, 본인이 고를 수 있는 상태를 만든 다음에 맡기는 것이 중요합니다."
+            },
+            {
+              "p": "또한 아이가 상담해 왔을 때, 스스로 생각하라고 재촉하는 것만으로는 충분하지 않을 때도 있습니다. 답을 정해 주기를 바라는 것이 아니라, 생각을 정리할 상대를 원하고 있는 경우도 있기 때문입니다."
+            },
+            {
+              "p": "부모로서의 의견을 전하는 것도 자립을 방해하는 것이 아닙니다. 그 의견도 하나의 자료로 건네고, 마지막은 본인이 생각하면 되는 것입니다."
+            },
+            {
+              "p": "자립이란 혼자서 정하는 것이 아닙니다. 필요한 정보나 사람의 의견을 활용하면서, 마지막은 스스로 정하는 것입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신은 평소에 아이의 의사를 존중하기 때문에, 부모의 생각을 일방적으로 밀어붙여서 부딪히는 일은 비교적 적을지도 모릅니다."
+            },
+            {
+              "p": "오히려 어려운 것은 아이가 스스로 정하지 못할 때입니다."
+            },
+            {
+              "p": "예를 들어 진로를 앞두고 어느 쪽을 골라야 할지 몇 번이고 의견을 물어 올 때가 있습니다. 당신은 본인의 인생이니까 마지막은 스스로 정했으면 좋겠다고 생각할 것입니다."
+            },
+            {
+              "p": "하지만 아이가 원하는 것은 결정 그 자체가 아닐지도 모릅니다."
+            },
+            {
+              "p": "잘못된 선택을 하는 것이 무서운 것일지도 모릅니다. 부모가 어떻게 생각하는지 알고 싶을 뿐일지도 모릅니다. 자기 생각에 자신이 없어서 등을 밀어 주기를 바라는 경우도 있습니다."
+            },
+            {
+              "p": "그 상태에서 본인에게 답을 계속 되돌려 주면, 자유를 받은 것이 아니라 혼자서 정해야만 하는 것처럼 느낄 때가 있습니다."
+            },
+            {
+              "p": "그럴 때는 함께 선택지를 정리해 보세요. 부모라면 어떻게 생각할지도 전합니다. 그래도 마지막 한 표만은 본인에게 남겨 둔다."
+            },
+            {
+              "p": "당신이 목표로 하는 것은 부모에게 의지하지 않는 아이가 아닙니다."
+            },
+            {
+              "p": "부모에게도 상담할 수 있다. 하지만 마지막에는 스스로 정할 수 있다."
+            },
+            {
+              "p": "거기까지 지원하는 것이 상담자 유형에게 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 아이가 스스로 고르고, 그 결과까지 경험할 수 있는 환경입니다."
+            },
+            {
+              "p": "가정 안에서도 성장에 맞추어 본인이 정할 수 있는 범위를 조금씩 넓혀 가면 좋을 것입니다. 어릴 때는 몇 가지 선택지 중에서 고르게 합니다. 자라면서 선택지 자체를 본인이 생각하게 합니다."
+            },
+            {
+              "p": "그리고 되돌릴 수 있는 범위의 실패는 경험하게 해 주는 것도 중요합니다."
+            },
+            {
+              "p": "스스로 생각해서 정한 방법으로는 결과로 이어지지 않았다는 경험조차도 다음 선택을 더 잘하기 위한 재료가 됩니다."
+            },
+            {
+              "p": "한편으로 부모는 완전히 뒤로 물러날 필요는 없습니다."
+            },
+            {
+              "p": "필요한 정보를 모으는 힘은 부모 쪽이 높은 경우가 대부분입니다. 질 높은 지원을 받음으로써 아이는 더 성장할 수 있습니다. 때로는 다른 관점에서 의견을 전하는 것이나, 정말 위험하면 멈추게 해 주는 것도 중요합니다."
+            },
+            {
+              "p": "그런 상담자 유형인 당신에게는 필요한 정보를 얻기 쉽고, 다양한 생각을 접할 수 있는 환경이 맞을 것입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 아이를 자신과는 별개의 한 사람으로서 존중할 수 있다는 것입니다."
+            },
+            {
+              "p": "부모는 아이보다 먼저 많은 것을 경험하고 있습니다. 자신이 후회한 일이 있으면 같은 실패를 하지 않았으면 할 것입니다. 잘된 경험이 있으면 같은 길을 권하고 싶어지는 것도 자연스러운 일입니다."
+            },
+            {
+              "p": "하지만 당신은 거기서 한 번 멈춰 설 수 있습니다."
+            },
+            {
+              "p": "자신에게 좋았던 인생이 반드시 아이에게도 좋은 인생이라고는 할 수 없다는 것을 잘 이해하고 있습니다."
+            },
+            {
+              "p": "스스로 고르는 경험을 쌓을수록, 부모가 곁에 없는 장면에서도 스스로 판단할 수 있게 됩니다."
+            },
+            {
+              "p": "그런 당신이 키우려고 하는 것은 ‘자신의 인생을 스스로 고르고, 그 선택을 자신의 것으로 살아갈 수 있는 사람’일 것입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, 아이의 의사를 존중한 나머지 부모가 가진 지식이나 경험까지 거두어 버릴 때가 있습니다."
+            },
+            {
+              "p": "결정권을 아이에게 넘기는 것과, 부모가 의견을 말하지 않는 것은 다릅니다."
+            },
+            {
+              "p": "아이에게는 아직 모르는 세계가 있습니다. 진학처도 일도 인간관계도, 경험하지 않은 이상 판단할 수 없는 것이 있는 것이 당연합니다."
+            },
+            {
+              "p": "그럴 때 부모이기에 알고 있는 것을 가르쳐 주는 것은 간섭이 아닙니다. 당신의 경험도, 선생님의 의견도, 친구의 이야기도 모든 정보가 본인이 정하기 위한 재료가 됩니다."
+            },
+            {
+              "p": "또한 실패를 경험하게 하는 데에도 경계선이 필요합니다."
+            },
+            {
+              "p": "실패하면 배울 수 있는 것과, 부모가 막아야 할 것은 같지 않습니다. 되돌릴 수 있는 실패라면 본인에게 맡겨도 될 것입니다. 하지만 건강이나 안전, 큰돈 등 되돌리기 어려운 것에 대해서는 부모가 앞에 나설 필요가 있습니다."
+            },
+            {
+              "p": "맡기는 범위와 지키는 범위는 고정된 것이 아닙니다. 아이가 성장하면 그 경계선도 조금씩 바깥쪽으로 움직여 갑니다."
+            },
+            {
+              "p": "자유를 주는 것 이상으로, 자유를 쓸 수 있는 힘을 키우는 것."
+            },
+            {
+              "p": "그것을 의식하면 상담자 유형의 약점은 꽤 보완하기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 교육형｜설계자🦉입니다."
+            },
+            {
+              "p": "당신이 아이의 의사를 존중하여 최종적인 선택을 본인에게 맡기려 하는 데 비해, 설계자 유형은 장래를 생각해서 필요한 교육이나 선택지를 준비하는 것을 잘합니다."
+            },
+            {
+              "p": "자립형만으로는 본인이 알고 있는 세계 안에서만 고르게 해 버릴 때가 있습니다. 반대로 설계자만으로는 부모가 좋다고 생각하는 길을 너무 많이 준비해 버릴 때가 있습니다."
+            },
+            {
+              "p": "설계자가 세계를 넓히고, 자립형이 그 안에서 본인에게 고르게 한다."
+            },
+            {
+              "p": "이 둘을 조합함으로써 부모가 가능성을 넓히고, 아이가 인생을 고르는 관계를 만들기 쉬워집니다."
+            },
+            {
+              "p": "당신 자신이 설계자가 될 필요는 없습니다. 선택을 존중하기 전에, 충분한 선택지를 보여 주고 있는가. 가끔 그것을 생각하는 것만으로도 상담자 유형의 장점은 더욱 살아납니다."
+            }
+          ],
+          [
+            {
+              "name": "요시다 쇼인"
+            },
+            {
+              "p": "요시다 쇼인은 쇼카손주쿠에서 다카스기 신사쿠와 이토 히로부미 등 많은 젊은이를 키운 인물로 알려져 있습니다."
+            },
+            {
+              "p": "특징적인 것은 모두를 자신과 같은 생각으로 만들려 한 것이 아니라, 대화와 토론을 통해 제자들 스스로 생각하게 했다는 점입니다. 각자의 장점과 생각을 보면서 본인이 행동하는 것을 중시했습니다."
+            },
+            {
+              "p": "교사가 완성된 답을 건네고 그대로 학생을 움직이는 것이 아니다. 생각할 재료를 주고 마지막은 본인이 움직인다."
+            },
+            {
+              "p": "그 자세는 아이의 인생을 부모가 완성하는 것이 아니라, 언젠가 본인에게 넘겨주려는 상담자 유형과 겹칩니다."
+            },
+            {
+              "name": "샹크스(원피스)"
+            },
+            {
+              "p": "샹크스도 누군가의 인생을 세세하게 관리하는 유형이 아닙니다."
+            },
+            {
+              "p": "루피에게 자신의 삶의 방식과 바다의 세계를 보여 주면서, 그 후 어떤 인생을 고를지는 본인에게 맡기고 있습니다."
+            },
+            {
+              "p": "한편 정말로 지켜야 하는 장면에서는 자신의 팔을 잃으면서까지 루피를 지켰습니다."
+            },
+            {
+              "p": "평소에는 본인의 인생에 맡긴다. 하지만 정말 위험할 때는 자신이 앞에 나선다."
+            },
+            {
+              "p": "자유롭게 두는 것과 지키지 않는 것은 다르다."
+            },
+            {
+              "p": "이 거리감이 상담자 유형을 알기 쉽게 보여 줍니다."
+            }
+          ],
+          [
+            {
+              "p": "요시다 쇼인에게는 “제군, 미쳐라”라는 말이 잘 알려져 있습니다."
+            },
+            {
+              "p": "주위의 상식에 맞추는 것만 생각하는 것이 아니라, 스스로 생각하고 믿은 것을 향해 행동한다. 그 자세는 아이 스스로 인생을 고르게 하고 싶은 당신의 생각과도 겹칩니다."
+            },
+            {
+              "p": "언젠가 아이가 당신으로서는 이해할 수 없는 길을 고르는 날이 올지도 모릅니다."
+            },
+            {
+              "p": "부모로서 걱정이 되어 다른 길을 권하고 싶어질 때도 있을 것입니다."
+            },
+            {
+              "p": "하지만 아이가 자기 나름대로 생각하고 자신의 말로 이유를 설명할 수 있다면, 그것은 당신의 육아가 실패한 것이 아닙니다. 오히려 자신의 인생에 대해 스스로 생각할 수 있게 된 순간인 것입니다."
+            },
+            {
+              "p": "그리고 샹크스의 모습에서는 또 하나 중요한 것이 보입니다."
+            },
+            {
+              "p": "샹크스라고 하면 유명한 장면이 있습니다."
+            },
+            {
+              "p": "“이 모자를 너에게 맡기마. 언젠가 꼭 돌려주러 와라. 훌륭한 해적이 되어서 말이야.”"
+            },
+            {
+              "p": "샹크스는 루피에게 아무런 조언도 하지 않았습니다. 루피의 꿈을 아이의 말이라며 무시하지 않고, 자신들을 뛰어넘겠다고 말한 소년을 믿고 모자를 맡긴 것입니다."
+            },
+            {
+              "p": "이 모습은 상담자 유형인 당신과 겹칩니다."
+            },
+            {
+              "p": "부모가 인생의 답을 계속 쥐고 있는 것이 아니라, 언젠가 그 답을 생각하는 역할 자체를 아이에게 넘겨 간다."
+            },
+            {
+              "p": "인생의 주도권은 아이에게 넘긴다. 하지만 그 뒤에는 언제나 당신이 있다."
+            },
+            {
+              "p": "그 안심이 있기에 아이는 부모에게서 떨어져 자신의 인생을 고를 용기를 가질 수 있게 되는 것입니다."
+            }
+          ]
+        ]
+      },
+      "challenge": {
+        "intro": [
+          "응원단장 유형인 당신은 ‘아이의 호기심을 소중히 여기고, 가능성을 믿고 등을 밀어 줄 수 있는 분’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이의 가능성을 경험을 통해 넓혀 가고 싶다고 생각하는 유형입니다."
+            },
+            {
+              "p": "아이가 무언가에 흥미를 가졌을 때, 맞는지 안 맞는지를 먼저 판단하기보다 한 번 해 보게 하고 싶다고 생각합니다. 실제로 경험하지 않으면 알 수 없는 것이 많다는 것을 알고 있기 때문입니다."
+            },
+            {
+              "p": "해 본 결과 생각했던 만큼 즐겁지 않았더라도 헛된 일이라고는 생각하지 않습니다. 좋아하지 않는다는 것을 알게 된 것도 그 아이 자신을 알기 위한 소중한 경험이 됩니다."
+            },
+            {
+              "p": "반대로 별생각 없이 시작한 것이 뜻밖의 재능으로 이어지기도 합니다. 처음부터 가능성을 좁히지 않고 다양한 세계를 접하게 함으로써 아이의 선택지를 늘려 갑니다."
+            },
+            {
+              "p": "당신이 소중히 여기는 것은 실패하지 않는 것보다 도전할 수 있는 것입니다."
+            },
+            {
+              "p": "넘어지지 않도록 앞질러서 계속 지켜 주는 것이 아니라, 넘어져도 다시 일어설 수 있도록 지탱해 준다. 그런 관계 방식을 자연스럽게 고를 수 있는 것이 응원단장 유형입니다."
+            }
+          ],
+          [
+            {
+              "p": "새로운 것에 대한 거부감이 적고, 흥미를 가진 것에 한 걸음 내디딜 수 있는 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "처음 가는 곳이나 모르는 사람을 필요 이상으로 무서워하지 않고, 자신의 세계를 넓혀 가는 힘이 몸에 붙기 쉬워집니다. 실패해도 부모에게 부정당하지 않는다는 안심이 있기 때문에, 결과를 두려워해 움직이지 못하게 되는 일도 적어집니다."
+            },
+            {
+              "p": "또한 많은 경험을 통해 자신의 좋고 싫음이나 잘하고 못하는 것을 실감으로 이해할 수 있게 됩니다."
+            },
+            {
+              "p": "아이 자신도 처음부터 자신을 알고 있는 것은 아닙니다. 해 봤기 때문에 좋아한다는 것을 알게 되기도 하고, 동경했지만 실제로는 맞지 않았다는 것을 깨닫기도 합니다."
+            },
+            {
+              "p": "그런 경험을 거듭함으로써 머릿속만으로는 알 수 없었던 자기 자신을 알아 갑니다."
+            },
+            {
+              "p": "한편으로 계속해서 새로운 것을 접하는 환경에서는 한 가지를 깊이 계속하기 전에 다음으로 옮겨 가 버릴 때도 있습니다. 경험의 수뿐만 아니라, 그중에서 정말 좋아하는 것을 찾았을 때 깊이 파고드는 힘도 키워 주는 것이 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 조심해야 할 것은 경험하게 하는 것 자체가 목적이 되지 않도록 하는 것입니다."
+            },
+            {
+              "p": "아이의 세계를 넓히고 싶다는 마음이 강할수록 다양한 경험을 주고 싶어집니다. 하지만 경험은 많으면 많을수록 좋은 것이 아닙니다."
+            },
+            {
+              "p": "아이가 무엇을 느꼈는지까지 봐 주는 것이 중요합니다."
+            },
+            {
+              "p": "즐거웠는지. 한 번 더 하고 싶은지. 생각했던 것과 무엇이 달랐는지. 경험한 뒤에 조금 돌아보는 것만으로도 그 일은 본인 안에 남기 쉬워집니다."
+            },
+            {
+              "p": "또한 아이가 도전하고 싶지 않다고 했을 때도 바로 소극적이라고 생각할 필요는 없습니다. 단순히 흥미가 없는 경우도 있고, 아직 마음의 준비가 되지 않은 경우도 있습니다."
+            },
+            {
+              "p": "등을 밀어 주는 것은 응원단장 유형의 강점이지만, 때로는 본인이 움직이기 시작할 때까지 기다리는 것도 응원의 하나입니다."
+            },
+            {
+              "p": "경험을 주는 것뿐만 아니라, 그 경험이 본인 안에 남는 곳까지 함께한다."
+            },
+            {
+              "p": "거기까지 할 수 있으면 당신이 준 많은 경험이 아이의 성장으로 이어져 갑니다."
+            }
+          ],
+          [
+            {
+              "p": "당신과 아이가 부딪히기 쉬운 것은, 부모에게는 좋은 경험으로 보이는데 본인이 내켜 하지 않는 장면입니다."
+            },
+            {
+              "p": "모처럼의 기회니까 해 보면 되고, 맞지 않으면 그만두면 된다. 당신에게는 자연스러운 생각이라도 아이에게는 똑같이 느껴지지 않을 때가 있습니다."
+            },
+            {
+              "p": "특히 신중한 아이에게 처음 가는 환경에 들어가는 것에는 큰 에너지가 필요합니다."
+            },
+            {
+              "p": "그럴 때 도전하는 것만을 계속 요구하면, 부모가 보기에는 등을 밀어 주고 있는 것이라도 본인에게는 재촉당하는 것처럼 느껴질 때가 있습니다."
+            },
+            {
+              "p": "중요한 것은 도전하지 않는 이유를 보는 것입니다."
+            },
+            {
+              "p": "흥미가 없다면 무리하게 경험할 필요는 없을지도 모릅니다. 한편 흥미는 있는데 실패가 무서워서 움직이지 못하는 것이라면, 첫걸음만 함께 내디디는 것으로 달라지기도 합니다."
+            },
+            {
+              "p": "응원단장 유형이기에 언제나 앞으로 밀 필요는 없습니다."
+            },
+            {
+              "p": "도전하게 하는 것보다, 도전하고 싶어졌을 때 움직일 수 있는 아이로 키우는 것."
+            },
+            {
+              "p": "그 차이를 의식하면 당신의 행동력이 아이의 부담이 아니라 힘이 됩니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 아이가 다양한 세계를 접할 수 있는 환경입니다."
+            },
+            {
+              "p": "학교와 가정만으로 아이의 세계를 완결시키지 말고, 운동이나 문화 활동 등 다른 가치관을 만날 수 있는 장소를 가지면 좋을 것입니다. 거기서 무엇을 고르느냐보다, 먼저 자신이 몰랐던 세계가 있다는 것을 아는 것에 의미가 있습니다."
+            },
+            {
+              "p": "다만 일정을 꽉 채울 필요는 없습니다."
+            },
+            {
+              "p": "무언가에 강하게 끌렸을 때는 새로운 경험을 늘리기보다 한 가지에 시간을 쓰는 시기가 있어도 좋을 것입니다. 넓게 경험하는 시기와 하나를 깊이 파는 시기는 함께할 수 있습니다."
+            },
+            {
+              "p": "또한 실패를 지나치게 나쁜 것으로 다루지 않는 분위기도 당신의 생각과 잘 맞을 것입니다."
+            },
+            {
+              "p": "도전해서 잘되지 않았을 때 책망받는 것이 아니라, 거기서 다음을 생각할 수 있다. 그런 환경이 있으면 아이는 결과만 두려워하지 않고 행동할 수 있습니다."
+            },
+            {
+              "p": "당신이 준비해야 할 것은 언제나 성공할 수 있는 환경이 아닙니다."
+            },
+            {
+              "p": "안심하고 도전할 수 있는 환경입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 아이의 가능성을 현재의 모습만으로 판단하지 않는다는 것입니다."
+            },
+            {
+              "p": "지금 못한다고 해서 맞지 않는다, 재능이 없다는 식으로 이른 단계에서 가능성을 닫아 버리는 일이 없습니다."
+            },
+            {
+              "p": "아이의 능력은 경험에 따라 바뀝니다. 처음 접했을 때는 아무것도 못하더라도, 재미있다고 느낀 것이 계기가 되어 푹 빠지고, 어느새 큰 장기가 되기도 합니다."
+            },
+            {
+              "p": "그리고 재능 그 자체보다 중요한 것이 만날 기회입니다."
+            },
+            {
+              "p": "아무리 가능성을 가지고 있어도 그 세계를 모르면 본인은 흥미를 갖는 것조차 할 수 없습니다. 부모가 새로운 세계로 가는 입구를 만드는 것에는 큰 의미가 있습니다."
+            },
+            {
+              "p": "게다가 당신은 실패를 경험의 일부로 받아들이기 쉬운 유형입니다. 결과만으로 평가받지 않는다는 것을 알면 아이도 안심하고 한 걸음을 내디딜 수 있습니다."
+            },
+            {
+              "p": "아직 보이지 않는 가능성에 첫 계기를 줄 수 있다는 것."
+            },
+            {
+              "p": "그것이 응원단장 유형의 큰 강점입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, 다음 경험을 주는 것에 의식이 지나치게 향할 때가 있습니다."
+            },
+            {
+              "p": "새로운 경험에는 알기 쉬운 자극이 있습니다. 처음 가는 곳이나 새로운 배움은 부모가 보기에도 성장하고 있다는 느낌을 얻기 쉬운 것입니다."
+            },
+            {
+              "p": "한편 한 가지를 오래 계속하는 시간은 변화가 적어 보입니다."
+            },
+            {
+              "p": "하지만 정말 좋아하는 것을 찾은 뒤에는 새로운 경험을 늘리기보다 같은 것을 반복하는 시간이 필요해집니다. 처음에는 못하던 것이 조금씩 할 수 있게 되고, 그 끝에서 비로소 보이는 재미도 있습니다."
+            },
+            {
+              "p": "또한 아이가 도중에 그만두고 싶다고 했을 때도 무엇이든 바로 다음으로 넘어가면 되는 것은 아닙니다."
+            },
+            {
+              "p": "정말로 맞지 않는 것인지. 아니면 잘 풀리지 않는 시기를 맞이하고 있을 뿐인지. 그것을 함께 생각할 필요가 있습니다."
+            },
+            {
+              "p": "당신에게 필요한 것은 도전을 줄이는 것이 아닙니다."
+            },
+            {
+              "p": "많은 입구를 만든 뒤, 그 안에서 찾은 소중한 것을 깊게 할 시간도 지켜 주는 것입니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 노력형｜감독🐯입니다."
+            },
+            {
+              "p": "응원단장 유형은 아이에게 많은 계기를 주고, 새로운 세계로의 첫걸음을 만드는 것을 잘합니다. 한편 감독 유형은 그중에서 찾은 것을 오랜 시간을 들여 쌓아 올리는 것을 소중히 여깁니다."
+            },
+            {
+              "p": "도전형만으로는 경험이 계속 넓어지기만 해서, 한 가지가 힘이 되기 전에 다음으로 넘어가 버릴 때가 있습니다. 노력형만으로는 쌓아 올리는 것을 중시한 나머지, 새로운 세계로 내디딜 기회가 적어질 때가 있습니다."
+            },
+            {
+              "p": "먼저 해 본다. 그리고 좋아하는 것을 찾으면 계속해 본다."
+            },
+            {
+              "p": "도전이 가능성을 찾고, 쌓아 올림이 그 가능성을 힘으로 바꾼다."
+            },
+            {
+              "p": "이 둘을 조합함으로써 당신의 육아는 더욱 균형이 좋아집니다."
+            }
+          ],
+          [
+            {
+              "name": "도요토미 히데요시"
+            },
+            {
+              "p": "도요토미 히데요시는 낮은 신분에서 출발해 최종적으로 천하 통일을 이룬 인물로 알려져 있습니다."
+            },
+            {
+              "p": "처음부터 장래의 길이 준비되어 있던 인물이 아닙니다. 다양한 입장과 역할을 경험하면서 자신이 활약할 수 있는 곳을 넓혀 갔습니다."
+            },
+            {
+              "p": "지금 있는 곳만으로 자신의 가능성을 정하지 않고, 기회가 있으면 움직여 본다. 그 끝에서 새로운 길을 개척해 가는 모습은 경험을 통해 가능성을 넓히려는 응원단장 유형과 겹칩니다."
+            },
+            {
+              "name": "오박사(포켓몬스터)"
+            },
+            {
+              "p": "오박사도 아이를 처음부터 하나의 길로 이끄는 존재가 아닙니다."
+            },
+            {
+              "p": "첫 포켓몬을 건네고 도감을 맡김으로써 넓은 세계로 나아갈 계기를 만듭니다. 그 후에 무엇을 만나고 무엇을 경험해 갈지는 본인에게 달려 있습니다."
+            },
+            {
+              "p": "처음부터 답을 가르쳐 주는 것이 아니라, 세계로 내디디기 위한 입구를 만든다."
+            },
+            {
+              "p": "먼저 밖으로 나가 자신의 눈으로 세계를 봐 본다."
+            },
+            {
+              "p": "그런 경험을 아이에게 주려는 자세가 응원단장 유형을 알기 쉽게 보여 줍니다."
+            }
+          ],
+          [
+            {
+              "p": "도요토미 히데요시에게는 “진다고 생각하면 진다. 이긴다고 생각하면 이긴다. 반대가 되더라도 남에게는 이긴다고 말해 두어라”라는 말이 전해지고 있습니다."
+            },
+            {
+              "p": "할 수 있을지 없을지를 생각하다 움직이지 못하게 되기보다, 먼저 자신의 가능성을 믿고 움직여 본다. 그 자세는 아이의 등을 밀어 주는 당신의 생각과도 겹칩니다."
+            },
+            {
+              "p": "아이는 처음부터 자신이 무엇에 맞는지를 알고 있는 것이 아닙니다."
+            },
+            {
+              "p": "실제로 접해 보고서야 비로소 빠져드는 것이 있습니다. 용기 내어 참가한 곳에서 소중한 친구를 만나기도 할 것입니다. 반대로 동경해서 시작한 것이 자신에게는 맞지 않는다는 것을 알게 되기도 합니다."
+            },
+            {
+              "p": "어느 쪽이든 의미 있는 경험입니다."
+            },
+            {
+              "p": "그리고 오박사가 지우에게 준 것도 완성된 답이 아니었습니다. 첫 포켓몬과 미완성 도감을 건네고, 아직 모르는 세계로 떠나보냅니다."
+            },
+            {
+              "p": "첫 세 마리를 준비해 그중에서 스스로 고르게 하고, 여행을 떠나보낸다."
+            },
+            {
+              "p": "고른 포켓몬에 따라 얻는 경험이 다르고, 잡은 포켓몬의 수만큼 이야기가 있습니다."
+            },
+            {
+              "p": "그 기회를 아이에게 주는 모습은 그야말로 응원단장 유형이라고 할 수 있을 것입니다."
+            },
+            {
+              "p": "부모에게도 비슷한 역할이 있습니다."
+            },
+            {
+              "p": "아이의 장래를 처음부터 정할 수는 없습니다. 그래도 이런 세계도 있다며 입구를 보여 줄 수는 있습니다."
+            },
+            {
+              "p": "중요한 것은 그 끝까지 부모가 계속 달리게 하지 않는 것입니다."
+            },
+            {
+              "p": "당신은 아이의 등을 밀어 주는 것을 잘하기에, 때로는 멈춰 선 아이의 곁에 있는 것도 필요합니다. 많이 경험한 뒤에 한 가지에 푹 빠졌다면, 이번에는 새로운 자극을 늘리지 말고 그곳에 머무는 시간을 지켜 줘도 좋을 것입니다."
+            },
+            {
+              "p": "먼저 해 본다. 거기서 무엇을 느꼈는지를 소중히 한다. 그리고 좋아하는 것을 찾으면 이번에는 차분히 함께해 본다."
+            },
+            {
+              "p": "당신이 아이에게 줄 수 있는 가장 큰 것은 성공 그 자체가 아닙니다."
+            },
+            {
+              "p": "자신이 모르는 세계로 내디뎌도 괜찮다고 생각할 수 있는 용기입니다."
+            },
+            {
+              "p": "그 용기가 있으면 언젠가 부모가 등을 밀지 않아도 아이는 스스로 새로운 세계로 걸어갈 수 있게 됩니다."
+            }
+          ]
+        ]
+      },
+      "social": {
+        "intro": [
+          "지도자 유형인 당신은 ‘다정함과 예의를 소중히 여기고, 남을 배려하는 마음을 키울 수 있는 성실한 분’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이의 능력이나 실적뿐만 아니라, 어떤 사람으로 자라는지를 소중히 여기는 유형입니다."
+            },
+            {
+              "p": "공부나 운동에서 좋은 결과를 남기는 것도 중요하지만, 그것만으로 육아가 성공한다고는 생각하지 않습니다. 인사를 할 수 있는 것, 약속을 지키는 것, 상대의 입장을 생각할 수 있는 것도 인생에서는 큰 힘이 된다고 생각합니다."
+            },
+            {
+              "p": "아이는 언젠가 가정 밖으로 나가 많은 사람과 관계를 맺으며 살아갑니다. 그때 필요한 것은 지식이나 능력만이 아닙니다."
+            },
+            {
+              "p": "아무리 우수해도 남에게 신뢰받지 못하면 혼자서 할 수 있는 일에는 한계가 있습니다. 반대로 주위를 소중히 할 수 있는 사람에게는 어려울 때 도와주는 사람이나 함께 무언가를 이루어 줄 동료가 생깁니다."
+            },
+            {
+              "p": "그렇기에 당신은 일상의 작은 행동도 소중히 여깁니다."
+            },
+            {
+              "p": "특별한 교육을 한다기보다, 가정에서의 대화나 사람을 대하는 방식을 통해 사회와 어울리는 법을 가르쳐 간다. 능력뿐만 아니라 인간성도 키우는 것을 소중히 여기는 것이 지도자 유형입니다."
+            }
+          ],
+          [
+            {
+              "p": "주위를 배려할 수 있고, 남에게 신뢰받기 쉬운 아이로 자랄 것입니다."
+            },
+            {
+              "p": "자신의 기분만으로 행동하는 것이 아니라, 상대는 어떻게 느낄까를 생각하는 습관이 몸에 붙기 쉬워집니다. 그래서 친구 관계나 단체 생활에서도 주위와 협력하면서 행동할 수 있게 됩니다."
+            },
+            {
+              "p": "또한 예의나 약속을 소중히 하는 가정에서는 사회에서 필요한 기본적인 행동도 자연스럽게 몸에 붙습니다."
+            },
+            {
+              "p": "이런 힘은 시험 점수처럼 눈에 보이는 것이 아닙니다. 하지만 성장해서 사회에 나갔을 때, 남에게 신뢰받는 힘으로서 큰 의미를 갖습니다."
+            },
+            {
+              "p": "한편으로 주위를 소중히 할 수 있는 아이일수록 자신의 마음을 뒤로 미뤄 버릴 때가 있습니다."
+            },
+            {
+              "p": "싫은 일도 거절하지 못한다. 주위의 기대에 부응하려고 무리를 한다. 그런 상태가 되지 않도록, 남을 배려하는 것만큼 자신의 마음도 소중히 해도 된다고 전해 줄 필요가 있습니다."
+            },
+            {
+              "p": "다정한 사람이 되는 것과 자신을 계속 참는 것은 다릅니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 조심해야 할 것은 예의와 순종을 같은 것으로 여기지 않는 것입니다."
+            },
+            {
+              "p": "인사를 한다. 약속을 지킨다. 남에게 상처 주는 일을 하지 않는다. 사회에서 소중히 하고 싶은 것은 분명히 있습니다."
+            },
+            {
+              "p": "하지만 주위에 맞추는 것이 언제나 옳다고는 할 수 없습니다."
+            },
+            {
+              "p": "학교의 규칙에 의문을 가질 때도 있고, 어른의 의견에 납득할 수 없을 때도 있습니다. 친구와 다른 생각을 가질 때도 있을 것입니다."
+            },
+            {
+              "p": "그럴 때 주위에 맞추는 것만을 계속 요구하면, 아이는 올바른 행동을 생각하기보다 혼나지 않는 행동을 고르게 될 때가 있습니다."
+            },
+            {
+              "p": "당신이 정말로 키우고 싶은 것은 시키는 대로만 하는 아이가 아닐 것입니다."
+            },
+            {
+              "p": "왜 그것을 하면 안 되는지. 왜 상대를 소중히 할 필요가 있는지. 거기까지 생각할 수 있게 되면, 부모가 보고 있지 않은 곳에서도 스스로 판단할 수 있습니다."
+            },
+            {
+              "p": "사람을 소중히 하는 것과 자신의 생각을 가지는 것은 함께할 수 있습니다."
+            },
+            {
+              "p": "그 둘을 동시에 키우는 것이 지도자 유형에게는 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "당신과 아이가 부딪히기 쉬운 것은 본인의 행동이 주위에 어떻게 보일지 신경 쓰이는 장면입니다."
+            },
+            {
+              "p": "집에서는 허용할 수 있는 일이라도 학교나 남 앞에서 같은 일을 하면 주의를 주고 싶어질 것입니다. 부모로서는 아이가 장래에 곤란하지 않도록, 사회에서 통하는 행동을 익혔으면 한다고 생각하고 있습니다."
+            },
+            {
+              "p": "하지만 아이에게는 그 의도까지 전해지지 않을 때가 있습니다."
+            },
+            {
+              "p": "왜 주위를 신경 써야 하는지. 아무에게도 폐를 끼치지 않았는데 뭐가 나쁜지. 그런 의문을 가질 때도 있을 것입니다."
+            },
+            {
+              "p": "거기서 세상이 원래 그렇다며 끝내 버리면, 아이에게는 남의 눈을 신경 쓰고 있을 뿐인 것으로 보여 버립니다."
+            },
+            {
+              "p": "중요한 것은 무엇을 위한 규칙인지를 함께 생각하는 것입니다."
+            },
+            {
+              "p": "남에게 상처 주지 않기 위한 것인지. 단체에서 기분 좋게 지내기 위한 것인지. 아니면 옛날부터 이어져 왔을 뿐 이유가 희미해진 것인지."
+            },
+            {
+              "p": "당신 자신이 생각하는 모습을 보여 줌으로써, 아이도 사회의 규칙을 그저 받아들이는 것이 아니라 의미까지 생각할 수 있게 됩니다."
+            },
+            {
+              "p": "규칙을 지킬 수 있는 사람보다, 왜 지키는지를 생각할 수 있는 사람으로 키운다."
+            },
+            {
+              "p": "거기까지 전할 수 있으면 당신의 가치관도 아이에게 닿기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 가정 밖에도 사람과의 관계가 있는 환경입니다."
+            },
+            {
+              "p": "아이들끼리뿐만 아니라, 나이나 입장이 다른 사람과 접하는 경험이 있으면 좋을 것입니다. 가정 안에서만으로는 배우기 어려운 거리감이나 배려도 사람과의 관계 속에서 조금씩 몸에 붙습니다."
+            },
+            {
+              "p": "또한 가정 자체가 사람을 소중히 하는 자세를 배울 수 있는 곳이라는 것도 중요합니다."
+            },
+            {
+              "p": "부모가 아이에게 예의를 요구하면서 부모 자신이 점원이나 가족에게 거만한 태도를 취한다면 말에 설득력이 없습니다. 반대로 부모가 자연스럽게 감사를 전하거나 잘못했을 때 사과하는 모습은 그대로 아이의 배움이 됩니다."
+            },
+            {
+              "p": "사람을 대하는 법은 설명만으로 가르치는 것이 아닙니다."
+            },
+            {
+              "p": "가정에서 매일 보는 어른의 모습이 아이에게는 첫 사회 교육이 됩니다."
+            },
+            {
+              "p": "그리고 아이가 가정 밖에서 실수했을 때는 단순히 혼내는 것으로 끝내지 말고, 상대가 어떻게 느꼈을지를 함께 생각한다. 그런 쌓임이 형식만이 아닌 배려로 이어져 갑니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 아이의 인생을 능력만으로 평가하지 않는다는 것입니다."
+            },
+            {
+              "p": "성적이나 진학처는 알기 쉽게 숫자로 나타납니다. 하지만 사람을 소중히 할 수 있는 것이나 신뢰받는 것은 쉽게 숫자가 되지 않습니다."
+            },
+            {
+              "p": "그래도 당신은 그런 힘이 인생에서는 중요하다는 것을 이해하고 있습니다."
+            },
+            {
+              "p": "남의 이야기를 들을 수 있다. 약속한 것을 지킨다. 자신이 잘못했을 때는 사과할 수 있다. 그런 작은 행동은 성장할수록 큰 차이가 되어 갑니다."
+            },
+            {
+              "p": "그리고 인간관계는 아이 인생의 다양한 장면에 관련됩니다."
+            },
+            {
+              "p": "학교에서도 일에서도 혼자서만 살아갈 수는 없습니다. 능력이 같다면 함께 노력하고 싶다고 생각되는 사람이 더 많은 기회를 얻을 것입니다."
+            },
+            {
+              "p": "당신은 아이에게 사회에서 평가받기 위한 예의만을 가르치고 있는 것이 아닙니다."
+            },
+            {
+              "p": "사람과 좋은 관계를 쌓으며 살아가기 위한 토대를 만들 수 있다는 것."
+            },
+            {
+              "p": "그것이 지도자 유형의 큰 강점입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, 주위에 대한 배려를 요구한 나머지 아이 자신의 마음을 뒤로 미뤄 버릴 때가 있습니다."
+            },
+            {
+              "p": "남을 배려할 수 있는 것은 훌륭한 힘입니다. 하지만 언제나 양보하는 것이 다정함은 아닙니다."
+            },
+            {
+              "p": "사실은 싫은데 친구에게 맞춘다. 선생님의 말에 의문이 있어도 입을 다문다. 누군가에게 상처 주지 않기 위해 자신만 참는다. 이런 상태가 계속되면 배려가 아니라 자기희생이 되어 버립니다."
+            },
+            {
+              "p": "때로는 거절하는 것도 필요합니다. 납득할 수 없는 일에 의견을 말하는 것도 인간관계를 망치는 행위라고는 할 수 없습니다."
+            },
+            {
+              "p": "오히려 자신의 마음을 전하면서 상대의 이야기도 들을 수 있는 것이 진정한 의미에서 사회 속을 살아가는 힘이 됩니다."
+            },
+            {
+              "p": "당신이 가르치고 싶은 것은 주위에 편리한 사람으로 여겨지는 방법이 아닙니다."
+            },
+            {
+              "p": "상대를 존중하면서 자신도 똑같이 존중하는 방법입니다."
+            },
+            {
+              "p": "아이가 다정하기 때문에 참고 있지는 않은지. 그것을 가끔 봐 주면 당신의 강점이 더 건강한 형태로 전해집니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 개성형｜프로듀서🐱입니다."
+            },
+            {
+              "p": "지도자 유형은 주위와의 관계를 소중히 하고, 사회 속에서 사람과 기분 좋게 살아가는 힘을 키우는 것을 잘합니다. 한편 프로듀서 유형은 주위와 다르더라도 그 아이다움을 지키는 것을 소중히 여깁니다."
+            },
+            {
+              "p": "사회형만으로는 주위와의 조화를 의식한 나머지 본인의 개성을 억눌러 버릴 때가 있습니다. 개성형만으로는 본인다움을 우선한 나머지 주위와의 관계를 가볍게 생각해 버릴 때가 있습니다."
+            },
+            {
+              "p": "사람을 소중히 한다. 하지만 자신까지 주위에 지나치게 맞추지 않는다."
+            },
+            {
+              "p": "사회 속에서 살아가는 힘과 자기답게 살아가는 힘을 둘 다 가지는 것."
+            },
+            {
+              "p": "이 둘을 조합함으로써 다정함을 가지면서도 자기 의견을 말할 수 있는 사람으로 키우기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "name": "예수 그리스도"
+            },
+            {
+              "p": "예수 그리스도의 가르침에서는 이웃을 사랑하는 것과 남을 용서하는 것이 큰 주제로 알려져 있습니다."
+            },
+            {
+              "p": "사람의 가치를 입장이나 능력만으로 판단하지 않고, 약한 처지에 있는 사람에게도 눈을 돌린다. 그 생각은 사람과의 관계나 배려를 소중히 하는 지도자 유형과 겹칩니다."
+            },
+            {
+              "p": "단순히 규칙을 지키게 하는 것이 아니라, 그 안쪽에 있는 사람을 소중히 하는 자세를 중시한다."
+            },
+            {
+              "p": "어떻게 행동할지뿐만 아니라, 왜 사람을 소중히 하는지까지 생각한다."
+            },
+            {
+              "p": "그런 가치관을 상징하는 인물입니다."
+            },
+            {
+              "name": "카마도 탄지로(귀멸의 칼날)"
+            },
+            {
+              "p": "탄지로는 강함뿐만 아니라 남에 대한 배려가 인상적인 인물입니다."
+            },
+            {
+              "p": "동료를 소중히 하는 것은 물론, 적에게도 그 배경이나 괴로움에 눈을 돌릴 때가 있습니다. 한편으로 다정하기만 한 것이 아니라, 지켜야 할 것을 위해서는 자신의 의지를 관철합니다."
+            },
+            {
+              "p": "주위를 배려하면서도 자신 안에 있는 소중한 것은 놓지 않는다."
+            },
+            {
+              "p": "남에게 다정하게 대하는 것과 자신의 신념을 가지는 것은 함께할 수 있다. 탄지로의 모습은 지도자 유형이 아이에게 전하고 싶은 사람과의 관계 방식을 알기 쉽게 보여 줍니다."
+            }
+          ],
+          [
+            {
+              "p": "예수 그리스도의 말씀으로 “네 이웃을 네 몸과 같이 사랑하라”는 가르침이 잘 알려져 있습니다."
+            },
+            {
+              "p": "여기서 중요한 것은 이웃을 사랑하라는 것만이 아닙니다. ‘네 몸과 같이’라는 부분도 포함되어 있습니다."
+            },
+            {
+              "p": "사람을 소중히 하기 위해 자신을 계속 희생할 필요는 없습니다."
+            },
+            {
+              "p": "이것은 지도자 유형인 당신이 아이에게 전해 주었으면 하는 것이기도 합니다."
+            },
+            {
+              "p": "다정한 아이일수록 주위에게 의지받을 때가 있습니다. 친구를 위해 참거나, 그 자리의 분위기를 깨지 않기 위해 자기 의견을 삼키기도 할 것입니다."
+            },
+            {
+              "p": "그럴 때는 주위를 배려할 수 있었던 것을 인정하면서 본인의 마음에도 눈을 돌려 주세요."
+            },
+            {
+              "p": "탄지로는 “사람은 마음이 원동력이니까, 마음은 어디까지든 강해질 수 있다”는 말을 남겼습니다."
+            },
+            {
+              "p": "이것은 인간의 마음의 성장과 무한한 가능성을 간결하게 보여 주는 장면입니다."
+            },
+            {
+              "p": "탄지로도 남에 대한 다정함을 강하게 가지면서, 자신이 지키겠다고 정한 것까지 주위에 맞추어 놓아 버리는 인물이 아닙니다."
+            },
+            {
+              "p": "그렇기에 당신이 아이에게 가르치는 예의나 배려도 그저 주위에 맞추기 위한 것으로 만들지 않는 것이 중요합니다."
+            },
+            {
+              "p": "상대의 입장을 생각한다. 하지만 납득할 수 없는 일에는 자기 의견을 가진다. 누군가를 돕는다. 하지만 자신이 괴로워질 때까지 짊어지지 않는다."
+            },
+            {
+              "p": "그 둘을 모두 할 수 있을 때 비로소 다정함은 아이의 강함이 됩니다."
+            },
+            {
+              "p": "사람을 소중히 할 수 있는 아이로 키운다. 그리고 그 가운데 한 사람으로서 자기 자신도 소중히 할 수 있는 아이로 키운다."
+            },
+            {
+              "p": "당신이 가르칠 수 있는 것은 단순한 예의가 아닙니다."
+            },
+            {
+              "p": "사람과 함께 살아가기 위한 힘입니다."
+            },
+            {
+              "p": "그 힘이 있으면 아이는 사회에 맞추기만 하는 것이 아니라, 주위에게 신뢰받으면서 자신의 인생도 소중히 할 수 있는 사람으로 자라 갈 것입니다."
+            }
+          ]
+        ]
+      },
+      "security": {
+        "intro": [
+          "보호자 유형인 당신은 ‘아이의 행복을 무엇보다 소중히 여기고, 어떤 때라도 아이 편이 되어 줄 수 있는 다정한 분’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이의 성공 이상으로, 본인이 행복하게 살아가는 것을 소중히 여기는 유형입니다."
+            },
+            {
+              "p": "좋은 학교에 진학하는 것이나 장래에 안정된 일을 갖는 것도 물론 중요하다고 생각할 것입니다. 다만 그것을 위해 아이가 계속 괴로워한다면, 정말로 그것이 행복인지 멈춰 서서 생각할 수 있습니다."
+            },
+            {
+              "p": "주위와 비교해서 뛰어난지보다, 본인이 납득하며 매일을 보낼 수 있는지. 결과뿐만 아니라 그 과정에 있는 마음까지 소중히 여깁니다."
+            },
+            {
+              "p": "그 밑바탕에 있는 것은 아이에게 가정을 안심할 수 있는 곳으로 만들고 싶다는 마음입니다."
+            },
+            {
+              "p": "바깥 세계에서는 실패할 때도 있습니다. 친구와 잘 지내지 못하거나 자신감을 잃는 날도 있을 것입니다. 그럴 때까지 가정에서 계속 평가받는다면, 아이에게는 마음을 쉴 곳이 없어져 버립니다."
+            },
+            {
+              "p": "당신은 무언가를 해냈기 때문에 인정하는 것이 아니라, 결과와 관계없이 아이 편이 되어 주고 싶다고 생각합니다."
+            },
+            {
+              "p": "밖에서 무슨 일이 있어도, 집에 돌아오면 자신을 받아 주는 사람이 있다."
+            },
+            {
+              "p": "그런 안심을 아이에게 줄 수 있는 것이 보호자 유형입니다."
+            }
+          ],
+          [
+            {
+              "p": "자신의 마음을 표현하기 쉽고, 남에게 도움을 청할 수 있는 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "실패했을 때 심하게 책망받지 않는다는 것을 알고 있으면, 불리한 일까지 부모에게 이야기하기 쉬워집니다. 곤란할 때 혼자 끌어안지 않고 누군가에게 상담한다는 선택지를 가질 수 있게 됩니다."
+            },
+            {
+              "p": "또한 가정 안에서 자신을 받아들여진 경험은 자기긍정감의 토대가 되기도 합니다."
+            },
+            {
+              "p": "자신에게는 돌아갈 곳이 있다는 감각이 있으면, 가정 밖으로 나가는 것에도 안심하고 도전할 수 있습니다. 부모에게서 떨어져 가기 위해서도 사실은 부모와의 안정된 관계가 필요합니다."
+            },
+            {
+              "p": "한편으로 편안한 환경이 있기 때문에 괴로운 일에서 빨리 벗어나려 할 때도 있습니다."
+            },
+            {
+              "p": "조금 어려운 일에 부딪혔을 때, 계속하면 극복할 수 있는 것까지 피해 버릴지도 모릅니다."
+            },
+            {
+              "p": "중요한 것은 괴롭게 만드는 것이 아니라, 안심할 수 있는 곳을 가지면서 어려움에도 마주할 수 있게 하는 것입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 조심해야 할 것은 아이를 지키는 것과 어려움을 없애 주는 것을 같은 것으로 여기지 않는 것입니다."
+            },
+            {
+              "p": "아이가 괴로워하고 있으면 돕고 싶어지는 것은 자연스러운 일입니다. 특히 당신은 본인의 마음을 소중히 할 수 있기 때문에, 무리를 시키는 것에는 신중할 것입니다."
+            },
+            {
+              "p": "하지만 성장하는 과정에서는 조금 괴로운 시간이 필요할 때도 있습니다."
+            },
+            {
+              "p": "연습해도 좀처럼 늘지 않는다. 친구와 의견이 부딪힌다. 공부해도 생각했던 결과가 나오지 않는다. 이런 경험을 모두 피할 수는 없습니다."
+            },
+            {
+              "p": "거기서 중요한 것은 괴로워 보이니까 바로 그만두게 하는 것도, 참고 계속하게 하는 것도 아닙니다."
+            },
+            {
+              "p": "본인이 무엇에 괴로움을 느끼고 있는지를 보는 것입니다."
+            },
+            {
+              "p": "지금은 괴롭지만 본인에게도 계속하고 싶은 마음이 있는지. 아니면 몸과 마음을 깎아 가면서까지 계속하고 있는지. 그 차이에 따라 부모가 관여하는 방식도 달라집니다."
+            },
+            {
+              "p": "안심할 수 있는 가정이란 괴로운 일이 일어나지 않는 곳이 아닙니다. 괴로운 일이 있어도 돌아올 수 있는 곳입니다."
+            },
+            {
+              "p": "그 감각을 가질 수 있으면 당신의 다정함은 아이의 도전을 멈추게 하는 것이 아니라 지탱하는 힘이 됩니다."
+            }
+          ],
+          [
+            {
+              "p": "당신과 아이가 부딪히기 쉬운 것은 본인이 괴로워하면서도 무언가를 계속하려 하는 장면입니다."
+            },
+            {
+              "p": "부모가 보기에는 분명히 괴로워 보이는데, 본인은 그만두고 싶지 않다고 말할 때가 있습니다. 당신은 무리하지 않아도 된다고 전하고 싶어질 것입니다."
+            },
+            {
+              "p": "하지만 아이에게는 괴로운 것과 그만두고 싶은 것이 같다고는 할 수 없습니다."
+            },
+            {
+              "p": "시합에 나가지 못해서 분하지만 동아리는 좋아하는 것일지도 모릅니다. 공부는 힘들어도 가고 싶은 학교가 있는 것일지도 모릅니다."
+            },
+            {
+              "p": "거기서 부모가 먼저 도망갈 길을 계속 만들면, 본인에게는 자신이라면 극복할 수 있다고 믿어 주지 않는 것처럼 느껴질 때가 있습니다."
+            },
+            {
+              "p": "반대로 정말 한계인데 성장을 위해서라며 견디게 할 필요도 없습니다."
+            },
+            {
+              "p": "당신에게 필요한 것은 괴로움을 판단하는 것보다, 본인이 어떻게 하고 싶은지를 함께 확인하는 것입니다."
+            },
+            {
+              "p": "계속하고 싶다면 지탱한다. 떠나고 싶다면 도망이 아닌 방법을 함께 생각한다. 망설이고 있다면 결론을 서두르지 않는다."
+            },
+            {
+              "p": "지킨다는 것은 언제나 어려움에서 멀어지게 하는 것이 아닙니다."
+            },
+            {
+              "p": "본인이 극복하려 하고 있을 때는 그 힘을 믿고 곁에 있는 것도 보호자 유형의 중요한 역할입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 아이가 안심하고 실패할 수 있는 가정입니다."
+            },
+            {
+              "p": "좋은 결과를 가지고 돌아온 날만 칭찬받는 것이 아니라, 잘되지 않은 날에도 평소처럼 돌아올 수 있다. 그런 환경이 당신의 장점을 가장 살립니다."
+            },
+            {
+              "p": "특히 중요한 것은 가정을 평가받는 곳으로 지나치게 만들지 않는 것입니다."
+            },
+            {
+              "p": "학교에서는 성적이 매겨지고, 운동에서는 승패가 있고, 친구 관계에서도 자신이 어떻게 보이는지를 신경 쓸 때가 있습니다. 아이는 가정 밖에서 이미 많은 평가에 노출되어 있습니다."
+            },
+            {
+              "p": "그렇기에 집에서는 무언가를 달성했는지와는 별개로 본인의 존재를 받아들이는 시간이 필요합니다."
+            },
+            {
+              "p": "다만 안심할 수 있는 곳과 아무것도 하지 않아도 되는 곳은 다릅니다."
+            },
+            {
+              "p": "집에서 충분히 마음을 쉬었기에 다시 밖으로 나갈 수 있다. 실패하고 돌아왔다면 한 번 더 도전할 수 있다."
+            },
+            {
+              "p": "당신이 만드는 가정은 아이를 바깥 세계로부터 숨기는 곳이 아닙니다."
+            },
+            {
+              "p": "밖에서 마음껏 도전하고, 실패해도 돌아올 수 있는 곳입니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 결과에 따라 아이와의 관계를 바꾸지 않는다는 것입니다."
+            },
+            {
+              "p": "아이는 성장하면서 몇 번이고 실패합니다. 부모가 기대했던 결과를 내지 못할 때도 있고, 본인 스스로 자신감을 잃을 때도 있습니다."
+            },
+            {
+              "p": "그럴 때 필요한 것은 더 평가해 오는 사람만이 아닙니다."
+            },
+            {
+              "p": "잘되지 않은 자신이라도 받아 주는 사람이 있다는 감각은 다시 한번 일어서기 위한 힘이 됩니다."
+            },
+            {
+              "p": "당신은 아이가 약해져 있을 때 그 가치까지 함께 낮추는 일이 없습니다."
+            },
+            {
+              "p": "그리고 안심할 수 있는 곳을 가진 아이는 실패를 필요 이상으로 두려워하지 않게 됩니다."
+            },
+            {
+              "p": "언제든 돌아올 수 있는 곳을 만듦으로써 오히려 멀리까지 갈 수 있게 하는 것."
+            },
+            {
+              "p": "그것이 보호자 유형의 큰 강점입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, 아이의 괴로움을 자신의 일처럼 지나치게 느낄 때가 있습니다."
+            },
+            {
+              "p": "괴로운 일을 겪게 하고 싶지 않은 마음이 강해질수록, 본인이 상처받기 전에 지켜 주려 하고, 아이가 스스로 극복할 수 있는 어려움까지 부모가 없애 버릴 때가 있습니다."
+            },
+            {
+              "p": "하지만 아이는 실패하지 않음으로써 강해지는 것이 아닙니다."
+            },
+            {
+              "p": "실패해도 괜찮았던 경험이나, 괴로운 시기를 자기 나름대로 극복한 경험으로부터 조금씩 자신감을 갖게 됩니다."
+            },
+            {
+              "p": "부모가 모든 돌을 주워 걷기 쉬운 길을 만들면, 그 길에서는 넘어지지 않을지도 모릅니다. 다만 언젠가 혼자 걷기 시작했을 때, 처음 보는 돌에 걸려 넘어져 버립니다."
+            },
+            {
+              "p": "그러니 작은 실패까지 막을 필요는 없습니다."
+            },
+            {
+              "p": "본인이 도움을 청하지 않는다면 조금만 지켜봐 본다. 곤란할 때 돌아올 수 있는 곳만 준비해 둔다."
+            },
+            {
+              "p": "아이를 지키는 것과 아이의 인생에서 괴로움을 없애는 것은 다릅니다."
+            },
+            {
+              "p": "그것을 의식하면 당신의 다정함은 아이의 강함으로도 이어져 갑니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 도전형｜응원단장🐒입니다."
+            },
+            {
+              "p": "보호자 유형은 아이가 안심할 수 있는 곳을 만드는 것을 잘합니다. 한편 응원단장 유형은 새로운 세계로 내디딜 계기를 만드는 것을 소중히 여깁니다."
+            },
+            {
+              "p": "안심형만으로는 아이를 지키려는 의식이 강해져 미지의 세계로 나갈 기회를 줄여 버릴 때가 있습니다. 도전형만으로는 계속해서 경험을 줌으로써 아이의 마음이 따라가지 못할 때가 있습니다."
+            },
+            {
+              "p": "안심할 수 있는 곳이 있기에 도전할 수 있다. 그리고 도전하기에 안심할 수 있는 곳의 의미도 커진다."
+            },
+            {
+              "p": "등을 밀어 주는 사람과 돌아갈 곳을 만드는 사람."
+            },
+            {
+              "p": "이 두 가지 생각을 조합함으로써 아이는 지나치게 무리하지 않고 바깥 세계로 내디디기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "name": "석가"
+            },
+            {
+              "p": "석가는 사람이 왜 괴로워하는지를 바라보고, 그 괴로움에서 어떻게 벗어날지를 계속 생각한 인물로 알려져 있습니다."
+            },
+            {
+              "p": "괴로움을 무시하고 앞으로 나아가게 하는 것이 아니라, 먼저 그 괴로움 자체에 눈을 돌린다. 그 자세는 아이의 마음을 소중히 하는 보호자 유형과 겹칩니다."
+            },
+            {
+              "p": "상대를 바깥에서 평가하는 것이 아니라, 그 사람이 무엇을 느끼고 있는지를 본다."
+            },
+            {
+              "p": "결과보다 먼저 눈앞에 있는 사람을 보는 것."
+            },
+            {
+              "p": "그런 자세를 상징하는 인물입니다."
+            },
+            {
+              "name": "신형만(짱구는 못말려)"
+            },
+            {
+              "p": "신형만은 완벽한 아버지로 그려지는 것이 아닙니다. 그래도 가족에게 무슨 일이 생기면 마지막에는 지키려 하는, 가정에 대한 강한 애정을 가진 인물입니다."
+            },
+            {
+              "p": "짱구에게 늘 높은 성과를 요구하거나 이상대로 키우려 하는 아버지도 아닙니다."
+            },
+            {
+              "p": "평소에는 자유롭게 지내면서, 정말 중요한 장면에서는 가족을 위해 앞에 나선다."
+            },
+            {
+              "p": "가정을 완벽한 곳으로 만든다기보다, 무슨 일이 있어도 마지막에는 돌아올 수 있는 곳으로 만든다. 그 모습이 보호자 유형의 안심감과 겹칩니다."
+            }
+          ],
+          [
+            {
+              "p": "석가의 말씀으로 “스스로를 등불로 삼고, 스스로를 의지처로 삼아라”라는 가르침이 알려져 있습니다."
+            },
+            {
+              "p": "부모는 언제까지나 아이의 괴로움을 대신 짊어질 수 없습니다."
+            },
+            {
+              "p": "성장하면 부모가 모르는 곳에서 고민하는 일도 늘어납니다. 학교에서 실패할 때도 있고, 인간관계에 상처받을 때도 있을 것입니다. 언젠가는 부모가 바로 도우러 갈 수 없는 곳에서 스스로 일어서야만 하는 날이 옵니다."
+            },
+            {
+              "p": "그렇기에 보호자 유형인 당신이 목표로 하는 것은 아이를 평생 계속 지키는 것만이 아닙니다."
+            },
+            {
+              "p": "지켜져 온 안심을 언젠가 본인 자신의 강함으로 바꾸어 가는 것입니다."
+            },
+            {
+              "p": "신형만도 가족의 모든 문제를 앞질러서 해결하는 아버지가 아닙니다. 평소에는 실수도 하고, 짱구 자신도 자유롭게 움직입니다. 그래도 정말 중요할 때는 자신의 뒤에 가족을 두고 지키려 합니다."
+            },
+            {
+              "p": "아이에게 필요한 것도 아무 일도 일어나지 않는 인생이 아닙니다."
+            },
+            {
+              "p": "실패해도 돌아갈 수 있다. 상처받아도 이야기할 수 있다. 도저히 안 되면 도움을 받을 수 있다. 그런 확신이 있으면 아이는 조금 무서운 세계에도 나갈 수 있습니다."
+            },
+            {
+              "p": "당신의 다정함은 아이를 가정 안에 머물게 하기 위한 것이 아닙니다."
+            },
+            {
+              "p": "안심하고 밖으로 내보내기 위한 것입니다."
+            },
+            {
+              "p": "그러니 아이가 벽에 부딪혔을 때, 바로 그 벽을 부숴 주지 않아도 괜찮습니다."
+            },
+            {
+              "p": "먼저 본인이 어떻게 하는지 지켜본다. 필요하면 곁에 선다. 그래도 어려울 때는 함께 생각한다. 정말 위험하면 망설이지 않고 지킨다."
+            },
+            {
+              "p": "그 거리감이 있으면 아이는 지켜지고 있다는 안심과 스스로 극복했다는 자신감을 모두 가질 수 있습니다."
+            },
+            {
+              "p": "“너라면 분명 괜찮아. 지치면 언제든 돌아와.”"
+            },
+            {
+              "p": "그런 마음으로 떠나보낼 수 있는 것이 보호자 유형인 당신이 할 수 있는 육아입니다."
+            }
+          ]
+        ]
+      },
+      "effort": {
+        "intro": [
+          "감독 유형인 당신은 ‘아이의 노력을 믿고, 조급해하지 않고 그 발걸음을 지켜볼 수 있는 마음이 넓은 분’입니다.",
+          "바로 결과가 나오는 것보다 매일의 작은 쌓아 올림을 소중히 여깁니다. 재능만으로 가능성을 정하지 않고, 계속함으로써 조금씩 성장해 가는 힘을 키우고 싶다고 생각하는 유형입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 큰 성공도 매일의 작은 쌓아 올림 끝에 있다고 생각하는 유형입니다."
+            },
+            {
+              "p": "한 번의 시험에서 좋은 점수를 받는 것보다 매일 조금씩 공부하는 것. 갑자기 잘하게 되는 것보다 어제 못했던 것을 오늘도 연습하는 것. 그런 눈에 띄지 않는 쌓아 올림에 가치를 느낍니다."
+            },
+            {
+              "p": "그래서 아이가 바로 결과를 내지 못해도 쉽게 가능성을 포기하지 않습니다."
+            },
+            {
+              "p": "눈앞의 결과뿐만 아니라 긴 시간 속에서 성장을 볼 수 있습니다."
+            },
+            {
+              "p": "당신이 소중히 여기는 노력은 한계까지 애쓰는 것이 아닙니다."
+            },
+            {
+              "p": "특별한 날에 엄청나게 애쓰기보다 평범한 날에도 조금만 앞으로 나아간다. 어제보다 오늘, 오늘보다 내일로 쌓아 올린 것이 언젠가 큰 힘이 된다고 생각합니다."
+            },
+            {
+              "p": "오늘의 한 걸음이 작더라도 그것을 계속하는 것에 의미가 있다."
+            },
+            {
+              "p": "그런 긴 안목으로 아이의 성장을 믿을 수 있는 것이 감독 유형입니다."
+            }
+          ],
+          [
+            {
+              "p": "바로 결과가 나오지 않더라도 꾸준히 계속할 수 있는 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "잘 안 되니까 맞지 않는다고 생각하는 것이 아니라, 아직 할 수 있게 되지 않았을 뿐이라고 받아들이기 쉬워집니다."
+            },
+            {
+              "p": "그래서 처음부터 잘하는 것뿐만 아니라, 시간을 들여 익히는 것에도 마주할 수 있게 됩니다."
+            },
+            {
+              "p": "또한 결과뿐만 아니라 과정을 봐 줌으로써 노력 그 자체에 가치를 느끼기 쉬워집니다."
+            },
+            {
+              "p": "시험에서 90점을 받았기 때문에 인정받는 것이 아니라, 지난번보다 공부를 계속할 수 있었던 것도 봐 준다. 시합에서 활약하지 못해도 매일의 연습을 계속했다는 것을 알아준다."
+            },
+            {
+              "p": "그런 경험은 결과가 나오지 않는 시기에도 계속하는 힘으로 이어집니다."
+            },
+            {
+              "p": "한편으로 성실하게 계속할 수 있는 아이일수록 그만두는 것에 죄책감을 가질 때가 있습니다."
+            },
+            {
+              "p": "계속하는 것은 중요하지만, 모든 것을 끝까지 계속해야만 하는 것은 아닙니다. 쌓아 올릴 가치가 있는 것과 방향을 바꾸는 편이 좋은 것을 구별하는 힘도 함께 키워 주는 것이 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 조심해야 할 것은 계속하는 것 자체가 목적이 되지 않는 것입니다."
+            },
+            {
+              "p": "노력은 분명히 큰 힘이 됩니다. 하지만 같은 것을 계속하고 있으면 반드시 결과가 나오는 것은 아닙니다."
+            },
+            {
+              "p": "공부 시간을 늘렸는데 성적이 바뀌지 않는다면 시간이 아니라 방법을 바꿀 필요가 있을지도 모릅니다. 오래 계속해 온 배움이라도 본인의 목표가 바뀌면 다른 길을 고를 때가 있습니다."
+            },
+            {
+              "p": "그럴 때 필요한 것은 더 애쓰는 것만이 아닙니다."
+            },
+            {
+              "p": "정말로 계속할 의미가 있는지."
+            },
+            {
+              "p": "노력을 계속하기 위해서도 가끔 멈춰 서서 생각하는 것이 필요합니다."
+            },
+            {
+              "p": "또한 아이에게는 아무리 해도 애쓸 수 없는 시기가 있습니다."
+            },
+            {
+              "p": "지친 날도 있고, 마음이 내키지 않는 시기도 있습니다. 그동안 쌓아 온 것이 며칠 쉬었다고 해서 모두 사라지는 것은 아닙니다."
+            },
+            {
+              "p": "노력할 수 없는 시기가 있다는 것과 그 아이 자신의 가치는 별개입니다."
+            },
+            {
+              "p": "오래 계속하는 것을 소중히 여기는 당신이기에, 쉬는 것도 긴 쌓아 올림의 일부로 봐 주세요."
+            }
+          ],
+          [
+            {
+              "p": "당신과 아이가 부딪히기 쉬운 것은 본인이 도중에 그만두고 싶다고 말을 꺼냈을 때입니다."
+            },
+            {
+              "p": "막 시작했을 때라면 그래도 이해가 됩니다. 하지만 몇 년이나 계속해 온 것을 갑자기 그만두고 싶다는 말을 들으면, 여기까지 쌓아 온 것이 아깝다고 느낄 것입니다."
+            },
+            {
+              "p": "조금 괴로운 시기를 넘기면 다시 즐거워질지도 모르고, 여기서 그만두는 버릇이 들지 않았으면 좋겠다고 생각할지도 모릅니다. 그런 걱정이 있을 것입니다."
+            },
+            {
+              "p": "다만 아이가 그만두고 싶은 이유는 하나가 아닙니다."
+            },
+            {
+              "p": "잘 안 되는 것에서 도망치고 싶은 경우도 있고, 충분히 경험한 위에서 다른 것에 흥미가 옮겨 간 경우도 있습니다. 환경 자체가 본인에게 맞지 않게 되어 있을 때도 있을 것입니다."
+            },
+            {
+              "p": "중요한 것은 계속할지 그만둘지를 바로 정하는 것이 아닙니다."
+            },
+            {
+              "p": "지금까지 무엇을 얻었는지. 왜 지금 그만두고 싶은지. 계속한 끝에 본인이 바라는 것이 있는지. 이것들을 함께 생각함으로써 그만둔다는 선택에도 의미를 갖게 할 수 있습니다."
+            },
+            {
+              "p": "쌓아 온 것은 그만둔 순간에 제로가 되는 것이 아닙니다."
+            },
+            {
+              "p": "계속하는 힘만큼, 스스로 매듭을 짓고 다음으로 나아가는 힘도 키워 주는 것이 중요합니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 작은 성장을 긴 시간으로 볼 수 있는 환경입니다."
+            },
+            {
+              "p": "매일의 성과를 세세하게 평가하기보다, 조금 전과 비교해서 무엇이 바뀌었는지를 보면 좋을 것입니다."
+            },
+            {
+              "p": "반년 전에는 못하던 것을 지금은 당연하게 할 수 있다. 예전 같으면 바로 포기하던 것을 조금 더 오래 계속할 수 있게 되었다. 그런 변화는 매일 보고 있으면 알아차리기 어려운 것입니다."
+            },
+            {
+              "p": "그렇기에 가끔 돌아보는 시간을 갖는 것이 당신의 육아와 잘 맞을 것입니다."
+            },
+            {
+              "p": "또한 노력을 습관으로 만들기 쉬운 환경도 중요합니다."
+            },
+            {
+              "p": "매번 큰 목표를 내걸기보다 무리 없이 계속할 수 있는 형태를 만드는 것이나, 애쓸 수 있는 날만 애쓰는 것이 아니라 괴로운 날에도 조금만 할 수 있는 구조를 만드는 것으로 쌓아 올림은 안정됩니다."
+            },
+            {
+              "p": "그리고 결과가 나왔을 때는 마지막 성과뿐만 아니라 거기까지의 과정에도 눈을 돌린다."
+            },
+            {
+              "p": "특별한 하루를 만들기보다 당연한 하루를 쌓아 올린다."
+            },
+            {
+              "p": "그런 가정의 분위기가 감독 유형의 장점을 가장 살립니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 아이의 성장을 긴 시간으로 믿을 수 있다는 것입니다."
+            },
+            {
+              "p": "아이의 성장 속도에는 차이가 있습니다."
+            },
+            {
+              "p": "바로 결과를 내는 아이도 있는가 하면, 시간을 들여 조금씩 자라는 아이도 있습니다. 주위와 비교하면 조급해져 버리는 시기도 있을 것입니다."
+            },
+            {
+              "p": "그럴 때도 당신은 지금의 결과만으로 가능성을 단정하지 않습니다."
+            },
+            {
+              "p": "매일 계속하고 있는 것을 보고 있기에, 조금씩 할 수 있는 것이 늘어나고 있다는 것을 알아차릴 수 있습니다."
+            },
+            {
+              "p": "이것은 아이에게 큰 안심이 됩니다."
+            },
+            {
+              "p": "계속하고 있는 자신을 봐 주는 사람이 있으면 결과가 나오지 않는 시기에도 앞으로 나아갈 수 있는 것입니다."
+            },
+            {
+              "p": "당신은 하루 진심으로 노력해도 큰 변화가 없다는 것을 잘 이해하고 있습니다. 그리고 그래도 자신을 믿고 계속하면 반드시 결과로 이어진다는 것도 잘 이해하고 있습니다."
+            },
+            {
+              "p": "아직 결과가 되지 않은 노력까지 믿어 줄 수 있다는 것."
+            },
+            {
+              "p": "그것이 감독 유형의 큰 강점입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, 계속하고 있다는 것 자체를 지나치게 높이 평가할 때가 있습니다."
+            },
+            {
+              "p": "오래 계속하고 있으면 그만두는 것이 어려워집니다."
+            },
+            {
+              "p": "그리고 모처럼 여기까지 계속해 왔으니까 하고 생각하는 사이에, 본인의 마음이나 환경이 바뀌어 있다는 것을 놓칠 때가 있습니다."
+            },
+            {
+              "p": "노력에는 양뿐만 아니라 방향도 중요합니다."
+            },
+            {
+              "p": "매일 계속해도 방법이 맞지 않으면 생각대로 성장하지 못할 때가 있습니다. 본인이 정말로 목표로 하고 싶은 것이 바뀌었다면, 그때까지와는 다른 곳에서 노력을 시작하는 편이 좋을 때도 있습니다."
+            },
+            {
+              "p": "그리고 무엇보다 노력할 수 없는 자신을 탓하는 아이로 만들지 않는 것이 중요합니다."
+            },
+            {
+              "p": "애쓸 수 있는 날이 있다면 쉬는 날이 있어도 괜찮아요. 다시 돌아오면 쌓아 올림은 이어져 갑니다."
+            },
+            {
+              "p": "당신이 아이에게 전하고 싶은 것은 절대 그만두지 말라는 것이 아닙니다."
+            },
+            {
+              "p": "계속할 가치가 있는 것을 찾았을 때 쉽게 놓지 않는 힘을 가졌으면 한다는 것입니다."
+            },
+            {
+              "p": "그 차이를 의식하면 노력을 소중히 여기는 당신의 가치관이 더 전해지기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 도전형｜응원단장🐒입니다."
+            },
+            {
+              "p": "감독 유형은 한 가지를 오래 쌓아 올리는 힘을 키우는 것을 잘합니다. 한편 응원단장 유형은 새로운 세계로 내디뎌 가능성을 찾는 것을 소중히 여깁니다."
+            },
+            {
+              "p": "노력형만으로는 지금 계속하고 있는 것을 소중히 여긴 나머지, 다른 가능성을 만날 기회가 적어질 때가 있습니다. 도전형만으로는 경험이 넓어지는 한편, 한 가지가 힘이 될 때까지 이어지지 않을 때가 있습니다."
+            },
+            {
+              "p": "먼저 다양한 세계를 접해 본다. 그중에서 정말 좋아하는 것을 찾으면 이번에는 시간을 들여 키워 간다."
+            },
+            {
+              "p": "도전이 가능성을 찾고, 쌓아 올림이 그 가능성을 힘으로 바꾼다."
+            },
+            {
+              "p": "이 둘이 합쳐짐으로써 아이는 넓은 세계를 알면서 자신의 무기도 만들어 갈 수 있게 됩니다."
+            }
+          ],
+          [
+            {
+              "name": "도쿠가와 이에야스"
+            },
+            {
+              "p": "도쿠가와 이에야스는 오랜 시간에 걸쳐 힘을 비축해 최종적으로 천하를 차지한 인물로 알려져 있습니다."
+            },
+            {
+              "p": "젊을 때부터 순풍에 돛을 단 듯했던 것은 아닙니다. 오다 노부나가나 도요토미 히데요시가 크게 세력을 넓히는 시대에도 살아남았고, 서둘러 결과를 구하기보다 긴 시간 속에서 기회를 기다렸습니다."
+            },
+            {
+              "p": "눈앞의 한 번의 승리만으로 모든 것을 정하지 않고, 오래 계속하는 가운데 조금씩 상황을 바꾸어 간다."
+            },
+            {
+              "p": "화려한 한 방보다 쌓아 올림을 믿는 모습은 감독 유형의 생각과 겹칩니다."
+            },
+            {
+              "name": "키타 신스케(하이큐!!)"
+            },
+            {
+              "p": "키타 신스케는 작품 속에서도 나날의 쌓아 올림을 상징하는 인물입니다."
+            },
+            {
+              "p": "특별한 날에만 애쓰는 것이 아니라, 평소부터 당연한 일을 당연하게 계속한다. 결과가 나오는지 아닌지에 따라 그 자세를 바꾸는 것도 아닙니다."
+            },
+            {
+              "p": "키타 신스케에게 매일의 연습이나 생활은 평가받기 위해서만 하는 것이 아닙니다. 자신이 해야 할 일이기에 계속하는 것입니다."
+            },
+            {
+              "p": "특별한 결과는 특별하지 않은 매일의 끝에 있다."
+            },
+            {
+              "p": "그 감각이 감독 유형을 무척 알기 쉽게 보여 줍니다."
+            }
+          ],
+          [
+            {
+              "p": "도쿠가와 이에야스에게는 “사람의 일생은 무거운 짐을 지고 먼 길을 가는 것과 같다. 서두르지 말라”라는 말이 널리 알려져 있습니다."
+            },
+            {
+              "p": "바로 목적지에 도착하려 하지 않고, 긴 길을 조금씩 나아간다. 그 생각은 감독 유형인 당신과 잘 겹칩니다."
+            },
+            {
+              "p": "육아도 마찬가지입니다."
+            },
+            {
+              "p": "오늘 가르친 것을 내일 할 수 있게 된다고는 할 수 없습니다. 몇 번을 말해도 못하는 시기도 있고, 노력하고 있는데 결과가 나오지 않는 시기도 있습니다."
+            },
+            {
+              "p": "그래도 몇 년 뒤에 돌아보면 어느새 할 수 있게 되어 있는 경우가 있습니다."
+            },
+            {
+              "p": "키타 신스케는 “제대로 한다. 매일 한다.”라는 말이 정말 잘 어울리는 인물이었습니다."
+            },
+            {
+              "p": "특별한 재능을 증명하기 위해 매일을 쌓아 올리고 있는 것이 아닙니다."
+            },
+            {
+              "p": "이를 닦는다. 청소를 한다. 연습한다. 자신이 하겠다고 정한 것을 담담하게 계속한다. 그 쌓아 올림으로 이나리자키라는 강호 안에서 유니폼을 손에 넣었습니다."
+            },
+            {
+              "p": "당신이 아이에게 가르칠 수 있는 노력도 괴로움을 계속 견디는 것이 아닙니다."
+            },
+            {
+              "p": "매일을 쌓아 올리고, 괴로운 날도 조금씩 나아간다. 그리고 다음 날도 또 쌓아 올린다"
+            },
+            {
+              "p": "그런 작은 행동을 계속하는 힘입니다."
+            },
+            {
+              "p": "그러니 결과가 나오지 않을 때도 아이 이상으로 조급해하지 말아 주세요."
+            },
+            {
+              "p": "지금 바로 성과가 되지 않았더라도 오늘 쌓아 올린 것은 남아 있습니다."
+            },
+            {
+              "p": "그리고 때로는 길을 바꿔도 괜찮습니다. 쌓아 온 경험까지 사라지는 것은 아니기 때문입니다."
+            },
+            {
+              "p": "오늘 했으니까 내일 결과가 나올 필요는 없습니다."
+            },
+            {
+              "p": "매일의 작은 한 걸음을 믿고 있는 사이에, 어느새 처음과는 완전히 다른 곳까지 나아가 있다."
+            },
+            {
+              "p": "그 긴 성장을 믿고 기다릴 수 있는 것이 감독 유형인 당신이 할 수 있는 육아입니다."
+            }
+          ]
+        ]
+      },
+      "strategy": {
+        "intro": [
+          "책사 유형인 당신은 ‘아이의 장래를 내다보며, 필요한 교육이나 환경을 계획적으로 갖출 수 있는 선견지명이 있는 분’입니다."
+        ],
+        "sections": [
+          [
+            {
+              "p": "당신은 아이의 장래를 생각하면서 그곳으로 향하는 길을 짜는 것을 소중히 여기는 유형입니다."
+            },
+            {
+              "p": "그저 좋은 학교에 갔으면 좋겠다고 생각하는 것이 아닙니다. 장래에 어떤 힘을 가진 사람이 되었으면 하는지를 정하고, 그러려면 어떤 경험이나 교육이 필요한지를 조사하고, 지금 할 수 있는 것을 생각해 갑니다."
+            },
+            {
+              "p": "중요한 것은 하나하나의 행동이 아니라 그 끝에 있는 목적입니다."
+            },
+            {
+              "p": "그렇기에 유행하는 교육을 그대로 받아들이기보다, 그것이 자신의 아이에게 무엇으로 이어지는지를 생각합니다."
+            },
+            {
+              "p": "또한 한정된 시간이나 돈을 어디에 써야 할지 생각하는 것도 잘합니다. 무엇이든 주는 것이 아니라, 필요한 것을 고르면서 환경을 갖추어 갑니다."
+            },
+            {
+              "p": "미래에서 거꾸로 계산해서 지금을 생각한다."
+            },
+            {
+              "p": "그런 장기적인 시각으로 아이의 성장을 지탱할 수 있는 것이 책사 유형입니다."
+            }
+          ],
+          [
+            {
+              "p": "목적을 생각하고 행동할 수 있는 아이로 자라기 쉬울 것입니다."
+            },
+            {
+              "p": "그저 눈앞의 과제를 해치우는 것이 아니라, 무엇을 위해 하는지를 생각하는 습관이 몸에 붙기 쉬워집니다."
+            },
+            {
+              "p": "공부도 좋은 점수를 받는 것만이 목적이 아닙니다. 그 끝에 가고 싶은 학교나 배우고 싶은 것이 있다면 지금 무엇을 해야 할지가 보이기 쉬워집니다."
+            },
+            {
+              "p": "또한 선택할 때도 눈앞의 즐거움만이 아니라 조금 앞까지 생각할 수 있게 됩니다."
+            },
+            {
+              "p": "한편으로 계획적으로 생각하는 데 익숙해질수록, 의미 없는 일을 피하게 될 때가 있습니다."
+            },
+            {
+              "p": "하지만 아이의 성장에는 나중에 돌아보고서야 비로소 의미를 알게 되는 경험도 있습니다."
+            },
+            {
+              "p": "무슨 도움이 될지 모르는 놀이나 샛길에서 뜻밖의 흥미가 생겨나기도 합니다."
+            },
+            {
+              "p": "계획하는 힘과 예정에 없던 것을 즐기는 힘."
+            },
+            {
+              "p": "그 둘을 모두 갖게 해 줌으로써 책사 유형의 장점이 더욱 살아납니다."
+            }
+          ],
+          [
+            {
+              "p": "당신이 조심해야 할 것은 계획이 아이의 인생 그 자체가 되지 않는 것입니다."
+            },
+            {
+              "p": "장래를 생각하는 힘이 있기에 지금 무엇을 하면 좋을지가 보이기 쉬운 유형입니다."
+            },
+            {
+              "p": "그래서 아이가 돌아가고 있으면 더 효율적인 방법을 가르쳐 주고 싶어질 때가 있습니다. 본인이 고르려는 길보다 이쪽이 장래로 이어진다고 느낄 때도 있을 것입니다."
+            },
+            {
+              "p": "하지만 아이의 성장은 처음에 세운 계획대로 진행된다고는 할 수 없습니다."
+            },
+            {
+              "p": "흥미가 바뀌기도 하고, 생각했던 것보다 잘하는 것이 발견되기도 합니다. 부모가 상상하지 못했던 세계에 본인이 끌리기도 할 것입니다."
+            },
+            {
+              "p": "그럴 때 처음의 계획을 계속 지키기보다, 목적 자체를 다시 보는 것도 필요합니다."
+            },
+            {
+              "p": "계획은 아이를 묶기 위해서가 아니라 가능성을 넓히기 위해 있는 것입니다."
+            },
+            {
+              "p": "좋은 계획이란 변경하지 않아도 되는 계획이 아닙니다. 아이의 성장에 맞추어 바꿀 수 있는 계획입니다."
+            },
+            {
+              "p": "미래를 보는 힘이 있는 당신이기에, 예정에 없던 성장도 계획 안에 받아들여 주세요."
+            }
+          ],
+          [
+            {
+              "p": "당신과 아이가 부딪히기 쉬운 것은 본인이 장래로 이어지지 않는 것처럼 보이는 선택을 했을 때입니다."
+            },
+            {
+              "p": "모처럼 시간을 쓴다면 의미 있는 일을 했으면 좋겠다며, 합리적이지 않은 시간을 아깝게 느끼는 장면이 있습니다."
+            },
+            {
+              "p": "하지만 아이는 언제나 미래를 위해 살고 있는 것이 아닙니다."
+            },
+            {
+              "p": "갑자기 무언가에 푹 빠지기도 하고, 부모가 보기에는 무슨 도움이 될지 모르는 것에 큰 가치를 느끼기도 할 것입니다."
+            },
+            {
+              "p": "효율만을 추구하면, 아이에게는 자신이 좋아하는 것보다 부모의 계획이 우선되고 있는 것처럼 느껴질 때가 있습니다."
+            },
+            {
+              "p": "중요한 것은 모든 시간에 목적을 갖게 하지 않는 것입니다."
+            },
+            {
+              "p": "장기적으로 필요한 것은 부모로서 생각한다. 그 한편으로 본인이 자유롭게 쓸 수 있는 여백도 남겨 둔다."
+            },
+            {
+              "p": "그 여백 속에서 부모가 계획할 수 없었던 흥미나 재능이 생겨날 때가 있습니다."
+            },
+            {
+              "p": "인생을 설계하는 것과 인생을 예정대로 진행시키는 것은 다릅니다."
+            },
+            {
+              "p": "이 차이를 의식하면 당신의 계획성이 아이의 자유를 빼앗지 않고 살아납니다."
+            }
+          ],
+          [
+            {
+              "p": "당신에게 맞는 것은 목표와 현재 위치를 가끔 확인할 수 있는 환경입니다."
+            },
+            {
+              "p": "매일 세세하게 관리할 필요는 없습니다. 반년이나 1년 같은 조금 긴 단위로 아이가 어떻게 성장하고 있는지를 보는 편이 당신의 생각에는 맞습니다."
+            },
+            {
+              "p": "또한 선택지를 비교할 수 있는 환경도 중요합니다."
+            },
+            {
+              "p": "학교나 배움을 고를 때도 하나만 보고 정하기보다 여러 선택지를 안다. 그 위에서 가정이 소중히 여기는 것과 비추어 보면 납득할 수 있는 판단을 하기 쉬워집니다."
+            },
+            {
+              "p": "다만 가정을 늘 목표 달성의 장소로 만들 필요는 없습니다."
+            },
+            {
+              "p": "계획에서 벗어나 자유롭게 보내는 시간도 남겨 둠으로써 아이 자신의 흥미가 보이기 쉬워집니다."
+            },
+            {
+              "p": "방향은 생각한다. 하지만 길 순서까지 모두 정하지는 않는다."
+            },
+            {
+              "p": "그 정도의 여백이 있는 환경에서 책사 유형의 앞을 보는 힘은 가장 잘 살아납니다."
+            }
+          ],
+          [
+            {
+              "p": "당신의 큰 강점은 눈앞뿐만 아니라 몇 년 앞까지 생각해서 환경을 만들 수 있다는 것입니다."
+            },
+            {
+              "p": "아이는 지금 원하는 것이나 지금 즐거운 것을 중심으로 생각합니다. 그것 자체는 자연스럽지만, 장래에 필요해질 것까지 어린아이가 예측하는 것은 어려울 것입니다."
+            },
+            {
+              "p": "그것을 보완할 수 있는 것이 당신입니다."
+            },
+            {
+              "p": "나중에 필요하다는 것을 알아차리고 나서는 시간이 부족할 때도 있습니다. 그렇기에 조금 앞을 보면서 지금 할 수 있는 것을 생각할 수 있다는 것은 큰 강점입니다."
+            },
+            {
+              "p": "게다가 당신은 노력뿐만 아니라 환경의 중요성도 알아차리기 쉬운 유형입니다."
+            },
+            {
+              "p": "본인에게 애쓰게 하는 것뿐만 아니라, 어디서 배우는지, 누구와 지내는지, 어떤 경험을 접하는지, 그런 주위의 환경까지 포함해 성장을 생각할 수 있습니다."
+            },
+            {
+              "p": "아이에게는 아직 보이지 않는 미래를 생각하고, 필요한 준비를 먼저 시작할 수 있다."
+            },
+            {
+              "p": "장래의 선택지가 필요해졌을 때 고를 수 있는 상태를 만들어 둘 수 있다는 것."
+            },
+            {
+              "p": "그것이 책사 유형의 큰 강점입니다."
+            }
+          ],
+          [
+            {
+              "p": "강점의 이면으로, 아이의 인생을 지나치게 최적화할 때가 있습니다."
+            },
+            {
+              "p": "장래에서 거꾸로 계산하면 무엇을 하면 효율적인지가 보입니다."
+            },
+            {
+              "p": "이 배움을 할 바에는 다른 것에 시간을 쓰는 편이 좋다. 여기서 노는 것보다 공부하는 편이 장래로 이어진다. 그런 판단에는 합리적인 이유가 있을 것입니다."
+            },
+            {
+              "p": "하지만 아이의 인생에는 효율로는 잴 수 없는 시간도 필요합니다."
+            },
+            {
+              "p": "돌아갔기 때문에 자신에게 맞지 않는 것을 알게 될 때도 있습니다."
+            },
+            {
+              "p": "그리고 부모가 올바른 길을 너무 많이 준비하면, 아이 스스로 생각할 기회가 적어집니다."
+            },
+            {
+              "p": "당신이 계획을 세우는 것 자체는 문제가 아닙니다. 중요한 것은 그 계획에 본인이 참여하고 있는 것입니다."
+            },
+            {
+              "p": "성장함에 따라 부모가 정하는 범위를 줄이고, 본인과 함께 생각하는 부분을 늘려 간다."
+            },
+            {
+              "p": "아이의 인생을 계획하는 것이 아니라, 아이가 자신의 인생을 계획할 수 있도록 한다."
+            },
+            {
+              "p": "거기까지 이을 수 있으면 당신의 전략성은 아이 자신의 힘이 되어 갑니다."
+            }
+          ],
+          [
+            {
+              "p": "특히 잘 맞는 것은 개성형｜프로듀서🐱입니다."
+            },
+            {
+              "p": "책사 유형은 장래를 생각하고, 그곳을 향하기 위한 교육이나 환경을 갖추는 것을 잘합니다. 한편 프로듀서 유형은 지금 그 아이가 가지고 있는 흥미나 개성을 찾는 것을 소중히 여깁니다."
+            },
+            {
+              "p": "전략형만으로는 부모가 생각한 이상에서 거꾸로 계산해서 아이의 현재 마음을 놓칠 때가 있습니다. 개성형만으로는 본인다움을 소중히 하는 한편, 그 개성을 어떻게 장래로 이을지까지 다 생각하지 못할 때가 있습니다."
+            },
+            {
+              "p": "개성형이 그 아이 안에 있는 것을 찾고, 전략형이 그것을 살릴 수 있는 환경을 생각한다."
+            },
+            {
+              "p": "재능을 찾는 것과 그 재능이 자라는 길을 만드는 것."
+            },
+            {
+              "p": "이 둘이 합쳐짐으로써 그 아이다움을 장래의 가능성으로 잇기 쉬워집니다."
+            }
+          ],
+          [
+            {
+              "name": "제갈공명"
+            },
+            {
+              "p": "제갈공명은 유비를 도운 책사로서 일본에서도 널리 알려진 인물입니다."
+            },
+            {
+              "p": "눈앞의 싸움만 보는 것이 아니라 그 후의 정세까지 생각하면서 전략을 짠다. 자신이 앞에 나서서 힘으로 돌파하기보다, 상황을 읽으면서 이길 수 있는 길을 만드는 인물로 알려져 있습니다."
+            },
+            {
+              "p": "중요한 것은 지금 무엇을 하느냐뿐만 아니라, 그 행동이 앞으로 무엇으로 이어지느냐."
+            },
+            {
+              "p": "미래를 보면서 지금 두어야 할 수를 생각한다."
+            },
+            {
+              "p": "그 자세가 책사 유형을 그대로 보여 줍니다."
+            },
+            {
+              "name": "아르민 알레르토(진격의 거인)"
+            },
+            {
+              "p": "아르민도 힘으로 문제를 해결하는 인물이 아닙니다."
+            },
+            {
+              "p": "주위의 상황을 관찰하고, 한정된 정보 속에서 다음에 무엇이 일어날지를 생각합니다. 그리고 목적을 달성하기 위해 누가 어디서 무엇을 해야 하는지를 짜 갑니다."
+            },
+            {
+              "p": "눈앞의 일에 반응하기만 하는 것이 아니라, 몇 수 앞까지 생각하고 움직인다."
+            },
+            {
+              "p": "자기 한 사람의 힘을 높이기보다, 가지고 있는 것을 어떻게 쓰면 목적에 가까워질지를 생각하는 모습은 책사 유형의 생각과 겹칩니다."
+            }
+          ],
+          [
+            {
+              "p": "제갈공명에게는 “배움은 고요하지 않으면 재능을 이루지 못하고, 뜻이 없으면 배움을 이루지 못한다”라는 말이 있습니다."
+            },
+            {
+              "p": "무엇을 위해 배우는지라는 뜻이 없으면 배움 자체도 형태가 되기 어렵다. 목적에서부터 생각하는 이 말은 책사 유형인 당신과 잘 겹칩니다."
+            },
+            {
+              "p": "아이에게 무언가를 시킬 때도 무엇을 하느냐뿐만 아니라 무엇을 위해 하느냐를 생각해 보세요."
+            },
+            {
+              "p": "공부시키는 것이 목적이 아니라, 그 힘을 써서 장래에 어떤 선택을 할 수 있게 되었으면 하는지."
+            },
+            {
+              "p": "목적이 보이고 있다면 방법은 바꿀 수 있습니다."
+            },
+            {
+              "p": "그리고 아르민도 한 번 생각한 작전을 무슨 일이 있어도 계속 지키는 인물이 아닙니다. 새로운 정보가 들어오면 상황을 다시 생각하고, 그때 가장 좋다고 생각하는 방법을 다시 고릅니다."
+            },
+            {
+              "p": "“아무것도 버리지 못하는 사람은 아무것도 바꿀 수 없을 거야.”"
+            },
+            {
+              "p": "이것은 아르민의 말입니다."
+            },
+            {
+              "p": "목적에서부터 생각하고, 무엇이 필요한지 생각하고, 그리고 그것과 같은 만큼 불필요한 것을 잘라 낼 수 있습니다."
+            },
+            {
+              "p": "육아에도 같은 유연함이 필요합니다."
+            },
+            {
+              "p": "어릴 때 그렸던 장래상과 자란 아이의 모습이 달라도 괜찮습니다. 본인이 바뀌면 계획도 바꿔도 되는 것입니다."
+            },
+            {
+              "p": "당신의 강점은 미래를 맞히는 것이 아닙니다."
+            },
+            {
+              "p": "미래를 생각하면서 지금 할 수 있는 것을 고르고, 상황이 바뀌면 다시 한번 생각할 수 있다는 것입니다."
+            },
+            {
+              "p": "그러니 완벽한 인생 설계를 만들 필요는 없습니다."
+            },
+            {
+              "p": "계획은 아이의 미래를 정하기 위해서가 아니라, 미래의 선택지를 늘리기 위해 써 주세요."
+            },
+            {
+              "p": "그 힘을 올바르게 쓸 수 있는 것이 책사 유형인 당신만이 할 수 있는 육아입니다."
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "es": {
+    "questions": [
+      "Para ampliar las posibilidades de mi hijo, creo que también son necesarias experiencias que él no desea.",
+      "Si sigue con algo porque le gusta, incluso el tiempo sin resultados tiene sentido.",
+      "La capacidad de adaptarse a los demás es tan importante como la de ser fiel a uno mismo.",
+      "Creo que el futuro académico y profesional no es algo que el niño deba decidir completamente solo.",
+      "Seguir un poco más después de pensar «quiero dejarlo» también es una experiencia valiosa.",
+      "Prefiero que convierta sus puntos fuertes en su arma antes que eliminar sus puntos débiles.",
+      "A veces es necesario no avisarle de antemano aunque sepa que va a fracasar.",
+      "Prefiero que elija un lugar que le exija esforzarse un poco antes que uno donde se sienta cómodo.",
+      "Si el día de una promesa importante le surgiera una oportunidad única en la vida, aceptaría que eligiera romper la promesa.",
+      "Quiero que se tome en serio incluso cosas cuya utilidad no está clara.",
+      "Aunque mi hijo esté satisfecho con el presente, creo que los padres deben pensar en lo que viene después.",
+      "Quiero aumentar sus opciones de futuro desde pequeño.",
+      "Afrontar lo que no le gusta, sin huir, también es una experiencia necesaria.",
+      "Me preocupa más que no se lleve bien con los demás que el hecho de que sea diferente.",
+      "Aunque conozca la forma correcta de hacer algo, es mejor observar en silencio.",
+      "Cuando veo a mi hijo esforzarse, siento que no hace falta exigirle resultados.",
+      "Aunque sea un colegio que él mismo eligió, si creo que no le conviene le animaría a replanteárselo.",
+      "El tiempo dedicado a seguir con algo para lo que no se tiene aptitud no es tiempo perdido.",
+      "Un día sin hacer nada es un día desperdiciado.",
+      "Prefiero que sea un niño capaz de levantarse tras un fracaso antes que uno que nunca fracasa.",
+      "Incluso en lo que puede decidir por sí mismo, quiero transmitirle mi opinión como padre o madre.",
+      "Si tiene algo que le apasiona, no pasa nada si descuida un poco otras cosas.",
+      "A veces se abren caminos cambiando de entorno, más que esforzándose sin parar.",
+      "Creo que rebelarse contra los padres también forma parte del crecimiento.",
+      "Si sirve para tener más libertad en el futuro, no importa tener un poco menos de libertad ahora.",
+      "Más que cosas en las que le da igual perder, quiero que viva algo que desee ganar a toda costa.",
+      "Aunque no quiera, me gustaría que siguiera al menos hasta el punto que acordamos al principio.",
+      "Me tranquiliza más que sea feliz de una forma normal que verle llevar una vida distinta a la de los demás.",
+      "Aunque note que tiene un problema, prefiero esperar a que él mismo me pida ayuda.",
+      "Está bien que haya una etapa en la que deje los estudios a un lado y juegue a lo grande.",
+      "Si sirviera para desarrollar su talento, me plantearía cambiar de colegio o incluso de lugar de residencia.",
+      "No creo que adelantarse para reducir sus fracasos sea siempre bueno para el niño.",
+      "Puedo ver incluso un año sin ningún resultado como parte de su crecimiento.",
+      "Antes de dejarle elegir libremente, quiero que adquiera la capacidad necesaria para elegir.",
+      "Si no encaja en el colegio pero a él no le importa, no me preocupo.",
+      "Si ahora es feliz, no hace falta exigirle el siguiente paso en su crecimiento.",
+      "El hecho de haber seguido con algo hasta ahora es una razón para seguir adelante.",
+      "Cuanto menos conozco un ámbito, más quiero confiar en el criterio de mi hijo.",
+      "Valoro más que tenga su propia opinión que el que se adapte a los demás.",
+      "Aunque sepa que es un camino más largo, si lo eligió él quiero dejárselo en sus manos.",
+      "Aunque no se vea talento, si es capaz de seguir esforzándose quiero apoyarle.",
+      "Aunque ahora me odie por ello, quiero tomar decisiones de las que en el futuro piense «menos mal que fue así».",
+      "Prefiero que conozca muchos mundos antes que conocer uno solo en profundidad.",
+      "Quiero que el hogar sea un lugar donde mi hijo no tenga que esforzarse.",
+      "Si eligió un camino en serio, le apoyaría incluso si eso significa renunciar a la estabilidad.",
+      "Cuando las cosas no salen bien, me gustaría que siguiera un poco más antes de cambiar de método.",
+      "Antes que sufrir por crecer, prefiero que elija la felicidad del presente.",
+      "Creo que dejarlo todo en manos del niño no es la única forma de respeto.",
+      "Si es una vida que él eligió, creo que hasta la libertad de arrepentirse le pertenece.",
+      "Si pudiera volver a mi infancia con los recuerdos que tengo ahora, elegiría de nuevo dando prioridad a lo que ahora pienso «ojalá lo hubiera hecho», en lugar de lo que quería entonces."
+    ],
+    "results": {
+      "education": {
+        "intro": [
+          "Como Arquitecto, eres «una persona entregada, llena de cariño y con una gran capacidad para pensar en el futuro de tu hijo»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Eres un padre o una madre que no solo piensa en el presente de su hijo, sino también en lo que vendrá después."
+            },
+            {
+              "p": "No juzgas únicamente por si tu hijo quiere hacer algo o si parece disfrutarlo ahora; piensas en adónde le llevará esa experiencia y qué posibilidades dejará abiertas. En cuanto a colegios, actividades extraescolares, exámenes de acceso y el futuro, no lo dejas todo en sus manos: reúnes información por tu cuenta e intentas encontrar opciones que tu hijo aún no conoce."
+            },
+            {
+              "p": "Para ti, la educación no consiste simplemente en sacar buenas notas, sino en ampliar las opciones de futuro gracias a los conocimientos y las capacidades adquiridos. Por eso, aunque a tu hijo ahora no le apetezca, si crees que lo necesitará en el futuro, se lo recomiendas."
+            },
+            {
+              "p": "En el fondo está el deseo de no limitar las posibilidades de tu hijo por no haber hecho nada como padre o madre. Mirar un poco por delante de tu hijo y preparar un entorno que conecte con su futuro: así es la crianza del Arquitecto."
+            }
+          ],
+          [
+            {
+              "p": "En las familias del Tipo Educación, los niños suelen crecer siendo capaces de hacer bien lo que hay que hacer."
+            },
+            {
+              "p": "A través de los deberes, los plazos y el esfuerzo con lo que se les da mal, aprenden de forma natural que no basta con hacer solo lo que quieren: para hacer realidad lo que desean, también hace falta prepararse."
+            },
+            {
+              "p": "Además, como sus padres buscan información activamente, entran en contacto más fácilmente con colegios, actividades, profesiones y experiencias que no habrían descubierto por sí solos. Entre ellas, puede que encuentren talentos que ni ellos mismos sabían que tenían."
+            },
+            {
+              "p": "Por otro lado, cuantas más buenas opciones preparan los padres, menos experiencias tiene el niño de elegir desde cero. Si recibe constantemente buenas propuestas de sus padres sobre colegios y actividades, al crecer puede llegar a preguntarse: «¿Qué es lo que realmente quiero hacer?»."
+            },
+            {
+              "p": "Por eso, en el Tipo Educación, aceptar las experiencias que se salen del camino preparado es tan importante como preparar un buen camino."
+            }
+          ],
+          [
+            {
+              "p": "Lo que más debes vigilar es que el sentimiento de «lo hago por su bien» no se haga más grande que los sentimientos de tu propio hijo."
+            },
+            {
+              "p": "La mayoría de las cosas que recomiendan los padres del Tipo Educación nacen del cariño. Estudiar amplía las opciones, conviene tener una buena base académica, también es importante aprender a no rendirse con facilidad. Precisamente porque esas valoraciones suelen ser acertadas, a veces cuesta darse cuenta de que uno se está pasando."
+            },
+            {
+              "p": "Cuando tu hijo dice que quiere dejar una actividad que lleva años haciendo, cuando elige un colegio distinto del que tú considerabas mejor, cuando se entusiasma con algo que no parece útil para el futuro: en esos momentos, intenta separar dos preguntas: ¿esta decisión le causará de verdad problemas, o soy yo quien siente inquietud?"
+            },
+            {
+              "p": "Tienes la capacidad de ver el futuro. Justamente por eso, de vez en cuando también es importante apartar la mirada del futuro y dedicar tiempo a mirar a tu hijo tal como es hoy."
+            }
+          ],
+          [
+            {
+              "p": "El Tipo Educación suele chocar con sus hijos sobre todo cuando siente que su forma de pensar no es racional."
+            },
+            {
+              "p": "Imagina que tu hijo dice de repente que quiere dejar la academia. En tu cabeza aparecen muchas preguntas sobre lo que vendrá: qué pasará con sus notas si lo deja ahora, si llegará a tiempo a los exámenes, si podría seguir en otra academia."
+            },
+            {
+              "p": "Mientras tanto, lo que tu hijo ve quizá sea el presente: «Mañana no quiero volver allí». En estos casos, ninguno de los dos está equivocado; simplemente miráis en escalas de tiempo diferentes."
+            },
+            {
+              "p": "Lo mismo ocurre con el futuro. Tú piensas en lo que vendrá después de ir a ese colegio, y tu hijo piensa en que quiere ir a ese colegio. Tú piensas si ese trabajo le permitirá vivir, y tu hijo piensa en que quiere probar ese trabajo."
+            },
+            {
+              "p": "Cuanta más razón tienes, más difícil le resulta a tu hijo replicar. Pero si esto continúa, poco a poco puede sentir que de todas formas no le vas a entender y dejar de pedirte consejo."
+            },
+            {
+              "p": "En esos momentos, antes de llegar a una conclusión, prueba a preguntarle una vez: «¿Por qué lo piensas?». Lo importante es la actitud de intentar entender lo que piensa."
+            },
+            {
+              "p": "Para un niño, hay una gran diferencia entre que le lleven la contraria antes de entenderle y que se la lleven después de haberle entendido."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno con mucha información pero que aún deje margen para elegir."
+            },
+            {
+              "p": "Al elegir colegio, academia o actividades, encajas mejor en un entorno con varias opciones, donde puedas comparar sus características y tener en cuenta también la personalidad y los intereses de tu hijo, que en uno donde solo te presentan una respuesta."
+            },
+            {
+              "p": "En cambio, si te dicen que basta con dejarle hacer lo que quiera sin contar con suficiente información, puede que te sientas inquieto. Y es que no quieres controlar a tu hijo, sino elegir con datos que te convenzan."
+            },
+            {
+              "p": "Reunir información es una de tus grandes armas. Además, deja un poco de margen al final: los padres amplían las opciones y el niño elige entre ellas, o incluso fuera de ellas. En un entorno así, es más fácil compaginar tus puntos fuertes con la autonomía de tu hijo."
+            }
+          ],
+          [
+            {
+              "p": "Tu mayor punto fuerte es que puedes pensar en posibilidades que tu hijo todavía no ve."
+            },
+            {
+              "p": "El mundo de un niño se limita inevitablemente a lo que ya conoce. No puede aspirar a un colegio del que nunca ha oído hablar ni soñar con una profesión que no sabe que existe. En esos casos, tú puedes reunir información, encontrar opciones y mostrarle un mundo nuevo."
+            },
+            {
+              "p": "Otro punto fuerte es que no juzgas solo por la emoción del momento. Incluso cuando tu hijo dice que algo no le gusta, puedes pensar con flexibilidad, sin aferrarte a un único método: qué es exactamente lo que le disgusta, si tiene sentido continuar, si hay otra manera."
+            },
+            {
+              "p": "Poder pensar en un futuro que tu hijo aún no puede ver: esa es tu fuerza como Arquitecto."
+            }
+          ],
+          [
+            {
+              "p": "Tu punto débil es que eres capaz de decir lo correcto."
+            },
+            {
+              "p": "Estudiar amplía las opciones de futuro, conviene tener una buena base académica, también es importante aprender a no abandonar a medias. En la mayoría de los casos, tus ideas están bien fundamentadas y casi siempre son razonables."
+            },
+            {
+              "p": "Precisamente por eso, cuando no estás de acuerdo con tu hijo, puede que intentes que te haga caso con el argumento de que tienes más experiencia y más información."
+            },
+            {
+              "p": "Pero lo que quieres formar a través de la educación seguramente no es un niño que ejecute a la perfección lo que dicen sus padres, sino una persona que piense por sí misma, elija por sí misma y recorra su propio camino en la vida."
+            },
+            {
+              "p": "A veces es importante aceptar que el hecho de que tu hijo tenga ideas distintas de las tuyas también es uno de los frutos de la educación."
+            },
+            {
+              "p": "Otra cosa a tener en cuenta es que tu atención tiende a ir hacia el crecimiento que se puede comprobar con números. Las notas, las puntuaciones, los títulos, las clasificaciones o los aprobados son resultados en los que el crecimiento se ve fácilmente. En cambio, crecimientos como empezar a expresar su opinión o encontrar algo que le apasione no tienen números."
+            },
+            {
+              "p": "El crecimiento que no se puede escribir en el plano también está ocurriendo, sin duda, dentro de tu hijo."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Autonomía｜Consejero🐴."
+            },
+            {
+              "p": "El Tipo Educación encuentra opciones y amplía el mundo del niño, y el Tipo Autonomía le ayuda después a pensar qué quiere él. Cuando ambos se combinan, resulta más fácil que los padres marquen una dirección y que, al mismo tiempo, el niño decida su propia vida."
+            },
+            {
+              "p": "También te recomendamos incorporar la perspectiva del Tipo Individualidad｜Productor🐱."
+            },
+            {
+              "p": "Mientras el Tipo Educación piensa «¿qué debería aprender este niño?», el Tipo Individualidad piensa «¿qué es lo que le atrae a este niño?». Precisamente por ser una perspectiva distinta de la tuya, puede ayudarte a descubrir facetas nuevas de tu hijo."
+            }
+          ],
+          [
+            {
+              "name": "Confucio"
+            },
+            {
+              "p": "Pensador chino que dio un enorme valor al aprendizaje. Su idea de que el ser humano crece no solo adquiriendo conocimientos, sino aprendiendo de forma continua, coincide con los valores del Tipo Educación."
+            },
+            {
+              "name": "La madre de Nobita (Doraemon)"
+            },
+            {
+              "p": "Una madre que llama la atención por estar siempre recordándole a Nobita los deberes, el estudio y los hábitos diarios. Su deseo de que aprenda lo que necesita para no tener problemas en el futuro, aunque ahora no quiera, refleja muy bien el corazón de unos padres del Tipo Educación."
+            }
+          ],
+          [
+            {
+              "p": "En las Analectas de Confucio aparece la famosa frase: «¿No es un placer aprender y practicar a su debido tiempo lo aprendido?». Expresa la idea de que repetir lo aprendido hasta hacerlo propio tiene valor."
+            },
+            {
+              "p": "Seguramente tú también eres alguien que quiere que tu hijo aprenda y domine muchas cosas desde ahora para que en el futuro pueda vivir con sus propias fuerzas."
+            },
+            {
+              "p": "La madre de Nobita también le insiste una y otra vez para que haga los deberes y estudie. En ella podemos ver ese cariño tan propio del Tipo Educación: aunque ahora no le guste, quiere que aprenda lo necesario para no tener problemas más adelante."
+            },
+            {
+              "p": "Sin embargo, el objetivo de la educación no es que el niño recorra el camino correcto que han pensado sus padres. Hacerle aprender muchas cosas, mostrarle muchos mundos y ayudarle a adquirir la fuerza que necesita. Y después, también es importante que algún día tu hijo sea capaz de decir: «Quiero ir por aquí»."
+            },
+            {
+              "p": "Aunque ese camino sea distinto del que imaginabas, puedes aceptar que ha crecido hasta el punto de pensar y elegir por sí mismo. Eso también es un gran fruto de la educación que has ido construyendo."
+            },
+            {
+              "p": "Se te da bien pensar en el futuro de tu hijo. Por eso, al final, en lugar de completar tú el mapa de futuro que dibujaste, deja que sea tu hijo quien dibuje lo que viene después."
+            }
+          ]
+        ]
+      },
+      "individuality": {
+        "intro": [
+          "Como Productor, eres «una persona de gran corazón que valora la forma de ser de tu hijo y sabe acompañar su crecimiento»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Más que acercar a tu hijo a una imagen ideal de «quiero que sea así», quieres descubrir la personalidad y los talentos que ya lleva dentro y ayudarlos a crecer."
+            },
+            {
+              "p": "Desde los estudios y el deporte hasta el carácter y la futura profesión, en el mundo hay muchísimos criterios sobre lo que «es mejor». Pero no crees que adaptar a tu hijo a esos criterios sea necesariamente lo mejor."
+            },
+            {
+              "p": "En lugar de dedicar mucho tiempo a subir hasta la media aquello que se le da mal, prefieres que se entregue a lo que le gusta y se le da bien, y convertirlo en un punto fuerte que solo él tiene. Aunque sea un poco diferente de los demás, si se le ve feliz, eres capaz de aceptarlo como «parte de su forma de ser»."
+            },
+            {
+              "p": "Por eso sueles notar cambios que las notas o las clasificaciones no reflejan. Que le encante dibujar, que se le dé bien hacer reír a los demás, que no pueda parar cuando empieza a investigar algo. Sabes encontrar valor en esos pequeños rasgos."
+            },
+            {
+              "p": "Puede que lo que más valoras en la crianza sea «criar a tu hijo para que llegue a ser alguien que solo él puede ser»."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer siendo capaces de expresar sus gustos y sus puntos fuertes y débiles, con sus propios valores y su propio mundo."
+            },
+            {
+              "p": "No temen más de lo necesario ser diferentes, y les resulta más fácil pensar «¿qué quiero hacer yo?» en lugar de «porque todo el mundo lo hace»."
+            },
+            {
+              "p": "Sobre todo, cabe esperar mucho de su crecimiento cuando encuentran algo que les gusta. Se sumergen a fondo en lo que les interesa, y eso puede convertirse en uno de sus grandes puntos fuertes."
+            },
+            {
+              "p": "Además, la experiencia de que sus padres reconozcan su forma de ser fortalece su autoestima. Aunque fuera no les valoren, en casa se sienten comprendidos. Esa experiencia también les ayuda, de adultos, a aceptar a personas con valores distintos de los suyos."
+            },
+            {
+              "p": "Por otro lado, precisamente porque crecen viendo respetados sus gustos, la capacidad de afrontar «lo que no me gusta pero tengo que hacer» hay que trabajarla de forma consciente."
+            },
+            {
+              "p": "Potenciar los puntos fuertes y huir de los débiles no es lo mismo. Si sabes distinguirlo, las virtudes del Tipo Individualidad brillarán todavía más."
+            }
+          ],
+          [
+            {
+              "p": "Lo que más debes vigilar es creer que entiendes la forma de ser de tu hijo y, sin querer, dejarla fijada."
+            },
+            {
+              "p": "«Este niño es más de deporte que de estudios», «no es de los que se ponen delante de la gente», «parece de ciencias», «esto le va mejor»."
+            },
+            {
+              "p": "Son palabras que salen precisamente de observar bien a tu hijo, pero tu hijo todavía está creciendo. Algo que se le daba mal a los diez años puede convertirse en un punto fuerte a los quince."
+            },
+            {
+              "p": "Algo que empezó a regañadientes puede gustarle desde el momento en que logra hacerlo bien."
+            },
+            {
+              "p": "Así que, cuando tu hijo rechace algo, antes de decidir de inmediato «esto no es para él», piensa un momento: ¿no le gusta, o no lo disfruta porque todavía no sabe hacerlo?"
+            },
+            {
+              "p": "Valorar la individualidad no significa fijar la individualidad que tiene ahora."
+            },
+            {
+              "p": "Es importante aceptar su forma de ser actual dejando espacio para que aparezcan facetas nuevas que ni él mismo conoce todavía."
+            }
+          ],
+          [
+            {
+              "p": "Como en general respetas la voluntad de tu hijo, puede que no haya muchos choques frontales."
+            },
+            {
+              "p": "Sin embargo, cuando tu hijo desea «ser normal», pueden surgir desencuentros inesperados."
+            },
+            {
+              "p": "Para ti, la individualidad que solo él tiene es su encanto. Pero para un niño, hay épocas en las que ser diferente de los demás resulta doloroso."
+            },
+            {
+              "p": "Unas palabras como «Tú estás bien tal como eres» pueden sonarle a «No entiendes lo mal que lo estoy pasando»."
+            },
+            {
+              "p": "Y al revés, cuando tu hijo intenta huir de algo que se le da mal, también cuesta decidir. ¿Piensas «no es lo suyo, así que puede dejarlo» o «aquí conviene que se esfuerce una vez»?"
+            },
+            {
+              "p": "En esos momentos, antes de decidir tú la respuesta, pregúntale: «¿Quieres dejarlo porque no te gusta? ¿O porque ahora no te sale bien?»."
+            },
+            {
+              "p": "Lo que necesita el Tipo Individualidad no es dejarle hacer todo libremente. Es saber distinguir cuándo hay que proteger su forma de ser y cuándo hay que darle un empujón para ampliar sus posibilidades."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno en el que tu hijo pueda conocer muchos mundos distintos y encontrar entre ellos lo que le gusta."
+            },
+            {
+              "p": "No solo los estudios, sino también el deporte, el arte, la música, la creación manual, la lectura, el contacto con la naturaleza o el trato con otras personas: te conviene un entorno en el que pueda vivir experiencias lo más variadas posible."
+            },
+            {
+              "p": "Eso sí, no hace falta dejarlo todo en sus manos desde el principio con la idea de que «basta con que elija lo que le gusta»."
+            },
+            {
+              "p": "Porque los niños solo pueden elegir entre lo que ya conocen."
+            },
+            {
+              "p": "No pueden enamorarse de un deporte que no conocen ni soñar con una profesión que no saben que existe. Que los padres abran puertas a mundos nuevos tiene un gran sentido."
+            },
+            {
+              "p": "Los padres amplían las posibilidades. Lo que se elige se deja en manos del niño."
+            },
+            {
+              "p": "Este reparto de papeles le va muy bien al Productor."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que no evalúas a tu hijo con una sola vara de medir."
+            },
+            {
+              "p": "En el colegio aumentan inevitablemente las situaciones en las que se le evalúa con números fáciles de entender, como notas o clasificaciones. Pero ni todo el encanto ni todo el talento de una persona se pueden convertir en números."
+            },
+            {
+              "p": "Hablar bien, hacer reír a la gente, poder concentrarse durante horas, tener ideas originales, ser sensible a los sentimientos de los demás. En rasgos así pueden esconderse los grandes puntos fuertes que sostendrán a tu hijo en el futuro."
+            },
+            {
+              "p": "Tú eres de las personas que pueden descubrirlos relativamente pronto."
+            },
+            {
+              "p": "Y lo más importante es que no solo los descubres, sino que también los valoras."
+            },
+            {
+              "p": "Que haya alguien que diga «¡Qué interesante!» o «¿Por qué no haces más?» incluso antes de que nadie lo reconozca. Con una sola frase así, lo que era un simple pasatiempo puede convertirse en algo que sostenga la vida entera de ese niño."
+            },
+            {
+              "p": "Puedes ser la primera persona en comprender un talento que aún nadie ha reconocido."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que, en nombre de «su forma de ser», puedes llegar a evitar incluso el esfuerzo necesario para crecer."
+            },
+            {
+              "p": "«Se le dan mal las matemáticas, así que quizá sea de letras», «si no le interesa el deporte, será artístico», «no le gusta hablar en público, así que es introvertido»."
+            },
+            {
+              "p": "Por supuesto, puede que sea así. Pero no se puede saber enseguida si se trata de su personalidad o simplemente de que todavía le falta experiencia."
+            },
+            {
+              "p": "Algo que no sabía hacer llega a hacerlo gracias a la práctica. Esa misma experiencia puede crear una faceta nueva de su individualidad."
+            },
+            {
+              "p": "Otra cosa a tener en cuenta es que con los puntos fuertes no basta para afrontar todo en la vida."
+            },
+            {
+              "p": "Los estudios necesarios aunque no gusten, las promesas con los demás, cumplir los plazos, la práctica constante: incluso para desplegar la individualidad hace falta una base mínima."
+            },
+            {
+              "p": "Por eso, ten las dos cosas a la vez: «proteger su forma de ser» y «confiar en que puede dar un poco más»."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Estrategia｜Estratega🦊."
+            },
+            {
+              "p": "Mientras tú descubres talentos y rasgos de su personalidad —«este niño tiene esta cualidad»—, al Estratega se le da bien pensar qué educación y qué entorno hacen falta para desarrollar esa cualidad."
+            },
+            {
+              "p": "El Productor descubre el atractivo del material y el Estratega traza el camino a partir de ahí. Es una combinación que funciona muy bien."
+            },
+            {
+              "p": "Otro tipo que suele complementarte es el Tipo Esfuerzo｜Entrenador🐯."
+            },
+            {
+              "p": "Los «me gusta» y los «se me da bien» que tú descubres también necesitan tiempo para tomar forma como talento. Si se añade la perspectiva del Entrenador de «confiar en la acumulación de pequeños pasos», resulta más fácil convertir el interés del niño en un punto fuerte real y no en algo pasajero."
+            },
+            {
+              "p": "No hace falta que tengas tú sola o tú solo todas las formas de pensar. Tomando prestada la perspectiva de tipos distintos del tuyo, las virtudes del Tipo Individualidad brillarán aún más."
+            }
+          ],
+          [
+            {
+              "name": "Sakamoto Ryōma"
+            },
+            {
+              "p": "Sakamoto Ryōma es conocido por haber buscado nuevos caminos sin dejarse atar por el marco de los dominios feudales de su época y relacionándose con personas de posiciones muy distintas."
+            },
+            {
+              "p": "No daba valor al hecho de ser igual que los demás y buscaba posibilidades incluso fuera de los marcos establecidos. Su forma de vivir tiene mucho en común con el Tipo Individualidad."
+            },
+            {
+              "name": "Koro-sensei (Assassination Classroom)"
+            },
+            {
+              "p": "Koro-sensei no intenta educar a todos sus alumnos con el mismo criterio."
+            },
+            {
+              "p": "Alumnos a los que se les dan bien los estudios, alumnos a los que se les da bien el deporte, alumnos cuyo punto fuerte es la comunicación con los demás. Observa con atención a cada uno y cambia su forma de tratarlos según su carácter y sus capacidades."
+            },
+            {
+              "p": "No quiere convertir a todos en la misma persona, sino imaginar para cada uno una forma final distinta."
+            },
+            {
+              "p": "Esta actitud se parece mucho a la crianza del Productor."
+            }
+          ],
+          [
+            {
+              "p": "Sakamoto Ryōma tiene una frase que dice: «En este mundo nunca hay un solo camino. Hay cien, mil, diez mil caminos»."
+            },
+            {
+              "p": "Tampoco en el futuro de tu hijo hay una única respuesta correcta. No está decidido que, si se le dan bien los estudios, vaya por este camino y, si no, por aquel, ni tiene por qué recorrer el mismo camino que los demás. El camino que le conviene puede estar en un lugar que ni tú ni él podéis ver todavía."
+            },
+            {
+              "p": "Koro-sensei también dice: «No existe un solo tipo de talento. Busca el asesinato que mejor encaje con tu talento»."
+            },
+            {
+              "p": "Lo importante no es solo llegar a hacer lo mismo que otros, sino descubrir lo que tu hijo tiene y buscar el lugar donde pueda brillar. Tú tienes la fuerza de mirar a tu hijo tal como es, sin evaluarlo solo con los criterios de los demás."
+            },
+            {
+              "p": "Sin embargo, la individualidad que ves ahora no es necesariamente su forma definitiva. Lo que hoy se le da mal puede convertirse en un punto fuerte dentro de unos años, y al entrar en contacto con un mundo que no le interesaba puede descubrir un talento inesperado."
+            },
+            {
+              "p": "Por eso, tanto como valoras su forma de ser actual, déjale encontrarse también con facetas suyas que aún no has visto."
+            },
+            {
+              "p": "No tienes que decidir tú las posibilidades de tu hijo. Basta con buscar juntos el camino que le conviene."
+            }
+          ]
+        ]
+      },
+      "independence": {
+        "intro": [
+          "El Consejero es «una presencia que da seguridad, que respeta las ideas de su hijo y le tiende la mano cuando lo necesita»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Crees que la vida de un hijo, al final, es algo que decide él mismo."
+            },
+            {
+              "p": "Como los padres han vivido más tiempo, tienen más experiencia y conocimientos. Hay muchas situaciones en las que pueden juzgar mejor que el niño. Aun así, no crees que unos padres que elijan siempre la respuesta correcta sean sinónimo de buena crianza."
+            },
+            {
+              "p": "Lo que valoras es que tu hijo piense por sí mismo. Cuando duda, en lugar de darle enseguida la respuesta, escuchas lo que piensa y buscáis la respuesta juntos."
+            },
+            {
+              "p": "Aunque una decisión te parezca un rodeo, si es reversible, puede que quieras dejar que la viva. No solo la experiencia de elegir y acertar, sino también la de equivocarse y replantearse, se convierte en fuerza para vivir de forma independiente algún día."
+            },
+            {
+              "p": "Por supuesto, no le dejas hacer todo lo que quiera. Le enseñas lo que no sabe. Le aconsejas cuando duda. Y si algo es realmente peligroso, lo detienes como padre o madre."
+            },
+            {
+              "p": "Para ti, criar no es guiar la vida de tu hijo para siempre. También consiste en ir cediéndole, poco a poco y a medida que crece, las riendas de su propia vida."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer con opiniones propias y siendo capaces de tomar sus propias decisiones."
+            },
+            {
+              "p": "Desde pequeños tienen ocasiones de pensar qué quieren hacer. Por eso, en lugar de buscar solo la respuesta que agradará a sus padres o la que los demás consideran correcta, les resulta más fácil tener sus propios criterios."
+            },
+            {
+              "p": "Esto no se adquiere solo con grandes decisiones como el futuro académico. Las pequeñas elecciones del día a día —qué ponerse, qué aprender, cómo pasar el fin de semana— también son práctica para encontrar sentido por sí mismos y mover su propia vida."
+            },
+            {
+              "p": "Además, como son decisiones propias, también desarrollan con más facilidad la capacidad de aceptar los resultados. Cuando algo no sale bien, en lugar de culpar a otros, aprenden a pensar qué hacer la próxima vez."
+            },
+            {
+              "p": "Por otro lado, cuanto más acostumbrados están a pensar por sí mismos, más pueden intentar resolver solos incluso sus preocupaciones."
+            },
+            {
+              "p": "Lo que de verdad se necesita en el futuro no es alguien que pueda hacerlo todo solo, sino alguien que piense por sí mismo y que, cuando haga falta, sepa apoyarse en los demás."
+            },
+            {
+              "p": "Si le enseñas a pedir consejo y ayuda tanto como a decidir por sí mismo, las virtudes del Tipo Autonomía brillarán todavía más."
+            }
+          ],
+          [
+            {
+              "p": "Lo que más debes vigilar es no confundir autonomía con dejadez."
+            },
+            {
+              "p": "Es importante dejar que decida, pero para eso necesita elementos de juicio. No se puede elegir algo cuya existencia se desconoce. Si no entiende las diferencias entre las opciones, tampoco puede juzgar cuál le conviene."
+            },
+            {
+              "p": "Por ejemplo, al elegir instituto, puede que tu hijo solo conozca el nombre del centro y su nivel académico. Solo cuando los padres investigan con él cosas como el ambiente del centro, adónde van después los alumnos, las actividades del club o el tiempo de desplazamiento, puede empezar a comparar a su manera."
+            },
+            {
+              "p": "Lo importante no es dejarlo en sus manos porque es su vida, sino dejárselo después de haber creado las condiciones para que pueda elegir."
+            },
+            {
+              "p": "Además, cuando tu hijo viene a pedirte consejo, a veces no basta con animarle a pensar por sí mismo. Quizá no quiere que decidas por él, sino alguien con quien ordenar sus ideas."
+            },
+            {
+              "p": "Dar tu opinión como padre o madre tampoco frena su autonomía. Entrégale esa opinión como un elemento más y deja que al final piense él."
+            },
+            {
+              "p": "La autonomía no es decidir solo. Es utilizar la información y las opiniones necesarias y tomar la decisión final uno mismo."
+            }
+          ],
+          [
+            {
+              "p": "Como normalmente respetas la voluntad de tu hijo, quizá sean relativamente pocos los choques por imponerle tus ideas."
+            },
+            {
+              "p": "Lo difícil, más bien, es cuando tu hijo no es capaz de decidir por sí mismo."
+            },
+            {
+              "p": "Por ejemplo, ante una decisión sobre su futuro, puede que te pida una y otra vez tu opinión sobre qué elegir. Tú quizá pienses: es su vida, así que al final quiero que decida él."
+            },
+            {
+              "p": "Pero puede que lo que tu hijo busca no sea la decisión en sí."
+            },
+            {
+              "p": "Quizá le da miedo equivocarse. Quizá solo quiere saber qué piensan sus padres. O quizá no confía en sus propias ideas y quiere que alguien le dé un empujón."
+            },
+            {
+              "p": "Si en ese estado le devuelves siempre la pregunta, puede sentir que no le has dado libertad, sino que tiene que decidirlo completamente solo."
+            },
+            {
+              "p": "En esos momentos, prueba a ordenar las opciones juntos. Cuéntale también cómo lo pensarías tú. Y aun así, deja en sus manos el último voto."
+            },
+            {
+              "p": "Lo que buscas no es un hijo que no dependa de sus padres."
+            },
+            {
+              "p": "Un hijo que puede pedir consejo a sus padres, pero que al final decide por sí mismo."
+            },
+            {
+              "p": "Acompañarle hasta ahí es lo importante para el Consejero."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno en el que tu hijo pueda elegir por sí mismo y vivir también los resultados."
+            },
+            {
+              "p": "En casa, conviene ir ampliando poco a poco, según crece, el ámbito de lo que puede decidir. Cuando es pequeño, le dejas elegir entre unas cuantas opciones. A medida que crece, le pides que piense él mismo las opciones."
+            },
+            {
+              "p": "También es importante dejarle vivir fracasos que tengan arreglo."
+            },
+            {
+              "p": "Incluso la experiencia de comprobar que el método que pensó y eligió no dio resultado se convierte en material para elegir mejor la próxima vez."
+            },
+            {
+              "p": "Por otro lado, los padres no tienen por qué retirarse del todo."
+            },
+            {
+              "p": "Casi siempre, los padres tienen más capacidad para reunir la información necesaria. Con un apoyo de calidad, el niño puede crecer todavía más. A veces también es importante dar una opinión desde otra perspectiva o detenerle si algo es realmente peligroso."
+            },
+            {
+              "p": "A ti, como Consejero, te conviene un entorno donde sea fácil obtener la información necesaria y conocer formas de pensar muy diversas."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que sabes respetar a tu hijo como una persona distinta de ti."
+            },
+            {
+              "p": "Los padres han vivido muchas cosas antes que sus hijos. Si hay algo de lo que te arrepientes, no querrás que tu hijo cometa el mismo error. Si algo te salió bien, es natural querer recomendarle el mismo camino."
+            },
+            {
+              "p": "Pero tú eres capaz de detenerte un momento justo ahí."
+            },
+            {
+              "p": "Entiendes bien que una vida que fue buena para ti no tiene por qué ser una buena vida para tu hijo."
+            },
+            {
+              "p": "Cuantas más experiencias acumula eligiendo por sí mismo, más capaz es de juzgar por su cuenta incluso cuando sus padres no están a su lado."
+            },
+            {
+              "p": "Lo que intentas formar es, seguramente, «una persona que elige su propia vida y la vive haciendo suyas esas decisiones»."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que, por respetar tanto la voluntad de tu hijo, puedes llegar a guardarte incluso los conocimientos y la experiencia que tienes como padre o madre."
+            },
+            {
+              "p": "Cederle la decisión a tu hijo no es lo mismo que no dar tu opinión."
+            },
+            {
+              "p": "Hay mundos que tu hijo todavía no conoce. Estudios, trabajo, relaciones: es natural que no pueda juzgar lo que no ha vivido."
+            },
+            {
+              "p": "En esos casos, contarle lo que sabes como padre o madre no es una intromisión. Tu experiencia, la opinión de sus profesores, lo que cuentan sus amigos: toda esa información se convierte en material para que él decida."
+            },
+            {
+              "p": "Dejarle vivir fracasos también necesita límites."
+            },
+            {
+              "p": "Lo que se puede aprender fracasando no es lo mismo que lo que los padres deben impedir. Los fracasos que tienen arreglo se pueden dejar en sus manos. Pero en cosas difíciles de recuperar, como la salud, la seguridad o grandes sumas de dinero, los padres deben dar un paso al frente."
+            },
+            {
+              "p": "El ámbito que le confías y el que proteges no son fijos. A medida que tu hijo crece, esa frontera se va desplazando poco a poco hacia fuera."
+            },
+            {
+              "p": "Más que dar libertad, cultivar la capacidad de usar la libertad."
+            },
+            {
+              "p": "Si lo tienes presente, los puntos débiles del Consejero se compensan con bastante facilidad."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Educación｜Arquitecto🦉."
+            },
+            {
+              "p": "Mientras tú respetas la voluntad de tu hijo e intentas dejar en sus manos la elección final, al Arquitecto se le da bien pensar en el futuro y preparar la educación y las opciones necesarias."
+            },
+            {
+              "p": "Solo con el Tipo Autonomía, el niño puede acabar eligiendo únicamente dentro del mundo que ya conoce. Y solo con el Arquitecto, se pueden preparar demasiados caminos que a los padres les parecen buenos."
+            },
+            {
+              "p": "El Arquitecto amplía el mundo y el Tipo Autonomía deja que el niño elija dentro de él."
+            },
+            {
+              "p": "Combinando ambos, resulta más fácil construir una relación en la que los padres amplían las posibilidades y el niño elige su vida."
+            },
+            {
+              "p": "No hace falta que te conviertas en Arquitecto. Antes de respetar su elección, ¿le has mostrado suficientes opciones? Con solo plantearte esto de vez en cuando, las virtudes del Consejero brillarán aún más."
+            }
+          ],
+          [
+            {
+              "name": "Yoshida Shōin"
+            },
+            {
+              "p": "Yoshida Shōin es conocido por haber formado a muchos jóvenes, como Takasugi Shinsaku o Itō Hirobumi, en su escuela Shōka Sonjuku."
+            },
+            {
+              "p": "Lo característico es que no intentó que todos pensaran como él, sino que hizo que sus discípulos pensaran por sí mismos a través del diálogo y el debate. Observaba los puntos fuertes y las ideas de cada uno y daba importancia a que actuaran por su cuenta."
+            },
+            {
+              "p": "El maestro no entrega una respuesta acabada para mover a los alumnos según ella. Les da material para pensar y, al final, son ellos quienes actúan."
+            },
+            {
+              "p": "Esa actitud coincide con la del Consejero, que no completa la vida de su hijo, sino que intenta cedérsela algún día."
+            },
+            {
+              "name": "Shanks (One Piece)"
+            },
+            {
+              "p": "Shanks tampoco es de los que controlan al detalle la vida de los demás."
+            },
+            {
+              "p": "Le muestra a Luffy su forma de vivir y el mundo del mar, pero deja en sus manos qué vida elegirá después."
+            },
+            {
+              "p": "Y, sin embargo, cuando de verdad había que protegerle, lo hizo aun a costa de perder su propio brazo."
+            },
+            {
+              "p": "Normalmente, deja que cada uno viva su vida. Pero cuando hay un peligro real, da un paso al frente."
+            },
+            {
+              "p": "Dejar libre a alguien no es lo mismo que no protegerle."
+            },
+            {
+              "p": "Esta forma de mantener la distancia refleja muy bien al Consejero."
+            }
+          ],
+          [
+            {
+              "p": "De Yoshida Shōin es muy conocida la frase: «Señores, enloqueced»."
+            },
+            {
+              "p": "No pensar solo en adaptarse al sentido común de los demás, sino actuar hacia aquello que uno mismo ha pensado y en lo que cree. Esa actitud también coincide con tu deseo de que tu hijo elija su propia vida."
+            },
+            {
+              "p": "Quizá algún día tu hijo elija un camino que no puedas entender."
+            },
+            {
+              "p": "Como padre o madre, puede que te preocupes y quieras recomendarle otro camino."
+            },
+            {
+              "p": "Pero si tu hijo lo ha pensado a su manera y es capaz de explicar sus razones con sus propias palabras, eso no significa que tu crianza haya fracasado. Al contrario, es el momento en que se ha vuelto capaz de pensar por sí mismo sobre su propia vida."
+            },
+            {
+              "p": "Y en Shanks podemos ver otra cosa importante."
+            },
+            {
+              "p": "Hablando de Shanks, hay una escena famosa."
+            },
+            {
+              "p": "«Te dejo este sombrero. Algún día ven a devolvérmelo. Cuando te hayas convertido en un gran pirata»."
+            },
+            {
+              "p": "Shanks no le dio a Luffy ningún consejo. Sin burlarse de su sueño como si fueran cosas de niños, creyó en aquel chico que dijo que les superaría y le confió su sombrero."
+            },
+            {
+              "p": "Esta imagen coincide contigo, como Consejero."
+            },
+            {
+              "p": "Los padres no se quedan para siempre con las respuestas de la vida, sino que algún día ceden a su hijo el propio papel de pensar esas respuestas."
+            },
+            {
+              "p": "Las riendas de la vida se las cedes a tu hijo. Pero detrás de él siempre estás tú."
+            },
+            {
+              "p": "Gracias a esa tranquilidad, el niño encuentra el valor para separarse de sus padres y elegir su propia vida."
+            }
+          ]
+        ]
+      },
+      "challenge": {
+        "intro": [
+          "Como Animador, eres «una persona que valora la curiosidad de su hijo, cree en sus posibilidades y sabe darle un empujón»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Quieres ampliar las posibilidades de tu hijo a través de la experiencia."
+            },
+            {
+              "p": "Cuando tu hijo se interesa por algo, antes que juzgar primero si le va o no, prefieres dejar que lo pruebe una vez. Sabes que hay muchas cosas que no se entienden sin vivirlas de verdad."
+            },
+            {
+              "p": "Aunque al probarlo no resulte tan divertido como esperaba, no lo consideras una pérdida de tiempo. Descubrir que algo no le gusta también es una experiencia valiosa para conocerse a sí mismo."
+            },
+            {
+              "p": "Y al revés, algo que empezó sin darle importancia puede conducir a un talento inesperado. Sin reducir las posibilidades desde el principio, amplías las opciones de tu hijo dejándole conocer muchos mundos distintos."
+            },
+            {
+              "p": "Lo que valoras es ser capaz de intentarlo más que no fracasar nunca."
+            },
+            {
+              "p": "En lugar de ir siempre por delante para que no se caiga, le apoyas para que pueda levantarse aunque se caiga. Elegir con naturalidad esa forma de acompañar es lo propio del Animador."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer con poca resistencia a lo nuevo y siendo capaces de dar un paso hacia lo que les interesa."
+            },
+            {
+              "p": "No temen más de lo necesario los lugares nuevos ni a las personas desconocidas, y desarrollan con más facilidad la capacidad de ampliar su propio mundo. Como se sienten seguros sabiendo que sus padres no les rechazarán si fracasan, rara vez se quedan paralizados por miedo al resultado."
+            },
+            {
+              "p": "Además, a través de muchas experiencias, llegan a entender de forma vivida sus gustos y sus puntos fuertes y débiles."
+            },
+            {
+              "p": "Los niños tampoco se conocen a sí mismos desde el principio. A veces descubren que algo les gusta porque lo probaron, y otras se dan cuenta de que algo que admiraban en realidad no es para ellos."
+            },
+            {
+              "p": "Acumulando experiencias así, llegan a conocer una parte de sí mismos que no habrían entendido solo pensando."
+            },
+            {
+              "p": "Por otro lado, en un entorno en el que siempre están descubriendo cosas nuevas, pueden pasar a lo siguiente antes de profundizar en algo. Es importante cultivar no solo la cantidad de experiencias, sino también la capacidad de dedicarse a fondo cuando encuentran algo que les gusta de verdad."
+            }
+          ],
+          [
+            {
+              "p": "Lo que debes vigilar es que la experiencia no se convierta en un fin en sí misma."
+            },
+            {
+              "p": "Cuanto más fuerte es tu deseo de ampliar el mundo de tu hijo, más experiencias querrás darle. Pero las experiencias no son mejores cuantas más haya."
+            },
+            {
+              "p": "Es importante fijarse en lo que tu hijo ha sentido."
+            },
+            {
+              "p": "¿Se lo pasó bien? ¿Quiere repetirlo? ¿En qué se diferenció de lo que esperaba? Con solo reflexionar un poco después de una experiencia, esta queda grabada con más facilidad en él."
+            },
+            {
+              "p": "Además, cuando tu hijo dice que no quiere intentar algo, no hace falta pensar enseguida que es poco decidido. Puede que simplemente no le interese, o que todavía no esté preparado."
+            },
+            {
+              "p": "Dar un empujón es el punto fuerte del Animador, pero a veces esperar a que se ponga en marcha por sí mismo también es una forma de animar."
+            },
+            {
+              "p": "No solo dar experiencias, sino acompañarle hasta que esas experiencias se queden dentro de él."
+            },
+            {
+              "p": "Si logras hacerlo, las muchas experiencias que le has dado se conectarán con su crecimiento."
+            }
+          ],
+          [
+            {
+              "p": "Tú y tu hijo soléis chocar sobre todo cuando algo te parece una buena experiencia pero a él no le apetece."
+            },
+            {
+              "p": "«Es una oportunidad estupenda, así que pruébalo, y si no te gusta, lo dejas». Para ti es una idea natural, pero puede que tu hijo no lo sienta igual."
+            },
+            {
+              "p": "Sobre todo para un niño prudente, entrar en un entorno nuevo requiere mucha energía."
+            },
+            {
+              "p": "Si en esos momentos solo le pides que lo intente, aunque desde tu punto de vista le estés dando un empujón, puede que él lo viva como si le metieras prisa."
+            },
+            {
+              "p": "Lo importante es fijarse en la razón por la que no quiere intentarlo."
+            },
+            {
+              "p": "Si no le interesa, quizá no haga falta forzar la experiencia. Pero si le interesa y le paraliza el miedo a fracasar, dar juntos solo el primer paso puede cambiarlo todo."
+            },
+            {
+              "p": "Precisamente porque eres Animador, no tienes que empujar siempre hacia delante."
+            },
+            {
+              "p": "Más que hacerle intentar cosas, criar a un niño que se ponga en marcha cuando le apetezca intentarlas."
+            },
+            {
+              "p": "Si tienes presente esa diferencia, tu capacidad de acción será una fuerza para tu hijo y no una carga."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno en el que tu hijo pueda conocer muchos mundos distintos."
+            },
+            {
+              "p": "Es bueno no limitar su mundo al colegio y a casa, sino tener lugares como el deporte o las actividades culturales donde pueda encontrarse con otros valores. Más que lo que elija allí, tiene sentido descubrir, para empezar, que existen mundos que no conocía."
+            },
+            {
+              "p": "Eso sí, no hace falta llenarle la agenda."
+            },
+            {
+              "p": "Cuando algo le atraiga con fuerza, está bien que haya una etapa en la que dedique tiempo a una sola cosa en lugar de sumar experiencias nuevas. Una etapa para experimentar mucho y otra para profundizar en algo pueden convivir."
+            },
+            {
+              "p": "Además, un ambiente que no trate el fracaso como algo excesivamente malo también encaja con tu forma de pensar."
+            },
+            {
+              "p": "Que, cuando lo intente y no salga bien, no se le culpe, sino que pueda pensar en lo siguiente. Con un entorno así, el niño puede actuar sin temer solo al resultado."
+            },
+            {
+              "p": "Lo que debes preparar no es un entorno en el que siempre pueda tener éxito."
+            },
+            {
+              "p": "Es un entorno en el que pueda intentarlo con tranquilidad."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que no juzgas las posibilidades de tu hijo solo por cómo es ahora."
+            },
+            {
+              "p": "No cierras sus posibilidades pronto pensando «como ahora no puede, no es lo suyo» o «no tiene talento»."
+            },
+            {
+              "p": "Las capacidades de un niño cambian con la experiencia. Aunque la primera vez no sepa hacer nada, que algo le resulte interesante puede hacer que se entusiasme y, sin darse cuenta, convertirlo en un gran punto fuerte."
+            },
+            {
+              "p": "Y más importante que el talento en sí es la oportunidad de encontrarse con él."
+            },
+            {
+              "p": "Por muchas posibilidades que tenga, si no sabe que ese mundo existe, ni siquiera puede llegar a interesarse. Que los padres abran puertas a mundos nuevos tiene un gran sentido."
+            },
+            {
+              "p": "Además, tiendes a aceptar el fracaso como parte de la experiencia. Si el niño sabe que no se le juzgará solo por los resultados, puede dar un paso adelante con tranquilidad."
+            },
+            {
+              "p": "Poder dar el primer impulso a posibilidades que aún no se ven."
+            },
+            {
+              "p": "Ese es el gran punto fuerte del Animador."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que tu atención puede centrarse demasiado en dar la siguiente experiencia."
+            },
+            {
+              "p": "Las experiencias nuevas tienen un estímulo fácil de ver. Ir a un sitio por primera vez o empezar una actividad nueva también da a los padres la sensación de que su hijo está creciendo."
+            },
+            {
+              "p": "En cambio, el tiempo dedicado a seguir con algo durante mucho tiempo parece cambiar poco."
+            },
+            {
+              "p": "Pero, una vez que encuentra algo que le gusta de verdad, necesita tiempo para repetir lo mismo más que sumar experiencias nuevas. Lo que al principio no sabía hacer va saliendo poco a poco, y solo entonces aparece una diversión nueva."
+            },
+            {
+              "p": "Además, cuando tu hijo quiere dejar algo a medias, no siempre conviene pasar de inmediato a lo siguiente."
+            },
+            {
+              "p": "¿De verdad no le va? ¿O solo está pasando por una racha en la que las cosas no salen? Hay que pensarlo juntos."
+            },
+            {
+              "p": "Lo que necesitas no es reducir los retos."
+            },
+            {
+              "p": "Es, después de abrir muchas puertas, proteger también el tiempo para profundizar en lo valioso que haya encontrado."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Esfuerzo｜Entrenador🐯."
+            },
+            {
+              "p": "Al Animador se le da bien dar al niño muchas oportunidades y crear el primer paso hacia mundos nuevos. El Entrenador, en cambio, valora ir construyendo durante mucho tiempo lo que se ha encontrado."
+            },
+            {
+              "p": "Solo con el Tipo Desafío, las experiencias pueden seguir dispersándose y pasar a lo siguiente antes de que algo se convierta en una fuerza. Solo con el Tipo Esfuerzo, la importancia que se da a acumular puede reducir las ocasiones de dar el paso hacia mundos nuevos."
+            },
+            {
+              "p": "Primero, probar. Y, cuando encuentres algo que te guste, seguir con ello."
+            },
+            {
+              "p": "El reto descubre las posibilidades y la constancia convierte esas posibilidades en fuerza."
+            },
+            {
+              "p": "Combinando ambos, tu crianza tendrá todavía mejor equilibrio."
+            }
+          ],
+          [
+            {
+              "name": "Toyotomi Hideyoshi"
+            },
+            {
+              "p": "Toyotomi Hideyoshi es conocido por haber partido de una posición social humilde y haber logrado finalmente la unificación de Japón."
+            },
+            {
+              "p": "No era alguien con un camino de futuro trazado desde el principio. Pasando por muchas posiciones y funciones distintas, fue ampliando los lugares donde podía destacar."
+            },
+            {
+              "p": "No decidía sus posibilidades solo por dónde estaba, sino que, si había una oportunidad, se movía. Y a partir de ahí abría caminos nuevos. Esa imagen coincide con el Animador, que busca ampliar las posibilidades a través de la experiencia."
+            },
+            {
+              "name": "El Profesor Oak (Pokémon)"
+            },
+            {
+              "p": "El Profesor Oak tampoco es alguien que guíe a los niños por un solo camino desde el principio."
+            },
+            {
+              "p": "Les entrega su primer Pokémon y les confía una Pokédex, creando la ocasión para salir a un mundo amplio. Lo que encuentren y vivan después depende de ellos."
+            },
+            {
+              "p": "No les enseña las respuestas desde el principio, sino que les abre una puerta para lanzarse al mundo."
+            },
+            {
+              "p": "Primero, salir y ver el mundo con tus propios ojos."
+            },
+            {
+              "p": "Esa actitud de querer dar al niño experiencias así refleja muy bien al Animador."
+            }
+          ],
+          [
+            {
+              "p": "A Toyotomi Hideyoshi se le atribuyen las palabras: «Si crees que perderás, perderás. Si crees que ganarás, ganarás. Y aunque salga al revés, di a los demás que ganarás»."
+            },
+            {
+              "p": "En lugar de quedarse paralizado pensando si podrá o no, primero creer en las propias posibilidades y ponerse en marcha. Esa actitud coincide con tu forma de pensar, la de quien empuja a su hijo hacia delante."
+            },
+            {
+              "p": "Los niños no saben desde el principio para qué sirven."
+            },
+            {
+              "p": "Hay cosas que solo empiezan a apasionarles cuando las prueban de verdad. Puede que conozcan a un amigo muy importante en un lugar al que se atrevieron a ir. Y también pueden descubrir que algo que empezaron por admiración no es para ellos."
+            },
+            {
+              "p": "Ambas son experiencias con sentido."
+            },
+            {
+              "p": "Y lo que el Profesor Oak le dio a Ash tampoco era una respuesta acabada. Le entregó su primer Pokémon y una Pokédex incompleta, y le envió a un mundo que aún no conocía."
+            },
+            {
+              "p": "Preparó tres iniciales, dejó que eligiera él y le envió de viaje."
+            },
+            {
+              "p": "Según el Pokémon elegido, las experiencias son distintas, y hay tantas historias como Pokémon capturados."
+            },
+            {
+              "p": "Esa forma de dar al niño una oportunidad así es, sin duda, propia del Animador."
+            },
+            {
+              "p": "Los padres tienen un papel parecido."
+            },
+            {
+              "p": "No se puede decidir desde el principio el futuro de un hijo. Pero sí se le puede mostrar la puerta, haciéndole saber que existen mundos así."
+            },
+            {
+              "p": "Lo importante es que los padres no le hagan correr sin parar hasta el final."
+            },
+            {
+              "p": "Precisamente porque se te da bien empujar a tu hijo, a veces también hace falta estar a su lado cuando se detiene. Si después de vivir muchas experiencias se entusiasma con una sola cosa, está bien que esta vez no añadas estímulos nuevos y protejas su tiempo para quedarse ahí."
+            },
+            {
+              "p": "Primero, probar. Valorar lo que sintió allí. Y, cuando encuentre algo que le guste, esta vez acompañarle con calma."
+            },
+            {
+              "p": "Lo más grande que puedes darle a tu hijo no es el éxito en sí."
+            },
+            {
+              "p": "Es el valor de sentir que está bien adentrarse en un mundo que no conoce."
+            },
+            {
+              "p": "Con ese valor, algún día, aunque sus padres no le empujen, tu hijo podrá caminar por sí mismo hacia mundos nuevos."
+            }
+          ]
+        ]
+      },
+      "social": {
+        "intro": [
+          "Como Mentor, eres «una persona sincera que valora la amabilidad y los buenos modales y sabe cultivar un corazón atento a los demás»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "No solo valoras las capacidades y los logros de tu hijo, sino también en qué tipo de persona se convierte."
+            },
+            {
+              "p": "Obtener buenos resultados en los estudios o en el deporte es importante, pero no crees que eso baste para que la crianza sea un éxito. Piensas que saludar, cumplir las promesas o ser capaz de ponerse en el lugar del otro también son grandes fuerzas en la vida."
+            },
+            {
+              "p": "Algún día tu hijo saldrá de casa y vivirá relacionándose con muchas personas. Lo que necesitará entonces no serán solo conocimientos y capacidades."
+            },
+            {
+              "p": "Por muy brillante que sea alguien, si los demás no confían en él, hay un límite a lo que puede hacer solo. En cambio, quien sabe cuidar a los que le rodean encuentra personas que le ayudan en los momentos difíciles y compañeros con los que lograr cosas juntos."
+            },
+            {
+              "p": "Por eso das importancia también a los pequeños gestos del día a día."
+            },
+            {
+              "p": "Más que una educación especial, enseñas a relacionarte con la sociedad a través de las conversaciones en casa y del trato con las personas. Valorar el crecimiento del carácter y no solo de las capacidades: eso es el Mentor."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer siendo atentos con los demás y ganándose con facilidad su confianza."
+            },
+            {
+              "p": "En lugar de actuar solo según cómo se sienten, desarrollan el hábito de pensar cómo se sentirá el otro. Por eso, en las amistades y en la vida en grupo, son capaces de actuar colaborando con los demás."
+            },
+            {
+              "p": "Además, en una familia que valora los modales y las promesas, los niños aprenden de forma natural los comportamientos básicos que se necesitan en la sociedad."
+            },
+            {
+              "p": "Estas capacidades no se ven como una nota de examen. Pero, cuando crecen y salen al mundo, adquieren un gran valor como la fuerza de inspirar confianza."
+            },
+            {
+              "p": "Por otro lado, los niños que saben cuidar de los demás a veces dejan para el final sus propios sentimientos."
+            },
+            {
+              "p": "No saber decir que no a lo que no quieren. Forzarse para estar a la altura de lo que se espera de ellos. Para que no lleguen a eso, hay que decirles que pueden valorar sus propios sentimientos tanto como se preocupan por los demás."
+            },
+            {
+              "p": "Ser una persona amable no es lo mismo que aguantarse siempre."
+            }
+          ],
+          [
+            {
+              "p": "Lo que debes vigilar es no confundir los buenos modales con la obediencia."
+            },
+            {
+              "p": "Saludar. Cumplir las promesas. No hacer daño a los demás. Sin duda hay cosas que merece la pena valorar en la sociedad."
+            },
+            {
+              "p": "Pero adaptarse a los demás no siempre es lo correcto."
+            },
+            {
+              "p": "A veces tu hijo cuestionará las normas del colegio o no estará de acuerdo con la opinión de un adulto. También puede pensar distinto que sus amigos."
+            },
+            {
+              "p": "Si en esos momentos solo le pides que se adapte, puede que empiece a elegir lo que no le valdrá una regañina en lugar de pensar qué es lo correcto."
+            },
+            {
+              "p": "Lo que de verdad quieres formar seguramente no es un niño que solo hace lo que le mandan."
+            },
+            {
+              "p": "¿Por qué no se debe hacer eso? ¿Por qué hay que cuidar al otro? Si llega a pensar hasta ahí, podrá juzgar por sí mismo incluso donde sus padres no le ven."
+            },
+            {
+              "p": "Valorar a los demás y tener ideas propias pueden ir de la mano."
+            },
+            {
+              "p": "Cultivar ambas cosas a la vez es lo importante para el Mentor."
+            }
+          ],
+          [
+            {
+              "p": "Tú y tu hijo soléis chocar sobre todo cuando te preocupa cómo ven los demás su comportamiento."
+            },
+            {
+              "p": "Cosas que en casa permitirías puede que quieras corregirlas si las hace en el colegio o en público. Como padre o madre, quieres que aprenda a comportarse de una manera que le sirva en la sociedad para que no tenga problemas en el futuro."
+            },
+            {
+              "p": "Pero puede que tu hijo no perciba esa intención."
+            },
+            {
+              "p": "¿Por qué tengo que preocuparme por los demás? Si no molesto a nadie, ¿qué tiene de malo? Puede que se haga preguntas así."
+            },
+            {
+              "p": "Si en ese momento lo zanjas con un «Así son las cosas», a tu hijo le parecerá que solo te importa lo que piensen los demás."
+            },
+            {
+              "p": "Lo importante es pensar juntos para qué sirve esa norma."
+            },
+            {
+              "p": "¿Es para no hacer daño a los demás? ¿Para que el grupo esté a gusto? ¿O es algo que simplemente se ha mantenido desde siempre y cuya razón se ha ido diluyendo?"
+            },
+            {
+              "p": "Si muestras que tú también reflexionas, tu hijo aprenderá a pensar en el sentido de las normas sociales en lugar de aceptarlas sin más."
+            },
+            {
+              "p": "Criar a alguien que piense por qué se cumplen las normas, más que a alguien que solo las cumple."
+            },
+            {
+              "p": "Si consigues transmitir eso, tus valores también le llegarán con más facilidad."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno en el que tu hijo tenga relaciones con personas también fuera de casa."
+            },
+            {
+              "p": "Es bueno que no solo trate con otros niños, sino que tenga experiencias con personas de distintas edades y posiciones. La distancia adecuada y la consideración, difíciles de aprender solo en casa, se van adquiriendo poco a poco en el trato con la gente."
+            },
+            {
+              "p": "También es importante que el propio hogar sea un lugar donde se aprenda a valorar a las personas."
+            },
+            {
+              "p": "Si los padres exigen buenos modales a su hijo mientras ellos mismos tratan con desdén a los dependientes o a la familia, sus palabras pierden fuerza. En cambio, ver a los padres dar las gracias con naturalidad o pedir perdón cuando se equivocan se convierte directamente en un aprendizaje para el niño."
+            },
+            {
+              "p": "El trato con los demás no se enseña solo con explicaciones."
+            },
+            {
+              "p": "Los adultos que el niño ve cada día en casa son su primera lección de vida en sociedad."
+            },
+            {
+              "p": "Y cuando tu hijo cometa un error fuera de casa, no te limites a reñirle: pensad juntos cómo se sintió la otra persona. Esa suma de momentos conduce a una consideración que va más allá de la simple formalidad."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que no evalúas la vida de tu hijo solo por sus capacidades."
+            },
+            {
+              "p": "Las notas o los estudios a los que accede se expresan fácilmente en números. Pero saber cuidar a las personas o inspirar confianza no se convierte fácilmente en números."
+            },
+            {
+              "p": "Aun así, entiendes que esas fuerzas son importantes en la vida."
+            },
+            {
+              "p": "Saber escuchar. Cumplir lo prometido. Pedir perdón cuando uno se ha equivocado. Esos pequeños gestos marcan una diferencia cada vez mayor a medida que se crece."
+            },
+            {
+              "p": "Y las relaciones humanas están presentes en todos los momentos de la vida de un niño."
+            },
+            {
+              "p": "Ni en el colegio ni en el trabajo se puede vivir completamente solo. Entre personas con la misma capacidad, quienes despiertan ganas de esforzarse juntos tendrán más oportunidades."
+            },
+            {
+              "p": "No le estás enseñando a tu hijo modales solo para que la sociedad le valore."
+            },
+            {
+              "p": "Poder construir la base para vivir creando buenas relaciones con los demás."
+            },
+            {
+              "p": "Ese es el gran punto fuerte del Mentor."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que, al pedirle que tenga en cuenta a los demás, puedes dejar para el final los sentimientos de tu propio hijo."
+            },
+            {
+              "p": "Saber preocuparse por los demás es una fuerza maravillosa. Pero ceder siempre no es amabilidad."
+            },
+            {
+              "p": "Seguirles la corriente a los amigos aunque no quiera. Callarse aunque dude de lo que dice un profesor. Aguantarse solo para no herir a nadie. Si esto se prolonga, deja de ser consideración y se convierte en sacrificio propio."
+            },
+            {
+              "p": "A veces hace falta decir que no. Expresar una opinión sobre algo con lo que no se está de acuerdo no tiene por qué romper una relación."
+            },
+            {
+              "p": "Al contrario, ser capaz de expresar lo que uno siente escuchando también al otro es lo que, en el verdadero sentido, da fuerza para vivir en sociedad."
+            },
+            {
+              "p": "Lo que quieres enseñar no es la manera de parecer cómodo para los demás."
+            },
+            {
+              "p": "Es la manera de respetar a los demás respetándose a uno mismo de la misma forma."
+            },
+            {
+              "p": "¿Se estará aguantando tu hijo precisamente por ser amable? Si te fijas en eso de vez en cuando, tu punto fuerte se transmitirá de una forma más sana."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Individualidad｜Productor🐱."
+            },
+            {
+              "p": "El Mentor valora las relaciones con los demás y se le da bien cultivar la capacidad de convivir a gusto con la gente en sociedad. El Productor, en cambio, valora proteger la forma de ser del niño aunque sea diferente de los demás."
+            },
+            {
+              "p": "Solo con el Tipo Convivencia, la atención a la armonía puede llevar a reprimir la individualidad del niño. Solo con el Tipo Individualidad, la prioridad de ser uno mismo puede llevar a tomarse a la ligera las relaciones con los demás."
+            },
+            {
+              "p": "Valorar a las personas. Pero sin adaptarse demasiado a los demás."
+            },
+            {
+              "p": "Tener a la vez la fuerza para vivir en sociedad y la fuerza para vivir siendo uno mismo."
+            },
+            {
+              "p": "Combinando ambos, resulta más fácil criar a alguien que sea amable y que, aun así, sepa decir lo que piensa."
+            }
+          ],
+          [
+            {
+              "name": "Jesucristo"
+            },
+            {
+              "p": "Las enseñanzas de Jesucristo son conocidas por tener como grandes temas el amor al prójimo y el perdón."
+            },
+            {
+              "p": "No juzgar el valor de una persona solo por su posición o su capacidad, y volver la mirada también hacia quienes están en situación de debilidad. Esa forma de pensar coincide con el Mentor, que valora el trato con los demás y la consideración."
+            },
+            {
+              "p": "No se trata simplemente de hacer cumplir las normas, sino de dar importancia a la actitud de valorar a las personas que hay detrás de ellas."
+            },
+            {
+              "p": "Pensar no solo en cómo comportarse, sino también en por qué hay que valorar a las personas."
+            },
+            {
+              "p": "Es una figura que simboliza esos valores."
+            },
+            {
+              "name": "Tanjiro Kamado (Kimetsu no Yaiba)"
+            },
+            {
+              "p": "Tanjiro es un personaje que destaca no solo por su fuerza, sino por su compasión hacia los demás."
+            },
+            {
+              "p": "Cuida a sus compañeros, por supuesto, y a veces incluso se fija en el pasado y el sufrimiento de sus enemigos. Pero no es solo amable: por aquello que debe proteger, se mantiene firme en su voluntad."
+            },
+            {
+              "p": "Se preocupa por los que le rodean, pero no suelta lo que es importante dentro de él."
+            },
+            {
+              "p": "Ser amable con los demás y tener convicciones propias pueden ir de la mano. La figura de Tanjiro muestra con claridad la forma de relacionarse con las personas que el Mentor quiere transmitir a sus hijos."
+            }
+          ],
+          [
+            {
+              "p": "Entre las palabras de Jesucristo es muy conocida la enseñanza: «Ama a tu prójimo como a ti mismo»."
+            },
+            {
+              "p": "Lo importante aquí no es solo «ama a tu prójimo». También incluye la parte de «como a ti mismo»."
+            },
+            {
+              "p": "No hace falta sacrificarse continuamente para valorar a los demás."
+            },
+            {
+              "p": "Esto también es algo que querríamos que tú, como Mentor, transmitieras a tu hijo."
+            },
+            {
+              "p": "Los niños amables a menudo son en quienes los demás se apoyan. Puede que se aguanten por un amigo o que se traguen su opinión para no estropear el ambiente."
+            },
+            {
+              "p": "En esos momentos, reconoce que han sabido preocuparse por los demás y, al mismo tiempo, presta atención a sus propios sentimientos."
+            },
+            {
+              "p": "Tanjiro dejó palabras como: «Las personas se mueven por el corazón, por eso el corazón puede hacerse fuerte sin límites»."
+            },
+            {
+              "p": "Es una escena que muestra de forma concisa el crecimiento del corazón humano y su potencial infinito."
+            },
+            {
+              "p": "Tanjiro también, aunque tiene una gran bondad hacia los demás, no es alguien que renuncie a lo que ha decidido proteger solo para adaptarse a los demás."
+            },
+            {
+              "p": "Por eso es importante que los modales y la consideración que enseñas a tu hijo no sean solo para encajar."
+            },
+            {
+              "p": "Pensar en la posición del otro. Pero tener opinión propia ante lo que no le convence. Ayudar a alguien. Pero sin cargar con tanto que le haga sufrir."
+            },
+            {
+              "p": "Solo cuando sea capaz de ambas cosas, la amabilidad se convertirá en su fuerza."
+            },
+            {
+              "p": "Criar a un niño capaz de valorar a las personas. Y criarle para que, como una de esas personas, también sepa valorarse a sí mismo."
+            },
+            {
+              "p": "Lo que puedes enseñar no son simples modales."
+            },
+            {
+              "p": "Es la fuerza para vivir junto a los demás."
+            },
+            {
+              "p": "Con esa fuerza, tu hijo no se limitará a adaptarse a la sociedad, sino que crecerá como una persona en quien los demás confían y que también valora su propia vida."
+            }
+          ]
+        ]
+      },
+      "security": {
+        "intro": [
+          "Como Protector, eres «una persona cariñosa que valora la felicidad de su hijo por encima de todo y siempre está de su lado»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Valoras que tu hijo viva feliz incluso más que su éxito."
+            },
+            {
+              "p": "Seguramente también te parece importante que vaya a un buen colegio o que en el futuro tenga un trabajo estable. Pero si para ello tuviera que sufrir constantemente, eres capaz de detenerte a pensar si eso es realmente la felicidad."
+            },
+            {
+              "p": "Más que si es mejor que los demás, si puede vivir cada día con satisfacción. No solo valoras los resultados, sino también los sentimientos del camino."
+            },
+            {
+              "p": "En el fondo está el deseo de que el hogar sea, para tu hijo, un lugar donde sentirse seguro."
+            },
+            {
+              "p": "En el mundo exterior habrá fracasos. Habrá días en los que las cosas no vayan bien con los amigos o en los que pierda la confianza. Si incluso entonces se le siguiera evaluando en casa, no tendría dónde descansar el corazón."
+            },
+            {
+              "p": "No quieres reconocerle por haber logrado algo, sino estar de su lado independientemente de los resultados."
+            },
+            {
+              "p": "Pase lo que pase fuera, al volver a casa hay alguien que le acepta."
+            },
+            {
+              "p": "Quien puede dar a su hijo esa tranquilidad es el Protector."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer siendo capaces de expresar lo que sienten y de pedir ayuda a los demás."
+            },
+            {
+              "p": "Si saben que no se les reñirá con dureza cuando fracasen, les resulta más fácil contar a sus padres incluso lo que no les conviene. Cuando tienen problemas, no cargan con ellos solos, sino que tienen la opción de hablarlo con alguien."
+            },
+            {
+              "p": "Además, la experiencia de sentirse aceptados en casa se convierte en la base de su autoestima."
+            },
+            {
+              "p": "Con la sensación de tener un lugar al que volver, pueden lanzarse con tranquilidad al mundo fuera de casa. De hecho, para separarse de sus padres, los niños necesitan una relación segura con ellos."
+            },
+            {
+              "p": "Por otro lado, precisamente porque tienen un entorno tan acogedor, a veces intentan alejarse pronto de lo difícil."
+            },
+            {
+              "p": "Cuando se topan con algo un poco complicado, puede que eviten incluso lo que podrían superar si siguieran."
+            },
+            {
+              "p": "Lo importante no es hacerles sufrir, sino que puedan afrontar las dificultades teniendo un lugar seguro."
+            }
+          ],
+          [
+            {
+              "p": "Lo que debes vigilar es no confundir proteger a tu hijo con quitarle las dificultades."
+            },
+            {
+              "p": "Es natural querer ayudar cuando tu hijo sufre. Sobre todo porque valoras sus sentimientos, seguramente eres prudente a la hora de exigirle demasiado."
+            },
+            {
+              "p": "Pero el proceso de crecer a veces requiere algo de sufrimiento."
+            },
+            {
+              "p": "Practicar y apenas mejorar. Chocar con un amigo. Estudiar y no obtener el resultado esperado. No es posible evitar todas estas experiencias."
+            },
+            {
+              "p": "Lo importante entonces no es hacerle dejarlo enseguida porque parece que lo pasa mal, ni tampoco obligarle a aguantar y seguir."
+            },
+            {
+              "p": "Es ver qué es exactamente lo que le está costando."
+            },
+            {
+              "p": "¿Ahora lo pasa mal pero también tiene ganas de seguir? ¿O está desgastándose física y emocionalmente para continuar? Según esa diferencia, la forma de intervenir de los padres también cambia."
+            },
+            {
+              "p": "Un hogar seguro no es un lugar donde no pasa nada malo. Es un lugar al que se puede volver aunque pasen cosas malas."
+            },
+            {
+              "p": "Con esa idea, tu amabilidad no frenará los retos de tu hijo, sino que se convertirá en una fuerza que los sostiene."
+            }
+          ],
+          [
+            {
+              "p": "Tú y tu hijo soléis chocar sobre todo cuando él intenta seguir con algo a pesar de estar sufriendo."
+            },
+            {
+              "p": "A veces, aunque a tus ojos se le vea claramente mal, él dice que no quiere dejarlo. Tú querrás decirle que no hace falta que se fuerce."
+            },
+            {
+              "p": "Pero para un niño, que algo le cueste y que quiera dejarlo no siempre son lo mismo."
+            },
+            {
+              "p": "Quizá le frustra no jugar en los partidos, pero le encanta su club. Quizá estudiar es duro, pero hay un colegio al que quiere ir."
+            },
+            {
+              "p": "Si los padres siempre le preparan una salida de antemano, puede sentir que no confían en que pueda superarlo."
+            },
+            {
+              "p": "Y al revés, tampoco hace falta hacerle aguantar «por su crecimiento» cuando de verdad ha llegado a su límite."
+            },
+            {
+              "p": "Lo que necesitas no es tanto juzgar su sufrimiento como comprobar juntos qué quiere hacer él."
+            },
+            {
+              "p": "Si quiere seguir, apóyale. Si quiere apartarse, pensad juntos una forma que no sea huir. Si duda, no tengas prisa por llegar a una conclusión."
+            },
+            {
+              "p": "Proteger no siempre significa alejarle de las dificultades."
+            },
+            {
+              "p": "Cuando intenta superar algo, confiar en su fuerza y estar a su lado también es un papel importante del Protector."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un hogar donde tu hijo pueda fracasar sin miedo."
+            },
+            {
+              "p": "Que no solo se le elogie los días que vuelve con buenos resultados, sino que también pueda volver como siempre los días en que las cosas salieron mal. Un entorno así es el que mejor saca tus virtudes."
+            },
+            {
+              "p": "Lo especialmente importante es no convertir el hogar en un lugar de evaluación."
+            },
+            {
+              "p": "En el colegio le ponen notas, en el deporte hay victorias y derrotas, y con los amigos le preocupa cómo le ven. Fuera de casa, los niños ya están expuestos a muchísimas evaluaciones."
+            },
+            {
+              "p": "Por eso, en casa hace falta tiempo para aceptar su existencia tal cual, independientemente de si ha logrado algo."
+            },
+            {
+              "p": "Eso sí, un lugar seguro no es lo mismo que un lugar donde no hay que hacer nada."
+            },
+            {
+              "p": "Como ha descansado bien en casa, puede volver a salir. Si vuelve tras fracasar, puede intentarlo otra vez."
+            },
+            {
+              "p": "El hogar que tú creas no es un lugar para esconder a tu hijo del mundo exterior."
+            },
+            {
+              "p": "Es un lugar al que puede volver después de salir a dar lo mejor de sí y fracasar."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que los resultados no cambian tu relación con tu hijo."
+            },
+            {
+              "p": "Los niños fracasan muchas veces mientras crecen. A veces no consiguen lo que sus padres esperaban, y otras pierden ellos mismos la confianza."
+            },
+            {
+              "p": "En esos momentos, lo que necesitan no es solo más gente que les evalúe."
+            },
+            {
+              "p": "Saber que hay alguien que le acepta aunque no le haya salido bien le da fuerzas para volver a levantarse."
+            },
+            {
+              "p": "Cuando tu hijo está bajo de ánimo, nunca rebajas su valor junto con él."
+            },
+            {
+              "p": "Y los niños que tienen un lugar seguro no temen el fracaso más de lo necesario."
+            },
+            {
+              "p": "Crear un lugar al que siempre puedan volver para que, de hecho, puedan llegar más lejos."
+            },
+            {
+              "p": "Ese es el gran punto fuerte del Protector."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que puedes vivir el sufrimiento de tu hijo demasiado como propio."
+            },
+            {
+              "p": "Cuanto más fuerte es tu deseo de evitarle malos ratos, más intentas protegerle antes de que se haga daño, y puedes llegar a eliminar incluso dificultades que tu hijo podría superar solo."
+            },
+            {
+              "p": "Pero los niños no se hacen fuertes por no fracasar."
+            },
+            {
+              "p": "Van ganando confianza poco a poco gracias a experiencias en las que, pese a fracasar, todo salió bien, o en las que superaron a su manera una etapa difícil."
+            },
+            {
+              "p": "Si los padres recogen todas las piedras y preparan un camino fácil, puede que en ese camino no se caigan. Pero algún día, cuando empiecen a caminar solos, tropezarán con una piedra que nunca habían visto."
+            },
+            {
+              "p": "Por eso, no hace falta prevenir incluso los pequeños fracasos."
+            },
+            {
+              "p": "Si no te pide ayuda, prueba a observar un poco. Basta con tener preparado un lugar al que pueda volver cuando lo necesite."
+            },
+            {
+              "p": "Proteger a tu hijo no es lo mismo que eliminar el sufrimiento de su vida."
+            },
+            {
+              "p": "Si lo tienes presente, tu amabilidad también se conectará con su fortaleza."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Desafío｜Animador🐒."
+            },
+            {
+              "p": "Al Protector se le da bien crear un lugar donde el niño se sienta seguro. El Animador, en cambio, valora crear oportunidades para dar el paso hacia mundos nuevos."
+            },
+            {
+              "p": "Solo con el Tipo Seguridad, el afán de proteger puede reducir las ocasiones de salir a lo desconocido. Solo con el Tipo Desafío, dar experiencia tras experiencia puede hacer que el corazón del niño no llegue a seguir el ritmo."
+            },
+            {
+              "p": "Como hay un lugar seguro, se pueden afrontar retos. Y como se afrontan retos, el lugar seguro cobra aún más sentido."
+            },
+            {
+              "p": "Alguien que da el empujón y alguien que crea un lugar al que volver."
+            },
+            {
+              "p": "Combinando estas dos formas de pensar, al niño le resulta más fácil dar el paso hacia el mundo exterior sin forzarse demasiado."
+            }
+          ],
+          [
+            {
+              "name": "Buda (Siddharta Gautama)"
+            },
+            {
+              "p": "Buda es conocido por haber contemplado por qué sufren las personas y por haber seguido pensando en cómo alejarse de ese sufrimiento."
+            },
+            {
+              "p": "En lugar de ignorar el sufrimiento y empujar hacia delante, primero mirar el propio sufrimiento. Esa actitud coincide con el Protector, que valora los sentimientos del niño."
+            },
+            {
+              "p": "No evaluar a la otra persona desde fuera, sino ver qué está sintiendo."
+            },
+            {
+              "p": "Antes que los resultados, mirar a la persona que se tiene delante."
+            },
+            {
+              "p": "Es una figura que simboliza esa actitud."
+            },
+            {
+              "name": "Hiroshi Nohara (Shin-chan)"
+            },
+            {
+              "p": "Hiroshi Nohara no aparece retratado como un padre perfecto. Aun así, es alguien con un profundo amor por su familia que, si les pasa algo, al final siempre intenta protegerlos."
+            },
+            {
+              "p": "Tampoco es un padre que exija siempre grandes logros a Shinnosuke ni que intente criarlo según un ideal."
+            },
+            {
+              "p": "En el día a día es despreocupado, pero en los momentos que de verdad importan da un paso al frente por su familia."
+            },
+            {
+              "p": "Más que convertir el hogar en un lugar perfecto, convertirlo en un lugar al que, pase lo que pase, al final se puede volver. Esa imagen coincide con la tranquilidad que transmite el Protector."
+            }
+          ],
+          [
+            {
+              "p": "Entre las palabras de Buda es conocida la enseñanza: «Sé tu propia luz, sé tu propio refugio»."
+            },
+            {
+              "p": "Los padres no pueden cargar para siempre con el sufrimiento de sus hijos."
+            },
+            {
+              "p": "Al crecer, aumentan las preocupaciones en lugares que los padres desconocen. Puede fracasar en el colegio o salir herido en sus relaciones. Algún día llegará el momento en que tenga que levantarse por sí mismo en un lugar al que sus padres no podrán acudir enseguida."
+            },
+            {
+              "p": "Por eso, lo que tú, como Protector, quieres conseguir no es solo proteger a tu hijo toda la vida."
+            },
+            {
+              "p": "Es convertir algún día la seguridad que ha recibido en su propia fortaleza."
+            },
+            {
+              "p": "Hiroshi Nohara tampoco es un padre que resuelva de antemano todos los problemas de su familia. A menudo se equivoca, y Shinnosuke hace lo que le da la gana. Aun así, cuando de verdad importa, pone a su familia detrás de él para protegerla."
+            },
+            {
+              "p": "Lo que necesita un niño tampoco es una vida en la que no pase nada."
+            },
+            {
+              "p": "Puede volver aunque fracase. Puede hablar aunque le hayan herido. Si algo es imposible, puede recibir ayuda. Con esa certeza, el niño puede salir incluso a un mundo que da un poco de miedo."
+            },
+            {
+              "p": "Tu amabilidad no es para retener a tu hijo en casa."
+            },
+            {
+              "p": "Es para enviarle fuera con tranquilidad."
+            },
+            {
+              "p": "Así que, cuando tu hijo choque contra un muro, no hace falta que lo derribes tú enseguida."
+            },
+            {
+              "p": "Primero, mira qué hace él. Si hace falta, ponte a su lado. Si sigue siendo difícil, pensad juntos. Y si hay un peligro real, protégele sin dudar."
+            },
+            {
+              "p": "Con esa distancia, tu hijo podrá tener a la vez la tranquilidad de sentirse protegido y la confianza de haberlo superado por sí mismo."
+            },
+            {
+              "p": "«Tú puedes. Cuando estés cansado, vuelve siempre que quieras»."
+            },
+            {
+              "p": "Poder despedirle con ese sentimiento es la crianza que tú, como Protector, puedes ofrecer."
+            }
+          ]
+        ]
+      },
+      "effort": {
+        "intro": [
+          "Como Entrenador, eres «una persona de gran corazón que cree en el esfuerzo de su hijo y sabe acompañar sus pasos sin prisas».",
+          "Valoras más la acumulación de pequeños pasos cada día que los resultados inmediatos. No decides las posibilidades solo por el talento: quieres cultivar la fuerza de crecer poco a poco a base de constancia."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Crees que incluso un gran éxito está al final de la acumulación de pequeños pasos diarios."
+            },
+            {
+              "p": "Estudiar un poco cada día antes que sacar una buena nota en un solo examen. Practicar hoy también lo que ayer no salía antes que mejorar de repente. Encuentras valor en esa acumulación discreta."
+            },
+            {
+              "p": "Por eso, aunque tu hijo no obtenga resultados enseguida, no renuncias fácilmente a sus posibilidades."
+            },
+            {
+              "p": "Eres capaz de mirar el crecimiento en un plazo largo, no solo los resultados inmediatos."
+            },
+            {
+              "p": "El esfuerzo que valoras no es llegar al límite."
+            },
+            {
+              "p": "Más que darlo todo en días especiales, avanzar un poco también en los días normales. Crees que lo que se va acumulando —hoy mejor que ayer, mañana mejor que hoy— se convertirá algún día en una gran fuerza."
+            },
+            {
+              "p": "Aunque el paso de hoy sea pequeño, seguir dándolo tiene sentido."
+            },
+            {
+              "p": "Quien puede creer en el crecimiento de su hijo con esa mirada a largo plazo es el Entrenador."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer siendo capaces de seguir con constancia aunque los resultados no lleguen enseguida."
+            },
+            {
+              "p": "En lugar de pensar «como no me sale, no es lo mío», les resulta más fácil pensar «es que todavía no lo he conseguido»."
+            },
+            {
+              "p": "Por eso son capaces de afrontar no solo lo que se les da bien desde el principio, sino también lo que requiere tiempo para aprenderse."
+            },
+            {
+              "p": "Además, como se valora el proceso y no solo el resultado, encuentran con más facilidad valor en el esfuerzo en sí."
+            },
+            {
+              "p": "No se les reconoce por haber sacado un 9, sino que también se ve que esta vez han sido más constantes en el estudio. Aunque no hayan destacado en el partido, se sabe que han seguido entrenando cada día."
+            },
+            {
+              "p": "Esas experiencias se convierten en fuerza para seguir incluso en las etapas sin resultados."
+            },
+            {
+              "p": "Por otro lado, los niños que son constantes y responsables a veces sienten culpa al dejar algo."
+            },
+            {
+              "p": "Seguir es importante, pero no todo tiene que continuarse hasta el final. Es importante cultivar también la capacidad de distinguir lo que merece la pena acumular de aquello en lo que conviene cambiar de rumbo."
+            }
+          ],
+          [
+            {
+              "p": "Lo que debes vigilar es que seguir no se convierta en un fin en sí mismo."
+            },
+            {
+              "p": "El esfuerzo es, sin duda, una gran fuerza. Pero seguir haciendo lo mismo no garantiza resultados."
+            },
+            {
+              "p": "Si ha aumentado las horas de estudio y sus notas no cambian, quizá lo que haya que cambiar no sea el tiempo, sino el método. Incluso con una actividad que lleva años haciendo, si sus objetivos cambian, puede elegir otro camino."
+            },
+            {
+              "p": "Lo que hace falta entonces no es solo esforzarse más."
+            },
+            {
+              "p": "¿De verdad tiene sentido seguir?"
+            },
+            {
+              "p": "Para seguir esforzándose, también hace falta detenerse a pensar de vez en cuando."
+            },
+            {
+              "p": "Además, los niños tienen épocas en las que simplemente no pueden esforzarse."
+            },
+            {
+              "p": "Hay días de cansancio y temporadas sin ganas. Lo que ha ido acumulando no desaparece por descansar unos días."
+            },
+            {
+              "p": "Que haya épocas en las que no puede esforzarse no tiene nada que ver con su valor como persona."
+            },
+            {
+              "p": "Precisamente porque valoras la constancia a largo plazo, intenta ver también el descanso como parte de esa larga acumulación."
+            }
+          ],
+          [
+            {
+              "p": "Tú y tu hijo soléis chocar sobre todo cuando dice de repente que quiere dejarlo a mitad de camino."
+            },
+            {
+              "p": "Si acaba de empezar, todavía se entiende. Pero si de pronto quiere dejar algo que lleva años haciendo, sentirás que es una pena desperdiciar todo lo acumulado."
+            },
+            {
+              "p": "Si supera esta etapa difícil, quizá vuelva a divertirse; puede que no quieras que se acostumbre a abandonar aquí. Seguramente tienes esas preocupaciones."
+            },
+            {
+              "p": "Pero los motivos por los que un niño quiere dejar algo no son uno solo."
+            },
+            {
+              "p": "Puede que quiera huir de que las cosas no salgan, o que, tras haberlo vivido lo suficiente, su interés haya pasado a otra cosa. También puede que el propio entorno ya no le convenga."
+            },
+            {
+              "p": "Lo importante no es decidir enseguida si sigue o lo deja."
+            },
+            {
+              "p": "¿Qué ha ganado hasta ahora? ¿Por qué quiere dejarlo ahora? ¿Hay algo que desee al final de seguir? Pensando juntos en estas preguntas, se puede dar sentido incluso a la decisión de dejarlo."
+            },
+            {
+              "p": "Lo acumulado no se queda en cero en el momento en que lo deja."
+            },
+            {
+              "p": "Es importante cultivar tanto la fuerza para seguir como la fuerza para cerrar una etapa por sí mismo y pasar a la siguiente."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno en el que se pueda ver el pequeño crecimiento en un plazo largo."
+            },
+            {
+              "p": "Más que evaluar al detalle los resultados de cada día, conviene fijarse en qué ha cambiado respecto a hace un tiempo."
+            },
+            {
+              "p": "Lo que hace seis meses no sabía hacer, ahora lo hace con naturalidad. Lo que antes abandonaba enseguida, ahora puede mantenerlo un poco más. Esos cambios son difíciles de notar cuando se ven todos los días."
+            },
+            {
+              "p": "Por eso, tener de vez en cuando un momento para mirar atrás encaja bien con tu forma de criar."
+            },
+            {
+              "p": "También es importante un entorno que facilite convertir el esfuerzo en hábito."
+            },
+            {
+              "p": "En lugar de marcar cada vez un gran objetivo, crear una forma de hacerlo que sea fácil de mantener, y un sistema que permita hacer un poco incluso en los días difíciles, no solo esforzarse los días buenos, hace que la acumulación sea estable."
+            },
+            {
+              "p": "Y cuando lleguen los resultados, mirar no solo el logro final, sino también el proceso que llevó hasta él."
+            },
+            {
+              "p": "Más que crear un día especial, acumular días normales."
+            },
+            {
+              "p": "Un ambiente así en casa es el que mejor saca las virtudes del Entrenador."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que sabes creer en el crecimiento de tu hijo a largo plazo."
+            },
+            {
+              "p": "Cada niño crece a un ritmo distinto."
+            },
+            {
+              "p": "Hay niños que obtienen resultados enseguida y otros que crecen poco a poco con el tiempo. Habrá épocas en las que, al compararse con los demás, sea fácil impacientarse."
+            },
+            {
+              "p": "Incluso entonces, no decides sus posibilidades solo por los resultados actuales."
+            },
+            {
+              "p": "Como ves lo que sigue haciendo cada día, puedes notar que poco a poco es capaz de hacer más cosas."
+            },
+            {
+              "p": "Eso le da a un niño una gran tranquilidad."
+            },
+            {
+              "p": "Si hay alguien que ve cómo sigue adelante, puede seguir avanzando incluso en las etapas sin resultados."
+            },
+            {
+              "p": "Entiendes bien que un día de esfuerzo serio no trae grandes cambios. Y también entiendes bien que, aun así, si uno cree en sí mismo y sigue adelante, acabará dando resultados."
+            },
+            {
+              "p": "Ser capaz de creer incluso en el esfuerzo que aún no se ha convertido en resultados."
+            },
+            {
+              "p": "Ese es el gran punto fuerte del Entrenador."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que puedes valorar demasiado el simple hecho de seguir."
+            },
+            {
+              "p": "Cuanto más tiempo se lleva con algo, más difícil resulta dejarlo."
+            },
+            {
+              "p": "Y mientras piensas «ya que hemos llegado hasta aquí», puedes pasar por alto que los sentimientos o las circunstancias de tu hijo han cambiado."
+            },
+            {
+              "p": "En el esfuerzo importa no solo la cantidad, sino también la dirección."
+            },
+            {
+              "p": "Aunque siga cada día, si el método no le conviene, puede que no crezca como esperaba. Si lo que de verdad quiere conseguir ha cambiado, a veces es mejor empezar a esforzarse en otro sitio."
+            },
+            {
+              "p": "Y sobre todo, es importante que no se convierta en un niño que se culpa por no poder esforzarse."
+            },
+            {
+              "p": "Si hay días en los que puede esforzarse, también puede haber días de descanso. Si vuelve, la acumulación continúa."
+            },
+            {
+              "p": "Lo que quieres transmitir a tu hijo no es «no lo dejes nunca»."
+            },
+            {
+              "p": "Es que tenga la fuerza de no soltar con facilidad algo cuando encuentre lo que merece la pena continuar."
+            },
+            {
+              "p": "Si tienes presente esa diferencia, tus valores sobre el esfuerzo se transmitirán mejor."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Desafío｜Animador🐒."
+            },
+            {
+              "p": "Al Entrenador se le da bien cultivar la fuerza de construir una sola cosa durante mucho tiempo. El Animador, en cambio, valora dar el paso hacia mundos nuevos y descubrir posibilidades."
+            },
+            {
+              "p": "Solo con el Tipo Esfuerzo, el apego a lo que ya se hace puede reducir las ocasiones de encontrar otras posibilidades. Solo con el Tipo Desafío, las experiencias se amplían, pero puede que nada dure lo suficiente como para convertirse en una fuerza."
+            },
+            {
+              "p": "Primero, conocer muchos mundos distintos. Y cuando encuentre algo que de verdad le guste, cultivarlo con tiempo."
+            },
+            {
+              "p": "El reto descubre las posibilidades y la constancia convierte esas posibilidades en fuerza."
+            },
+            {
+              "p": "Juntos, permiten que el niño conozca un mundo amplio y, al mismo tiempo, vaya forjando sus propias armas."
+            }
+          ],
+          [
+            {
+              "name": "Tokugawa Ieyasu"
+            },
+            {
+              "p": "Tokugawa Ieyasu es conocido por haber acumulado fuerzas durante mucho tiempo hasta acabar gobernando el país."
+            },
+            {
+              "p": "Su camino no fue fácil desde joven. Sobrevivió a una época en la que Oda Nobunaga y Toyotomi Hideyoshi ampliaron enormemente su poder y, en lugar de buscar resultados con prisa, esperó su oportunidad durante mucho tiempo."
+            },
+            {
+              "p": "No decidirlo todo por una sola victoria inmediata, sino ir cambiando la situación poco a poco a base de constancia."
+            },
+            {
+              "p": "Su confianza en la acumulación más que en un golpe espectacular coincide con la forma de pensar del Entrenador."
+            },
+            {
+              "name": "Shinsuke Kita (Haikyu!!)"
+            },
+            {
+              "p": "Shinsuke Kita es el personaje que, en la obra, simboliza la acumulación diaria."
+            },
+            {
+              "p": "No se esfuerza solo en los días especiales, sino que sigue haciendo como es debido lo que hay que hacer cada día. Tampoco cambia esa actitud según lleguen o no los resultados."
+            },
+            {
+              "p": "Para Shinsuke Kita, el entrenamiento y la vida diaria no son algo que se haga solo para ser valorado. Son algo que continúa porque es lo que le corresponde hacer."
+            },
+            {
+              "p": "Los resultados especiales están al final de días que no tienen nada de especial."
+            },
+            {
+              "p": "Esa sensación refleja de manera muy clara al Entrenador."
+            }
+          ],
+          [
+            {
+              "p": "De Tokugawa Ieyasu es muy conocida la frase: «La vida es como recorrer un largo camino con una pesada carga a la espalda. No hay que apresurarse»."
+            },
+            {
+              "p": "No intentar llegar enseguida a la meta, sino avanzar poco a poco por un largo camino. Esa forma de pensar coincide muy bien contigo, como Entrenador."
+            },
+            {
+              "p": "Con la crianza pasa lo mismo."
+            },
+            {
+              "p": "Lo que enseñas hoy no tiene por qué aprenderse mañana. Habrá épocas en las que, por mucho que se lo digas, no lo consiga, y otras en las que se esfuerce sin obtener resultados."
+            },
+            {
+              "p": "Aun así, al mirar atrás unos años después, verás que sin darse cuenta ha llegado a conseguirlo."
+            },
+            {
+              "p": "Shinsuke Kita era un personaje al que le encajaban de verdad las palabras: «Hacerlo bien. Hacerlo cada día»."
+            },
+            {
+              "p": "No acumula sus días para demostrar un talento especial."
+            },
+            {
+              "p": "Lavarse los dientes. Limpiar. Entrenar. Seguir con serenidad lo que ha decidido hacer. Gracias a esa acumulación, consiguió su uniforme en un equipo tan fuerte como Inarizaki."
+            },
+            {
+              "p": "El esfuerzo que puedes enseñar a tu hijo tampoco es soportar el sufrimiento sin fin."
+            },
+            {
+              "p": "Acumular cada día, avanzar un poco incluso en los días difíciles. Y al día siguiente, volver a acumular"
+            },
+            {
+              "p": "Es la fuerza de mantener esas pequeñas acciones."
+            },
+            {
+              "p": "Por eso, aunque los resultados no lleguen, intenta no impacientarte más que tu hijo."
+            },
+            {
+              "p": "Aunque todavía no se haya convertido en resultados, lo que se ha acumulado hoy sigue ahí."
+            },
+            {
+              "p": "Y a veces está bien cambiar de camino. La experiencia acumulada no desaparece."
+            },
+            {
+              "p": "Haberlo hecho hoy no significa que los resultados tengan que llegar mañana."
+            },
+            {
+              "p": "Mientras se confía en los pequeños pasos de cada día, sin darse cuenta se llega a un lugar completamente distinto del punto de partida."
+            },
+            {
+              "p": "Poder creer en ese largo crecimiento y esperarlo es la crianza que tú, como Entrenador, puedes ofrecer."
+            }
+          ]
+        ]
+      },
+      "strategy": {
+        "intro": [
+          "Como Estratega, eres «una persona con visión de futuro que tiene presente el porvenir de su hijo y sabe preparar de forma planificada la educación y el entorno que necesita»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Valoras pensar en el futuro de tu hijo y trazar el camino hacia él."
+            },
+            {
+              "p": "No solo quieres que vaya a un buen colegio. Decides qué capacidades te gustaría que tuviera en el futuro, investigas qué experiencias y qué educación hacen falta para ello y piensas en lo que se puede hacer ahora."
+            },
+            {
+              "p": "Lo importante no es cada acción por separado, sino el objetivo que hay detrás."
+            },
+            {
+              "p": "Por eso, en lugar de adoptar tal cual los métodos educativos de moda, piensas adónde llevarán a tu propio hijo."
+            },
+            {
+              "p": "También se te da bien pensar dónde invertir un tiempo y un dinero limitados. No se lo das todo, sino que preparas el entorno eligiendo lo necesario."
+            },
+            {
+              "p": "Partir del futuro para pensar en el presente."
+            },
+            {
+              "p": "Quien puede apoyar el crecimiento de su hijo con esa perspectiva a largo plazo es el Estratega."
+            }
+          ],
+          [
+            {
+              "p": "Los niños suelen crecer siendo capaces de pensar en los objetivos y actuar en consecuencia."
+            },
+            {
+              "p": "En lugar de limitarse a cumplir con la tarea que tienen delante, desarrollan el hábito de pensar para qué la hacen."
+            },
+            {
+              "p": "Incluso en los estudios, sacar buenas notas no es el único objetivo. Si hay un colegio al que quieren ir o algo que quieren aprender, les resulta más fácil ver qué deben hacer ahora."
+            },
+            {
+              "p": "Además, al tomar decisiones, son capaces de pensar un poco más allá y no solo en lo divertido del momento."
+            },
+            {
+              "p": "Por otro lado, cuanto más se acostumbran a pensar de forma planificada, más pueden evitar lo que parece no tener sentido."
+            },
+            {
+              "p": "Pero en el crecimiento de un niño también hay experiencias cuyo significado solo se entiende al mirar atrás."
+            },
+            {
+              "p": "De juegos o desvíos cuya utilidad no está clara pueden nacer intereses inesperados."
+            },
+            {
+              "p": "La capacidad de planificar y la capacidad de disfrutar de lo imprevisto."
+            },
+            {
+              "p": "Darle ambas hace que las virtudes del Estratega brillen todavía más."
+            }
+          ],
+          [
+            {
+              "p": "Lo que debes vigilar es que el plan no se convierta en la vida misma de tu hijo."
+            },
+            {
+              "p": "Como tienes la capacidad de pensar en el futuro, eres de los que ven con facilidad qué hay que hacer ahora."
+            },
+            {
+              "p": "Por eso, cuando tu hijo da un rodeo, a veces querrás enseñarle una forma más eficiente. También puede que sientas que otro camino conecta mejor con el futuro que el que él quiere elegir."
+            },
+            {
+              "p": "Pero el crecimiento de un niño no siempre sigue el plan inicial."
+            },
+            {
+              "p": "Sus intereses pueden cambiar, o puede descubrir que algo se le da mejor de lo que pensaba. También puede sentirse atraído por un mundo que sus padres nunca imaginaron."
+            },
+            {
+              "p": "En esos momentos, más que seguir manteniendo el plan inicial, también puede hacer falta replantearse el propio objetivo."
+            },
+            {
+              "p": "Los planes no existen para atar al niño, sino para ampliar sus posibilidades."
+            },
+            {
+              "p": "Un buen plan no es el que nunca hay que cambiar. Es el que se puede cambiar según crece el niño."
+            },
+            {
+              "p": "Precisamente porque tienes la capacidad de ver el futuro, acoge también en tus planes el crecimiento imprevisto."
+            }
+          ],
+          [
+            {
+              "p": "Tú y tu hijo soléis chocar sobre todo cuando él toma una decisión que no parece conducir a nada en el futuro."
+            },
+            {
+              "p": "«Si vas a dedicarle tiempo, que sea a algo con sentido». Hay momentos en los que sientes que el tiempo poco racional es un desperdicio."
+            },
+            {
+              "p": "Pero los niños no viven siempre pensando en el futuro."
+            },
+            {
+              "p": "Puede que de repente se entusiasmen con algo o que encuentren un gran valor en algo cuya utilidad tú no ves."
+            },
+            {
+              "p": "Si solo buscas la eficiencia, tu hijo puede sentir que tus planes tienen prioridad sobre lo que a él le gusta."
+            },
+            {
+              "p": "Lo importante es no darle un objetivo a cada momento."
+            },
+            {
+              "p": "Lo necesario a largo plazo lo piensan los padres. Pero, al mismo tiempo, se deja también un espacio libre que el niño pueda usar como quiera."
+            },
+            {
+              "p": "En ese espacio libre pueden nacer intereses y talentos que los padres nunca habrían podido planificar."
+            },
+            {
+              "p": "Diseñar una vida no es lo mismo que hacer que una vida vaya según lo previsto."
+            },
+            {
+              "p": "Si tienes presente esa diferencia, tu capacidad de planificar podrá brillar sin quitarle libertad a tu hijo."
+            }
+          ],
+          [
+            {
+              "p": "Lo que mejor te va es un entorno en el que se puedan comprobar de vez en cuando el objetivo y la situación actual."
+            },
+            {
+              "p": "No hace falta controlarlo todo al detalle cada día. Ver cómo crece tu hijo en periodos algo más largos, como seis meses o un año, encaja mejor con tu forma de pensar."
+            },
+            {
+              "p": "También es importante un entorno en el que se puedan comparar opciones."
+            },
+            {
+              "p": "Al elegir colegio o actividades, en lugar de decidir viendo una sola, conviene conocer varias. Y después, contrastándolas con lo que tu familia valora, es más fácil tomar decisiones con las que te sientas convencido."
+            },
+            {
+              "p": "Eso sí, no hace falta convertir el hogar en un lugar para cumplir objetivos todo el tiempo."
+            },
+            {
+              "p": "Dejando también tiempo para salirse del plan y pasarlo libremente, se ven mejor los intereses propios del niño."
+            },
+            {
+              "p": "Pensar la dirección. Pero no decidir todos los pasos del recorrido."
+            },
+            {
+              "p": "En un entorno con ese margen, la capacidad del Estratega de ver más allá se aprovecha al máximo."
+            }
+          ],
+          [
+            {
+              "p": "Uno de tus grandes puntos fuertes es que puedes crear un entorno pensando no solo en lo inmediato, sino en los próximos años."
+            },
+            {
+              "p": "Los niños piensan sobre todo en lo que quieren ahora y en lo que les divierte ahora. Es natural, pero a un niño pequeño le resulta difícil prever lo que necesitará en el futuro."
+            },
+            {
+              "p": "Ahí es donde entras tú."
+            },
+            {
+              "p": "Si uno se da cuenta de que algo era necesario cuando ya es tarde, a veces falta tiempo. Por eso, poder mirar un poco más allá y pensar en lo que se puede hacer ahora es un gran punto fuerte."
+            },
+            {
+              "p": "Además, tiendes a darte cuenta de la importancia del entorno, no solo del esfuerzo."
+            },
+            {
+              "p": "No se trata solo de hacer que tu hijo se esfuerce, sino de pensar su crecimiento teniendo en cuenta también lo que le rodea: dónde aprende, con quién pasa el tiempo, qué experiencias vive."
+            },
+            {
+              "p": "Pensar en un futuro que tu hijo aún no ve y empezar antes los preparativos necesarios."
+            },
+            {
+              "p": "Poder dejarle en condiciones de elegir cuando necesite opciones de futuro."
+            },
+            {
+              "p": "Ese es el gran punto fuerte del Estratega."
+            }
+          ],
+          [
+            {
+              "p": "La otra cara de tu punto fuerte es que puedes llegar a optimizar demasiado la vida de tu hijo."
+            },
+            {
+              "p": "Partiendo del futuro, se ve qué es lo más eficiente."
+            },
+            {
+              "p": "Si va a hacer esta actividad, mejor dedicar el tiempo a otra cosa. Estudiar conduce más al futuro que jugar aquí. Seguramente esas valoraciones tienen razones lógicas."
+            },
+            {
+              "p": "Pero la vida de un niño también necesita tiempo que no se puede medir con la eficiencia."
+            },
+            {
+              "p": "A veces, precisamente por haber dado un rodeo, descubre lo que no le conviene."
+            },
+            {
+              "p": "Y si los padres preparan demasiados caminos correctos, el niño tiene menos ocasiones de pensar por sí mismo."
+            },
+            {
+              "p": "Hacer planes no es un problema en sí. Lo importante es que tu hijo participe en ellos."
+            },
+            {
+              "p": "A medida que crece, reducir el ámbito que deciden los padres y aumentar la parte que se piensa junto con él."
+            },
+            {
+              "p": "No planificar la vida de tu hijo, sino hacer que tu hijo pueda planificar su propia vida."
+            },
+            {
+              "p": "Si logras llegar hasta ahí, tu pensamiento estratégico se convertirá en la propia fuerza de tu hijo."
+            }
+          ],
+          [
+            {
+              "p": "Te entiendes especialmente bien con el Tipo Individualidad｜Productor🐱."
+            },
+            {
+              "p": "Al Estratega se le da bien pensar en el futuro y preparar la educación y el entorno para llegar a él. El Productor, en cambio, valora descubrir los intereses y la personalidad que el niño tiene ahora."
+            },
+            {
+              "p": "Solo con el Tipo Estrategia, partir del ideal que han pensado los padres puede hacer que se pasen por alto los sentimientos actuales del niño. Solo con el Tipo Individualidad, aunque se valore su forma de ser, puede que no se llegue a pensar cómo conectar esa individualidad con el futuro."
+            },
+            {
+              "p": "El Tipo Individualidad descubre lo que hay dentro del niño y el Tipo Estrategia piensa un entorno donde se pueda aprovechar."
+            },
+            {
+              "p": "Descubrir el talento y crear el camino para que ese talento crezca."
+            },
+            {
+              "p": "Juntos, facilitan conectar la forma de ser del niño con sus posibilidades futuras."
+            }
+          ],
+          [
+            {
+              "name": "Zhuge Liang (Kongming)"
+            },
+            {
+              "p": "Zhuge Liang es conocido, también en Japón, como el estratega que apoyó a Liu Bei."
+            },
+            {
+              "p": "No miraba solo la batalla que tenía delante, sino que diseñaba sus estrategias pensando también en la situación posterior. Es conocido como alguien que, más que abrirse paso por la fuerza, leía la situación y creaba el camino hacia la victoria."
+            },
+            {
+              "p": "Lo importante no es solo qué hacer ahora, sino adónde llevará esa acción."
+            },
+            {
+              "p": "Mirar al futuro mientras se piensa la jugada que hay que hacer ahora."
+            },
+            {
+              "p": "Esa actitud refleja exactamente al Estratega."
+            },
+            {
+              "name": "Armin Arlert (Ataque a los Titanes)"
+            },
+            {
+              "p": "Armin tampoco es alguien que resuelva los problemas por la fuerza."
+            },
+            {
+              "p": "Observa la situación que le rodea y, con información limitada, piensa en lo que va a ocurrir. Después, para lograr el objetivo, organiza quién debe hacer qué y dónde."
+            },
+            {
+              "p": "No se limita a reaccionar ante lo que tiene delante, sino que se mueve pensando varias jugadas por adelantado."
+            },
+            {
+              "p": "Más que aumentar su propia fuerza, piensa en cómo usar lo que tiene para acercarse al objetivo. Esa actitud coincide con la forma de pensar del Estratega."
+            }
+          ],
+          [
+            {
+              "p": "Zhuge Liang dejó las palabras: «Sin serenidad, el estudio no se convierte en talento; sin aspiración, el estudio no llega a buen término»."
+            },
+            {
+              "p": "Sin la aspiración de saber para qué se aprende, el propio aprendizaje difícilmente toma forma. Estas palabras, que parten del objetivo, coinciden muy bien contigo, como Estratega."
+            },
+            {
+              "p": "Cuando le pidas a tu hijo que haga algo, piensa no solo en qué hacer, sino también en para qué."
+            },
+            {
+              "p": "El objetivo no es hacerle estudiar, sino qué tipo de decisiones te gustaría que pudiera tomar en el futuro gracias a esa capacidad."
+            },
+            {
+              "p": "Si el objetivo está claro, el método se puede cambiar."
+            },
+            {
+              "p": "Y Armin tampoco es alguien que mantenga a toda costa un plan que ya ha pensado. Cuando llega información nueva, vuelve a analizar la situación y elige de nuevo el método que en ese momento le parece mejor."
+            },
+            {
+              "p": "«Quien no es capaz de sacrificar nada, nunca podrá cambiar nada»."
+            },
+            {
+              "p": "Son palabras de Armin."
+            },
+            {
+              "p": "Pensar desde el objetivo, pensar qué hace falta y, al mismo tiempo, ser capaz de desprenderse de lo innecesario con la misma decisión."
+            },
+            {
+              "p": "La crianza necesita esa misma flexibilidad."
+            },
+            {
+              "p": "No pasa nada si la imagen de futuro que imaginaste cuando era pequeño no coincide con el hijo que ha llegado a ser. Si tu hijo cambia, el plan también puede cambiar."
+            },
+            {
+              "p": "Tu punto fuerte no es acertar el futuro."
+            },
+            {
+              "p": "Es elegir lo que se puede hacer ahora pensando en el futuro y ser capaz de replantearlo cuando la situación cambia."
+            },
+            {
+              "p": "Por eso, no hace falta crear un plan de vida perfecto."
+            },
+            {
+              "p": "Usa los planes no para decidir el futuro de tu hijo, sino para ampliar sus opciones de futuro."
+            },
+            {
+              "p": "Saber usar bien esa fuerza es la crianza que solo tú, como Estratega, puedes ofrecer."
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "ru": {
+    "questions": [
+      "Чтобы расширить возможности ребёнка, считаю, что нужен и такой опыт, которого он сам не хочет.",
+      "Если ребёнок продолжает заниматься чем-то, потому что любит это, даже время без результатов имеет смысл.",
+      "Умение подстраиваться под окружающих так же важно, как умение оставаться собой.",
+      "Считаю, что путь в жизни — это не то, что ребёнок решает полностью сам.",
+      "Продержаться ещё немного после того, как захотелось бросить, — тоже ценный опыт.",
+      "Мне хочется, чтобы ребёнок превращал сильные стороны в своё оружие, а не избавлялся от слабых.",
+      "Иногда нужно не предупреждать заранее, даже если знаешь, что ребёнок ошибётся.",
+      "Хочу, чтобы ребёнок выбирал не уютное место, а то, где придётся немного тянуться вверх.",
+      "Если в день важного обещания появится шанс, который бывает раз в жизни, я приму решение нарушить обещание.",
+      "Хочу, чтобы ребёнок всерьёз увлекался даже тем, польза чего непонятна.",
+      "Даже если ребёнок доволен настоящим, родители должны думать о том, что будет дальше.",
+      "Хочу как можно раньше расширять для ребёнка выбор на будущее.",
+      "Нужен и опыт того, как не убегать от неприятного, а встречать его лицом к лицу.",
+      "Меня больше тревожит, что ребёнок не ладит с людьми, чем то, что он не похож на других.",
+      "Даже если знаешь правильный способ, лучше молча наблюдать.",
+      "Когда вижу, как ребёнок старается, чувствую, что можно не требовать результата.",
+      "Даже если школу выбрал сам ребёнок, я посоветую передумать, если сочту, что она ему не подходит.",
+      "Время, потраченное на то, к чему нет способностей, не потеряно зря.",
+      "День, прожитый без дела, — это жаль.",
+      "Лучше вырастить ребёнка, который умеет подниматься после неудач, чем того, кто никогда не ошибается.",
+      "Даже в том, что ребёнок может решить сам, мне хочется высказать мнение родителя.",
+      "Если у ребёнка есть то, чем он может увлечься с головой, не страшно, если другое немного запустится.",
+      "Иногда новые пути открываются не от бесконечных стараний, а от смены обстановки.",
+      "Считаю, что бунт против родителей — тоже часть взросления.",
+      "Ради большей свободы в будущем можно немного пожертвовать свободой сейчас.",
+      "Хочу, чтобы ребёнок пережил не то, в чём не жалко проиграть, а то, в чём он во что бы то ни стало хочет победить.",
+      "Даже если ребёнку не хочется, пусть продолжает хотя бы до того момента, о котором договорились в начале.",
+      "Мне спокойнее, если ребёнок просто будет счастлив, как все, чем если он пойдёт по особенному пути.",
+      "Даже заметив, что ребёнку трудно, я подожду, пока он сам попросит о помощи.",
+      "Ничего страшного, если будет период, когда ребёнок отложит учёбу и будет играть от души.",
+      "Если это поможет развить талант, я готов(а) подумать о смене школы или даже места жительства.",
+      "Не думаю, что опережать события и уменьшать количество неудач всегда идёт ребёнку на пользу.",
+      "Даже год без всяких результатов я могу считать частью роста.",
+      "Прежде чем дать ребёнку свободно выбирать, хочу, чтобы он научился делать выбор.",
+      "Если ребёнок не вписывается в школе, но его это не беспокоит, я тоже не волнуюсь.",
+      "Если ребёнок счастлив сейчас, не обязательно подталкивать его к следующему шагу в развитии.",
+      "То, что ты уже долго этим занимаешься, — само по себе причина продолжать.",
+      "Чем меньше я знаю о какой-то сфере, тем больше хочу доверять решению ребёнка.",
+      "Для меня важнее, чтобы у ребёнка было своё мнение, чем умение приспосабливаться к окружающим.",
+      "Даже понимая, что это окольный путь, хочу доверить его ребёнку, если он сам его выбрал.",
+      "Даже если таланта не видно, хочу поддерживать ребёнка, пока он способен продолжать стараться.",
+      "Пусть сейчас ребёнок на меня обижается, но хочу принимать решения, о которых он потом скажет: «Хорошо, что так вышло».",
+      "Хочу, чтобы ребёнок узнал много разных миров, а не один мир досконально.",
+      "Хочу, чтобы дом был местом, где ребёнку не нужно стараться.",
+      "Если ребёнок всерьёз выбрал путь, я поддержу его, даже если придётся отказаться от стабильности.",
+      "Когда что-то не получается, хочу, чтобы ребёнок продержался ещё немного, прежде чем менять подход.",
+      "Лучше пусть ребёнок выберет счастье сейчас, чем будет страдать ради роста.",
+      "Считаю, что доверить всё ребёнку — не единственная форма уважения.",
+      "Если это жизнь, которую ребёнок выбрал сам, то даже право пожалеть о ней принадлежит ему.",
+      "Если бы я мог(ла) вернуться в детство с нынешними воспоминаниями, то выбирал(а) бы заново, отдавая приоритет тому, о чём сейчас думаю «надо было это сделать», а не тому, чего хотел(а) тогда."
+    ],
+    "results": {
+      "education": {
+        "intro": [
+          "Вы — Архитектор, «преданный и любящий родитель, который умеет думать о будущем своего ребёнка»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Вы родитель, который думает не только о сегодняшнем дне ребёнка, но и о том, что ждёт его дальше."
+            },
+            {
+              "p": "Вы судите не только по тому, хочет ли ребёнок что-то делать и интересно ли ему сейчас, но и о том, к чему приведёт этот опыт и какие возможности он оставит. Выбирая школу, кружки, экзамены и будущий путь, вы не оставляете всё на ребёнка: сами собираете информацию и стараетесь найти варианты, о которых он ещё не знает."
+            },
+            {
+              "p": "Для вас образование — это не просто хорошие оценки, а скорее расширение выбора на будущее благодаря знаниям и умениям. Поэтому, даже если сейчас ребёнку не хочется, вы порой советуете ему что-то, если считаете, что это пригодится в будущем."
+            },
+            {
+              "p": "В основе этого — желание не сузить возможности ребёнка из-за того, что родители ничего не сделали. Смотреть чуть дальше ребёнка и создавать среду, которая ведёт в будущее, — так воспитывает Архитектор."
+            }
+          ],
+          [
+            {
+              "p": "В семьях типа «Образование» дети обычно вырастают способными как следует делать то, что нужно."
+            },
+            {
+              "p": "Через домашние задания, сроки и работу над тем, что даётся трудно, они естественным образом понимают: недостаточно делать только то, что хочется, — чтобы осуществить желаемое, нужна ещё и подготовка."
+            },
+            {
+              "p": "Кроме того, благодаря тому что родители активно собирают информацию, детям легче соприкоснуться со школами, кружками, профессиями и опытом, которых они сами никогда бы не нашли. Среди этого они могут открыть в себе сильные стороны, о которых даже не подозревали."
+            },
+            {
+              "p": "С другой стороны, чем больше хороших вариантов готовят родители, тем меньше у ребёнка опыта выбирать с нуля. Если постоянно получать от родителей хорошие предложения насчёт школы и кружков, то, повзрослев, можно растеряться: «А чего я на самом деле хочу?»"
+            },
+            {
+              "p": "Поэтому для типа «Образование» признавать опыт, уводящий в сторону от подготовленного пути, так же важно, как и готовить хороший путь."
+            }
+          ],
+          [
+            {
+              "p": "Больше всего стоит следить за тем, не стало ли чувство «это ради моего ребёнка» сильнее, чем чувства самого ребёнка."
+            },
+            {
+              "p": "Почти всё, что советуют родители типа «Образование», продиктовано любовью. Учиться — значит расширять выбор, базовые знания лучше иметь, умение не сдаваться легко тоже важно. Именно потому, что такие суждения часто действительно верны, бывает трудно заметить, что вы перегибаете палку."
+            },
+            {
+              "p": "Когда ребёнок хочет бросить занятие, которым увлекался много лет, когда выбирает не ту школу, которую вы считали лучшей, когда с головой уходит в то, что вряд ли пригодится в будущем, — в такие моменты попробуйте разделить два вопроса: действительно ли этот выбор создаст проблемы или тревожно просто мне?"
+            },
+            {
+              "p": "У вас есть способность видеть будущее. Именно поэтому иногда важно отвести взгляд от будущего и посмотреть на ребёнка таким, какой он сейчас."
+            }
+          ],
+          [
+            {
+              "p": "Тип «Образование» чаще всего сталкивается с ребёнком, когда его мысли кажутся нерациональными."
+            },
+            {
+              "p": "Допустим, ребёнок вдруг говорит, что хочет бросить репетитора. У вас в голове сразу возникает множество мыслей о будущем: что будет с оценками, если бросить сейчас, успеет ли он к экзаменам, может, получится продолжить у другого репетитора."
+            },
+            {
+              "p": "А ребёнок, возможно, видит только настоящее: «Завтра я туда идти не хочу». В таких случаях никто из вас не неправ — просто вы смотрите на разные временные отрезки."
+            },
+            {
+              "p": "То же самое бывает и с выбором пути. Вы думаете о том, что будет после этой школы, а ребёнок — о том, что хочет туда пойти. Вы думаете, можно ли прожить на эту профессию, а ребёнок — что хочет её попробовать."
+            },
+            {
+              "p": "Чем правее вы, тем труднее ребёнку возразить. Но если так продолжается, он постепенно может решить, что вы всё равно не поймёте, и вовсе перестать с вами советоваться."
+            },
+            {
+              "p": "В такой момент, прежде чем делать вывод, попробуйте один раз спросить: «Почему ты так думаешь?» Главное — стремление понять мысли ребёнка."
+            },
+            {
+              "p": "Для ребёнка большая разница, возражают ли ему, не поняв, или возражают, уже поняв его."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где много информации, но при этом остаётся простор для выбора."
+            },
+            {
+              "p": "Выбирая школу, репетиторов или кружки, вам лучше там, где есть несколько вариантов, можно сравнить их особенности и учесть характер и интересы ребёнка, а не там, где предлагают один-единственный ответ."
+            },
+            {
+              "p": "Наоборот, если без достаточной информации вам скажут просто позволить ребёнку делать что хочется, вы можете встревожиться. Ведь вы хотите не контролировать ребёнка, а выбирать, имея убедительные данные."
+            },
+            {
+              "p": "Сбор информации — одно из ваших главных преимуществ. А в конце оставьте немного свободного места: родители расширяют выбор, а ребёнок выбирает из предложенного — или даже за его пределами. В такой среде легче сочетать ваши сильные стороны с самостоятельностью ребёнка."
+            }
+          ],
+          [
+            {
+              "p": "Ваша главная сильная сторона — умение думать о возможностях, которых ребёнок ещё не видит."
+            },
+            {
+              "p": "Мир ребёнка неизбежно ограничен тем, что он уже знает. Нельзя стремиться в школу, о которой не слышал, или мечтать о профессии, о существовании которой не знаешь. В такие моменты вы можете собрать информацию, найти варианты и показать ребёнку новый мир."
+            },
+            {
+              "p": "Ещё одна сильная сторона — вы не судите только по сиюминутным эмоциям. Даже когда ребёнок говорит, что ему что-то не нравится, вы можете гибко подумать, не цепляясь за один способ: что именно ему не нравится, есть ли смысл продолжать, нет ли другого пути."
+            },
+            {
+              "p": "Умение думать о будущем, которого ребёнок пока не видит, — это ваша сила как Архитектора."
+            }
+          ],
+          [
+            {
+              "p": "Ваша слабая сторона — вы умеете говорить правильные вещи."
+            },
+            {
+              "p": "Учёба расширяет выбор на будущее, базовые знания лучше иметь, умение не бросать на полпути тоже важно. В большинстве случаев у ваших взглядов есть веские основания, и почти всегда они справедливы."
+            },
+            {
+              "p": "Именно поэтому, когда вы с ребёнком не согласны, вы можете пытаться добиться послушания, ссылаясь на то, что у вас больше опыта и информации."
+            },
+            {
+              "p": "Но через образование вы, наверное, хотите вырастить не ребёнка, который точно выполняет указания родителей, а человека, который думает сам, выбирает сам и идёт по жизни своей дорогой."
+            },
+            {
+              "p": "Иногда важно принять, что ребёнок с мыслями, отличными от ваших, — это тоже один из плодов образования."
+            },
+            {
+              "p": "Ещё стоит помнить, что ваше внимание легко переключается на рост, который можно подтвердить цифрами. Оценки, баллы, сертификаты, места в рейтингах, поступление — это понятные результаты, где рост хорошо виден. А у такого роста, как умение высказать своё мнение или найденное увлечение, цифр нет."
+            },
+            {
+              "p": "Рост, который нельзя вписать в чертёж, тоже обязательно происходит внутри ребёнка."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Самостоятельность»｜Советник🐴."
+            },
+            {
+              "p": "Тип «Образование» находит варианты и расширяет мир ребёнка, а тип «Самостоятельность» затем помогает ему подумать, чего хочет он сам. Вместе они позволяют совместить выбор направления родителями и решение ребёнка о собственной жизни."
+            },
+            {
+              "p": "Также советуем перенять взгляд типа «Индивидуальность»｜Продюсер🐱."
+            },
+            {
+              "p": "Если тип «Образование» думает: «Чему этому ребёнку стоит научиться?», то тип «Индивидуальность» думает: «Что этого ребёнка привлекает?» Именно потому, что это другой взгляд, он может помочь открыть в ребёнке новые стороны."
+            }
+          ],
+          [
+            {
+              "name": "Конфуций"
+            },
+            {
+              "p": "Китайский мыслитель, придававший огромное значение учёбе. Его мысль о том, что человек растёт не просто получая знания, а продолжая учиться, совпадает с ценностями типа «Образование»."
+            },
+            {
+              "name": "Мама Нобиты («Дораэмон»)"
+            },
+            {
+              "p": "Мама, которая запоминается тем, что постоянно напоминает Нобите о домашних заданиях, учёбе и привычках. Её желание, чтобы сын, пусть и неохотно, усвоил нужное и не мучился в будущем, хорошо передаёт родительские чувства типа «Образование»."
+            }
+          ],
+          [
+            {
+              "p": "В «Лунь юй» Конфуция есть знаменитые слова: «Учиться и своевременно повторять выученное — разве это не приятно?» Это мысль о том, что ценно повторять выученное, пока оно не станет твоим."
+            },
+            {
+              "p": "Вы, наверное, тоже хотите, чтобы ребёнок уже сейчас многому научился и многое освоил, чтобы в будущем жить своими силами."
+            },
+            {
+              "p": "Мама Нобиты тоже снова и снова напоминает ему о домашних заданиях и учёбе. В этом видна типичная для типа «Образование» родительская забота: пусть сейчас не хочется, но нужное надо усвоить, чтобы потом не было трудно."
+            },
+            {
+              "p": "Однако цель образования — не заставить ребёнка идти правильным путём, придуманным родителями. Дать ему многому научиться, показать множество миров, помочь обрести нужные силы. А потом важно, чтобы однажды ребёнок сам смог сказать: «Я хочу идти вот сюда»."
+            },
+            {
+              "p": "Даже если этот путь отличается от того, что вы представляли, вы сможете принять, что ребёнок вырос настолько, чтобы думать и выбирать сам. Это тоже большой плод того образования, которое вы выстраивали."
+            },
+            {
+              "p": "Вы умеете думать о будущем ребёнка. Поэтому в конце не дорисовывайте сами карту будущего, которую нарисовали, а позвольте ребёнку нарисовать продолжение."
+            }
+          ]
+        ]
+      },
+      "individuality": {
+        "intro": [
+          "Вы — Продюсер, «великодушный человек, который ценит неповторимость ребёнка и умеет бережно сопровождать его рост»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Вам хочется не подгонять ребёнка под готовый образ «вот каким я хочу его вырастить», а найти индивидуальность и таланты, которые в нём уже есть, и помочь им расти."
+            },
+            {
+              "p": "От учёбы и спорта до характера и будущей профессии — в мире множество стандартов о том, «как лучше». Но вы не считаете, что подгонять под них ребёнка обязательно правильно."
+            },
+            {
+              "p": "Вместо того чтобы тратить много времени, подтягивая слабые места до среднего уровня, вы хотите, чтобы ребёнок с головой погружался в то, что любит и умеет, и превращал это в силу, которая есть только у него. Даже если он немного не такой, как другие, но выглядит счастливым, вы можете принять это как «часть его самого»."
+            },
+            {
+              "p": "Поэтому вы легко замечаете изменения, которых не видно по оценкам и рейтингам. Любит рисовать, умеет рассмешить, не может остановиться, когда начинает что-то выяснять. Вы умеете находить ценность в таких маленьких чертах."
+            },
+            {
+              "p": "Возможно, главное для вас в воспитании — «вырастить человека, каким может стать только этот ребёнок»."
+            }
+          ],
+          [
+            {
+              "p": "Дети обычно вырастают способными открыто выражать свои симпатии и антипатии, сильные и слабые стороны, со своими ценностями и своим миром."
+            },
+            {
+              "p": "Они не боятся больше необходимого быть не такими, как все, и им легче думать «а чего хочу я?», а не «потому что все так делают»."
+            },
+            {
+              "p": "Особенно многого можно ожидать от их роста, когда они находят то, что любят. Они глубоко погружаются в то, что им интересно, и это может стать их большой силой."
+            },
+            {
+              "p": "К тому же опыт, когда родители признают твою индивидуальность, укрепляет самооценку. Даже если снаружи тебя не ценят, дома понимают. Этот опыт помогает и во взрослой жизни принимать людей с иными ценностями."
+            },
+            {
+              "p": "С другой стороны, именно потому, что они растут в уважении к своим интересам, умение браться за «то, что не нравится, но нужно» придётся развивать осознанно."
+            },
+            {
+              "p": "Развивать сильные стороны и убегать от слабых — не одно и то же. Если научиться их различать, достоинства типа «Индивидуальность» раскроются ещё ярче."
+            }
+          ],
+          [
+            {
+              "p": "Больше всего стоит остерегаться того, чтобы, думая, что понимаете индивидуальность ребёнка, не закрепить её раз и навсегда."
+            },
+            {
+              "p": "«Этот ребёнок больше по спорту, чем по учёбе», «он не из тех, кто выходит вперёд», «похоже, он технарь», «ему больше подходит вот это»."
+            },
+            {
+              "p": "Такие слова рождаются как раз потому, что вы внимательно наблюдаете за ребёнком, но он ещё растёт. То, что не давалось в десять лет, к пятнадцати может стать сильной стороной."
+            },
+            {
+              "p": "То, что начиналось через силу, может полюбиться с того момента, как начинает получаться."
+            },
+            {
+              "p": "Поэтому, когда ребёнок отказывается от чего-то, не решайте сразу: «Ему это не подходит», а сначала подумайте: ему не нравится, или ему неинтересно, потому что пока не получается?"
+            },
+            {
+              "p": "Ценить индивидуальность — не значит закреплять её нынешний вид."
+            },
+            {
+              "p": "Важно принимать ребёнка таким, какой он сейчас, оставляя место для новых сторон, о которых он сам ещё не знает."
+            }
+          ],
+          [
+            {
+              "p": "Поскольку вы в целом уважаете волю ребёнка, открытых столкновений может быть не так много."
+            },
+            {
+              "p": "Но когда ребёнок сам захочет «быть как все», может возникнуть неожиданное недопонимание."
+            },
+            {
+              "p": "Для вас индивидуальность, которая есть только у него, — это его обаяние. Но для ребёнка бывают периоды, когда быть не таким, как все, мучительно."
+            },
+            {
+              "p": "Слова «Ты хорош таким, какой ты есть» могут восприниматься им как «Ты не понимаешь, как мне тяжело»."
+            },
+            {
+              "p": "И наоборот, когда ребёнок пытается сбежать от того, что ему не даётся, решение тоже даётся непросто. Думать ли «это не его, можно бросить» или «здесь стоит один раз постараться»?"
+            },
+            {
+              "p": "В такой момент, прежде чем родителю решать за него, спросите: «Ты хочешь бросить, потому что не нравится? Или потому что пока не получается?»"
+            },
+            {
+              "p": "Типу «Индивидуальность» нужно не позволять ребёнку всё что угодно, а различать моменты, когда нужно защитить его самобытность, и моменты, когда нужно подтолкнуть, чтобы расширить его возможности."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где ребёнок может соприкоснуться с самыми разными мирами и найти среди них то, что любит."
+            },
+            {
+              "p": "Не только учёба, но и спорт, искусство, музыка, творчество руками, чтение, природа, общение с людьми — вам подходит среда, где можно попробовать как можно больше разного опыта."
+            },
+            {
+              "p": "Однако не нужно с самого начала отдавать всё в руки ребёнка под лозунгом «пусть выбирает, что нравится»."
+            },
+            {
+              "p": "Ведь дети могут выбирать только из того, что уже знают."
+            },
+            {
+              "p": "Нельзя полюбить спорт, о котором не слышал, или мечтать о профессии, о существовании которой не знаешь. То, что родители открывают дверь в новые миры, имеет огромное значение."
+            },
+            {
+              "p": "Родители расширяют возможности. Что выбрать — решает ребёнок."
+            },
+            {
+              "p": "Такое распределение ролей очень подходит Продюсеру."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — вы не оцениваете ребёнка одной меркой."
+            },
+            {
+              "p": "В школе неизбежно становится всё больше ситуаций, где оценивают понятными цифрами — баллами и местами в рейтинге. Но не всё обаяние и не все таланты человека можно выразить в цифрах."
+            },
+            {
+              "p": "Хорошо говорит, умеет рассмешить, может часами сосредоточенно заниматься, придумывает интересные идеи, чутко чувствует других. В таких чертах может скрываться большая сила, которая будет поддерживать ребёнка в будущем."
+            },
+            {
+              "p": "Вы из тех, кто способен заметить это сравнительно рано."
+            },
+            {
+              "p": "А ещё важнее, что вы не только замечаете, но и поддерживаете."
+            },
+            {
+              "p": "Когда ещё никто не признал, рядом есть человек, который говорит: «Как интересно!» или «А может, попробуешь ещё?» Одна такая фраза может превратить простое хобби в то, что будет поддерживать ребёнка всю жизнь."
+            },
+            {
+              "p": "Вы можете стать первым, кто понял талант, который ещё никто не оценил."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — под предлогом «это его особенность» вы можете избегать даже той нагрузки, которая нужна для роста."
+            },
+            {
+              "p": "«Математика не даётся — наверное, гуманитарий», «спорт не интересен — значит, творческая натура», «не любит выступать перед людьми — значит, интроверт»."
+            },
+            {
+              "p": "Конечно, может быть, так оно и есть. Но сразу не понять, индивидуальность это или просто пока не хватает опыта."
+            },
+            {
+              "p": "То, что не получалось, начинает получаться благодаря тренировкам. Сам этот опыт может создать новую сторону личности ребёнка."
+            },
+            {
+              "p": "Ещё стоит помнить, что одними сильными сторонами не справиться со всем в жизни."
+            },
+            {
+              "p": "Учёба, которая не нравится, но нужна, обещания другим, соблюдение сроков, упорные тренировки — даже чтобы раскрыть индивидуальность, нужна минимальная основа."
+            },
+            {
+              "p": "Поэтому держите в голове сразу и «беречь его самобытность», и «верить, что он может чуть больше»."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Стратегия»｜Стратег🦊."
+            },
+            {
+              "p": "Если вы находите таланты и черты — «у этого ребёнка есть вот такое достоинство», то Стратег умеет думать, какое образование и какая среда нужны, чтобы развить это достоинство."
+            },
+            {
+              "p": "Продюсер находит привлекательность материала, а Стратег прокладывает от неё путь. Это очень удачное сочетание."
+            },
+            {
+              "p": "Ещё один тип, который хорошо вас дополняет, — тип «Упорство»｜Тренер🐯."
+            },
+            {
+              "p": "Найденным вами «нравится» и «получается» тоже нужно время, чтобы превратиться в талант. Если добавить взгляд Тренера — «верить в маленькие шаги», — легче вырастить из интереса ребёнка настоящую силу, а не мимолётное увлечение."
+            },
+            {
+              "p": "Вам не нужно в одиночку владеть всеми способами мышления. Заимствуя взгляды других типов, вы ещё ярче раскроете достоинства типа «Индивидуальность»."
+            }
+          ],
+          [
+            {
+              "name": "Сакамото Рёма"
+            },
+            {
+              "p": "Сакамото Рёма известен тем, что, не ограничивая себя рамками княжеств своего времени, искал новые пути, общаясь с людьми самого разного положения."
+            },
+            {
+              "p": "Он не видел ценности в том, чтобы просто быть как все, и искал возможности даже за пределами привычных рамок. Его образ жизни во многом совпадает с типом «Индивидуальность»."
+            },
+            {
+              "name": "Коро-сэнсэй («Класс убийц»)"
+            },
+            {
+              "p": "Коро-сэнсэй не пытается воспитывать всех учеников по одной мерке."
+            },
+            {
+              "p": "Ученики, у которых хорошо с учёбой, ученики, у которых хорошо со спортом, ученики, чья сила — общение с людьми. Он внимательно наблюдает за каждым и меняет подход в зависимости от характера и способностей."
+            },
+            {
+              "p": "Не делать из всех одинаковых людей, а представлять для каждого свой, особенный итог."
+            },
+            {
+              "p": "Такой подход очень похож на воспитание Продюсера."
+            }
+          ],
+          [
+            {
+              "p": "У Сакамото Рёмы есть слова: «В мире не бывает только одной дороги. Дорог — сто, тысяча, десять тысяч»."
+            },
+            {
+              "p": "И у будущего ребёнка нет единственно правильного ответа. Не решено заранее, что если хорошо учится — то эта дорога, а если плохо — та, и не нужно идти той же дорогой, что и все. Подходящая ему дорога может быть там, где её пока не видят ни родители, ни сам ребёнок."
+            },
+            {
+              "p": "И Коро-сэнсэй говорит: «Таланты бывают разные. Найдите убийство, которое подходит именно вашему таланту»."
+            },
+            {
+              "p": "Важно не только научиться делать то же, что и другие, но и найти то, что есть у ребёнка, и искать место, где это раскроется. У вас есть сила смотреть на самого ребёнка, не оценивая его только по чужим меркам."
+            },
+            {
+              "p": "Но то, что вы видите сейчас, не обязательно окончательный образ ребёнка. То, что сейчас не даётся, через несколько лет может стать сильной стороной, а знакомство с миром, который раньше не интересовал, может открыть неожиданный талант."
+            },
+            {
+              "p": "Поэтому, так же как вы цените нынешнюю самобытность ребёнка, дайте ему встретиться и с той его стороной, которую вы ещё не видели."
+            },
+            {
+              "p": "Вам не нужно определять возможности ребёнка. Достаточно вместе искать подходящую ему дорогу."
+            }
+          ]
+        ]
+      },
+      "independence": {
+        "intro": [
+          "Советник — это «надёжная опора, которая уважает мысли ребёнка и протягивает руку, когда это нужно»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Вы считаете, что в конечном счёте жизнь ребёнка решает сам ребёнок."
+            },
+            {
+              "p": "Раз родители прожили дольше, у них больше опыта и знаний. Есть много ситуаций, где они могут рассудить лучше ребёнка. И всё же вы не думаете, что хорошее воспитание — это когда родители всегда выбирают правильный ответ."
+            },
+            {
+              "p": "Вы цените, чтобы ребёнок думал сам. Когда он сомневается, вы не даёте сразу ответ, а выслушиваете его мысли и ищете ответ вместе."
+            },
+            {
+              "p": "Даже если выбор кажется вам окольным путём, вы можете захотеть дать ребёнку его пройти, если ошибку можно исправить. Не только опыт успеха после собственного выбора, но и опыт ошибки и переосмысления когда-нибудь станет силой для самостоятельной жизни."
+            },
+            {
+              "p": "Конечно, вы не позволяете ему делать всё что вздумается. Учите тому, чего он не знает. Советуете, когда он сомневается. А если действительно опасно — останавливаете как родитель."
+            },
+            {
+              "p": "Для вас воспитание — не вечное руководство жизнью ребёнка. Это ещё и постепенная передача ему руля его собственной жизни по мере того, как он растёт."
+            }
+          ],
+          [
+            {
+              "p": "Дети обычно вырастают со своим мнением и способными принимать решения сами."
+            },
+            {
+              "p": "С ранних лет у них есть возможность думать, чего они хотят. Поэтому им легче выработать собственные критерии, а не искать только ответ, который понравится родителям, или правильный в глазах других."
+            },
+            {
+              "p": "Это вырабатывается не только в больших решениях вроде выбора пути. Мелкие повседневные выборы — что надеть, чем заниматься, как провести выходной — тоже тренировка в том, чтобы самому находить смысл и двигать свою жизнь."
+            },
+            {
+              "p": "А поскольку решение было своим, легче развивается и умение принимать его последствия. Даже когда что-то не удаётся, ребёнок не винит других, а думает, как поступить в следующий раз."
+            },
+            {
+              "p": "С другой стороны, чем привычнее ребёнку думать самому, тем чаще он может пытаться и свои тревоги решать в одиночку."
+            },
+            {
+              "p": "По-настоящему нужен в будущем не тот, кто может всё сделать один, а тот, кто думает сам и при необходимости может опереться на других."
+            },
+            {
+              "p": "Если учить советоваться и просить о помощи так же, как принимать решения, достоинства типа «Самостоятельность» раскроются ещё ярче."
+            }
+          ],
+          [
+            {
+              "p": "Больше всего стоит остерегаться того, чтобы не путать самостоятельность с попустительством."
+            },
+            {
+              "p": "Важно давать ребёнку решать, но для этого нужны основания для решения. Нельзя выбрать то, о существовании чего не знаешь. Если не понимаешь различий между вариантами, не можешь понять, что тебе подходит."
+            },
+            {
+              "p": "Например, при выборе школы ребёнок может знать только её название и рейтинг. Лишь когда родители вместе с ним разузнают об атмосфере, о том, куда поступают выпускники, о кружках и времени на дорогу, он сможет сравнивать по-своему."
+            },
+            {
+              "p": "Важно не отдавать решение ребёнку просто потому, что это его жизнь, а отдавать его после того, как создано состояние, в котором он может выбирать."
+            },
+            {
+              "p": "К тому же, когда ребёнок приходит за советом, иногда мало просто предложить ему подумать самому. Возможно, он хочет не того, чтобы за него решили, а того, кто поможет упорядочить мысли."
+            },
+            {
+              "p": "Мнение родителя тоже не мешает самостоятельности. Передайте его как ещё один материал для размышлений, а в конце пусть думает он сам."
+            },
+            {
+              "p": "Самостоятельность — это не решать в одиночку. Это использовать нужную информацию и мнения людей и в конце принимать решение самому."
+            }
+          ],
+          [
+            {
+              "p": "Поскольку вы обычно уважаете волю ребёнка, конфликты из-за навязывания вашего мнения, возможно, случаются сравнительно редко."
+            },
+            {
+              "p": "Сложнее, скорее, тогда, когда ребёнок не может решить сам."
+            },
+            {
+              "p": "Например, перед выбором пути он может снова и снова спрашивать, что выбрать. Вы, наверное, думаете: это его жизнь, и в конце хочется, чтобы он решил сам."
+            },
+            {
+              "p": "Но, возможно, ребёнку нужно не само решение."
+            },
+            {
+              "p": "Может быть, ему страшно сделать неправильный выбор. Может быть, он просто хочет знать, что думаете вы. Или он не уверен в своих мыслях и хочет, чтобы его подтолкнули."
+            },
+            {
+              "p": "Если в таком состоянии всё время возвращать ему вопрос, он может почувствовать, что ему дали не свободу, а необходимость решать в полном одиночестве."
+            },
+            {
+              "p": "В такой момент попробуйте вместе разобрать варианты. Расскажите, как подумали бы вы. И всё же последний голос оставьте за ним."
+            },
+            {
+              "p": "Ваша цель — не ребёнок, который не полагается на родителей."
+            },
+            {
+              "p": "Ребёнок, который может посоветоваться с родителями, но в конце решает сам."
+            },
+            {
+              "p": "Поддерживать его до этого момента — вот что важно для Советника."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где ребёнок сам выбирает и проживает последствия своего выбора."
+            },
+            {
+              "p": "И дома стоит постепенно, по мере взросления, расширять круг того, что он может решать сам. Пока маленький — пусть выбирает из нескольких вариантов. Подрастая — пусть сам придумывает варианты."
+            },
+            {
+              "p": "Важно также давать ему пережить неудачи, которые можно исправить."
+            },
+            {
+              "p": "Даже опыт того, что придуманный и выбранный им способ не принёс результата, становится материалом для лучшего выбора в следующий раз."
+            },
+            {
+              "p": "При этом родителям не нужно полностью отступать назад."
+            },
+            {
+              "p": "Чаще всего родители лучше умеют собирать нужную информацию. Получая качественную поддержку, ребёнок может вырасти ещё больше. Иногда важно и высказать мнение с другой стороны, и остановить, если действительно опасно."
+            },
+            {
+              "p": "Вам, Советнику, подходит среда, где легко получить нужную информацию и встретиться с самыми разными взглядами."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — умение уважать ребёнка как отдельного от вас человека."
+            },
+            {
+              "p": "Родители многое пережили раньше детей. Если о чём-то жалеешь, не хочется, чтобы ребёнок повторил ту же ошибку. Если что-то удалось, естественно хотеть посоветовать тот же путь."
+            },
+            {
+              "p": "Но вы способны в этот момент остановиться."
+            },
+            {
+              "p": "Вы хорошо понимаете, что жизнь, которая была хороша для вас, не обязательно будет хороша для ребёнка."
+            },
+            {
+              "p": "Чем больше у ребёнка опыта собственного выбора, тем лучше он может рассуждать сам, даже когда родителей нет рядом."
+            },
+            {
+              "p": "Вы, наверное, растите «человека, который сам выбирает свою жизнь и проживает этот выбор как свой»."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — уважая волю ребёнка, вы можете спрятать даже те знания и опыт, которые есть у вас как у родителя."
+            },
+            {
+              "p": "Передать ребёнку право решать — не то же самое, что родителю не высказывать мнения."
+            },
+            {
+              "p": "У ребёнка ещё есть миры, которых он не знает. Учёба, работа, отношения — естественно, что о том, чего не пережил, судить трудно."
+            },
+            {
+              "p": "В такой момент рассказать то, что знаете вы как родитель, — не вмешательство. Ваш опыт, мнение учителей, рассказы друзей — вся информация становится материалом для его решения."
+            },
+            {
+              "p": "Давать пережить неудачу тоже нужно с границами."
+            },
+            {
+              "p": "То, на чём можно научиться через ошибку, — не то же самое, что родители должны остановить. Поправимые неудачи можно доверить ребёнку. Но в том, что трудно исправить, — здоровье, безопасность, большие деньги — родителям нужно выйти вперёд."
+            },
+            {
+              "p": "Круг того, что вы доверяете, и круг того, что защищаете, не застывшие. По мере роста ребёнка эта граница постепенно сдвигается наружу."
+            },
+            {
+              "p": "Важнее, чем дать свободу, — вырастить умение пользоваться свободой."
+            },
+            {
+              "p": "Если помнить об этом, слабые стороны Советника довольно легко восполнить."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Образование»｜Архитектор🦉."
+            },
+            {
+              "p": "Если вы уважаете волю ребёнка и стремитесь оставить последний выбор за ним, то Архитектор умеет думать о будущем и готовить нужное образование и варианты."
+            },
+            {
+              "p": "Только с типом «Самостоятельность» ребёнок может выбирать лишь внутри уже знакомого мира. А только с Архитектором родители могут подготовить слишком много путей, которые кажутся хорошими им самим."
+            },
+            {
+              "p": "Архитектор расширяет мир, а тип «Самостоятельность» даёт ребёнку выбрать внутри него."
+            },
+            {
+              "p": "Сочетая их, легче выстроить отношения, в которых родители расширяют возможности, а ребёнок выбирает жизнь."
+            },
+            {
+              "p": "Вам не нужно самим становиться Архитектором. Прежде чем уважать выбор, достаточно ли вы показали вариантов? Даже если иногда задумываться об этом, достоинства Советника раскроются ещё ярче."
+            }
+          ],
+          [
+            {
+              "name": "Ёсида Сёин"
+            },
+            {
+              "p": "Ёсида Сёин известен тем, что в своей школе Сёка Сондзюку воспитал многих молодых людей, в том числе Такасуги Синсаку и Ито Хиробуми."
+            },
+            {
+              "p": "Примечательно, что он не стремился сделать так, чтобы все думали как он, а через диалог и споры побуждал учеников думать самих. Он видел сильные стороны и идеи каждого и придавал значение тому, чтобы человек действовал сам."
+            },
+            {
+              "p": "Учитель не вручает готовый ответ, чтобы ученики действовали по нему. Он даёт материал для размышлений, а в конце ученики действуют сами."
+            },
+            {
+              "p": "Этот подход совпадает с Советником, который не достраивает жизнь ребёнка сам, а когда-нибудь передаёт её ему."
+            },
+            {
+              "name": "Шанкс («Ван-Пис»)"
+            },
+            {
+              "p": "Шанкс тоже не из тех, кто мелочно управляет чужой жизнью."
+            },
+            {
+              "p": "Он показывает Луффи свой образ жизни и мир моря, но то, какую жизнь выбрать дальше, оставляет за ним."
+            },
+            {
+              "p": "Но когда действительно нужно было защитить Луффи, он сделал это, даже потеряв собственную руку."
+            },
+            {
+              "p": "Обычно он доверяет человеку его жизнь. Но когда по-настоящему опасно, выходит вперёд сам."
+            },
+            {
+              "p": "Дать свободу — не то же самое, что не защищать."
+            },
+            {
+              "p": "Эта дистанция очень наглядно показывает Советника."
+            }
+          ],
+          [
+            {
+              "p": "У Ёсиды Сёина широко известны слова: «Господа, будьте безумны!»"
+            },
+            {
+              "p": "Не думать только о том, чтобы подстроиться под чужой здравый смысл, а действовать ради того, что сам обдумал и во что веришь. Этот подход совпадает и с вашим желанием, чтобы ребёнок сам выбирал свою жизнь."
+            },
+            {
+              "p": "Возможно, однажды ребёнок выберет путь, который вы не сможете понять."
+            },
+            {
+              "p": "Как родитель вы, может быть, встревожитесь и захотите посоветовать другой путь."
+            },
+            {
+              "p": "Но если ребёнок по-своему всё обдумал и может объяснить причины своими словами, это не значит, что ваше воспитание провалилось. Напротив, это момент, когда он научился сам думать о своей жизни."
+            },
+            {
+              "p": "А в Шанксе можно увидеть ещё одну важную вещь."
+            },
+            {
+              "p": "С Шанксом связана знаменитая сцена."
+            },
+            {
+              "p": "«Я оставлю эту шляпу тебе. Когда-нибудь верни её мне. Когда станешь великим пиратом»."
+            },
+            {
+              "p": "Шанкс не дал Луффи никакого совета. Не посмеявшись над мечтой мальчика как над детской болтовнёй, он поверил тому, кто сказал, что превзойдёт их, и доверил ему свою шляпу."
+            },
+            {
+              "p": "Этот образ совпадает с вами, Советником."
+            },
+            {
+              "p": "Родители не держат вечно ответы на вопросы жизни, а когда-нибудь передают ребёнку саму роль — искать эти ответы."
+            },
+            {
+              "p": "Руль жизни вы передаёте ребёнку. Но за его спиной всегда есть вы."
+            },
+            {
+              "p": "Именно благодаря этой уверенности ребёнок находит смелость отойти от родителей и выбрать свою жизнь."
+            }
+          ]
+        ]
+      },
+      "challenge": {
+        "intro": [
+          "Вы — Главный болельщик, «человек, который ценит любопытство ребёнка, верит в его возможности и умеет подтолкнуть вперёд»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Вы хотите расширять возможности ребёнка через опыт."
+            },
+            {
+              "p": "Когда ребёнок чем-то заинтересовался, вам хочется не сначала решать, подходит ли ему это, а дать попробовать. Вы знаете, что многое невозможно понять, не испытав на себе."
+            },
+            {
+              "p": "Даже если на деле оказалось не так интересно, как ожидалось, вы не считаете это напрасным. Понять, что тебе что-то не нравится, — тоже ценный опыт, чтобы узнать себя."
+            },
+            {
+              "p": "И наоборот, то, что начиналось просто так, может привести к неожиданному таланту. Не сужая возможности с самого начала, вы расширяете выбор ребёнка, давая ему соприкоснуться с самыми разными мирами."
+            },
+            {
+              "p": "Для вас важнее способность пробовать, чем никогда не ошибаться."
+            },
+            {
+              "p": "Не забегать вперёд, всё время защищая от падений, а поддерживать, чтобы, упав, ребёнок мог снова подняться. Естественно выбирать такой способ участия — в этом и есть Главный болельщик."
+            }
+          ],
+          [
+            {
+              "p": "Дети обычно вырастают открытыми новому и способными сделать шаг к тому, что их заинтересовало."
+            },
+            {
+              "p": "Они не боятся больше необходимого незнакомых мест и людей, и им легче научиться расширять свой мир. Поскольку они спокойны, зная, что родители не отвергнут их за ошибку, они реже замирают от страха перед результатом."
+            },
+            {
+              "p": "Кроме того, через множество опытов они на собственном ощущении понимают, что им нравится, а что нет, что получается, а что не очень."
+            },
+            {
+              "p": "Дети и сами не знают себя с самого начала. Иногда понимают, что что-то любят, потому что попробовали, а иногда осознают, что то, чем восхищались, им на самом деле не подходит."
+            },
+            {
+              "p": "Накапливая такой опыт, они узнают себя так, как невозможно узнать, просто размышляя."
+            },
+            {
+              "p": "С другой стороны, в среде, где постоянно встречаешь новое, можно переключиться на следующее, так и не углубившись в одно. Важно развивать не только количество опыта, но и умение глубоко погрузиться, когда нашёл то, что по-настоящему любишь."
+            }
+          ],
+          [
+            {
+              "p": "Вам стоит следить за тем, чтобы опыт ради опыта не стал самоцелью."
+            },
+            {
+              "p": "Чем сильнее желание расширить мир ребёнка, тем больше хочется дать ему разного опыта. Но опыт не становится лучше просто от количества."
+            },
+            {
+              "p": "Важно видеть, что ребёнок при этом почувствовал."
+            },
+            {
+              "p": "Было ли весело? Хочется ли ещё раз? Чем это отличалось от ожиданий? Если немного оглянуться после опыта, он лучше запомнится."
+            },
+            {
+              "p": "Также, когда ребёнок говорит, что не хочет пробовать, не нужно сразу считать его нерешительным. Возможно, ему просто неинтересно, а возможно, он ещё не готов."
+            },
+            {
+              "p": "Подтолкнуть — сильная сторона Главного болельщика, но иногда подождать, пока ребёнок сам двинется, — тоже форма поддержки."
+            },
+            {
+              "p": "Не только давать опыт, но и сопровождать, пока этот опыт не останется внутри ребёнка."
+            },
+            {
+              "p": "Если удастся дойти до этого, множество подаренного вами опыта соединится с ростом ребёнка."
+            }
+          ],
+          [
+            {
+              "p": "Вы с ребёнком чаще всего сталкиваетесь, когда родителю что-то кажется хорошим опытом, а ребёнку не хочется."
+            },
+            {
+              "p": "«Такой шанс — попробуй, а не понравится — бросишь». Для вас это естественная мысль, но ребёнок может чувствовать иначе."
+            },
+            {
+              "p": "Особенно осторожному ребёнку войти в новую среду стоит больших сил."
+            },
+            {
+              "p": "Если в такой момент только требовать попробовать, то, хотя родителю кажется, что он подталкивает, ребёнок может почувствовать, что его торопят."
+            },
+            {
+              "p": "Важно увидеть, почему он не хочет пробовать."
+            },
+            {
+              "p": "Если ему неинтересно, возможно, и не нужно навязывать этот опыт. А если интересно, но страх неудачи сковывает, всё может измениться, если сделать первый шаг вместе."
+            },
+            {
+              "p": "Именно потому, что вы Главный болельщик, не нужно всегда толкать вперёд."
+            },
+            {
+              "p": "Важнее не заставлять пробовать, а вырастить ребёнка, который сможет двинуться, когда сам захочет попробовать."
+            },
+            {
+              "p": "Если помнить об этой разнице, ваша энергия станет для ребёнка силой, а не бременем."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где ребёнок может соприкоснуться с самыми разными мирами."
+            },
+            {
+              "p": "Хорошо не замыкать мир ребёнка на школе и доме, а иметь места вроде спорта или творческих занятий, где он встретит другие ценности. Важнее не то, что он там выберет, а то, что он вообще узнает о существовании незнакомых миров."
+            },
+            {
+              "p": "Но не нужно забивать расписание до отказа."
+            },
+            {
+              "p": "Когда ребёнка что-то сильно увлекло, может быть период, когда он тратит время на одно дело, а не добавляет новый опыт. Время широкого опыта и время глубокого погружения в одно могут сосуществовать."
+            },
+            {
+              "p": "Кроме того, вашему образу мыслей подходит атмосфера, где неудачу не считают чем-то слишком плохим."
+            },
+            {
+              "p": "Когда попробовал и не получилось — не упрекают, а помогают подумать о следующем шаге. В такой среде ребёнок может действовать, не боясь только результата."
+            },
+            {
+              "p": "Готовить нужно не среду, где всегда можно добиться успеха."
+            },
+            {
+              "p": "А среду, где можно спокойно пробовать."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — вы не судите о возможностях ребёнка только по тому, какой он сейчас."
+            },
+            {
+              "p": "Вы не закрываете возможности рано, решив, что «раз сейчас не получается — значит, не его» или «таланта нет»."
+            },
+            {
+              "p": "Способности ребёнка меняются с опытом. Даже если поначалу ничего не получалось, интерес может стать толчком к увлечению, и незаметно это превратится в большую силу."
+            },
+            {
+              "p": "А важнее самого таланта — возможность с ним встретиться."
+            },
+            {
+              "p": "Сколько бы ни было возможностей, если ребёнок не знает о существовании этого мира, он не может им даже заинтересоваться. То, что родители открывают дверь в новые миры, имеет огромное значение."
+            },
+            {
+              "p": "К тому же вы легко принимаете неудачу как часть опыта. Зная, что его не будут оценивать только по результату, ребёнок может спокойно сделать шаг вперёд."
+            },
+            {
+              "p": "Умение дать первый толчок возможностям, которых ещё не видно."
+            },
+            {
+              "p": "Это и есть большая сильная сторона Главного болельщика."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — внимание может слишком смещаться к тому, чтобы дать следующий опыт."
+            },
+            {
+              "p": "У нового опыта есть понятный стимул. Первое посещение нового места или новое занятие и родителям легко даёт ощущение, что ребёнок растёт."
+            },
+            {
+              "p": "А время, когда долго занимаешься одним, выглядит малоизменчивым."
+            },
+            {
+              "p": "Но когда ребёнок нашёл то, что по-настоящему любит, ему нужно не добавлять новый опыт, а время повторять одно и то же. То, что не получалось, постепенно начинает получаться, и только тогда открывается особый интерес."
+            },
+            {
+              "p": "Также, когда ребёнок хочет бросить на полпути, не всегда правильно сразу переходить к следующему."
+            },
+            {
+              "p": "Действительно ли не подходит? Или просто наступил период, когда не получается? Это нужно обдумать вместе."
+            },
+            {
+              "p": "Вам нужно не сокращать количество испытаний."
+            },
+            {
+              "p": "А, открыв множество дверей, беречь и время, чтобы углубить найденное за ними ценное."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Упорство»｜Тренер🐯."
+            },
+            {
+              "p": "Главный болельщик умеет давать ребёнку много поводов и создавать первый шаг в новые миры. А Тренер ценит то, чтобы долго выстраивать найденное."
+            },
+            {
+              "p": "Только с типом «Вызов» опыт может бесконечно расширяться, и ребёнок перейдёт к следующему, прежде чем одно станет силой. Только с типом «Упорство» упор на накопление может сократить шансы шагнуть в новые миры."
+            },
+            {
+              "p": "Сначала попробовать. А найдя то, что нравится, продолжать."
+            },
+            {
+              "p": "Вызов находит возможности, а накопление превращает эти возможности в силу."
+            },
+            {
+              "p": "Сочетая их, вы сделаете своё воспитание ещё более сбалансированным."
+            }
+          ],
+          [
+            {
+              "name": "Тоётоми Хидэёси"
+            },
+            {
+              "p": "Тоётоми Хидэёси известен тем, что начал с низкого положения и в итоге объединил страну."
+            },
+            {
+              "p": "Ему с самого начала не был приготовлен путь. Пробуя самые разные положения и роли, он расширял места, где мог проявить себя."
+            },
+            {
+              "p": "Не определять свои возможности только тем, где находишься сейчас, а при появлении шанса действовать — и прокладывать новый путь. Этот образ совпадает с Главным болельщиком, который хочет расширять возможности через опыт."
+            },
+            {
+              "name": "Профессор Оук («Покемон»)"
+            },
+            {
+              "p": "Профессор Оук тоже не тот, кто с самого начала ведёт детей по одной дороге."
+            },
+            {
+              "p": "Он вручает первого покемона и доверяет покедекс, создавая повод выйти в широкий мир. А с чем встретиться и что пережить потом — зависит от самого ребёнка."
+            },
+            {
+              "p": "Не учить ответам с самого начала, а открыть вход, чтобы шагнуть в мир."
+            },
+            {
+              "p": "Сначала выйти и увидеть мир своими глазами."
+            },
+            {
+              "p": "Желание дать ребёнку такой опыт наглядно показывает Главного болельщика."
+            }
+          ],
+          [
+            {
+              "p": "Тоётоми Хидэёси приписывают слова: «Думаешь, что проиграешь, — проиграешь. Думаешь, что победишь, — победишь. А если выйдет наоборот, всё равно говори людям, что победишь»."
+            },
+            {
+              "p": "Не застывать в раздумьях, получится или нет, а сначала поверить в свои возможности и действовать. Этот подход совпадает и с вашим образом мыслей — того, кто подталкивает ребёнка вперёд."
+            },
+            {
+              "p": "Дети с самого начала не знают, к чему у них есть склонность."
+            },
+            {
+              "p": "Что-то увлекает лишь тогда, когда попробуешь на деле. В месте, куда решился прийти, можно встретить дорогого друга. А можно и понять, что то, чем восхищался, тебе не подходит."
+            },
+            {
+              "p": "И то и другое — значимый опыт."
+            },
+            {
+              "p": "И то, что профессор Оук дал Эшу, тоже не было готовым ответом. Он вручил первого покемона и незаполненный покедекс и отправил его в ещё незнакомый мир."
+            },
+            {
+              "p": "Подготовил трёх стартовых покемонов, дал выбрать самому и отправил в путешествие."
+            },
+            {
+              "p": "От выбранного покемона зависит опыт, и сколько поймано покемонов — столько и историй."
+            },
+            {
+              "p": "Давать ребёнку такую возможность — это и есть Главный болельщик."
+            },
+            {
+              "p": "У родителей похожая роль."
+            },
+            {
+              "p": "Нельзя с самого начала решить будущее ребёнка. Но можно показать вход, рассказав, что бывают и такие миры."
+            },
+            {
+              "p": "Важно, чтобы родители не заставляли его бежать до самого конца."
+            },
+            {
+              "p": "Именно потому, что вы умеете подталкивать ребёнка, иногда нужно и побыть рядом, когда он остановился. Если, получив много опыта, он увлёкся чем-то одним, можно на этот раз не добавлять новых стимулов и беречь его время, чтобы он там задержался."
+            },
+            {
+              "p": "Сначала попробовать. Ценить то, что почувствовал. А найдя то, что нравится, на этот раз основательно этим заняться."
+            },
+            {
+              "p": "Самое большое, что вы можете дать ребёнку, — это не сам успех."
+            },
+            {
+              "p": "А смелость верить, что можно шагнуть в незнакомый мир."
+            },
+            {
+              "p": "С этой смелостью однажды, даже без родительского толчка, ребёнок сможет сам идти в новые миры."
+            }
+          ]
+        ]
+      },
+      "social": {
+        "intro": [
+          "Вы — Наставник, «искренний человек, который ценит доброту и вежливость и умеет воспитывать в ребёнке заботу о других»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Для вас важно не только то, каких способностей и успехов достигнет ребёнок, но и то, каким человеком он вырастет."
+            },
+            {
+              "p": "Хорошие результаты в учёбе и спорте тоже важны, но вы не считаете, что одного этого достаточно для успешного воспитания. Вы думаете, что умение здороваться, держать обещания и вставать на место другого — тоже большая сила в жизни."
+            },
+            {
+              "p": "Когда-нибудь ребёнок выйдет из дома и будет жить, общаясь со множеством людей. Тогда ему понадобятся не только знания и способности."
+            },
+            {
+              "p": "Каким бы талантливым ни был человек, если ему не доверяют, в одиночку он может сделать немногое. А у того, кто бережно относится к окружающим, появляются люди, готовые помочь в трудную минуту, и товарищи, вместе с которыми можно чего-то добиться."
+            },
+            {
+              "p": "Поэтому вы цените и маленькие повседневные поступки."
+            },
+            {
+              "p": "Не столько особое обучение, сколько разговоры дома и то, как вы общаетесь с людьми, учат ребёнка жить в обществе. Ценить воспитание не только способностей, но и человеческих качеств — это и есть Наставник."
+            }
+          ],
+          [
+            {
+              "p": "Дети вырастут внимательными к окружающим и легко вызывающими доверие."
+            },
+            {
+              "p": "Они действуют не только исходя из своих чувств, а привыкают думать, что почувствует другой. Поэтому и в дружбе, и в коллективе они умеют действовать сообща с другими."
+            },
+            {
+              "p": "Кроме того, в семье, где ценят вежливость и обещания, дети естественно усваивают основные правила поведения, нужные в обществе."
+            },
+            {
+              "p": "Эти качества не видны, как баллы за контрольную. Но когда ребёнок вырастет и выйдет в общество, они станут важной силой — умением вызывать доверие."
+            },
+            {
+              "p": "С другой стороны, дети, которые умеют беречь окружающих, порой откладывают свои чувства на потом."
+            },
+            {
+              "p": "Не могут отказаться от того, что не хочется. Перенапрягаются, чтобы оправдать ожидания. Чтобы этого не случилось, нужно говорить ребёнку, что свои чувства можно ценить так же, как заботу о других."
+            },
+            {
+              "p": "Быть добрым и всё время терпеть себе во вред — не одно и то же."
+            }
+          ],
+          [
+            {
+              "p": "Вам стоит следить за тем, чтобы не путать вежливость с покорностью."
+            },
+            {
+              "p": "Здороваться. Держать обещания. Не обижать других. В обществе действительно есть то, что стоит ценить."
+            },
+            {
+              "p": "Но подстраиваться под окружающих не всегда правильно."
+            },
+            {
+              "p": "Ребёнок может усомниться в школьных правилах или не согласиться с мнением взрослого. У него могут быть мысли, отличные от мыслей друзей."
+            },
+            {
+              "p": "Если в такие моменты требовать только подстраиваться, ребёнок может начать выбирать не правильный поступок, а тот, за который не отругают."
+            },
+            {
+              "p": "То, что вы по-настоящему хотите вырастить, — наверняка не ребёнок, который просто делает, что велят."
+            },
+            {
+              "p": "Почему так нельзя? Зачем беречь другого человека? Если ребёнок научится думать об этом, он сможет сам принимать решения и там, где родители не видят."
+            },
+            {
+              "p": "Беречь людей и иметь своё мнение — вполне совместимо."
+            },
+            {
+              "p": "Растить в ребёнке и то и другое одновременно — вот что важно для Наставника."
+            }
+          ],
+          [
+            {
+              "p": "Вы с ребёнком чаще всего сталкиваетесь, когда вас беспокоит, как его поведение выглядит в глазах других."
+            },
+            {
+              "p": "То, что дома вы бы допустили, в школе или на людях может вызвать желание сделать замечание. Как родитель вы хотите, чтобы ребёнок усвоил поведение, принятое в обществе, и не испытывал трудностей в будущем."
+            },
+            {
+              "p": "Но ребёнку ваш замысел может быть непонятен."
+            },
+            {
+              "p": "Почему нужно обращать внимание на других? Я же никому не мешаю — что в этом плохого? У него могут возникать такие вопросы."
+            },
+            {
+              "p": "Если закончить на «так принято», ребёнку покажется, что вам просто важно, что подумают люди."
+            },
+            {
+              "p": "Важно вместе подумать, для чего существует это правило."
+            },
+            {
+              "p": "Чтобы не обижать людей? Чтобы всем в коллективе было комфортно? Или это просто давняя традиция, причина которой уже стёрлась?"
+            },
+            {
+              "p": "Показывая, что вы сами размышляете, вы помогаете ребёнку не просто принимать правила общества, а задумываться об их смысле."
+            },
+            {
+              "p": "Вырастить не того, кто просто соблюдает правила, а того, кто думает, зачем их соблюдать."
+            },
+            {
+              "p": "Если удастся передать это, ваши ценности тоже легче дойдут до ребёнка."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где у ребёнка есть общение с людьми и вне дома."
+            },
+            {
+              "p": "Хорошо, если у него будет опыт общения не только со сверстниками, но и с людьми разного возраста и положения. Чувство дистанции и внимательность, которым трудно научиться только дома, постепенно приходят в отношениях с людьми."
+            },
+            {
+              "p": "Также важно, чтобы сам дом был местом, где учатся бережному отношению к людям."
+            },
+            {
+              "p": "Если родители требуют от ребёнка вежливости, а сами грубы с продавцами или с членами семьи, их словам нет веры. И наоборот, когда родители естественно благодарят или извиняются, если неправы, это само по себе становится уроком для ребёнка."
+            },
+            {
+              "p": "Общению с людьми не учат одними объяснениями."
+            },
+            {
+              "p": "Взрослые, которых ребёнок каждый день видит дома, — его первый урок жизни в обществе."
+            },
+            {
+              "p": "А когда ребёнок ошибся вне дома, не ограничивайтесь выговором, а вместе подумайте, что почувствовал другой. Такие моменты складываются в заботу, которая не сводится к формальности."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — вы не оцениваете жизнь ребёнка только по способностям."
+            },
+            {
+              "p": "Оценки и учебные заведения легко выразить в цифрах. А умение беречь людей и вызывать доверие в цифры так просто не переводится."
+            },
+            {
+              "p": "И всё же вы понимаете, что эти качества в жизни важны."
+            },
+            {
+              "p": "Умеет выслушать. Держит слово. Может извиниться, когда неправ. Такие маленькие поступки с возрастом дают всё большую разницу."
+            },
+            {
+              "p": "К тому же отношения с людьми касаются самых разных сторон жизни ребёнка."
+            },
+            {
+              "p": "Ни в школе, ни на работе невозможно жить совсем одному. При равных способностях больше возможностей получает тот, с кем хочется вместе стараться."
+            },
+            {
+              "p": "Вы учите ребёнка вежливости не только ради того, чтобы его ценили в обществе."
+            },
+            {
+              "p": "Умение заложить основу для жизни, в которой строишь хорошие отношения с людьми."
+            },
+            {
+              "p": "Это и есть большая сильная сторона Наставника."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — требуя от ребёнка внимания к окружающим, вы можете оттеснять на второй план его собственные чувства."
+            },
+            {
+              "p": "Умение заботиться о других — прекрасная сила. Но всегда уступать — ещё не доброта."
+            },
+            {
+              "p": "Подстраиваться под друзей, хотя на самом деле не хочется. Молчать, даже если сомневаешься в словах учителя. Терпеть одному, чтобы никого не задеть. Если так продолжается, это уже не забота, а самопожертвование."
+            },
+            {
+              "p": "Иногда нужно и отказать. Высказать мнение о том, с чем не согласен, не обязательно значит разрушить отношения."
+            },
+            {
+              "p": "Напротив, умение выражать свои чувства и при этом слушать другого и есть подлинная сила жить в обществе."
+            },
+            {
+              "p": "Вы хотите научить не тому, как казаться удобным для окружающих."
+            },
+            {
+              "p": "А тому, как уважать другого, уважая так же и себя."
+            },
+            {
+              "p": "Не терпит ли ребёнок именно потому, что он добрый? Если иногда обращать на это внимание, ваша сила будет передаваться в более здоровой форме."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Индивидуальность»｜Продюсер🐱."
+            },
+            {
+              "p": "Наставник ценит отношения с окружающими и умеет развивать способность ладить с людьми в обществе. А Продюсер ценит то, чтобы сохранить самобытность ребёнка, даже если он не такой, как все."
+            },
+            {
+              "p": "Только с типом «Общество» стремление к гармонии может приглушить индивидуальность ребёнка. Только с типом «Индивидуальность» стремление быть собой может привести к лёгкому отношению к окружающим."
+            },
+            {
+              "p": "Беречь людей. Но не подстраиваться под окружающих слишком сильно."
+            },
+            {
+              "p": "Иметь и силу жить в обществе, и силу жить по-своему."
+            },
+            {
+              "p": "Сочетая их, легче вырастить человека, который добр и при этом может высказать своё мнение."
+            }
+          ],
+          [
+            {
+              "name": "Иисус Христос"
+            },
+            {
+              "p": "В учении Иисуса Христа большими темами известны любовь к ближнему и прощение других."
+            },
+            {
+              "p": "Не судить о ценности человека только по положению и способностям, обращать внимание и на тех, кто слаб. Этот взгляд совпадает с Наставником, который ценит отношение к людям и заботу."
+            },
+            {
+              "p": "Не просто заставлять соблюдать правила, а ценить то бережное отношение к людям, которое стоит за ними."
+            },
+            {
+              "p": "Думать не только о том, как вести себя, но и о том, почему нужно беречь людей."
+            },
+            {
+              "p": "Это фигура, символизирующая такие ценности."
+            },
+            {
+              "name": "Тандзиро Камадо («Клинок, рассекающий демонов»)"
+            },
+            {
+              "p": "Тандзиро запоминается не только силой, но и заботой о других."
+            },
+            {
+              "p": "Он, конечно, бережёт товарищей, а иногда обращает внимание даже на прошлое и страдания врагов. Но он не просто добр: ради того, что нужно защитить, он стоит на своём."
+            },
+            {
+              "p": "Заботиться об окружающих и при этом не отпускать то важное, что есть внутри."
+            },
+            {
+              "p": "Быть добрым к другим и иметь свои убеждения вполне совместимо. Образ Тандзиро наглядно показывает тот способ общения с людьми, который Наставник хочет передать ребёнку."
+            }
+          ],
+          [
+            {
+              "p": "Среди слов Иисуса Христа широко известна заповедь: «Возлюби ближнего твоего, как самого себя»."
+            },
+            {
+              "p": "Важно здесь не только «возлюби ближнего». В ней есть и слова «как самого себя»."
+            },
+            {
+              "p": "Чтобы беречь других, не нужно постоянно жертвовать собой."
+            },
+            {
+              "p": "Это тоже то, что хотелось бы, чтобы вы, Наставник, передали ребёнку."
+            },
+            {
+              "p": "На добрых детей часто полагаются окружающие. Они могут терпеть ради друга или проглатывать своё мнение, чтобы не испортить атмосферу."
+            },
+            {
+              "p": "В такие моменты признайте, что ребёнок сумел позаботиться о других, и вместе с тем обратите внимание и на его собственные чувства."
+            },
+            {
+              "p": "Тандзиро оставил слова вроде: «Человека движет сердце, поэтому сердце может становиться сколь угодно сильным»."
+            },
+            {
+              "p": "Это сцена, кратко показывающая рост человеческого сердца и его безграничные возможности."
+            },
+            {
+              "p": "Тандзиро тоже, при всей своей доброте к людям, не из тех, кто откажется от того, что решил защищать, лишь бы подстроиться под окружающих."
+            },
+            {
+              "p": "Поэтому важно, чтобы вежливость и забота, которым вы учите ребёнка, не сводились лишь к умению подстраиваться."
+            },
+            {
+              "p": "Думать о положении другого. Но иметь своё мнение, когда не согласен. Помогать кому-то. Но не взваливать на себя столько, что становится тяжело."
+            },
+            {
+              "p": "Только когда получается и то и другое, доброта становится силой ребёнка."
+            },
+            {
+              "p": "Вырастить ребёнка, который умеет беречь людей. И вырастить его так, чтобы он, как один из этих людей, умел беречь и себя."
+            },
+            {
+              "p": "То, чему вы можете научить, — не просто вежливость."
+            },
+            {
+              "p": "А сила жить вместе с людьми."
+            },
+            {
+              "p": "С этой силой ребёнок не будет просто подстраиваться под общество, а вырастет человеком, которому доверяют окружающие и который бережёт и свою жизнь."
+            }
+          ]
+        ]
+      },
+      "security": {
+        "intro": [
+          "Вы — Хранитель, «добрый человек, для которого счастье ребёнка важнее всего и который всегда на его стороне»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Для вас важнее, чтобы ребёнок жил счастливо, чем его успех."
+            },
+            {
+              "p": "Конечно, вы тоже считаете важным хорошую школу и стабильную работу в будущем. Но если ради этого ребёнку придётся постоянно страдать, вы можете остановиться и подумать: а действительно ли это счастье?"
+            },
+            {
+              "p": "Важнее не то, лучше ли он других, а то, может ли он проживать каждый день с удовлетворением. Вы цените не только результат, но и чувства на пути к нему."
+            },
+            {
+              "p": "В основе этого — желание сделать дом местом, где ребёнку спокойно."
+            },
+            {
+              "p": "Во внешнем мире бывают неудачи. Бывают дни, когда не ладится с друзьями или пропадает уверенность в себе. Если даже тогда дома его продолжат оценивать, ребёнку будет негде дать отдых сердцу."
+            },
+            {
+              "p": "Вы хотите быть на его стороне независимо от результата, а не признавать его за то, что он чего-то добился."
+            },
+            {
+              "p": "Что бы ни случилось снаружи, дома есть тот, кто его примет."
+            },
+            {
+              "p": "Давать ребёнку такое спокойствие умеет Хранитель."
+            }
+          ],
+          [
+            {
+              "p": "Дети обычно вырастают способными выражать свои чувства и просить о помощи."
+            },
+            {
+              "p": "Если знаешь, что за неудачу не будут сурово ругать, легче рассказать родителям даже о неприятном. В трудной ситуации у ребёнка появляется вариант не нести всё в одиночку, а поговорить с кем-то."
+            },
+            {
+              "p": "Кроме того, опыт того, что тебя принимают дома, становится основой самооценки."
+            },
+            {
+              "p": "Чувствуя, что есть куда вернуться, можно спокойно пробовать себя и за пределами дома. На самом деле, чтобы отдалиться от родителей, ребёнку как раз и нужны с ними надёжные отношения."
+            },
+            {
+              "p": "С другой стороны, именно потому, что дома так уютно, ребёнок порой стремится поскорее уйти от трудного."
+            },
+            {
+              "p": "Столкнувшись с чем-то немного сложным, он может избегать даже того, что преодолел бы, если бы продолжал."
+            },
+            {
+              "p": "Важно не заставлять страдать, а помогать встречать трудности, имея безопасное место."
+            }
+          ],
+          [
+            {
+              "p": "Вам стоит следить за тем, чтобы не путать защиту ребёнка с устранением трудностей."
+            },
+            {
+              "p": "Естественно хотеть помочь, когда ребёнку плохо. Тем более что вы цените его чувства и наверняка осторожны в том, чтобы не перегружать."
+            },
+            {
+              "p": "Но на пути роста иногда нужно немного трудного времени."
+            },
+            {
+              "p": "Тренируешься, а лучше почти не становится. Спор с друзьями. Учишь, а результат не тот, на который надеялся. Всего этого не избежать."
+            },
+            {
+              "p": "Важно здесь не сразу позволить бросить, раз тяжело, и не заставлять терпеть и продолжать."
+            },
+            {
+              "p": "А увидеть, что именно ребёнку даётся тяжело."
+            },
+            {
+              "p": "Сейчас трудно, но он сам хочет продолжать? Или он изнуряет себя, лишь бы не бросить? От этой разницы зависит и то, как родителю участвовать."
+            },
+            {
+              "p": "Дом, где спокойно, — это не место, где не бывает ничего тяжёлого. Это место, куда можно вернуться, даже когда тяжело."
+            },
+            {
+              "p": "С таким пониманием ваша доброта станет силой, которая не останавливает ребёнка, а поддерживает его в испытаниях."
+            }
+          ],
+          [
+            {
+              "p": "Вы с ребёнком чаще всего сталкиваетесь, когда он, несмотря на трудности, пытается что-то продолжать."
+            },
+            {
+              "p": "Бывает, что, на ваш взгляд, ему явно тяжело, а он говорит, что не хочет бросать. Вам захочется сказать, что не нужно себя мучить."
+            },
+            {
+              "p": "Но для ребёнка «тяжело» и «хочу бросить» — не всегда одно и то же."
+            },
+            {
+              "p": "Может быть, ему обидно не попадать в состав, но он любит свою секцию. Может быть, учиться тяжело, но есть школа, куда он хочет поступить."
+            },
+            {
+              "p": "Если родители постоянно заранее готовят пути отступления, ребёнок может почувствовать, что в него не верят."
+            },
+            {
+              "p": "И наоборот, когда он и вправду на пределе, не нужно заставлять его терпеть «ради роста»."
+            },
+            {
+              "p": "Вам нужно не столько оценивать его страдания, сколько вместе выяснить, чего хочет он сам."
+            },
+            {
+              "p": "Хочет продолжать — поддержите. Хочет отойти — вместе подумайте о способе, который не будет бегством. Сомневается — не торопитесь с выводом."
+            },
+            {
+              "p": "Защищать — не всегда значит уводить от трудностей."
+            },
+            {
+              "p": "Когда ребёнок пытается что-то преодолеть, верить в его силы и быть рядом — тоже важная роль Хранителя."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит дом, где ребёнок может спокойно ошибаться."
+            },
+            {
+              "p": "Где хвалят не только в дни, когда он принёс хороший результат, но и в дни неудач можно вернуться как обычно. Такая среда лучше всего раскрывает ваши достоинства."
+            },
+            {
+              "p": "Особенно важно не делать дом слишком похожим на место оценок."
+            },
+            {
+              "p": "В школе ставят оценки, в спорте есть победы и поражения, а в дружбе ребёнок переживает, как его видят. За пределами дома дети и так получают множество оценок."
+            },
+            {
+              "p": "Поэтому дома нужно время, когда его принимают просто за то, что он есть, независимо от достижений."
+            },
+            {
+              "p": "Но место, где спокойно, и место, где можно ничего не делать, — разные вещи."
+            },
+            {
+              "p": "Потому что дома как следует отдохнул душой — можно снова выйти в мир. Вернулся после неудачи — можно попробовать ещё раз."
+            },
+            {
+              "p": "Дом, который создаёте вы, — не место, где ребёнка прячут от внешнего мира."
+            },
+            {
+              "p": "А место, куда можно вернуться, даже если, выложившись снаружи, потерпел неудачу."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — результаты не меняют ваших отношений с ребёнком."
+            },
+            {
+              "p": "Растя, дети много раз ошибаются. Иногда они не достигают того, на что надеялись родители, а иногда сами теряют уверенность."
+            },
+            {
+              "p": "В такие моменты им нужны не только люди, которые ещё больше их оценивают."
+            },
+            {
+              "p": "Ощущение, что тебя принимают даже таким, у кого не получилось, даёт силы подняться снова."
+            },
+            {
+              "p": "Когда ребёнку плохо, вы никогда не снижаете вместе с этим его ценность."
+            },
+            {
+              "p": "А ребёнок, у которого есть безопасное место, не боится ошибок больше необходимого."
+            },
+            {
+              "p": "Создать место, куда всегда можно вернуться, и благодаря этому дать уйти дальше."
+            },
+            {
+              "p": "Это и есть большая сильная сторона Хранителя."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — вы можете слишком остро переживать боль ребёнка как свою."
+            },
+            {
+              "p": "Чем сильнее желание уберечь его от тяжёлого, тем больше вы стараетесь защитить его до того, как ему станет больно, и можете убрать даже те трудности, которые он преодолел бы сам."
+            },
+            {
+              "p": "Но дети становятся сильными не оттого, что не ошибаются."
+            },
+            {
+              "p": "Уверенность постепенно приходит из опыта, когда после неудачи всё оказалось в порядке, и когда трудный период удалось пережить по-своему."
+            },
+            {
+              "p": "Если родители уберут все камни и проложат лёгкую дорогу, на ней ребёнок, может, и не упадёт. Но однажды, когда он пойдёт сам, он споткнётся о камень, которого никогда не видел."
+            },
+            {
+              "p": "Поэтому не нужно предотвращать даже мелкие неудачи."
+            },
+            {
+              "p": "Если ребёнок не просит о помощи, попробуйте немного понаблюдать. Достаточно держать наготове место, куда можно вернуться, когда трудно."
+            },
+            {
+              "p": "Защищать ребёнка и убирать из его жизни все трудности — разные вещи."
+            },
+            {
+              "p": "Если помнить об этом, ваша доброта будет связана и с силой ребёнка."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Вызов»｜Главный болельщик🐒."
+            },
+            {
+              "p": "Хранитель умеет создавать место, где ребёнку спокойно. А Главный болельщик ценит то, чтобы создавать поводы шагнуть в новые миры."
+            },
+            {
+              "p": "Только с типом «Спокойствие» стремление защитить может сократить шансы выйти в неизвестный мир. Только с типом «Вызов» опыт может следовать за опытом так, что сердце ребёнка не будет успевать."
+            },
+            {
+              "p": "Есть безопасное место — значит, можно пробовать. А раз пробуешь, безопасное место значит ещё больше."
+            },
+            {
+              "p": "Тот, кто подталкивает, и тот, кто создаёт место, куда вернуться."
+            },
+            {
+              "p": "Сочетая эти два подхода, ребёнку легче шагнуть во внешний мир, не перенапрягаясь."
+            }
+          ],
+          [
+            {
+              "name": "Будда (Шакьямуни)"
+            },
+            {
+              "p": "Будда известен тем, что всматривался в то, почему люди страдают, и продолжал думать о том, как освободиться от страдания."
+            },
+            {
+              "p": "Не игнорировать страдание и не гнать вперёд, а сначала обратить внимание на само страдание. Этот подход совпадает с Хранителем, который ценит чувства ребёнка."
+            },
+            {
+              "p": "Не оценивать другого со стороны, а видеть, что он чувствует."
+            },
+            {
+              "p": "Прежде результата — посмотреть на человека, который перед тобой."
+            },
+            {
+              "p": "Это фигура, символизирующая такой подход."
+            },
+            {
+              "name": "Хироси Нохара («Крейон Син-тян»)"
+            },
+            {
+              "p": "Хироси Нохара не изображён идеальным отцом. И всё же это человек с сильной любовью к семье, который, если что-то случится, в конце концов встаёт на её защиту."
+            },
+            {
+              "p": "Он и не тот отец, который всё время требует от Синноскэ высоких достижений или пытается вырастить его по идеалу."
+            },
+            {
+              "p": "Обычно живёт беззаботно, но в по-настоящему важный момент выходит вперёд ради семьи."
+            },
+            {
+              "p": "Не столько делать дом идеальным местом, сколько сделать его местом, куда, что бы ни случилось, в конце можно вернуться. Этот образ совпадает со спокойствием, которое даёт Хранитель."
+            }
+          ],
+          [
+            {
+              "p": "Среди слов Будды известно наставление: «Будьте сами себе светильником, будьте сами себе опорой»."
+            },
+            {
+              "p": "Родители не могут вечно нести страдания ребёнка вместо него."
+            },
+            {
+              "p": "С возрастом ребёнок всё больше переживает там, о чём родители не знают. Он может потерпеть неудачу в школе или пострадать в отношениях. Однажды настанет день, когда ему придётся подниматься самому там, куда родители не смогут сразу прийти на помощь."
+            },
+            {
+              "p": "Поэтому вы, Хранитель, стремитесь не только к тому, чтобы всю жизнь защищать ребёнка."
+            },
+            {
+              "p": "А к тому, чтобы однажды полученное спокойствие превратилось в его собственную силу."
+            },
+            {
+              "p": "Хироси Нохара тоже не тот отец, который заранее решает все проблемы семьи. Он и сам ошибается, и Синноскэ действует как хочет. Но в по-настоящему важный момент он ставит семью за свою спину и защищает её."
+            },
+            {
+              "p": "Ребёнку тоже нужна не жизнь, в которой ничего не случается."
+            },
+            {
+              "p": "Можно вернуться, даже если не получилось. Можно рассказать, даже если обидели. Если совсем никак — помогут. С такой уверенностью ребёнок может выйти даже в немного страшный мир."
+            },
+            {
+              "p": "Ваша доброта — не для того, чтобы удержать ребёнка дома."
+            },
+            {
+              "p": "А для того, чтобы спокойно отпустить его в мир."
+            },
+            {
+              "p": "Поэтому, когда ребёнок упрётся в стену, не обязательно сразу её разрушать за него."
+            },
+            {
+              "p": "Сначала посмотрите, что он сделает. Если нужно — встаньте рядом. Если всё равно трудно — подумайте вместе. Если по-настоящему опасно — без колебаний защитите."
+            },
+            {
+              "p": "При такой дистанции у ребёнка будут и спокойствие от того, что его защищают, и уверенность от того, что справился сам."
+            },
+            {
+              "p": "«Ты обязательно справишься. Устанешь — возвращайся, когда захочешь»."
+            },
+            {
+              "p": "Отпускать ребёнка с таким чувством — это то воспитание, которое можете дать вы, Хранитель."
+            }
+          ]
+        ]
+      },
+      "effort": {
+        "intro": [
+          "Вы — Тренер, «великодушный человек, который верит в старания ребёнка и умеет без спешки сопровождать его шаги».",
+          "Для вас важнее ежедневное накопление маленьких шагов, чем быстрый результат. Вы не определяете возможности одним талантом и хотите вырастить в ребёнке силу понемногу расти благодаря постоянству."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Вы считаете, что даже большой успех лежит в конце накопления маленьких ежедневных шагов."
+            },
+            {
+              "p": "Не столько получить хорошую оценку за одну контрольную, сколько понемногу учиться каждый день. Не столько вдруг стать мастером, сколько и сегодня тренировать то, что вчера не получалось. Вы видите ценность в таком незаметном накоплении."
+            },
+            {
+              "p": "Поэтому, даже если ребёнок не добивается результата сразу, вы не спешите разочаровываться в его возможностях."
+            },
+            {
+              "p": "Вы способны видеть рост на длинной дистанции, а не только ближайшие результаты."
+            },
+            {
+              "p": "Старание, которое вы цените, — это не работа на пределе."
+            },
+            {
+              "p": "Не столько выложиться в особенный день, сколько и в обычный день продвинуться хоть немного. Вы верите, что накопленное — сегодня лучше, чем вчера, завтра лучше, чем сегодня, — когда-нибудь станет большой силой."
+            },
+            {
+              "p": "Даже если сегодняшний шаг мал, в том, чтобы продолжать, есть смысл."
+            },
+            {
+              "p": "Верить в рост ребёнка с таким дальним прицелом умеет Тренер."
+            }
+          ],
+          [
+            {
+              "p": "Дети обычно вырастают способными упорно продолжать, даже если результат приходит не сразу."
+            },
+            {
+              "p": "Они не думают «не получается — значит, не моё», а легче воспринимают это как «просто пока не получилось»."
+            },
+            {
+              "p": "Поэтому они могут браться не только за то, что даётся сразу, но и за то, на освоение чего нужно время."
+            },
+            {
+              "p": "Кроме того, когда видят не только результат, но и процесс, дети легче ощущают ценность самого старания."
+            },
+            {
+              "p": "Признают не потому, что получил 90 баллов, а замечают и то, что учился упорнее, чем в прошлый раз. Даже если не блеснул в матче, знают, что каждый день продолжал тренироваться."
+            },
+            {
+              "p": "Такой опыт становится силой продолжать и в периоды без результатов."
+            },
+            {
+              "p": "С другой стороны, дети, которые добросовестно продолжают, иногда испытывают вину, когда бросают."
+            },
+            {
+              "p": "Продолжать важно, но не всё обязательно доводить до конца. Важно вместе развивать умение отличать то, что стоит накапливать, от того, в чём лучше сменить направление."
+            }
+          ],
+          [
+            {
+              "p": "Вам стоит следить за тем, чтобы продолжение само по себе не стало целью."
+            },
+            {
+              "p": "Старание действительно становится большой силой. Но если продолжать одно и то же, результат не гарантирован."
+            },
+            {
+              "p": "Если время занятий увеличилось, а оценки не меняются, возможно, менять нужно не время, а способ. Даже давнее увлечение ребёнок может сменить на другой путь, если изменились его цели."
+            },
+            {
+              "p": "Тогда нужно не только стараться ещё больше."
+            },
+            {
+              "p": "Действительно ли есть смысл продолжать?"
+            },
+            {
+              "p": "Чтобы продолжать стараться, иногда нужно и остановиться подумать."
+            },
+            {
+              "p": "К тому же у детей бывают периоды, когда стараться никак не получается."
+            },
+            {
+              "p": "Бывают дни усталости и периоды без настроения. Накопленное не исчезает от того, что несколько дней отдыхал."
+            },
+            {
+              "p": "То, что бывают периоды, когда не можешь стараться, и ценность самого ребёнка — разные вещи."
+            },
+            {
+              "p": "Именно потому, что вы цените долгое постоянство, смотрите и на отдых как на часть долгого накопления."
+            }
+          ],
+          [
+            {
+              "p": "Вы с ребёнком чаще всего сталкиваетесь, когда он вдруг говорит, что хочет бросить на полпути."
+            },
+            {
+              "p": "Если только начал — ещё понятно. Но когда вдруг хочет бросить то, чем занимался много лет, вам станет жаль накопленного."
+            },
+            {
+              "p": "Если пережить этот трудный период, может, снова станет интересно; не хочется, чтобы у него появилась привычка бросать. Наверняка у вас есть такие тревоги."
+            },
+            {
+              "p": "Но причин, по которым ребёнок хочет бросить, не одна."
+            },
+            {
+              "p": "Может быть, он хочет сбежать от неудач, а может, достаточно попробовав, переключился на что-то другое. Бывает и так, что сама среда перестала ему подходить."
+            },
+            {
+              "p": "Важно не решать сразу, продолжать или бросить."
+            },
+            {
+              "p": "Что он получил до сих пор? Почему хочет бросить именно сейчас? Есть ли в конце пути то, чего он хочет? Обдумав это вместе, можно придать смысл даже решению бросить."
+            },
+            {
+              "p": "Накопленное не обнуляется в момент, когда бросаешь."
+            },
+            {
+              "p": "Важно растить не только силу продолжать, но и силу самому подвести черту и двинуться дальше."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где можно видеть маленький рост на длинной дистанции."
+            },
+            {
+              "p": "Вместо того чтобы подробно оценивать ежедневные результаты, лучше смотреть, что изменилось по сравнению с тем, что было некоторое время назад."
+            },
+            {
+              "p": "То, что полгода назад не получалось, теперь получается как само собой. То, что раньше бросал сразу, теперь может продолжать чуть дольше. Такие перемены трудно заметить, если видишь их каждый день."
+            },
+            {
+              "p": "Поэтому время от времени оглядываться назад — хорошо сочетается с вашим воспитанием."
+            },
+            {
+              "p": "Важна и среда, где легко превратить старание в привычку."
+            },
+            {
+              "p": "Вместо того чтобы каждый раз ставить большую цель, создать удобную для постоянства форму, а также устройство, при котором немного можно сделать и в тяжёлый день, а не стараться только в хорошие, — так накопление становится устойчивым."
+            },
+            {
+              "p": "А когда результат пришёл, смотреть не только на итог, но и на путь к нему."
+            },
+            {
+              "p": "Не устраивать особенный день, а накапливать обычные дни."
+            },
+            {
+              "p": "Такая атмосфера в семье лучше всего раскрывает достоинства Тренера."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — умение верить в рост ребёнка на длинной дистанции."
+            },
+            {
+              "p": "Дети растут с разной скоростью."
+            },
+            {
+              "p": "Одни быстро показывают результат, другие растут понемногу, со временем. Бывают периоды, когда, сравнивая с другими, легко занервничать."
+            },
+            {
+              "p": "Даже тогда вы не судите о возможностях только по нынешнему результату."
+            },
+            {
+              "p": "Видя, что ребёнок продолжает каждый день, вы замечаете, что понемногу он может всё больше."
+            },
+            {
+              "p": "Для ребёнка это большое спокойствие."
+            },
+            {
+              "p": "Если есть кто-то, кто видит, как ты продолжаешь, можно двигаться вперёд и в периоды без результатов."
+            },
+            {
+              "p": "Вы хорошо понимаете, что даже один день серьёзных стараний не приносит больших перемен. И так же хорошо понимаете, что, если верить в себя и продолжать, результат обязательно придёт."
+            },
+            {
+              "p": "Умение верить даже в старания, которые ещё не стали результатом."
+            },
+            {
+              "p": "Это и есть большая сильная сторона Тренера."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — вы можете слишком высоко ценить сам факт продолжения."
+            },
+            {
+              "p": "Чем дольше продолжаешь, тем труднее бросить."
+            },
+            {
+              "p": "И пока вы думаете «раз уж столько продолжали», можно не заметить, что чувства или обстоятельства ребёнка изменились."
+            },
+            {
+              "p": "В старании важны не только количество, но и направление."
+            },
+            {
+              "p": "Даже если продолжать каждый день, при неподходящем способе можно расти не так, как хотелось. Если то, к чему ребёнок по-настоящему хочет стремиться, изменилось, иногда лучше начать стараться в другом месте."
+            },
+            {
+              "p": "А главное — важно не вырастить ребёнка, который винит себя за то, что не может стараться."
+            },
+            {
+              "p": "Раз бывают дни, когда получается стараться, могут быть и дни отдыха. Если вернуться, накопление продолжится."
+            },
+            {
+              "p": "Вы хотите сказать ребёнку не «никогда не бросай»."
+            },
+            {
+              "p": "А то, чтобы у него была сила не отпускать легко то, что стоит продолжать, когда он это найдёт."
+            },
+            {
+              "p": "Если помнить об этой разнице, ваши ценности о старании будут легче передаваться."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Вызов»｜Главный болельщик🐒."
+            },
+            {
+              "p": "Тренер умеет растить силу долго выстраивать одно. А Главный болельщик ценит то, чтобы шагать в новые миры и находить возможности."
+            },
+            {
+              "p": "Только с типом «Упорство» привязанность к тому, что уже делаешь, может сократить шансы встретить другие возможности. Только с типом «Вызов» опыт расширяется, но может не продержаться достаточно, чтобы стать силой."
+            },
+            {
+              "p": "Сначала соприкоснуться с самыми разными мирами. А найдя то, что по-настоящему любишь, растить это со временем."
+            },
+            {
+              "p": "Вызов находит возможности, а накопление превращает эти возможности в силу."
+            },
+            {
+              "p": "Вместе они позволяют ребёнку узнать широкий мир и при этом выковать собственное оружие."
+            }
+          ],
+          [
+            {
+              "name": "Токугава Иэясу"
+            },
+            {
+              "p": "Токугава Иэясу известен тем, что долго копил силы и в итоге стал правителем страны."
+            },
+            {
+              "p": "С юности его путь не был гладким. Он выжил в эпоху, когда Ода Нобунага и Тоётоми Хидэёси сильно расширили своё влияние, и, вместо того чтобы спешить за результатом, долго ждал своего часа."
+            },
+            {
+              "p": "Не решать всё одной ближайшей победой, а постепенно менять положение, долго продолжая."
+            },
+            {
+              "p": "Вера в накопление, а не в эффектный удар, совпадает с образом мыслей Тренера."
+            },
+            {
+              "name": "Синсукэ Кита («Волейбол!!»)"
+            },
+            {
+              "p": "Синсукэ Кита — персонаж, который в произведении символизирует ежедневное накопление."
+            },
+            {
+              "p": "Он старается не только в особенные дни, а как положено продолжает делать обычные вещи каждый день. И не меняет этого отношения в зависимости от того, есть результат или нет."
+            },
+            {
+              "p": "Для Синсукэ Киты ежедневные тренировки и жизнь — не то, что делается только ради оценки. Он продолжает их, потому что это то, что он должен делать."
+            },
+            {
+              "p": "Особенный результат — в конце совсем не особенных дней."
+            },
+            {
+              "p": "Это ощущение очень наглядно показывает Тренера."
+            }
+          ],
+          [
+            {
+              "p": "У Токугавы Иэясу широко известны слова: «Жизнь человека подобна долгому пути с тяжёлой ношей. Не спеши»."
+            },
+            {
+              "p": "Не стремиться сразу добраться до цели, а понемногу двигаться по долгой дороге. Этот взгляд хорошо совпадает с вами, Тренером."
+            },
+            {
+              "p": "С воспитанием то же самое."
+            },
+            {
+              "p": "То, чему вы научили сегодня, не обязательно получится завтра. Бывают периоды, когда, сколько ни говори, не выходит, и периоды, когда ребёнок старается, а результата нет."
+            },
+            {
+              "p": "И всё же, оглянувшись через несколько лет, вы увидите, что незаметно для себя он научился."
+            },
+            {
+              "p": "Синсукэ Кита — человек, которому по-настоящему подходят слова «Делаю как следует. Делаю каждый день»."
+            },
+            {
+              "p": "Он накапливает дни не для того, чтобы доказать особый талант."
+            },
+            {
+              "p": "Чистит зубы. Убирается. Тренируется. Спокойно продолжает то, что решил делать. Благодаря этому накоплению он получил форму в сильнейшей команде Инаридзаки."
+            },
+            {
+              "p": "Старание, которому вы можете научить ребёнка, — тоже не бесконечное терпение страданий."
+            },
+            {
+              "p": "Накапливать каждый день, понемногу продвигаться и в тяжёлые дни. А на следующий день снова накапливать"
+            },
+            {
+              "p": "Это сила продолжать такие маленькие действия."
+            },
+            {
+              "p": "Поэтому, даже когда результата нет, постарайтесь не тревожиться сильнее ребёнка."
+            },
+            {
+              "p": "Даже если это ещё не стало результатом, то, что накоплено сегодня, остаётся."
+            },
+            {
+              "p": "И иногда можно сменить дорогу. Накопленный опыт от этого не исчезнет."
+            },
+            {
+              "p": "Сделанное сегодня не обязано принести результат завтра."
+            },
+            {
+              "p": "Пока веришь в маленькие ежедневные шаги, незаметно оказываешься совсем не там, где начинал."
+            },
+            {
+              "p": "Верить в этот долгий рост и ждать его — это то воспитание, которое можете дать вы, Тренер."
+            }
+          ]
+        ]
+      },
+      "strategy": {
+        "intro": [
+          "Вы — Стратег, «дальновидный человек, который держит в поле зрения будущее ребёнка и умеет планомерно готовить нужное образование и среду»."
+        ],
+        "sections": [
+          [
+            {
+              "p": "Вы цените то, чтобы думать о будущем ребёнка и прокладывать к нему путь."
+            },
+            {
+              "p": "Вы не просто хотите, чтобы он пошёл в хорошую школу. Вы решаете, какими качествами хотели бы видеть его в будущем, выясняете, какой опыт и образование для этого нужны, и думаете, что можно сделать уже сейчас."
+            },
+            {
+              "p": "Важны не отдельные действия, а цель, которая за ними стоит."
+            },
+            {
+              "p": "Поэтому вы не перенимаете модные методы воспитания как есть, а думаете, к чему они приведут именно вашего ребёнка."
+            },
+            {
+              "p": "Вы также умеете думать, на что потратить ограниченное время и деньги. Не давать всего подряд, а выстраивать среду, выбирая нужное."
+            },
+            {
+              "p": "Идти от будущего, чтобы думать о настоящем."
+            },
+            {
+              "p": "Поддерживать рост ребёнка с такой долгосрочной перспективой умеет Стратег."
+            }
+          ],
+          [
+            {
+              "p": "Дети обычно вырастают способными думать о цели и действовать исходя из неё."
+            },
+            {
+              "p": "Они не просто выполняют задачу перед глазами, а привыкают думать, ради чего её делают."
+            },
+            {
+              "p": "И в учёбе цель — не только хорошие оценки. Если впереди есть школа, куда хочется поступить, или то, чему хочется научиться, легче понять, что нужно делать сейчас."
+            },
+            {
+              "p": "Кроме того, делая выбор, они могут думать немного вперёд, а не только о сиюминутном удовольствии."
+            },
+            {
+              "p": "С другой стороны, чем привычнее планировать, тем чаще они могут избегать того, что кажется бессмысленным."
+            },
+            {
+              "p": "Но в росте ребёнка есть и опыт, смысл которого становится понятен, только когда оглядываешься назад."
+            },
+            {
+              "p": "Из игр и обходных путей, польза которых неясна, могут родиться неожиданные интересы."
+            },
+            {
+              "p": "Сила планировать и сила радоваться незапланированному."
+            },
+            {
+              "p": "Если дать ребёнку и то и другое, достоинства Стратега раскроются ещё ярче."
+            }
+          ],
+          [
+            {
+              "p": "Вам стоит следить за тем, чтобы план не стал самой жизнью ребёнка."
+            },
+            {
+              "p": "Раз у вас есть способность думать о будущем, вы легко видите, что нужно делать сейчас."
+            },
+            {
+              "p": "Поэтому, когда ребёнок идёт окольным путём, вам может захотеться подсказать более эффективный способ. Может показаться и то, что другой путь лучше ведёт в будущее, чем тот, который он хочет выбрать."
+            },
+            {
+              "p": "Но рост ребёнка не обязательно идёт по первоначальному плану."
+            },
+            {
+              "p": "Интересы могут меняться, может обнаружиться, что что-то получается лучше, чем ожидалось. Ребёнка может привлечь мир, о котором родители и не помышляли."
+            },
+            {
+              "p": "В такие моменты иногда нужно не держаться за первоначальный план, а пересмотреть саму цель."
+            },
+            {
+              "p": "План существует не для того, чтобы связывать ребёнка, а чтобы расширять его возможности."
+            },
+            {
+              "p": "Хороший план — не тот, который не нужно менять. А тот, который можно менять по мере роста ребёнка."
+            },
+            {
+              "p": "Именно потому, что вы умеете видеть будущее, впустите в свой план и незапланированный рост."
+            }
+          ],
+          [
+            {
+              "p": "Вы с ребёнком чаще всего сталкиваетесь, когда он делает выбор, который, похоже, никуда не ведёт."
+            },
+            {
+              "p": "«Раз уж тратишь время, займись чем-то полезным» — бывают моменты, когда нерациональное время кажется вам потерянным."
+            },
+            {
+              "p": "Но дети живут не всегда ради будущего."
+            },
+            {
+              "p": "Ребёнок может вдруг чем-то увлечься или видеть огромную ценность в том, пользы чего вы не понимаете."
+            },
+            {
+              "p": "Если стремиться только к эффективности, ребёнку может показаться, что ваши планы важнее того, что любит он."
+            },
+            {
+              "p": "Важно не придавать цель каждой минуте."
+            },
+            {
+              "p": "То, что нужно в долгосрочной перспективе, обдумывают родители. Но при этом оставляют и свободное пространство, которым ребёнок распоряжается сам."
+            },
+            {
+              "p": "Именно в этом пространстве могут родиться интересы и таланты, которые родители никак не смогли бы спланировать."
+            },
+            {
+              "p": "Проектировать жизнь и заставлять жизнь идти по графику — разные вещи."
+            },
+            {
+              "p": "Если помнить об этой разнице, ваша плановость раскроется, не отнимая у ребёнка свободу."
+            }
+          ],
+          [
+            {
+              "p": "Вам подходит среда, где можно время от времени сверять цель и текущее положение."
+            },
+            {
+              "p": "Нет нужды подробно управлять каждым днём. Вашему образу мыслей больше подходит смотреть, как растёт ребёнок, на чуть более длинных отрезках — полгода или год."
+            },
+            {
+              "p": "Важна и среда, где можно сравнивать варианты."
+            },
+            {
+              "p": "Выбирая школу или занятия, лучше узнать несколько вариантов, а не решать, посмотрев на один. А затем, сопоставив их с тем, что ценит ваша семья, легче принять решение, которое вас убедит."
+            },
+            {
+              "p": "Однако не нужно превращать дом в место, где всё время достигают целей."
+            },
+            {
+              "p": "Оставляя время, когда можно сойти с плана и провести его свободно, легче увидеть интересы самого ребёнка."
+            },
+            {
+              "p": "Направление продумать. Но не расписывать весь маршрут до шага."
+            },
+            {
+              "p": "В среде с таким простором способность Стратега смотреть вперёд раскрывается лучше всего."
+            }
+          ],
+          [
+            {
+              "p": "Ваша большая сильная сторона — умение создавать среду, думая не только о ближайшем, но и о нескольких годах вперёд."
+            },
+            {
+              "p": "Дети думают в основном о том, чего хотят сейчас и что им интересно сейчас. Это естественно, но маленькому ребёнку трудно предвидеть, что понадобится в будущем."
+            },
+            {
+              "p": "Восполнить это можете вы."
+            },
+            {
+              "p": "Если понять, что что-то было нужно, лишь потом, времени может не хватить. Поэтому умение смотреть немного вперёд и думать, что можно сделать сейчас, — большая сила."
+            },
+            {
+              "p": "К тому же вы легко замечаете важность среды, а не только стараний."
+            },
+            {
+              "p": "Вы думаете о росте, учитывая не только то, чтобы ребёнок старался, но и окружение: где он учится, с кем проводит время, с каким опытом соприкасается."
+            },
+            {
+              "p": "Думать о будущем, которого ребёнок ещё не видит, и заранее начинать нужную подготовку."
+            },
+            {
+              "p": "Суметь создать состояние, в котором можно выбирать, когда понадобятся варианты на будущее."
+            },
+            {
+              "p": "Это и есть большая сильная сторона Стратега."
+            }
+          ],
+          [
+            {
+              "p": "Обратная сторона вашей силы — вы можете слишком оптимизировать жизнь ребёнка."
+            },
+            {
+              "p": "Если идти от будущего, видно, что эффективнее."
+            },
+            {
+              "p": "Раз уж заниматься этим кружком, лучше потратить время на другое. Учиться полезнее для будущего, чем играть здесь. У таких суждений наверняка есть разумные причины."
+            },
+            {
+              "p": "Но в жизни ребёнка нужно и время, которое не измерить эффективностью."
+            },
+            {
+              "p": "Бывает, что именно потому, что пошёл окольным путём, понимаешь, что тебе не подходит."
+            },
+            {
+              "p": "А если родители подготовят слишком много правильных путей, у ребёнка останется меньше шансов думать самому."
+            },
+            {
+              "p": "Строить планы — само по себе не проблема. Важно, чтобы ребёнок участвовал в этих планах."
+            },
+            {
+              "p": "По мере роста сокращать то, что решают родители, и увеличивать то, что обдумывают вместе с ребёнком."
+            },
+            {
+              "p": "Не планировать жизнь ребёнка, а сделать так, чтобы ребёнок мог планировать свою жизнь сам."
+            },
+            {
+              "p": "Если удастся дойти до этого, ваше стратегическое мышление станет собственной силой ребёнка."
+            }
+          ],
+          [
+            {
+              "p": "Особенно хорошо вы сочетаетесь с типом «Индивидуальность»｜Продюсер🐱."
+            },
+            {
+              "p": "Стратег умеет думать о будущем и готовить образование и среду, чтобы к нему прийти. А Продюсер ценит то, чтобы находить интересы и индивидуальность, которые есть у ребёнка сейчас."
+            },
+            {
+              "p": "Только с типом «Стратегия» можно, идя от придуманного родителями идеала, упустить нынешние чувства ребёнка. Только с типом «Индивидуальность», ценя самобытность, можно не додумать, как связать её с будущим."
+            },
+            {
+              "p": "Тип «Индивидуальность» находит то, что есть внутри ребёнка, а тип «Стратегия» думает о среде, где это можно применить."
+            },
+            {
+              "p": "Найти талант и проложить путь, по которому этот талант будет расти."
+            },
+            {
+              "p": "Вместе они помогают связать самобытность ребёнка с его будущими возможностями."
+            }
+          ],
+          [
+            {
+              "name": "Чжугэ Лян (Кунмин)"
+            },
+            {
+              "p": "Чжугэ Лян широко известен, в том числе в Японии, как стратег, поддерживавший Лю Бэя."
+            },
+            {
+              "p": "Он смотрел не только на ближайшую битву, а строил стратегию, думая и о том, как сложится обстановка потом. Он известен как человек, который не столько прорывался силой сам, сколько, читая ситуацию, прокладывал путь к победе."
+            },
+            {
+              "p": "Важно не только то, что делать сейчас, но и то, к чему это действие приведёт."
+            },
+            {
+              "p": "Смотреть в будущее и думать о ходе, который нужно сделать сейчас."
+            },
+            {
+              "p": "Этот подход в точности отражает Стратега."
+            },
+            {
+              "name": "Армин Арлерт («Атака титанов»)"
+            },
+            {
+              "p": "Армин тоже не тот, кто решает проблемы силой."
+            },
+            {
+              "p": "Он наблюдает за обстановкой и из ограниченной информации думает о том, что произойдёт дальше. А затем, чтобы достичь цели, выстраивает, кто, где и что должен делать."
+            },
+            {
+              "p": "Не просто реагировать на то, что перед глазами, а действовать, продумав на несколько ходов вперёд."
+            },
+            {
+              "p": "Не столько наращивать собственную силу, сколько думать, как использовать то, что есть, чтобы приблизиться к цели, — этот образ совпадает с образом мыслей Стратега."
+            }
+          ],
+          [
+            {
+              "p": "У Чжугэ Ляна есть слова: «Без покоя учение не станет талантом, без стремления учение не будет завершено»."
+            },
+            {
+              "p": "Без стремления, ради чего учишься, само учение с трудом обретает форму. Эти слова, которые идут от цели, хорошо совпадают с вами, Стратегом."
+            },
+            {
+              "p": "Когда вы предлагаете ребёнку чем-то заняться, думайте не только о том, что делать, но и о том, ради чего."
+            },
+            {
+              "p": "Цель — не заставить учиться, а то, какой выбор вы хотите, чтобы он мог сделать в будущем благодаря этой силе."
+            },
+            {
+              "p": "Если цель видна, способ можно менять."
+            },
+            {
+              "p": "И Армин тоже не тот, кто любой ценой держится за однажды придуманный план. Когда появляется новая информация, он заново оценивает обстановку и снова выбирает способ, который в этот момент считает лучшим."
+            },
+            {
+              "p": "«Тот, кто не может ничем пожертвовать, никогда ничего не сможет изменить»."
+            },
+            {
+              "p": "Это слова Армина."
+            },
+            {
+              "p": "Думать от цели, думать, что нужно, и так же решительно отсекать ненужное."
+            },
+            {
+              "p": "Воспитанию нужна такая же гибкость."
+            },
+            {
+              "p": "Ничего страшного, если образ будущего, нарисованный в детстве, не совпадёт с тем, каким вырос ребёнок. Если меняется ребёнок, может меняться и план."
+            },
+            {
+              "p": "Ваша сила — не в том, чтобы угадать будущее."
+            },
+            {
+              "p": "А в том, чтобы, думая о будущем, выбирать, что можно сделать сейчас, и уметь передумать, когда меняется обстановка."
+            },
+            {
+              "p": "Поэтому не нужно составлять идеальный жизненный план."
+            },
+            {
+              "p": "Используйте планы не для того, чтобы решить будущее ребёнка, а чтобы расширить его выбор в будущем."
+            },
+            {
+              "p": "Умение правильно использовать эту силу — это то воспитание, которое можете дать только вы, Стратег."
+            }
+          ]
+        ]
+      }
+    }
+  }
+};

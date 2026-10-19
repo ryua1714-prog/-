@@ -59,6 +59,7 @@ function buildRecord(type) {
   const result = state.result;
   return {
     at: new Date().toISOString(),
+    lang: currentLang,
     type: type.key,
     decidedBy: result.type ? result.decidedBy : "choice",
     uniform: result.uniform.isUniform,
@@ -94,6 +95,7 @@ async function saveToSheets(record) {
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify({
         respondentId: sheetsRespondentId(),
+        lang: record.lang,
         type: record.type,
         decidedBy: record.decidedBy,
         uniform: record.uniform,
