@@ -11,6 +11,7 @@ import { CATEGORIES, CATEGORY_LABEL, RETURN_PRESETS } from "@/lib/constants";
 import { formatDateTime, formatYen } from "@/lib/utils";
 import { ApplicationStatusBadge, Badge, Button, ButtonLink, Card, CategoryBadge, Input, Label, Required, Select, Textarea } from "@/components/ui";
 import { Tabs } from "@/components/tabs";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 type TabKey = "profile" | "history";
 
@@ -28,7 +29,10 @@ export function MyPageContent() {
   return (
     <div className="bg-navy-50/50 pb-16">
       <div className="border-b border-slate-200 bg-white">
-        <div className="container-page flex flex-col gap-4 py-8 sm:flex-row sm:items-center">
+        <div className="container-page pt-5">
+          <Breadcrumbs items={[{ label: "マイページ", href: "/mypage" }, { label: tab === "history" ? "応募履歴" : "プロフィール設定" }]} />
+        </div>
+        <div className="container-page flex flex-col gap-4 pb-8 pt-5 sm:flex-row sm:items-center">
           <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-brand-600 text-2xl font-bold text-white">
             {currentSeeker.name.slice(0, 1)}
           </div>

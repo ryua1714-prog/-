@@ -1,7 +1,8 @@
-import { ArrowRight, Building2, FileCheck2, Headset, PenLine, Quote } from "lucide-react";
+import { ArrowRight, Building2, FileCheck2, Headset, PenLine } from "lucide-react";
+import { BrushStroke } from "@/components/brush";
 import { HeroSearch } from "@/components/hero-search";
 import { FeaturedProjects } from "@/components/featured-projects";
-import { CategoryLinks, Faq, FlowSteps } from "@/components/home-sections";
+import { CategoryLinks, Faq, FlowSteps, MatchCarousel } from "@/components/home-sections";
 import { ButtonLink, SectionTitle } from "@/components/ui";
 
 const POINTS = [
@@ -10,67 +11,23 @@ const POINTS = [
   { icon: Headset, title: "成約まで担当者が伴走", text: "面談の日程調整や条件のすり合わせをお手伝いします。" },
 ];
 
-/** トップの成約事例（デモ用のダミー） */
-function MatchExample() {
-  return (
-    <div className="rounded-md border border-slate-200 bg-white p-5 shadow-[0_8px_24px_-12px_rgba(18,32,61,0.25)]">
-      <div className="flex items-center justify-between">
-        <p className="text-xs font-bold text-accent-500">成約事例</p>
-        <p className="text-[11px] text-slate-400">2026年10月 成約</p>
-      </div>
-      <div className="mt-4 space-y-3">
-        <div className="flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-600 font-bold text-white">横</span>
-          <div className="min-w-0">
-            <p className="truncate text-sm font-bold text-navy-900">横浜ブルーウェーブス</p>
-            <p className="text-xs text-slate-500">社会人バスケットボール／神奈川県</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-2 pl-5 text-xs text-slate-400">
-          <span className="h-5 w-px bg-slate-300" />
-          協賛
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-navy-800 font-bold text-white">ミ</span>
-          <div className="min-w-0">
-            <p className="truncate text-sm font-bold text-navy-900">株式会社ミナトフーズ</p>
-            <p className="text-xs text-slate-500">食品メーカー／東京都</p>
-          </div>
-        </div>
-      </div>
-      <dl className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded border border-slate-200 bg-slate-200 text-xs">
-        <div className="bg-slate-50 px-3 py-2">
-          <dt className="text-slate-500">協賛金額</dt>
-          <dd className="mt-0.5 text-sm font-bold text-navy-900">年間150万円</dd>
-        </div>
-        <div className="bg-slate-50 px-3 py-2">
-          <dt className="text-slate-500">見返り</dt>
-          <dd className="mt-0.5 font-semibold text-navy-900">胸ロゴ・試供品配布</dd>
-        </div>
-      </dl>
-      <p className="mt-4 flex gap-2 text-sm leading-relaxed text-slate-700">
-        <Quote className="h-4 w-4 shrink-0 rotate-180 text-brand-500" />
-        地元の企業さんと組めたことで、子ども向けのバスケ教室を月4回に増やせました。
-      </p>
-      <p className="mt-3 text-[10px] text-slate-400">※事例はデモ用のダミーです</p>
-    </div>
-  );
-}
-
 export default function HomePage() {
   return (
     <>
       {/* Hero */}
       <section className="border-b border-slate-200 bg-[#f3f7fc]">
         <div className="container-page grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-[1.25fr_1fr]">
-          <div>
+          <div className="min-w-0">
             <p className="text-sm font-bold text-accent-500">スポーツ・地域・学生のスポンサー探しに</p>
-            <h1 className="mt-3 text-3xl font-bold leading-snug text-navy-900 sm:text-[2.6rem] sm:leading-snug">
+            <h1 className="mt-4 font-brush text-[2.1rem] font-normal leading-[1.45] text-navy-900 sm:text-[3.2rem]">
               挑戦する人と、
               <br />
-              応援する企業をつなぐ。
+              <span className="relative inline-block">
+                <span className="relative z-10">応援する企業をつなぐ。</span>
+                <BrushStroke className="absolute -bottom-3 left-[-3%] z-0 h-[0.5em] w-[106%] sm:-bottom-4" />
+              </span>
             </h1>
-            <p className="mt-4 max-w-xl text-sm leading-loose text-slate-700 sm:text-base sm:leading-loose">
+            <p className="mt-7 max-w-xl text-sm leading-loose text-slate-700 sm:text-base sm:leading-loose">
               スポンサーブリッジは、選手・チーム、地域のお祭りやまちづくり、学生の部活・サークルと、それを応援したい企業が出会えるマッチングサービスです。
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -84,8 +41,8 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="mx-auto w-full max-w-sm lg:mr-0">
-            <MatchExample />
+          <div className="mx-auto w-full min-w-0 max-w-sm lg:mr-0">
+            <MatchCarousel />
           </div>
         </div>
       </section>

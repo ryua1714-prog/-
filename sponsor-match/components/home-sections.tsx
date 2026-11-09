@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronRight, GraduationCap, PartyPopper, Trophy } from "lucide-react";
+import { ChevronRight, GraduationCap, PartyPopper, Quote, Trophy } from "lucide-react";
+import { Accordion } from "@/components/accordion";
+import { Carousel } from "@/components/carousel";
 import { useStore } from "@/lib/store";
 import { CATEGORIES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -131,20 +133,105 @@ const FAQS = [
 
 export function Faq() {
   return (
-    <div className="divide-y divide-slate-200 rounded-md border border-slate-200 bg-white">
-      {FAQS.map((f) => (
-        <details key={f.q} className="group">
-          <summary className="flex cursor-pointer list-none items-start gap-3 px-5 py-4 font-semibold text-navy-900 hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
+    <Accordion
+      single
+      defaultOpen={["faq-0"]}
+      className="divide-y divide-slate-200 rounded-md border border-slate-200 bg-white"
+      headerClassName="px-5 py-4 font-semibold text-navy-900 hover:bg-slate-50"
+      bodyClassName="flex gap-3 px-5 pb-5 text-sm leading-relaxed text-slate-700"
+      items={FAQS.map((f, i) => ({
+        id: `faq-${i}`,
+        title: (
+          <span className="flex gap-3">
             <span className="font-display font-bold text-brand-600">Q</span>
-            <span className="flex-1">{f.q}</span>
-            <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-slate-400 transition-transform group-open:rotate-90" />
-          </summary>
-          <div className="flex gap-3 px-5 pb-5 text-sm leading-relaxed text-slate-700">
+            {f.q}
+          </span>
+        ),
+        content: (
+          <>
             <span className="font-display font-bold text-accent-500">A</span>
             <p className="flex-1">{f.a}</p>
+          </>
+        ),
+      }))}
+    />
+  );
+}
+
+const MATCHES = [
+  {
+    when: "2026年10月 成約",
+    seeker: { initial: "横", name: "横浜ブルーウェーブス", sub: "社会人バスケットボール／神奈川県" },
+    company: { initial: "ミ", name: "株式会社ミナトフーズ", sub: "食品メーカー／東京都" },
+    amount: "年間150万円",
+    returns: "胸ロゴ・試供品配布",
+    voice: "地元の企業さんと組めたことで、子ども向けのバスケ教室を月4回に増やせました。",
+  },
+  {
+    when: "2026年9月 成約",
+    seeker: { initial: "あ", name: "NPO法人あきた空き家リビング", sub: "まちづくり／秋田県" },
+    company: { initial: "み", name: "みちのく信用金庫", sub: "金融／宮城県" },
+    amount: "60万円",
+    returns: "報告会登壇・ロゴ掲載",
+    voice: "職員の方がボランティアで改修に参加してくださり、資金以上の支えになりました。",
+  },
+  {
+    when: "2026年8月 成約",
+    seeker: { initial: "名", name: "名古屋工業高専 ロボット研究会", sub: "ロボコン／愛知県" },
+    company: { initial: "中", name: "中部精密工業株式会社", sub: "製造業／愛知県" },
+    amount: "40万円＋部材提供",
+    returns: "機体ロゴ・工場見学",
+    voice: "現場の技術者さんに加工のコツを教わり、機体の精度が大きく上がりました。",
+  },
+];
+
+/** トップの成約事例カルーセル（デモ用のダミー） */
+export function MatchCarousel() {
+  return (
+    <Carousel label="成約事例" autoPlayMs={5000}>
+      {MATCHES.map((m) => (
+        <div key={m.seeker.name} className="rounded-md border border-slate-200 bg-white p-5 shadow-[0_8px_24px_-12px_rgba(18,32,61,0.25)]">
+          <div className="flex items-center justify-between">
+            <p className="text-xs font-bold text-accent-500">成約事例</p>
+            <p className="text-[11px] text-slate-400">{m.when}</p>
           </div>
-        </details>
+          <div className="mt-4 space-y-3">
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-600 font-bold text-white">{m.seeker.initial}</span>
+              <div className="min-w-0">
+                <p className="truncate text-sm font-bold text-navy-900">{m.seeker.name}</p>
+                <p className="text-xs text-slate-500">{m.seeker.sub}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 pl-5 text-xs text-slate-400">
+              <span className="h-5 w-px bg-slate-300" />
+              協賛
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-navy-800 font-bold text-white">{m.company.initial}</span>
+              <div className="min-w-0">
+                <p className="truncate text-sm font-bold text-navy-900">{m.company.name}</p>
+                <p className="text-xs text-slate-500">{m.company.sub}</p>
+              </div>
+            </div>
+          </div>
+          <dl className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded border border-slate-200 bg-slate-200 text-xs">
+            <div className="bg-slate-50 px-3 py-2">
+              <dt className="text-slate-500">協賛金額</dt>
+              <dd className="mt-0.5 text-sm font-bold text-navy-900">{m.amount}</dd>
+            </div>
+            <div className="bg-slate-50 px-3 py-2">
+              <dt className="text-slate-500">見返り</dt>
+              <dd className="mt-0.5 font-semibold text-navy-900">{m.returns}</dd>
+            </div>
+          </dl>
+          <p className="mt-4 flex gap-2 text-sm leading-relaxed text-slate-700">
+            <Quote className="h-4 w-4 shrink-0 rotate-180 text-brand-500" />
+            {m.voice}
+          </p>
+          <p className="mt-3 text-[10px] text-slate-400">※事例はデモ用のダミーです</p>
+        </div>
       ))}
-    </div>
+    </Carousel>
   );
 }

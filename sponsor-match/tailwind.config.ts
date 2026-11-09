@@ -35,6 +35,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['"Noto Sans JP"', '"Hiragino Sans"', '"Hiragino Kaku Gothic ProN"', "Meiryo", "system-ui", "sans-serif"],
+        brush: ['"Yuji Syuku"', '"Zen Kaku Gothic New"', "serif"],
         display: ['"Zen Kaku Gothic New"', '"Noto Sans JP"', '"Hiragino Sans"', "Meiryo", "sans-serif"],
       },
     },

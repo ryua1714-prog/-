@@ -23,6 +23,7 @@ import { ApplicationStatusBadge, Badge, Button, Card, CategoryBadge, InitialLogo
 import { Modal } from "@/components/modal";
 import { useConfirm } from "@/components/confirm";
 import { ProjectForm } from "./project-form";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 type TabKey = "projects" | "applications" | "members";
 
@@ -87,6 +88,12 @@ export default function AdminPage() {
         </aside>
 
         <section className="min-w-0 space-y-5">
+          <Breadcrumbs
+            items={[
+              { label: "管理画面", href: "/admin" },
+              { label: tab === "projects" ? "案件管理" : tab === "applications" ? "応募管理" : "募集側会員一覧" },
+            ]}
+          />
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
             {[
               { label: "公開中の案件", value: projects.filter((p) => p.status === "open").length },

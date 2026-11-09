@@ -5,6 +5,7 @@ import { useState, type FormEvent } from "react";
 import { Search } from "lucide-react";
 import { AREAS, CATEGORIES } from "@/lib/constants";
 import { Button } from "@/components/ui";
+import { Autocomplete } from "@/components/autocomplete";
 
 export function HeroSearch() {
   const router = useRouter();
@@ -53,12 +54,12 @@ export function HeroSearch() {
         </label>
         <label>
           <span className={label}>キーワード</span>
-          <input
+          <Autocomplete
             name="q"
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={setQ}
             placeholder="例：ユニフォーム、祭り、SNS"
-            className={field}
+            inputClassName={field}
           />
         </label>
         <Button type="submit" variant="accent" className="h-11 px-6">

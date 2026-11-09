@@ -3,8 +3,13 @@
 import { RotateCcw, Search, SlidersHorizontal } from "lucide-react";
 import type { Area, Category, SponsorProject } from "@/types";
 import { AREAS, BUDGET_OPTIONS, CATEGORIES } from "@/lib/constants";
-import { formatManYen } from "@/lib/utils";
-import { Input, Select } from "@/components/ui";
+import { cn, formatManYen } from "@/lib/utils";
+import { Select } from "@/components/ui";
+import { Accordion } from "@/components/accordion";
+import { Autocomplete } from "@/components/autocomplete";
+
+const inputBase =
+  "h-10 w-full rounded-md border border-slate-300 bg-white px-3 text-sm text-navy-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100";
 
 export interface FilterState {
   q: string;
@@ -82,102 +87,129 @@ export function ProjectFilters({
         </button>
       </div>
 
-      <div className="divide-y divide-slate-100">
-        <section className="p-4">
-          <p className="mb-2 text-sm font-bold text-navy-800">フリーワード</p>
-          <div className="relative">
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <Input
-              value={value.q}
-              onChange={(e) => set("q", e.target.value)}
-              placeholder="企業名・見返り・業種など"
-              className="pl-9"
-            />
-          </div>
-        </section>
+      <section className="border-b border-slate-100 p-4">
+        <p className="mb-2 text-sm font-bold text-navy-800">フリーワード</p>
+        <div className="relative">
+          <Search className="pointer-events-none absolute left-3 top-1/2 z-10 h-4 w-4 -translate-y-1/2 text-slate-400" />
+          <Autocomplete
+            value={value.q}
+            onChange={(v) => set("q", v)}
+            placeholder="企業名・見返り・業種など"
+            inputClassName={cn(inputBase, "pl-9")}
+          />
+        </div>
+      </section>
 
-        <section className="p-4">
-          <p className="mb-2 text-sm font-bold text-navy-800">カテゴリー</p>
-          <div className="space-y-2">
-            {CATEGORIES.map((c) => (
-              <label key={c.value} className="flex cursor-pointer items-start gap-2 text-sm text-navy-800">
-                <input
-                  type="checkbox"
-                  checked={value.categories.includes(c.value)}
-                  onChange={() => toggleCategory(c.value)}
-                  className="mt-0.5 h-4 w-4 rounded border-slate-300 text-brand-600 accent-brand-600"
-                />
-                {c.label}
-              </label>
-            ))}
-          </div>
-        </section>
+      <Accordion
+        defaultOpen={["category", "area", "budget"]}
+        itemClassName="border-b border-slate-100"
+        headerClassName="px-4 py-3 text-sm font-bold text-navy-800 hover:bg-slate-50"
+        bodyClassName="px-4 pb-4"
+        items={[
+          {
+            id: "category",
+            title: (
+              <>
+                カテゴリー
+                {value.categories.length > 0 && <span className="ml-2 text-xs font-semibold text-brand-600">{value.categories.length}件選択中</span>}
+              </>
+            ),
+            content: (
+              <div className="space-y-2">
+                {CATEGORIES.map((c) => (
+                  <label key={c.value} className="flex cursor-pointer items-start gap-2 text-sm text-navy-800">
+                    <input
+                      type="checkbox"
+                      checked={value.categories.includes(c.value)}
+                      onChange={() => toggleCategory(c.value)}
+                      className="mt-0.5 h-4 w-4 rounded border-slate-300 accent-brand-600"
+                    />
+                    {c.label}
+                  </label>
+                ))}
+              </div>
+            ),
+          },
+          {
+            id: "area",
+            title: (
+              <>
+                地域
+                {value.area && <span className="ml-2 text-xs font-semibold text-brand-600">{value.area}</span>}
+              </>
+            ),
+            content: (
+              <>
+                <Select value={value.area} onChange={(e) => set("area", e.target.value as Area | "")}>
+                  <option value="">すべての地域</option>
+                  {AREAS.map((a) => (
+                    <option key={a} value={a}>
+                      {a}
+                    </option>
+                  ))}
+                </Select>
+                <p className="mt-1.5 text-xs text-slate-500">※地域を選ぶと「全国」対象の案件も表示されます</p>
+              </>
+            ),
+          },
+          {
+            id: "budget",
+            title: "協賛金額",
+            content: (
+              <>
+                <div className="space-y-2">
+                  {BUDGET_OPTIONS.map((o) => (
+                    <label key={o.value} className="flex cursor-pointer items-center gap-2 text-sm text-navy-800">
+                      <input
+                        type="radio"
+                        name="budget"
+                        checked={value.budget === o.value}
+                        onChange={() => set("budget", o.value)}
+                        className="h-4 w-4 accent-brand-600"
+                      />
+                      {o.label}
+                    </label>
+                  ))}
+                </div>
+                <div className="mt-4">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-semibold text-navy-700">上限額がこの金額以上</span>
+                    <span className="font-bold text-brand-600">
+                      {value.minAmount === 0 ? "指定なし" : `${formatManYen(value.minAmount)}〜`}
+                    </span>
+                  </div>
+                  <input
+                    type="range"
+                    min={0}
+                    max={SLIDER_MAX}
+                    step={SLIDER_STEP}
+                    value={value.minAmount}
+                    onChange={(e) => set("minAmount", Number(e.target.value))}
+                    className="mt-2 w-full accent-brand-600"
+                    aria-label="協賛金額の下限"
+                  />
+                  <div className="flex justify-between text-[10px] text-slate-400">
+                    <span>0円</span>
+                    <span>300万円</span>
+                  </div>
+                </div>
+              </>
+            ),
+          },
+        ]}
+      />
 
-        <section className="p-4">
-          <p className="mb-2 text-sm font-bold text-navy-800">地域</p>
-          <Select value={value.area} onChange={(e) => set("area", e.target.value as Area | "")}>
-            <option value="">すべての地域</option>
-            {AREAS.map((a) => (
-              <option key={a} value={a}>
-                {a}
-              </option>
-            ))}
-          </Select>
-          <p className="mt-1.5 text-xs text-slate-500">※地域を選ぶと「全国」対象の案件も表示されます</p>
-        </section>
-
-        <section className="p-4">
-          <p className="mb-2 text-sm font-bold text-navy-800">協賛金額</p>
-          <div className="space-y-2">
-            {BUDGET_OPTIONS.map((o) => (
-              <label key={o.value} className="flex cursor-pointer items-center gap-2 text-sm text-navy-800">
-                <input
-                  type="radio"
-                  name="budget"
-                  checked={value.budget === o.value}
-                  onChange={() => set("budget", o.value)}
-                  className="h-4 w-4 accent-brand-600"
-                />
-                {o.label}
-              </label>
-            ))}
-          </div>
-          <div className="mt-4">
-            <div className="flex items-center justify-between text-xs">
-              <span className="font-semibold text-navy-700">上限額がこの金額以上</span>
-              <span className="font-bold text-brand-600">
-                {value.minAmount === 0 ? "指定なし" : `${formatManYen(value.minAmount)}〜`}
-              </span>
-            </div>
-            <input
-              type="range"
-              min={0}
-              max={SLIDER_MAX}
-              step={SLIDER_STEP}
-              value={value.minAmount}
-              onChange={(e) => set("minAmount", Number(e.target.value))}
-              className="mt-2 w-full accent-brand-600"
-              aria-label="協賛金額の下限"
-            />
-            <div className="flex justify-between text-[10px] text-slate-400">
-              <span>0円</span>
-              <span>300万円</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="p-4">
-          <label className="flex cursor-pointer items-center gap-2 text-sm text-navy-800">
-            <input
-              type="checkbox"
-              checked={value.openOnly}
-              onChange={(e) => set("openOnly", e.target.checked)}
-              className="h-4 w-4 accent-brand-600"
-            />
-            募集中の案件のみ表示
-          </label>
-        </section>
-      </div>
+      <section className="p-4">
+        <label className="flex cursor-pointer items-center gap-2 text-sm text-navy-800">
+          <input
+            type="checkbox"
+            checked={value.openOnly}
+            onChange={(e) => set("openOnly", e.target.checked)}
+            className="h-4 w-4 accent-brand-600"
+          />
+          募集中の案件のみ表示
+        </label>
+      </section>
     </div>
   );
 }

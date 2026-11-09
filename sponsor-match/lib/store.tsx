@@ -24,6 +24,8 @@ interface StoreValue extends StoreData {
   updateApplicationStatus: (id: string, status: ApplicationStatus) => void;
   updateSeeker: (profile: SeekerProfile) => void;
   resetAll: () => void;
+  /** localStorage から読み直す（プルトゥリフレッシュ用） */
+  reload: () => void;
 }
 
 const initialData = (): StoreData => ({
@@ -121,6 +123,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setData(initialData());
   }, []);
 
+  const reload = useCallback(() => {
+    const stored = readStorage();
+    if (stored) setData(stored);
+  }, []);
+
   const currentSeeker = useMemo(
     () => data.seekers.find((s) => s.id === CURRENT_SEEKER_ID) ?? data.seekers[0],
     [data.seekers],
@@ -138,6 +145,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     updateApplicationStatus,
     updateSeeker,
     resetAll,
+    reload,
   };
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;

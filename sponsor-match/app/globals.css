@@ -24,6 +24,58 @@
   }
 }
 
+@keyframes brush-draw {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+.brush-draw {
+  animation: brush-draw 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.2s both;
+}
+@keyframes drawer-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.drawer-in {
+  animation: drawer-in 0.25s ease-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .brush-draw,
+  .drawer-in,
+  .fade-in,
+  .animate-in {
+    animation: none;
+  }
+}
+html,
+body {
+  overscroll-behavior-y: contain;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes toast-in {
   from {
     opacity: 0;

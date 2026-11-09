@@ -1,11 +1,14 @@
 "use client";
 
-import Link from "next/link";
-import { useParams } from "next/navigation";
-import { Banknote, Building2, CalendarClock, ChevronRight, CircleCheck, FileText, Gift, MapPin, Send, Target } from "lucide-react";
+import { useParams, useRouter } from "next/navigation";
+import { useState } from "react";
+import { Banknote, Building2, CalendarClock, CircleCheck, FileText, Gift, MapPin, Send, Target } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { formatDate } from "@/lib/utils";
-import { ButtonLink, Card, CategoryBadge, InitialLogo } from "@/components/ui";
+import { Button, ButtonLink, Card, CategoryBadge, InitialLogo } from "@/components/ui";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { Modal } from "@/components/modal";
+import { CATEGORY_LABEL } from "@/lib/constants";
 import { DeadlineBadge } from "@/components/project-card";
 import { LoadingBlock, NotFoundProject } from "@/components/not-found-project";
 import type { ReactNode } from "react";
@@ -39,6 +42,9 @@ export default function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { getProject, hydrated, applications, currentSeeker } = useStore();
   const project = getProject(id);
+  const router = useRouter();
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [checked, setChecked] = useState(false);
 
   if (!project) return hydrated ? <NotFoundProject /> : <LoadingBlock />;
 
@@ -51,10 +57,18 @@ export default function ProjectDetailPage() {
         応募済み（応募履歴を見る）
       </ButtonLink>
     ) : (
-      <ButtonLink href={`/projects/${project.id}/apply`} variant="accent" size="lg" className="w-full">
+      <Button
+        variant="accent"
+        size="lg"
+        className="w-full"
+        onClick={() => {
+          setChecked(false);
+          setConfirmOpen(true);
+        }}
+      >
         <Send className="h-5 w-5" />
         この案件に応募する
-      </ButtonLink>
+      </Button>
     )
   ) : (
     <div className="rounded-md bg-slate-100 py-3 text-center text-sm font-semibold text-slate-500">この案件の募集は終了しました</div>
@@ -63,17 +77,13 @@ export default function ProjectDetailPage() {
   return (
     <div className="bg-navy-50/50 pb-28 lg:pb-12">
       <div className="container-page py-4">
-        <nav className="flex flex-wrap items-center gap-1 text-xs text-slate-500">
-          <Link href="/" className="hover:text-brand-600">
-            トップ
-          </Link>
-          <ChevronRight className="h-3 w-3" />
-          <Link href="/projects" className="hover:text-brand-600">
-            スポンサー案件一覧
-          </Link>
-          <ChevronRight className="h-3 w-3" />
-          <span className="truncate text-navy-700">{project.companyName}</span>
-        </nav>
+        <Breadcrumbs
+          items={[
+            { label: "スポンサー案件一覧", href: "/projects" },
+            { label: CATEGORY_LABEL[project.category], href: `/projects?category=${project.category}` },
+            { label: project.companyName },
+          ]}
+        />
       </div>
 
       <div className="container-page grid gap-6 lg:grid-cols-[1fr_320px]">
@@ -151,6 +161,46 @@ export default function ProjectDetailPage() {
 
       {/* モバイル用フローティングCTA */}
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 p-3 backdrop-blur lg:hidden">{cta}</div>
+      <Modal
+        open={confirmOpen}
+        onClose={() => setConfirmOpen(false)}
+        title="応募前の確認"
+        footer={
+          <>
+            <Button variant="outline" onClick={() => setConfirmOpen(false)}>
+              戻る
+            </Button>
+            <Button
+              variant="accent"
+              disabled={!checked}
+              onClick={() => {
+                setConfirmOpen(false);
+                router.push(`/projects/${project.id}/apply`);
+              }}
+            >
+              応募フォームへ進む
+            </Button>
+          </>
+        }
+      >
+        <div className="space-y-5 text-sm">
+          <p className="leading-relaxed text-slate-700">
+            <span className="font-bold text-navy-900">{project.companyName}</span> の案件に応募します。応募の前に、協賛条件と提出物をご確認ください。
+          </p>
+          <div>
+            <p className="mb-2 text-xs font-bold text-navy-700">協賛条件・必須要件</p>
+            <CheckList items={project.conditions} />
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-bold text-navy-700">応募要件・提出物</p>
+            <CheckList items={project.requirements} />
+          </div>
+          <label className="flex cursor-pointer items-center gap-2 rounded-md border border-slate-200 bg-slate-50 px-3 py-3 font-semibold text-navy-900">
+            <input type="checkbox" checked={checked} onChange={(e) => setChecked(e.target.checked)} className="h-4 w-4 accent-brand-600" />
+            上記の条件を確認しました
+          </label>
+        </div>
+      </Modal>
     </div>
   );
 }

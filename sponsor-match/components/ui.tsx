@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { ApplicationStatus, Category } from "@/types";
 import { APPLICATION_STATUS, CATEGORY_LABEL, CATEGORY_STYLE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { Breadcrumbs, type Crumb } from "@/components/breadcrumbs";
+import { BrushTitle } from "@/components/brush";
 
 /* ───────── Button ───────── */
 type Variant = "primary" | "secondary" | "outline" | "ghost" | "accent" | "danger";
@@ -160,13 +162,24 @@ export function SectionTitle({
   );
 }
 
-export function PageHeader({ title, description, children }: { title: string; description?: string; children?: ReactNode }) {
+export function PageHeader({
+  title,
+  description,
+  breadcrumbs,
+  children,
+}: {
+  title: string;
+  description?: string;
+  breadcrumbs?: Crumb[];
+  children?: ReactNode;
+}) {
   return (
-    <div className="border-b border-slate-200 bg-navy-50/60">
-      <div className="container-page py-8 sm:py-10">
+    <div className="border-b border-slate-200 bg-[#f3f7fc]">
+      <div className="container-page py-6 sm:py-8">
+        <Breadcrumbs items={breadcrumbs ?? [{ label: title }]} className="mb-5" />
         {children}
-        <h1 className="text-2xl font-bold text-navy-900 sm:text-3xl">{title}</h1>
-        {description && <p className="mt-2 text-sm text-slate-600 sm:text-base">{description}</p>}
+        <BrushTitle className="text-3xl sm:text-4xl">{title}</BrushTitle>
+        {description && <p className="mt-5 text-sm text-slate-600 sm:text-base">{description}</p>}
       </div>
     </div>
   );

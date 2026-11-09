@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useStore } from "@/lib/store";
 import { ProjectCard } from "@/components/project-card";
+import { Carousel } from "@/components/carousel";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -17,8 +18,8 @@ export function FeaturedProjects() {
 
   const list = useMemo(() => {
     const open = projects.filter((p) => p.status === "open");
-    if (tab === "featured") return open.filter((p) => p.featured).slice(0, 6);
-    return [...open].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 6);
+    if (tab === "featured") return open.filter((p) => p.featured).slice(0, 8);
+    return [...open].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 8);
   }, [projects, tab]);
 
   return (
@@ -53,11 +54,11 @@ export function FeaturedProjects() {
       {list.length === 0 ? (
         <p className="py-10 text-center text-sm text-slate-500">該当する案件はありません。</p>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Carousel key={tab} label="スポンサー案件" slideClassName="basis-[88%] sm:basis-1/2 lg:basis-1/3">
           {list.map((p) => (
             <ProjectCard key={p.id} project={p} />
           ))}
-        </div>
+        </Carousel>
       )}
     </div>
   );

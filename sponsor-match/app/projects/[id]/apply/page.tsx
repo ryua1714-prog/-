@@ -1,15 +1,15 @@
 "use client";
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState, type FormEvent } from "react";
-import { ArrowLeft, CircleCheck, ClipboardList, Send } from "lucide-react";
+import { CircleCheck, ClipboardList, Send } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { useToast } from "@/components/toast";
 import { RETURN_PRESETS } from "@/lib/constants";
 import { formatYen } from "@/lib/utils";
 import { Button, ButtonLink, Card, CategoryBadge, InitialLogo, Input, Label, Required, Textarea } from "@/components/ui";
 import { LoadingBlock, NotFoundProject } from "@/components/not-found-project";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 interface FormState {
   applicantName: string;
@@ -106,10 +106,13 @@ export default function ApplyPage() {
   return (
     <div className="bg-navy-50/50 pb-16">
       <div className="container-page max-w-3xl py-6">
-        <Link href={`/projects/${project.id}`} className="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-brand-600">
-          <ArrowLeft className="h-4 w-4" />
-          案件詳細に戻る
-        </Link>
+        <Breadcrumbs
+          items={[
+            { label: "スポンサー案件一覧", href: "/projects" },
+            { label: project.companyName, href: `/projects/${project.id}` },
+            { label: done ? "応募完了" : "応募フォーム" },
+          ]}
+        />
 
         <ol className="mt-5 flex items-center gap-2 text-xs font-semibold">
           {STEPS.map((s, i) => {

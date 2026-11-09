@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { StoreProvider } from "@/lib/store";
 import { ToastProvider } from "@/components/toast";
+import { PullToRefresh } from "@/components/pull-to-refresh";
 import HomePage from "@/app/page";
 import ProjectsPage from "@/app/projects/page";
 import ProjectDetailPage from "@/app/projects/[id]/page";
@@ -49,7 +50,9 @@ function App() {
         <ToastProvider>
           <Header />
           <main className="flex-1">
-            <Routes />
+            <PullToRefresh>
+              <Routes />
+            </PullToRefresh>
           </main>
           <Footer />
         </ToastProvider>
