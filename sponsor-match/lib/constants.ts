@@ -29,8 +29,8 @@ export const CATEGORY_LABEL: Record<Category, string> = {
 
 export const CATEGORY_STYLE: Record<Category, string> = {
   sports: "bg-brand-50 text-brand-700 ring-brand-100",
-  community: "bg-emerald-50 text-emerald-700 ring-emerald-100",
-  students: "bg-amber-50 text-amber-700 ring-amber-100",
+  community: "bg-accent-50 text-accent-700 ring-accent-100",
+  students: "bg-sky-50 text-sky-700 ring-sky-100",
 };
 
 export const AREAS: Area[] = [
@@ -52,10 +52,10 @@ export const BUDGET_OPTIONS: { value: string; label: string; min: number; max: n
 ];
 
 export const APPLICATION_STATUS: Record<ApplicationStatus, { label: string; style: string }> = {
-  pending: { label: "応募済み", style: "bg-slate-100 text-slate-700 ring-slate-200" },
-  reviewing: { label: "選考中", style: "bg-brand-50 text-brand-700 ring-brand-100" },
-  accepted: { label: "面談打診", style: "bg-emerald-50 text-emerald-700 ring-emerald-200" },
-  rejected: { label: "見送り", style: "bg-rose-50 text-rose-700 ring-rose-100" },
+  pending: { label: "応募済み", style: "bg-white text-slate-700 ring-slate-300" },
+  reviewing: { label: "選考中", style: "bg-sky-50 text-sky-700 ring-sky-200" },
+  accepted: { label: "面談打診", style: "bg-brand-600 text-white ring-brand-600" },
+  rejected: { label: "見送り", style: "bg-slate-100 text-slate-500 ring-slate-200" },
 };
 
 export const RETURN_PRESETS = [

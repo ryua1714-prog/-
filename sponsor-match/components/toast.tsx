@@ -39,11 +39,11 @@ export function ToastProvider({ children }: { children: ReactNode }) {
             key={t.id}
             className={cn(
               "pointer-events-auto flex w-full max-w-sm items-start gap-3 rounded-lg border bg-white px-4 py-3 text-sm shadow-lg animate-in",
-              t.kind === "success" ? "border-emerald-200" : "border-brand-100",
+              t.kind === "success" ? "border-brand-200" : "border-brand-100",
             )}
           >
             {t.kind === "success" ? (
-              <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" />
+              <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
             ) : (
               <Info className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
             )}

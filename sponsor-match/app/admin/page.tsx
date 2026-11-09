@@ -45,7 +45,7 @@ export default function AdminPage() {
       <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[220px_1fr]">
         <aside className="space-y-3">
           <div className="rounded-lg bg-navy-900 p-4 text-white">
-            <p className="flex items-center gap-1.5 text-xs font-bold text-rose-300">
+            <p className="flex items-center gap-1.5 text-xs font-bold text-accent-100">
               <ShieldCheck className="h-4 w-4" />
               管理者モード
             </p>
@@ -96,7 +96,7 @@ export default function AdminPage() {
             ].map((s) => (
               <Card key={s.label} className="px-4 py-3">
                 <p className="text-xs text-slate-500">{s.label}</p>
-                <p className={cn("mt-1 text-2xl font-bold", s.alert ? "text-rose-600" : "text-navy-900")}>{s.value}</p>
+                <p className={cn("mt-1 text-2xl font-bold", s.alert ? "text-accent-600" : "text-navy-900")}>{s.value}</p>
               </Card>
             ))}
           </div>
@@ -193,10 +193,10 @@ function ProjectsAdmin() {
                       }}
                       className="flex items-center gap-2"
                     >
-                      <span className={cn("relative h-5 w-9 rounded-full transition-colors", open ? "bg-emerald-500" : "bg-slate-300")}>
+                      <span className={cn("relative h-5 w-9 rounded-full transition-colors", open ? "bg-brand-600" : "bg-slate-300")}>
                         <span className={cn("absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-all", open ? "left-[18px]" : "left-0.5")} />
                       </span>
-                      <span className={cn("text-xs font-semibold", open ? "text-emerald-700" : "text-slate-500")}>{open ? "公開" : "非公開"}</span>
+                      <span className={cn("text-xs font-semibold", open ? "text-brand-700" : "text-slate-500")}>{open ? "公開" : "非公開"}</span>
                     </button>
                   </td>
                   <td className="px-5 py-3">
@@ -218,7 +218,7 @@ function ProjectsAdmin() {
                             "削除する",
                           );
                         }}
-                        className="rounded p-1.5 text-slate-500 hover:bg-rose-50 hover:text-rose-600"
+                        className="rounded p-1.5 text-slate-500 hover:bg-accent-50 hover:text-accent-600"
                         title="削除"
                       >
                         <Trash2 className="h-4 w-4" />

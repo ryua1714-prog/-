@@ -5,7 +5,7 @@ import type { Application, ApplicationStatus, SeekerProfile, SponsorProject } fr
 import { CURRENT_SEEKER_ID, mockApplications, mockProjects, mockSeekers } from "@/lib/mock-data";
 import { newId } from "@/lib/utils";
 
-const STORAGE_KEY = "sponsor-match:v1";
+const STORAGE_KEY = "sponsor-match:v2";
 
 interface StoreData {
   projects: SponsorProject[];

@@ -8,8 +8,8 @@ export function DeadlineBadge({ project }: { project: SponsorProject }) {
   if (project.status === "closed") return <Badge className="bg-slate-100 text-slate-500 ring-slate-200">募集終了</Badge>;
   const d = daysUntil(project.deadline);
   if (d < 0) return <Badge className="bg-slate-100 text-slate-500 ring-slate-200">締切済み</Badge>;
-  if (d <= 14) return <Badge className="bg-rose-50 text-rose-600 ring-rose-100">締切まで{d}日</Badge>;
-  return <Badge className="bg-emerald-50 text-emerald-700 ring-emerald-100">募集中</Badge>;
+  if (d <= 14) return <Badge className="bg-accent-50 text-accent-600 ring-accent-100">締切まで{d}日</Badge>;
+  return <Badge className="bg-brand-50 text-brand-700 ring-brand-100">募集中</Badge>;
 }
 
 /** グリッド表示用（トップページ） */

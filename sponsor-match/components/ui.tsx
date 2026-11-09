@@ -14,7 +14,7 @@ const variantClass: Record<Variant, string> = {
   outline: "border border-slate-300 bg-white text-navy-800 hover:bg-slate-50",
   ghost: "text-navy-700 hover:bg-navy-50",
   accent: "bg-accent-500 text-white hover:bg-accent-600 shadow-sm",
-  danger: "border border-rose-200 bg-white text-rose-600 hover:bg-rose-50",
+  danger: "border border-accent-100 bg-white text-accent-600 hover:bg-accent-50",
 };
 const sizeClass: Record<Size, string> = {
   sm: "h-8 px-3 text-xs",
@@ -102,7 +102,7 @@ export function Label({ className, ...props }: LabelHTMLAttributes<HTMLLabelElem
 }
 
 export function Required() {
-  return <span className="ml-1.5 rounded bg-rose-500 px-1.5 py-0.5 text-[10px] font-bold text-white">必須</span>;
+  return <span className="ml-1.5 rounded bg-accent-500 px-1.5 py-0.5 text-[10px] font-bold text-white">必須</span>;
 }
 
 const fieldBase =
@@ -134,7 +134,7 @@ export function InitialLogo({ text, color, size = "md" }: { text: string; color:
 export function SectionTitle({ en, title, className }: { en?: string; title: string; className?: string }) {
   return (
     <div className={cn("mb-8 text-center", className)}>
-      {en && <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">{en}</p>}
+      {en && <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-500">{en}</p>}
       <h2 className="mt-2 text-2xl font-bold text-navy-900 sm:text-3xl">{title}</h2>
     </div>
   );

@@ -25,7 +25,7 @@ export function useConfirm() {
             キャンセル
           </Button>
           <Button
-            className="bg-rose-600 hover:bg-rose-700"
+            className="bg-accent-600 hover:bg-accent-700"
             onClick={() => {
               state?.onOk();
               close();

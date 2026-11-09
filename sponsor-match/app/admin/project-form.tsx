@@ -6,7 +6,7 @@ import { AREAS, CATEGORIES } from "@/lib/constants";
 import { newId } from "@/lib/utils";
 import { Button, Input, Label, Required, Select, Textarea } from "@/components/ui";
 
-const LOGO_COLORS = ["bg-sky-600", "bg-indigo-700", "bg-violet-600", "bg-teal-600", "bg-emerald-700", "bg-orange-600", "bg-pink-600", "bg-slate-700"];
+const LOGO_COLORS = ["bg-brand-600", "bg-navy-700", "bg-accent-500", "bg-sky-600", "bg-accent-700", "bg-navy-900"];
 
 interface Draft {
   companyName: string;
@@ -119,7 +119,7 @@ export function ProjectForm({
 
   return (
     <form onSubmit={submit} className="space-y-5">
-      {error && <p className="rounded-md bg-rose-50 px-3 py-2 text-sm font-semibold text-rose-600">{error}</p>}
+      {error && <p className="rounded-md bg-accent-50 px-3 py-2 text-sm font-semibold text-accent-600">{error}</p>}
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <Label htmlFor="f-company">

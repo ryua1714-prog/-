@@ -37,9 +37,9 @@ export function Header() {
   const isAdmin = pathname.startsWith("/admin");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-t-[3px] border-b-slate-200 border-t-accent-500 bg-white/95 backdrop-blur">
       {isAdmin && (
-        <div className="bg-rose-600 py-1.5 text-center text-xs font-bold text-white">
+        <div className="bg-accent-600 py-1.5 text-center text-xs font-bold text-white">
           <ShieldCheck className="mr-1 inline h-3.5 w-3.5 align-[-2px]" />
           管理者モードで表示中です（運営者専用画面）
         </div>

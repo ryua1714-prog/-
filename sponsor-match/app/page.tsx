@@ -21,8 +21,8 @@ import { CATEGORIES } from "@/lib/constants";
 const CATEGORY_ICON = { sports: Trophy, community: PartyPopper, students: GraduationCap } as const;
 const CATEGORY_COLOR = {
   sports: "from-brand-600 to-navy-700",
-  community: "from-emerald-600 to-teal-800",
-  students: "from-amber-500 to-orange-700",
+  community: "from-accent-500 to-accent-700",
+  students: "from-sky-500 to-brand-700",
 } as const;
 
 const SEEKER_FLOW = [
@@ -63,7 +63,7 @@ export default function HomePage() {
             運営チームが全案件を審査・掲載しています
           </p>
           <h1 className="mt-5 text-3xl font-bold leading-tight sm:text-5xl sm:leading-tight">
-            挑戦する人と、
+            <span className="underline decoration-accent-500 decoration-4 underline-offset-[10px]">挑戦する人</span>と、
             <br className="sm:hidden" />
             応援する企業をつなぐ
             <br />

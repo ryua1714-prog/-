@@ -101,7 +101,7 @@ export default function ApplyPage() {
     window.scrollTo({ top: 0 });
   };
 
-  const err = (k: keyof FormState) => errors[k] && <p className="mt-1 text-xs font-semibold text-rose-600">{errors[k]}</p>;
+  const err = (k: keyof FormState) => errors[k] && <p className="mt-1 text-xs font-semibold text-accent-600">{errors[k]}</p>;
 
   return (
     <div className="bg-navy-50/50 pb-16">
@@ -139,7 +139,7 @@ export default function ApplyPage() {
 
         {done ? (
           <Card className="mt-5 p-8 text-center">
-            <CircleCheck className="mx-auto h-14 w-14 text-emerald-500" />
+            <CircleCheck className="mx-auto h-14 w-14 text-brand-600" />
             <h1 className="mt-4 text-2xl font-bold text-navy-900">応募が完了しました</h1>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
               {project.companyName} へ応募内容を送信しました。

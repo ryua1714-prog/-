@@ -204,7 +204,7 @@ function ProfileForm() {
                   <input type="checkbox" checked={form.offeredReturns.includes(r)} onChange={() => toggleReturn(r)} className="h-4 w-4 accent-brand-600" />
                   <span className="flex-1 text-navy-800">{r}</span>
                   {!RETURN_PRESETS.includes(r) && (
-                    <button type="button" onClick={(e) => { e.preventDefault(); set("offeredReturns", form.offeredReturns.filter((x) => x !== r)); }} aria-label="削除" className="text-slate-400 hover:text-rose-500">
+                    <button type="button" onClick={(e) => { e.preventDefault(); set("offeredReturns", form.offeredReturns.filter((x) => x !== r)); }} aria-label="削除" className="text-slate-400 hover:text-accent-500">
                       <X className="h-4 w-4" />
                     </button>
                   )}
@@ -279,9 +279,9 @@ function History() {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[
           { label: "応募総数", value: counts.total, tone: "text-navy-900" },
-          { label: "選考中", value: counts.reviewing, tone: "text-brand-600" },
-          { label: "面談打診", value: counts.accepted, tone: "text-emerald-600" },
-          { label: "見送り", value: counts.rejected, tone: "text-rose-600" },
+          { label: "選考中", value: counts.reviewing, tone: "text-sky-600" },
+          { label: "面談打診", value: counts.accepted, tone: "text-brand-600" },
+          { label: "見送り", value: counts.rejected, tone: "text-slate-500" },
         ].map((s) => (
           <Card key={s.label} className="px-4 py-3">
             <p className="text-xs text-slate-500">{s.label}</p>

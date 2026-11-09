@@ -54,7 +54,7 @@ function ContactFormInner({ initialTab }: { initialTab: TabKey }) {
 
       {sent === tab ? (
         <Card className="mt-6 p-10 text-center">
-          <CircleCheck className="mx-auto h-14 w-14 text-emerald-500" />
+          <CircleCheck className="mx-auto h-14 w-14 text-brand-600" />
           <h2 className="mt-4 text-xl font-bold text-navy-900">送信が完了しました</h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600">
             {sent === "company"
@@ -74,7 +74,7 @@ function ContactFormInner({ initialTab }: { initialTab: TabKey }) {
                 ? "スポンサー案件の掲載をご希望の企業様は、以下のフォームからお申し込みください。担当者がヒアリングのうえ、案件ページを制作いたします。"
                 : "サービス内容、ご利用方法、料金などに関するご質問はこちらからお問い合わせください。"}
             </p>
-            {error && <p className="mb-4 rounded-md bg-rose-50 px-3 py-2 text-sm font-semibold text-rose-600">{error}</p>}
+            {error && <p className="mb-4 rounded-md bg-accent-50 px-3 py-2 text-sm font-semibold text-accent-600">{error}</p>}
             <div className="grid gap-5 sm:grid-cols-2">
               {tab === "company" ? (
                 <>
