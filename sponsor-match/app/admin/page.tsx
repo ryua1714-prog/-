@@ -21,6 +21,7 @@ import { APPLICATION_STATUS, CATEGORY_LABEL } from "@/lib/constants";
 import { cn, formatDate, formatDateTime, formatYen } from "@/lib/utils";
 import { ApplicationStatusBadge, Badge, Button, Card, CategoryBadge, InitialLogo, Input, Select } from "@/components/ui";
 import { Modal } from "@/components/modal";
+import { useConfirm } from "@/components/confirm";
 import { ProjectForm } from "./project-form";
 
 type TabKey = "projects" | "applications" | "members";
@@ -29,6 +30,7 @@ export default function AdminPage() {
   const { projects, applications, seekers, hydrated, resetAll } = useStore();
   const toast = useToast();
   const [tab, setTab] = useState<TabKey>("projects");
+  const { ask, dialog } = useConfirm();
 
   const nav = [
     { key: "projects" as const, label: "案件管理", icon: Briefcase, count: projects.length },
@@ -68,10 +70,14 @@ export default function AdminPage() {
           </nav>
           <button
             onClick={() => {
-              if (confirm("すべてのデータを初期状態（モックデータ）に戻します。よろしいですか？")) {
-                resetAll();
-                toast("データを初期状態に戻しました");
-              }
+              ask(
+                "すべてのデータを初期状態（モックデータ）に戻します。応募やプロフィールの変更も消えます。よろしいですか？",
+                () => {
+                  resetAll();
+                  toast("データを初期状態に戻しました");
+                },
+                "初期化する",
+              );
             }}
             className="flex w-full items-center justify-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-50"
           >
@@ -106,6 +112,7 @@ export default function AdminPage() {
           )}
         </section>
       </div>
+      {dialog}
     </div>
   );
 }
@@ -115,6 +122,7 @@ function ProjectsAdmin() {
   const { projects, applications, upsertProject, deleteProject, toggleProjectStatus } = useStore();
   const toast = useToast();
   const [editing, setEditing] = useState<SponsorProject | "new" | null>(null);
+  const { ask, dialog } = useConfirm();
   const [q, setQ] = useState("");
 
   const list = useMemo(() => {
@@ -201,10 +209,14 @@ function ProjectsAdmin() {
                       </button>
                       <button
                         onClick={() => {
-                          if (confirm(`「${p.title}」を削除しますか？`)) {
-                            deleteProject(p.id);
-                            toast("案件を削除しました");
-                          }
+                          ask(
+                            `「${p.title}」を削除しますか？この操作は取り消せません。`,
+                            () => {
+                              deleteProject(p.id);
+                              toast("案件を削除しました");
+                            },
+                            "削除する",
+                          );
                         }}
                         className="rounded p-1.5 text-slate-500 hover:bg-rose-50 hover:text-rose-600"
                         title="削除"
@@ -240,6 +252,7 @@ function ProjectsAdmin() {
           />
         )}
       </Modal>
+      {dialog}
     </Card>
   );
 }
