@@ -9,6 +9,7 @@
   body {
     @apply bg-white text-navy-900 antialiased;
     font-feature-settings: "palt";
+    font-weight: 500;
   }
   h1,
   h2,
@@ -69,6 +70,12 @@ html,
 body {
   overscroll-behavior-y: contain;
 }
+/* 筆文字を少し太く見せる */
+.font-brush {
+  -webkit-text-stroke: 0.03em currentColor;
+  paint-order: stroke fill;
+}
+
 .no-scrollbar {
   scrollbar-width: none;
 }

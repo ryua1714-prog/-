@@ -1,10 +1,8 @@
-import { FileQuestion } from "lucide-react";
 import { ButtonLink } from "@/components/ui";
 
 export function NotFoundProject() {
   return (
     <div className="container-page py-24 text-center">
-      <FileQuestion className="mx-auto h-12 w-12 text-slate-300" />
       <h1 className="mt-4 text-xl font-bold text-navy-900">案件が見つかりませんでした</h1>
       <p className="mt-2 text-sm text-slate-500">削除されたか、URLが間違っている可能性があります。</p>
       <ButtonLink href="/projects" className="mt-6">

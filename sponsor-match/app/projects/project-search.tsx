@@ -2,7 +2,6 @@
 
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import { SearchX, SlidersHorizontal } from "lucide-react";
 import type { Area, Category } from "@/types";
 import { AREAS, CATEGORIES } from "@/lib/constants";
 import { useStore } from "@/lib/store";
@@ -49,7 +48,6 @@ function ProjectSearchInner({ initial }: { initial: FilterState }) {
       <div className="grid gap-6 lg:grid-cols-[280px_1fr]">
         <aside>
           <Button variant="outline" className="mb-3 w-full lg:hidden" onClick={() => setShowFilters((v) => !v)}>
-            <SlidersHorizontal className="h-4 w-4" />
             {showFilters ? "絞り込み条件を閉じる" : "絞り込み条件を開く"}
           </Button>
           <div className={`${showFilters ? "block" : "hidden"} lg:sticky lg:top-24 lg:block`}>
@@ -74,7 +72,6 @@ function ProjectSearchInner({ initial }: { initial: FilterState }) {
 
           {results.length === 0 ? (
             <div className="rounded-md border border-dashed border-slate-300 bg-white py-16 text-center">
-              <SearchX className="mx-auto h-10 w-10 text-slate-300" />
               <p className="mt-3 font-semibold text-navy-800">条件に一致する案件が見つかりませんでした</p>
               <p className="mt-1 text-sm text-slate-500">条件を変更して再度お試しください。</p>
               <Button variant="outline" className="mt-5" onClick={() => setFilters(defaultFilters)}>

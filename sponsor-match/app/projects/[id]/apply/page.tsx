@@ -2,9 +2,9 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState, type FormEvent } from "react";
-import { CircleCheck, ClipboardList, Send } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { useToast } from "@/components/toast";
+import { Hanko } from "@/components/marks";
 import { RETURN_PRESETS } from "@/lib/constants";
 import { formatYen } from "@/lib/utils";
 import { Button, ButtonLink, Card, CategoryBadge, InitialLogo, Input, Label, Required, Textarea } from "@/components/ui";
@@ -142,7 +142,7 @@ export default function ApplyPage() {
 
         {done ? (
           <Card className="mt-5 p-8 text-center">
-            <CircleCheck className="mx-auto h-14 w-14 text-brand-600" />
+            <Hanko char="受" tone="red" filled size="lg" className="h-16 w-16 text-3xl" />
             <h1 className="mt-4 text-2xl font-bold text-navy-900">応募が完了しました</h1>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
               {project.companyName} へ応募内容を送信しました。
@@ -161,7 +161,6 @@ export default function ApplyPage() {
             </dl>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <ButtonLink href="/mypage?tab=history">
-                <ClipboardList className="h-4 w-4" />
                 応募履歴を見る
               </ButtonLink>
               <ButtonLink href="/projects" variant="outline">
@@ -274,7 +273,6 @@ export default function ApplyPage() {
                 </label>
                 {err("agree")}
                 <Button type="submit" variant="accent" size="lg" className="mt-5 w-full">
-                  <Send className="h-5 w-5" />
                   この内容で応募する
                 </Button>
               </div>

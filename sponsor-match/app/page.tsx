@@ -1,14 +1,14 @@
-import { ArrowRight, Building2, FileCheck2, Headset, PenLine } from "lucide-react";
 import { BrushStroke } from "@/components/brush";
 import { HeroSearch } from "@/components/hero-search";
 import { FeaturedProjects } from "@/components/featured-projects";
 import { CategoryLinks, Faq, FlowSteps, MatchCarousel } from "@/components/home-sections";
 import { ButtonLink, SectionTitle } from "@/components/ui";
+import { Hanko } from "@/components/marks";
 
 const POINTS = [
-  { icon: FileCheck2, title: "全案件を運営が確認", text: "掲載前に企業情報と協賛条件を確認しています。" },
-  { icon: PenLine, title: "案件ページは制作代行", text: "企業の担当者が原稿を用意する必要はありません。" },
-  { icon: Headset, title: "成約まで担当者が伴走", text: "面談の日程調整や条件のすり合わせをお手伝いします。" },
+  { mark: "審", title: "全案件を運営が確認", text: "掲載前に企業情報と協賛条件を確認しています。" },
+  { mark: "代", title: "案件ページは制作代行", text: "企業の担当者が原稿を用意する必要はありません。" },
+  { mark: "伴", title: "成約まで担当者が伴走", text: "面談の日程調整や条件のすり合わせをお手伝いします。" },
 ];
 
 export default function HomePage() {
@@ -33,10 +33,8 @@ export default function HomePage() {
             <div className="mt-7 flex flex-wrap gap-3">
               <ButtonLink href="/projects" variant="accent" size="lg">
                 スポンサー案件をさがす
-                <ArrowRight className="h-4 w-4" />
               </ButtonLink>
               <ButtonLink href="/contact?tab=company" variant="outline" size="lg">
-                <Building2 className="h-4 w-4" />
                 企業の方はこちら
               </ButtonLink>
             </div>
@@ -53,7 +51,7 @@ export default function HomePage() {
         <ul className="mt-6 grid gap-4 sm:grid-cols-3">
           {POINTS.map((p) => (
             <li key={p.title} className="flex gap-3">
-              <p.icon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
+              <Hanko char={p.mark} tone="red" size="sm" className="mt-0.5" />
               <div>
                 <p className="text-sm font-bold text-navy-900">{p.title}</p>
                 <p className="mt-0.5 text-xs leading-relaxed text-slate-600">{p.text}</p>
@@ -90,7 +88,7 @@ export default function HomePage() {
             <thead className="bg-navy-50 text-left text-xs text-navy-700">
               <tr>
                 <th className="px-5 py-2.5 font-bold">ご利用者</th>
-                <th className="px-5 py-2.5 font-bold">月額</th>
+                <th className="px-5 py-2.5 font-bold">月額（税抜）</th>
                 <th className="px-5 py-2.5 font-bold">そのほか</th>
               </tr>
             </thead>
@@ -98,16 +96,16 @@ export default function HomePage() {
               <tr>
                 <td className="px-5 py-4 font-bold text-navy-900">選手・団体</td>
                 <td className="px-5 py-4 text-navy-900">
-                  <span className="text-lg font-bold">1,000円</span>（基本）／<span className="text-lg font-bold">5,000円</span>（有料）
+                  <span className="text-lg font-bold">1,000円</span>（基本・税抜）／<span className="text-lg font-bold">5,000円</span>（有料・税抜）
                 </td>
                 <td className="px-5 py-4 text-slate-600">成約手数料：初年度15%・次年度以降5%</td>
               </tr>
               <tr>
                 <td className="px-5 py-4 font-bold text-navy-900">企業</td>
                 <td className="px-5 py-4 text-navy-900">
-                  <span className="text-lg font-bold">10,000円</span>（ページ制作・運用代行込み）
+                  <span className="text-lg font-bold">10,000円</span>（税抜・ページ制作・運用代行込み）
                 </td>
-                <td className="px-5 py-4 text-slate-600">初回システム登録料：30,000円</td>
+                <td className="px-5 py-4 text-slate-600">初回システム登録料：30,000円（税抜）</td>
               </tr>
             </tbody>
           </table>

@@ -3,37 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
-import {
-  ClipboardList,
-  GraduationCap,
-  Handshake,
-  LayoutDashboard,
-  LogOut,
-  Mail,
-  MapPin,
-  Menu,
-  PartyPopper,
-  ShieldCheck,
-  Trophy,
-  User,
-  UserRound,
-  X,
-} from "lucide-react";
+import { CloseMark, MenuMark } from "@/components/marks";
 import { Dropdown } from "@/components/dropdown";
 import { Accordion } from "@/components/accordion";
 import { useStore } from "@/lib/store";
 import { useToast } from "@/components/toast";
 import { AREAS, CATEGORIES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { Hanko } from "@/components/marks";
 
-const CAT_ICON = { sports: Trophy, community: PartyPopper, students: GraduationCap } as const;
+const CAT_MARK = { sports: { char: "競", tone: "blue" }, community: { char: "祭", tone: "red" }, students: { char: "学", tone: "sky" } } as const;
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
     <Link href="/" className="flex items-center gap-2">
-      <span className="flex h-8 w-8 items-center justify-center rounded-md bg-brand-600 text-white">
-        <Handshake className="h-5 w-5" />
-      </span>
+      <Hanko char="橋" tone={light ? "red" : "blue"} filled className="h-9 w-9 text-lg" />
       <span className="leading-tight">
         <span className={cn("block font-brush text-lg tracking-wide", light ? "text-white" : "text-navy-900")}>スポンサーブリッジ</span>
         <span className={cn("block text-[10px] tracking-widest", light ? "text-navy-200" : "text-slate-500")}>SPONSOR BRIDGE</span>
@@ -56,12 +40,12 @@ function ProjectsMenu() {
           <p className="mb-2 text-xs font-bold text-slate-500">カテゴリーから</p>
           <ul className="space-y-1">
             {CATEGORIES.map((c) => {
-              const Icon = CAT_ICON[c.value];
+              const mark = CAT_MARK[c.value];
               const n = projects.filter((p) => p.category === c.value && p.status === "open").length;
               return (
                 <li key={c.value}>
                   <Link href={`/projects?category=${c.value}`} className="flex items-center gap-2 rounded px-2 py-2 text-sm text-navy-800 hover:bg-navy-50">
-                    <Icon className="h-4 w-4 text-brand-600" />
+                    <Hanko char={mark.char} tone={mark.tone} size="sm" className="h-6 w-6 text-xs" />
                     <span className="flex-1">{c.label}</span>
                     <span className="text-xs text-slate-400">{n}件</span>
                   </Link>
@@ -79,7 +63,6 @@ function ProjectsMenu() {
             {AREAS.map((a) => (
               <li key={a}>
                 <Link href={`/projects?area=${encodeURIComponent(a)}`} className="flex items-center gap-1.5 rounded px-2 py-1.5 text-sm text-navy-800 hover:bg-navy-50">
-                  <MapPin className="h-3.5 w-3.5 text-slate-400" />
                   {a}
                 </Link>
               </li>
@@ -100,7 +83,6 @@ function AccountMenu() {
       align="right"
       label={
         <>
-          <User className="h-4 w-4" />
           マイページ
         </>
       }
@@ -116,13 +98,11 @@ function AccountMenu() {
           <ul className="py-1 text-sm">
             <li>
               <Link href="/mypage" className="flex items-center gap-2 px-4 py-2 text-navy-800 hover:bg-navy-50">
-                <UserRound className="h-4 w-4 text-slate-400" />
                 プロフィール設定
               </Link>
             </li>
             <li>
               <Link href="/mypage?tab=history" className="flex items-center gap-2 px-4 py-2 text-navy-800 hover:bg-navy-50">
-                <ClipboardList className="h-4 w-4 text-slate-400" />
                 応募履歴
               </Link>
             </li>
@@ -135,7 +115,6 @@ function AccountMenu() {
                 }}
                 className="flex w-full items-center gap-2 px-4 py-2 text-left text-slate-600 hover:bg-navy-50"
               >
-                <LogOut className="h-4 w-4 text-slate-400" />
                 ログアウト
               </button>
             </li>
@@ -177,7 +156,7 @@ function DrawerMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
         <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
           <span className="font-brush text-lg text-navy-900">メニュー</span>
           <button onClick={onClose} className="rounded p-2 text-slate-500 hover:bg-slate-100" aria-label="メニューを閉じる">
-            <X className="h-5 w-5" />
+            <CloseMark className="h-5 w-5" />
           </button>
         </div>
         <nav className="flex-1 overflow-y-auto px-3 py-3">
@@ -193,11 +172,11 @@ function DrawerMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                 content: (
                   <ul>
                     {CATEGORIES.map((c) => {
-                      const Icon = CAT_ICON[c.value];
+                      const mark = CAT_MARK[c.value];
                       return (
                         <li key={c.value}>
                           <Link href={`/projects?category=${c.value}`} className={linkCls}>
-                            <Icon className="h-4 w-4 text-brand-600" />
+                            <Hanko char={mark.char} tone={mark.tone} size="sm" className="h-6 w-6 text-xs" />
                             {c.label}
                           </Link>
                         </li>
@@ -219,7 +198,6 @@ function DrawerMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                     {AREAS.map((a) => (
                       <li key={a}>
                         <Link href={`/projects?area=${encodeURIComponent(a)}`} className={linkCls}>
-                          <MapPin className="h-3.5 w-3.5 text-slate-400" />
                           {a}
                         </Link>
                       </li>
@@ -234,13 +212,11 @@ function DrawerMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                   <ul>
                     <li>
                       <Link href="/mypage" className={linkCls}>
-                        <UserRound className="h-4 w-4 text-slate-400" />
                         プロフィール設定
                       </Link>
                     </li>
                     <li>
                       <Link href="/mypage?tab=history" className={linkCls}>
-                        <ClipboardList className="h-4 w-4 text-slate-400" />
                         応募履歴
                       </Link>
                     </li>
@@ -257,13 +233,11 @@ function DrawerMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             </li>
             <li>
               <Link href="/contact" className={cn(linkCls, "font-bold")}>
-                <Mail className="h-4 w-4 text-slate-400" />
                 お問い合わせ
               </Link>
             </li>
             <li>
               <Link href="/admin" className={cn(linkCls, "font-bold")}>
-                <LayoutDashboard className="h-4 w-4 text-slate-400" />
                 管理画面（運営者）
               </Link>
             </li>
@@ -292,7 +266,6 @@ export function Header() {
       <header className="sticky top-0 z-40 border-b border-t-[3px] border-b-slate-200 border-t-accent-500 bg-white/95 backdrop-blur">
         {isAdmin && (
           <div className="bg-accent-600 py-1.5 text-center text-xs font-bold text-white">
-            <ShieldCheck className="mr-1 inline h-3.5 w-3.5 align-[-2px]" />
             管理者モードで表示中です（運営者専用画面）
           </div>
         )}
@@ -323,7 +296,7 @@ export function Header() {
               aria-label="メニューを開く"
               aria-expanded={open}
             >
-              <Menu className="h-6 w-6" />
+              <MenuMark className="h-6 w-6" />
               <span className="text-[10px] font-bold leading-none">メニュー</span>
             </button>
           </div>

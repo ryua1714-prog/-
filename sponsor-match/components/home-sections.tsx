@@ -2,19 +2,15 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronRight, GraduationCap, PartyPopper, Quote, Trophy } from "lucide-react";
+import { ChevronRight } from "@/components/marks";
 import { Accordion } from "@/components/accordion";
 import { Carousel } from "@/components/carousel";
 import { useStore } from "@/lib/store";
 import { CATEGORIES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { Hanko } from "@/components/marks";
 
-const CATEGORY_ICON = { sports: Trophy, community: PartyPopper, students: GraduationCap } as const;
-const CATEGORY_TONE = {
-  sports: "bg-brand-50 text-brand-600",
-  community: "bg-accent-50 text-accent-600",
-  students: "bg-sky-50 text-sky-600",
-} as const;
+const CAT_MARK = { sports: { char: "競", tone: "blue" }, community: { char: "祭", tone: "red" }, students: { char: "学", tone: "sky" } } as const;
 const CATEGORY_EXAMPLES = {
   sports: "プロ・社会人チーム／個人アスリート／eスポーツ",
   community: "夏祭り・花火大会／伝統芸能／まちづくり",
@@ -27,7 +23,7 @@ export function CategoryLinks() {
   return (
     <div className="grid gap-3 md:grid-cols-3">
       {CATEGORIES.map((c) => {
-        const Icon = CATEGORY_ICON[c.value];
+        const mark = CAT_MARK[c.value];
         const count = projects.filter((p) => p.category === c.value && p.status === "open").length;
         return (
           <Link
@@ -35,9 +31,7 @@ export function CategoryLinks() {
             href={`/projects?category=${c.value}`}
             className="group flex items-center gap-4 rounded-md border border-slate-200 bg-white p-4 transition hover:border-brand-500"
           >
-            <span className={cn("flex h-12 w-12 shrink-0 items-center justify-center rounded-full", CATEGORY_TONE[c.value])}>
-              <Icon className="h-6 w-6" />
-            </span>
+            <Hanko char={mark.char} tone={mark.tone} filled size="lg" />
             <span className="min-w-0 flex-1">
               <span className="flex items-baseline gap-2">
                 <span className="font-bold text-navy-900 group-hover:text-brand-600">{c.short}</span>
@@ -226,7 +220,6 @@ export function MatchCarousel() {
             </div>
           </dl>
           <p className="mt-4 flex gap-2 text-sm leading-relaxed text-slate-700">
-            <Quote className="h-4 w-4 shrink-0 rotate-180 text-brand-500" />
             {m.voice}
           </p>
           <p className="mt-3 text-[10px] text-slate-400">※事例はデモ用のダミーです</p>

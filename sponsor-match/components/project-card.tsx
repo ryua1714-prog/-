@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Banknote, CalendarClock, MapPin } from "lucide-react";
 import type { SponsorProject } from "@/types";
 import { Badge, CategoryBadge, InitialLogo, ReturnTag } from "@/components/ui";
 import { cn, daysUntil, formatDate } from "@/lib/utils";
@@ -35,13 +34,11 @@ export function ProjectCard({ project }: { project: SponsorProject }) {
       </div>
       <dl className="mt-4 space-y-1.5 border-t border-slate-100 pt-3 text-sm">
         <div className="flex items-center gap-2">
-          <Banknote className="h-4 w-4 shrink-0 text-brand-600" />
-          <dt className="sr-only">協賛金額</dt>
+          <dt className="w-14 shrink-0 text-xs text-slate-500">協賛金額</dt>
           <dd className="font-bold text-navy-900">{project.budgetRange}</dd>
         </div>
         <div className="flex items-center gap-2 text-slate-600">
-          <MapPin className="h-4 w-4 shrink-0 text-slate-400" />
-          <dt className="sr-only">対象地域</dt>
+          <dt className="w-14 shrink-0 text-xs text-slate-500">対象地域</dt>
           <dd>{project.targetRegion}</dd>
         </div>
       </dl>
@@ -89,17 +86,14 @@ export function ProjectListItem({ project }: { project: SponsorProject }) {
       </div>
       <dl className="grid grid-cols-1 divide-y divide-slate-100 border-t border-slate-100 bg-slate-50/70 text-sm sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         <div className="flex items-center gap-2 px-5 py-2.5">
-          <Banknote className="h-4 w-4 text-brand-600" />
           <dt className="shrink-0 whitespace-nowrap text-xs text-slate-500">協賛金額</dt>
           <dd className="font-bold text-navy-900">{project.budgetRange}</dd>
         </div>
         <div className="flex items-center gap-2 px-5 py-2.5">
-          <MapPin className="h-4 w-4 text-slate-400" />
           <dt className="shrink-0 whitespace-nowrap text-xs text-slate-500">対象地域</dt>
           <dd className="font-medium text-navy-800">{project.targetRegion}</dd>
         </div>
         <div className="flex items-center gap-2 px-5 py-2.5">
-          <CalendarClock className="h-4 w-4 text-slate-400" />
           <dt className="shrink-0 whitespace-nowrap text-xs text-slate-500">募集締切</dt>
           <dd className="font-medium text-navy-800">{formatDate(project.deadline)}</dd>
         </div>

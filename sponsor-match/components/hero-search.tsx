@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { Search } from "lucide-react";
+import { SearchMark } from "@/components/marks";
 import { AREAS, CATEGORIES } from "@/lib/constants";
 import { Button } from "@/components/ui";
 import { Autocomplete } from "@/components/autocomplete";
@@ -63,7 +63,7 @@ export function HeroSearch() {
           />
         </label>
         <Button type="submit" variant="accent" className="h-11 px-6">
-          <Search className="h-4 w-4" />
+          <SearchMark className="h-4 w-4" />
           検索する
         </Button>
       </div>

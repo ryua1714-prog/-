@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useMemo, useRef, useState, type InputHTMLAttributes } from "react";
-import { Building2, Clock, Gift, MapPin, Search, Tag } from "lucide-react";
+import { SearchMark } from "@/components/marks";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -12,12 +12,12 @@ interface Suggestion {
   kind: Kind;
 }
 
-const KIND_META: Record<Kind, { label: string; icon: typeof Search }> = {
-  company: { label: "企業名", icon: Building2 },
-  return: { label: "見返り", icon: Gift },
-  region: { label: "地域", icon: MapPin },
-  industry: { label: "業種", icon: Tag },
-  popular: { label: "よく検索", icon: Clock },
+const KIND_META: Record<Kind, { label: string }> = {
+  company: { label: "企業名" },
+  return: { label: "見返り" },
+  region: { label: "地域" },
+  industry: { label: "業種" },
+  popular: { label: "よく検索" },
 };
 
 const POPULAR = ["ユニフォーム", "SNS", "祭り", "遠征費", "全国", "講演会"];
@@ -147,7 +147,6 @@ export function Autocomplete({
         >
           {!q && <li className="px-3 pb-1 pt-1.5 text-[11px] font-bold text-slate-400">よく検索されるキーワード</li>}
           {items.map((s, i) => {
-            const Icon = KIND_META[s.kind].icon;
             return (
               <li
                 key={`${s.kind}-${s.value}`}
@@ -161,7 +160,6 @@ export function Autocomplete({
                 onMouseEnter={() => setActive(i)}
                 className={cn("flex cursor-pointer items-center gap-2 px-3 py-2", i === active ? "bg-brand-50" : "hover:bg-slate-50")}
               >
-                <Icon className="h-4 w-4 shrink-0 text-slate-400" />
                 <span className="min-w-0 flex-1 truncate text-navy-800">
                   <Highlight text={s.value} query={q} />
                 </span>

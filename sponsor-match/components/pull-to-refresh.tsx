@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { ArrowDown, LoaderCircle } from "lucide-react";
+import { Spinner } from "@/components/marks";
 import { useStore } from "@/lib/store";
-import { useToast } from "@/components/toast";
 import { cn } from "@/lib/utils";
 
 const THRESHOLD = 64;
@@ -15,7 +14,6 @@ const MAX = 96;
  */
 export function PullToRefresh({ children }: { children: ReactNode }) {
   const { reload } = useStore();
-  const toast = useToast();
   const [pull, setPull] = useState(0);
   const [refreshing, setRefreshing] = useState(false);
   const startY = useRef<number | null>(null);
@@ -54,7 +52,6 @@ export function PullToRefresh({ children }: { children: ReactNode }) {
           setRefreshing(false);
           setPull(0);
           pullRef.current = 0;
-          toast("最新の情報に更新しました");
         }, 900);
       } else {
         setPull(0);
@@ -72,7 +69,7 @@ export function PullToRefresh({ children }: { children: ReactNode }) {
       document.removeEventListener("touchend", onEnd);
       document.removeEventListener("touchcancel", onEnd);
     };
-  }, [refreshing, reload, toast]);
+  }, [refreshing, reload]);
 
   const ready = pull >= THRESHOLD;
 
@@ -86,15 +83,9 @@ export function PullToRefresh({ children }: { children: ReactNode }) {
         {pull > 8 && (
           <span className="mb-3 flex items-center gap-2">
             {refreshing ? (
-              <>
-                <LoaderCircle className="h-4 w-4 animate-spin text-brand-600" />
-                更新しています…
-              </>
+              <Spinner className="h-5 w-5 text-brand-600" />
             ) : (
-              <>
-                <ArrowDown className={cn("h-4 w-4 text-brand-600 transition-transform", ready && "rotate-180")} />
-                {ready ? "指をはなすと更新します" : "引っぱって更新"}
-              </>
+              <span className={cn("text-base leading-none text-brand-600 transition-transform", ready && "rotate-180")}>↓</span>
             )}
           </span>
         )}

@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Yuji+Syuku&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Yuji+Syuku&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
         />
       </head>
       <body className="flex min-h-screen flex-col">

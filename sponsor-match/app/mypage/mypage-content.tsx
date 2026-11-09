@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Fragment, useEffect, useMemo, useState, type FormEvent } from "react";
-import { ClipboardList, ExternalLink, Plus, Save, UserRound, X } from "lucide-react";
+import { CloseMark } from "@/components/marks";
 import type { Category, SeekerProfile } from "@/types";
 import { useStore } from "@/lib/store";
 import { useToast } from "@/components/toast";
@@ -56,8 +56,8 @@ export function MyPageContent() {
             value={tab}
             onChange={setTab}
             items={[
-              { key: "profile", label: "プロフィール設定", icon: UserRound },
-              { key: "history", label: "応募履歴", icon: ClipboardList, count: myApps.length },
+              { key: "profile", label: "プロフィール設定" },
+              { key: "history", label: "応募履歴", count: myApps.length },
             ]}
             className="border-b-0"
           />
@@ -209,7 +209,7 @@ function ProfileForm() {
                   <span className="flex-1 text-navy-800">{r}</span>
                   {!RETURN_PRESETS.includes(r) && (
                     <button type="button" onClick={(e) => { e.preventDefault(); set("offeredReturns", form.offeredReturns.filter((x) => x !== r)); }} aria-label="削除" className="text-slate-400 hover:text-accent-500">
-                      <X className="h-4 w-4" />
+                      <CloseMark className="h-4 w-4" />
                     </button>
                   )}
                 </label>
@@ -228,7 +228,6 @@ function ProfileForm() {
                 placeholder="独自の見返りを追加（例：ホームゲームでの始球式）"
               />
               <Button type="button" variant="outline" onClick={addCustom}>
-                <Plus className="h-4 w-4" />
                 追加
               </Button>
             </div>
@@ -241,7 +240,6 @@ function ProfileForm() {
           変更を破棄
         </Button>
         <Button type="submit">
-          <Save className="h-4 w-4" />
           プロフィールを保存
         </Button>
       </div>
@@ -269,7 +267,6 @@ function History() {
   if (myApps.length === 0) {
     return (
       <Card className="py-16 text-center">
-        <ClipboardList className="mx-auto h-10 w-10 text-slate-300" />
         <p className="mt-3 font-semibold text-navy-800">まだ応募履歴はありません</p>
         <ButtonLink href="/projects" className="mt-5">
           スポンサー案件を探す
@@ -349,7 +346,7 @@ function History() {
                           </div>
                           {p && (
                             <Link href={`/projects/${p.id}`} className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-brand-600 hover:underline">
-                              案件詳細を開く <ExternalLink className="h-3 w-3" />
+                              案件詳細を開く
                             </Link>
                           )}
                         </td>

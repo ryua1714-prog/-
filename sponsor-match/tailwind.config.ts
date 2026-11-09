@@ -34,9 +34,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['"Noto Sans JP"', '"Hiragino Sans"', '"Hiragino Kaku Gothic ProN"', "Meiryo", "system-ui", "sans-serif"],
-        brush: ['"Yuji Syuku"', '"Zen Kaku Gothic New"', "serif"],
-        display: ['"Zen Kaku Gothic New"', '"Noto Sans JP"', '"Hiragino Sans"', "Meiryo", "sans-serif"],
+        sans: ['"Zen Old Mincho"', '"Hiragino Mincho ProN"', '"Yu Mincho"', "YuMincho", "serif"],
+        brush: ['"Yuji Syuku"', '"Shippori Mincho B1"', "serif"],
+        display: ['"Shippori Mincho B1"', '"Zen Old Mincho"', '"Hiragino Mincho ProN"', '"Yu Mincho"', "serif"],
       },
     },
   },

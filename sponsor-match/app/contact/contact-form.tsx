@@ -2,9 +2,9 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { Building2, CircleCheck, Mail, Send } from "lucide-react";
 import { CATEGORIES } from "@/lib/constants";
 import { useToast } from "@/components/toast";
+import { Hanko } from "@/components/marks";
 import { Tabs } from "@/components/tabs";
 import { Button, Card, Input, Label, Required, Select, Textarea } from "@/components/ui";
 
@@ -47,14 +47,14 @@ function ContactFormInner({ initialTab }: { initialTab: TabKey }) {
           setError("");
         }}
         items={[
-          { key: "company", label: "企業向け：案件掲載申し込み", icon: Building2 },
-          { key: "general", label: "一般お問い合わせ", icon: Mail },
+          { key: "company", label: "企業向け：案件掲載申し込み" },
+          { key: "general", label: "一般お問い合わせ" },
         ]}
       />
 
       {sent === tab ? (
         <Card className="mt-6 p-10 text-center">
-          <CircleCheck className="mx-auto h-14 w-14 text-brand-600" />
+          <Hanko char="受" tone="red" filled size="lg" className="h-16 w-16 text-3xl" />
           <h2 className="mt-4 text-xl font-bold text-navy-900">送信が完了しました</h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600">
             {sent === "company"
@@ -177,7 +177,6 @@ function ContactFormInner({ initialTab }: { initialTab: TabKey }) {
               </label>
             </div>
             <Button type="submit" size="lg" className="mt-6 w-full">
-              <Send className="h-5 w-5" />
               {tab === "company" ? "掲載を申し込む" : "送信する"}
             </Button>
           </Card>

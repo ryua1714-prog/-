@@ -1,7 +1,7 @@
 "use client";
 
 import { Children, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
-import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
+import { ChevronLeft, ChevronRight, PauseMark, PlayMark } from "@/components/marks";
 import { cn } from "@/lib/utils";
 
 /**
@@ -129,7 +129,7 @@ export function Carousel({
               className="flex h-6 w-6 items-center justify-center rounded-full text-slate-500 hover:bg-slate-100"
               aria-label={playing ? "自動再生を停止" : "自動再生を開始"}
             >
-              {playing ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+              {playing ? <PauseMark className="h-3.5 w-3.5" /> : <PlayMark className="h-3.5 w-3.5" />}
             </button>
           )}
         </div>

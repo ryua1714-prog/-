@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Building2, Check, Minus, Trophy } from "lucide-react";
 import { ButtonLink, PageHeader } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
@@ -9,7 +8,7 @@ const SEEKER_PLANS = [
   {
     name: "基本プラン",
     price: "1,000",
-    unit: "円／月",
+    unit: "円／月（税抜）",
     note: "まずは気軽に始めたい方に",
     features: ["プロフィール掲載", "スポンサー案件の検索・閲覧", "案件への応募（月3件まで）", "応募履歴の管理"],
     highlight: false,
@@ -17,7 +16,7 @@ const SEEKER_PLANS = [
   {
     name: "有料プラン",
     price: "5,000",
-    unit: "円／月",
+    unit: "円／月（税抜）",
     note: "本格的にスポンサーを獲得したい方に",
     features: ["基本プランのすべての機能", "案件への応募 無制限", "プロフィールの優先表示", "提案書の添削サポート", "新着案件の優先通知"],
     highlight: true,
@@ -46,8 +45,18 @@ const COMPANY_COMPARE: { label: string; value: boolean | string }[] = [
 ];
 
 function Cell({ v }: { v: boolean | string }) {
-  if (v === true) return <Check className="mx-auto h-5 w-5 text-brand-600" aria-label="あり" />;
-  if (v === false) return <Minus className="mx-auto h-5 w-5 text-slate-300" aria-label="なし" />;
+  if (v === true)
+    return (
+      <span className="text-lg font-bold text-brand-600" aria-label="あり">
+        ○
+      </span>
+    );
+  if (v === false)
+    return (
+      <span className="text-lg text-slate-300" aria-label="なし">
+        －
+      </span>
+    );
   return <span className="text-sm font-semibold text-navy-800">{v}</span>;
 }
 
@@ -59,7 +68,6 @@ export default function PricingPage() {
       {/* 募集側 */}
       <section className="container-page py-12">
         <h2 className="flex items-center gap-2 text-xl font-bold text-navy-900">
-          <Trophy className="h-6 w-6 text-brand-600" />
           募集側（選手・チーム・団体）プラン
         </h2>
         <div className="mt-6 grid gap-5 md:grid-cols-3">
@@ -83,7 +91,7 @@ export default function PricingPage() {
               <ul className="mt-5 flex-1 space-y-2">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm text-navy-800">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" />
+                    <span className="shrink-0 font-bold text-brand-600">○</span>
                     {f}
                   </li>
                 ))}
@@ -104,7 +112,7 @@ export default function PricingPage() {
                 </p>
               </div>
               <div className="rounded-md bg-white p-4">
-                <p className="text-xs text-slate-500">次年度以降（契約更新時）</p>
+                <p className="text-xs text-slate-500">次年度以降</p>
                 <p className="text-3xl font-bold text-navy-900">
                   5<span className="text-base">%</span>
                 </p>
@@ -144,21 +152,20 @@ export default function PricingPage() {
       <section className="bg-navy-50/70 py-12">
         <div className="container-page">
           <h2 className="flex items-center gap-2 text-xl font-bold text-navy-900">
-            <Building2 className="h-6 w-6 text-navy-700" />
             スポンサー企業プラン
           </h2>
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             <div className="rounded-md border border-slate-200 bg-white p-6">
               <p className="font-bold text-navy-900">初回システム登録料</p>
               <p className="mt-4 text-4xl font-bold text-navy-900">
-                30,000<span className="ml-1 text-sm font-medium text-slate-500">円（税別・初回のみ）</span>
+                30,000<span className="ml-1 text-sm font-medium text-slate-500">円（税抜・初回のみ）</span>
               </p>
               <p className="mt-3 text-sm text-slate-600">企業アカウントの開設、初回ヒアリング、管理画面の設定を含みます。</p>
             </div>
             <div className="rounded-md border-2 border-navy-700 bg-white p-6">
               <p className="font-bold text-navy-900">月額掲載・管理料</p>
               <p className="mt-4 text-4xl font-bold text-navy-900">
-                10,000<span className="ml-1 text-sm font-medium text-slate-500">円／月（税別）</span>
+                10,000<span className="ml-1 text-sm font-medium text-slate-500">円／月（税抜）</span>
               </p>
               <p className="mt-3 text-sm text-slate-600">案件ページの制作・運用代行込み。応募の受付から面談調整まで運営チームがサポートします。</p>
             </div>

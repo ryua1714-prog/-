@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight, House } from "lucide-react";
+import { ChevronRight } from "@/components/marks";
 import { cn } from "@/lib/utils";
 
 export interface Crumb {
@@ -20,7 +20,6 @@ export function Breadcrumbs({ items, className }: { items: Crumb[]; className?: 
               {i > 0 && <ChevronRight className="h-3 w-3 shrink-0 text-slate-400" aria-hidden />}
               {c.href && !last ? (
                 <Link href={c.href} className="flex items-center gap-1 hover:text-brand-600 hover:underline">
-                  {i === 0 && <House className="h-3.5 w-3.5" aria-hidden />}
                   {c.label}
                 </Link>
               ) : (

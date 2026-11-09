@@ -2,7 +2,6 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
-import { Banknote, Building2, CalendarClock, CircleCheck, FileText, Gift, MapPin, Send, Target } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { formatDate } from "@/lib/utils";
 import { Button, ButtonLink, Card, CategoryBadge, InitialLogo } from "@/components/ui";
@@ -13,11 +12,10 @@ import { DeadlineBadge } from "@/components/project-card";
 import { LoadingBlock, NotFoundProject } from "@/components/not-found-project";
 import type { ReactNode } from "react";
 
-function Section({ icon, title, children }: { icon: ReactNode; title: string; children: ReactNode }) {
+function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="border-t border-slate-100 px-6 py-6 first:border-t-0">
       <h2 className="mb-3 flex items-center gap-2 border-l-4 border-brand-600 pl-3 text-lg font-bold text-navy-900">
-        {icon}
         {title}
       </h2>
       {children}
@@ -29,8 +27,8 @@ function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="space-y-2">
       {items.map((i) => (
-        <li key={i} className="flex items-start gap-2 text-sm leading-relaxed text-navy-800">
-          <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" />
+        <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-navy-800">
+          <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 bg-accent-500" aria-hidden />
           {i}
         </li>
       ))}
@@ -66,7 +64,6 @@ export default function ProjectDetailPage() {
           setConfirmOpen(true);
         }}
       >
-        <Send className="h-5 w-5" />
         この案件に応募する
       </Button>
     )
@@ -106,16 +103,16 @@ export default function ProjectDetailPage() {
           </Card>
 
           <Card>
-            <Section icon={<Building2 className="h-5 w-5 text-brand-600" />} title="企業概要">
+            <Section title="企業概要">
               <p className="text-sm leading-relaxed text-navy-800">{project.companyOverview}</p>
             </Section>
-            <Section icon={<Target className="h-5 w-5 text-brand-600" />} title="協賛の背景">
+            <Section title="協賛の背景">
               <p className="text-sm leading-relaxed text-navy-800">{project.background}</p>
             </Section>
-            <Section icon={<FileText className="h-5 w-5 text-brand-600" />} title="協賛条件・必須要件">
+            <Section title="協賛条件・必須要件">
               <CheckList items={project.conditions} />
             </Section>
-            <Section icon={<Gift className="h-5 w-5 text-brand-600" />} title="求める見返り">
+            <Section title="求める見返り">
               <div className="grid gap-2 sm:grid-cols-2">
                 {project.expectedReturns.map((r) => (
                   <div key={r} className="rounded-md border border-brand-100 bg-brand-50 px-4 py-3 text-sm font-semibold text-brand-700">
@@ -124,7 +121,7 @@ export default function ProjectDetailPage() {
                 ))}
               </div>
             </Section>
-            <Section icon={<FileText className="h-5 w-5 text-brand-600" />} title="応募要件・提出物">
+            <Section title="応募要件・提出物">
               <CheckList items={project.requirements} />
             </Section>
           </Card>
@@ -137,14 +134,13 @@ export default function ProjectDetailPage() {
             <div className="bg-navy-800 px-5 py-3 text-sm font-bold text-white">募集概要</div>
             <dl className="divide-y divide-slate-100 text-sm">
               {[
-                { icon: Banknote, label: "協賛金額", value: project.budgetRange, strong: true },
-                { icon: MapPin, label: "対象地域", value: project.targetRegion },
-                { icon: CalendarClock, label: "募集締切", value: formatDate(project.deadline) },
-                { icon: CalendarClock, label: "掲載日", value: formatDate(project.publishedAt) },
+                { label: "協賛金額", value: project.budgetRange, strong: true },
+                { label: "対象地域", value: project.targetRegion },
+                { label: "募集締切", value: formatDate(project.deadline) },
+                { label: "掲載日", value: formatDate(project.publishedAt) },
               ].map((row) => (
                 <div key={row.label} className="flex gap-3 px-5 py-3">
                   <dt className="flex w-24 shrink-0 items-center gap-1.5 text-slate-500">
-                    <row.icon className="h-4 w-4" />
                     {row.label}
                   </dt>
                   <dd className={row.strong ? "font-bold text-navy-900" : "text-navy-800"}>{row.value}</dd>

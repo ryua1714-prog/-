@@ -1,6 +1,6 @@
 "use client";
 
-import { RotateCcw, Search, SlidersHorizontal } from "lucide-react";
+import { SearchMark } from "@/components/marks";
 import type { Area, Category, SponsorProject } from "@/types";
 import { AREAS, BUDGET_OPTIONS, CATEGORIES } from "@/lib/constants";
 import { cn, formatManYen } from "@/lib/utils";
@@ -78,11 +78,9 @@ export function ProjectFilters({
     <div className="rounded-md border border-slate-200 bg-white">
       <div className="flex items-center justify-between border-b border-slate-200 bg-navy-800 px-4 py-3 text-white lg:rounded-t-lg">
         <p className="flex items-center gap-2 text-sm font-bold">
-          <SlidersHorizontal className="h-4 w-4" />
           条件を絞り込む
         </p>
         <button onClick={onReset} className="flex items-center gap-1 text-xs text-navy-200 hover:text-white">
-          <RotateCcw className="h-3.5 w-3.5" />
           クリア
         </button>
       </div>
@@ -90,7 +88,7 @@ export function ProjectFilters({
       <section className="border-b border-slate-100 p-4">
         <p className="mb-2 text-sm font-bold text-navy-800">フリーワード</p>
         <div className="relative">
-          <Search className="pointer-events-none absolute left-3 top-1/2 z-10 h-4 w-4 -translate-y-1/2 text-slate-400" />
+          <SearchMark className="pointer-events-none absolute left-3 top-1/2 z-10 h-4 w-4 -translate-y-1/2 text-slate-400" />
           <Autocomplete
             value={value.q}
             onChange={(v) => set("q", v)}

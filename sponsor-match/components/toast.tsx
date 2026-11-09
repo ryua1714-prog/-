@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
-import { CircleCheck, Info, X } from "lucide-react";
+import { CloseMark, Hanko } from "@/components/marks";
 import { cn } from "@/lib/utils";
 
 type ToastKind = "success" | "info";
@@ -42,14 +42,10 @@ export function ToastProvider({ children }: { children: ReactNode }) {
               t.kind === "success" ? "border-brand-200" : "border-brand-100",
             )}
           >
-            {t.kind === "success" ? (
-              <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
-            ) : (
-              <Info className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
-            )}
+            <Hanko char={t.kind === "success" ? "済" : "注"} tone={t.kind === "success" ? "red" : "blue"} size="sm" className="h-6 w-6 text-xs" />
             <p className="flex-1 text-navy-900">{t.message}</p>
             <button onClick={() => dismiss(t.id)} className="text-slate-400 hover:text-slate-600" aria-label="閉じる">
-              <X className="h-4 w-4" />
+              <CloseMark className="h-4 w-4" />
             </button>
           </div>
         ))}
