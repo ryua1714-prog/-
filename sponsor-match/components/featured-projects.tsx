@@ -1,13 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useStore } from "@/lib/store";
 import { ProjectCard } from "@/components/project-card";
 import { cn } from "@/lib/utils";
 
 const TABS = [
-  { key: "new", label: "新着案件" },
-  { key: "featured", label: "おすすめ案件" },
+  { key: "new", label: "新着" },
+  { key: "featured", label: "おすすめ" },
 ] as const;
 
 export function FeaturedProjects() {
@@ -22,26 +23,37 @@ export function FeaturedProjects() {
 
   return (
     <div>
-      <div className="mb-6 flex justify-center gap-2" role="tablist">
-        {TABS.map((t) => (
-          <button
-            key={t.key}
-            role="tab"
-            aria-selected={tab === t.key}
-            onClick={() => setTab(t.key)}
-            className={cn(
-              "rounded-full px-5 py-2 text-sm font-semibold transition-colors",
-              tab === t.key ? "bg-navy-800 text-white" : "bg-white text-navy-700 ring-1 ring-slate-200 hover:bg-navy-50",
-            )}
-          >
-            {t.label}
-          </button>
-        ))}
+      <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-4">
+          <h2 className="flex items-center gap-2.5 text-xl font-bold text-navy-900 sm:text-2xl">
+            <span className="h-5 w-1.5 rounded-sm bg-accent-500" aria-hidden />
+            スポンサー案件
+          </h2>
+          <div className="flex border-b border-slate-200" role="tablist">
+            {TABS.map((t) => (
+              <button
+                key={t.key}
+                role="tab"
+                aria-selected={tab === t.key}
+                onClick={() => setTab(t.key)}
+                className={cn(
+                  "-mb-px border-b-2 px-3 py-1.5 text-sm font-semibold transition-colors",
+                  tab === t.key ? "border-brand-600 text-brand-600" : "border-transparent text-slate-500 hover:text-navy-800",
+                )}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
+        </div>
+        <Link href="/projects" className="text-sm font-semibold text-brand-600 hover:underline">
+          すべての案件を見る ›
+        </Link>
       </div>
       {list.length === 0 ? (
         <p className="py-10 text-center text-sm text-slate-500">該当する案件はありません。</p>
       ) : (
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((p) => (
             <ProjectCard key={p.id} project={p} />
           ))}

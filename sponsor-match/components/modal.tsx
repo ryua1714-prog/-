@@ -40,7 +40,7 @@ export function Modal({
         aria-label={title}
         onClick={(e) => e.stopPropagation()}
         className={cn(
-          "flex max-h-[92vh] w-full flex-col rounded-t-xl bg-white shadow-2xl sm:rounded-xl",
+          "flex max-h-[92vh] w-full flex-col rounded-t-lg bg-white shadow-2xl sm:rounded-md",
           size === "lg" ? "sm:max-w-3xl" : "sm:max-w-xl",
         )}
       >

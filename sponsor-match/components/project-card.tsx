@@ -17,7 +17,7 @@ export function ProjectCard({ project }: { project: SponsorProject }) {
   return (
     <Link
       href={`/projects/${project.id}`}
-      className="group flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-500 hover:shadow-md"
+      className="group flex h-full flex-col rounded-md border border-slate-200 bg-white p-5 transition hover:border-brand-500"
     >
       <div className="flex items-center gap-2">
         <CategoryBadge category={project.category} />
@@ -61,7 +61,7 @@ export function ProjectListItem({ project }: { project: SponsorProject }) {
     <Link
       href={`/projects/${project.id}`}
       className={cn(
-        "group block rounded-lg border border-slate-200 bg-white shadow-sm transition hover:border-brand-500 hover:shadow-md",
+        "group block rounded-md border border-slate-200 bg-white transition hover:border-brand-500",
         closed && "opacity-70",
       )}
     >

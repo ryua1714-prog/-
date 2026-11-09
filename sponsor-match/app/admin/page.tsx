@@ -44,7 +44,7 @@ export default function AdminPage() {
     <div className="min-h-[calc(100vh-64px)] bg-slate-100">
       <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[220px_1fr]">
         <aside className="space-y-3">
-          <div className="rounded-lg bg-navy-900 p-4 text-white">
+          <div className="rounded-md bg-navy-900 p-4 text-white">
             <p className="flex items-center gap-1.5 text-xs font-bold text-accent-100">
               <ShieldCheck className="h-4 w-4" />
               管理者モード
@@ -52,7 +52,7 @@ export default function AdminPage() {
             <p className="mt-1 text-sm font-bold">運営管理コンソール</p>
             <p className="mt-1 text-[11px] text-navy-300">ログイン中：運営スタッフ（デモ）</p>
           </div>
-          <nav className="flex gap-1 overflow-x-auto rounded-lg bg-white p-1.5 shadow-sm lg:flex-col">
+          <nav className="flex gap-1 overflow-x-auto rounded-md bg-white p-1.5 lg:flex-col">
             {nav.map((n) => (
               <button
                 key={n.key}

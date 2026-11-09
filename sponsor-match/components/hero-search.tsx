@@ -21,52 +21,51 @@ export function HeroSearch() {
     router.push(`/projects${params.toString() ? `?${params}` : ""}`);
   };
 
-  const selectClass =
-    "h-12 w-full rounded-md border-0 bg-white px-3 text-sm text-navy-900 ring-1 ring-inset ring-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none";
+  const field =
+    "h-11 w-full rounded border border-slate-300 bg-white px-3 text-sm text-navy-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100";
+  const label = "mb-1 block text-xs font-bold text-navy-700";
 
   return (
-    <form
-      action="/projects"
-      onSubmit={submit}
-      className="grid gap-2 rounded-xl bg-white/10 p-2 ring-1 ring-white/20 backdrop-blur sm:grid-cols-[1fr_auto_auto_auto] sm:bg-white sm:p-2 sm:ring-0 sm:shadow-xl"
-    >
-      <label className="relative block">
-        <span className="sr-only">キーワード</span>
-        <Search className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
-        <input
-          name="q"
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="キーワード（例：ユニフォーム、祭り、SNS）"
-          className={`${selectClass} pl-10`}
-        />
-      </label>
-      <label>
-        <span className="sr-only">カテゴリー</span>
-        <select name="category" value={category} onChange={(e) => setCategory(e.target.value)} className={`${selectClass} sm:w-44`}>
-          <option value="">全カテゴリー</option>
-          {CATEGORIES.map((c) => (
-            <option key={c.value} value={c.value}>
-              {c.short}
-            </option>
-          ))}
-        </select>
-      </label>
-      <label>
-        <span className="sr-only">地域</span>
-        <select name="area" value={area} onChange={(e) => setArea(e.target.value)} className={`${selectClass} sm:w-44`}>
-          <option value="">全地域</option>
-          {AREAS.map((a) => (
-            <option key={a} value={a}>
-              {a}
-            </option>
-          ))}
-        </select>
-      </label>
-      <Button type="submit" variant="accent" size="lg" className="h-12">
-        <Search className="h-5 w-5" />
-        検索する
-      </Button>
+    <form action="/projects" onSubmit={submit} className="rounded-md border border-slate-200 bg-white p-4 shadow-[0_8px_24px_-12px_rgba(18,32,61,0.25)] sm:p-5">
+      <p className="mb-3 text-sm font-bold text-navy-900">スポンサー案件をさがす</p>
+      <div className="grid gap-3 sm:grid-cols-[1fr_1fr_1.6fr_auto] sm:items-end">
+        <label>
+          <span className={label}>カテゴリー</span>
+          <select name="category" value={category} onChange={(e) => setCategory(e.target.value)} className={field}>
+            <option value="">すべて</option>
+            {CATEGORIES.map((c) => (
+              <option key={c.value} value={c.value}>
+                {c.short}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          <span className={label}>地域</span>
+          <select name="area" value={area} onChange={(e) => setArea(e.target.value)} className={field}>
+            <option value="">すべて</option>
+            {AREAS.map((a) => (
+              <option key={a} value={a}>
+                {a}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          <span className={label}>キーワード</span>
+          <input
+            name="q"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="例：ユニフォーム、祭り、SNS"
+            className={field}
+          />
+        </label>
+        <Button type="submit" variant="accent" className="h-11 px-6">
+          <Search className="h-4 w-4" />
+          検索する
+        </Button>
+      </div>
     </form>
   );
 }

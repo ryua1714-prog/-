@@ -70,7 +70,7 @@ export function ProjectFilters({
     set("categories", value.categories.includes(c) ? value.categories.filter((x) => x !== c) : [...value.categories, c]);
 
   return (
-    <div className="rounded-lg border border-slate-200 bg-white shadow-sm">
+    <div className="rounded-md border border-slate-200 bg-white">
       <div className="flex items-center justify-between border-b border-slate-200 bg-navy-800 px-4 py-3 text-white lg:rounded-t-lg">
         <p className="flex items-center gap-2 text-sm font-bold">
           <SlidersHorizontal className="h-4 w-4" />

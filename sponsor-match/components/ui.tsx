@@ -9,11 +9,11 @@ type Variant = "primary" | "secondary" | "outline" | "ghost" | "accent" | "dange
 type Size = "sm" | "md" | "lg";
 
 const variantClass: Record<Variant, string> = {
-  primary: "bg-brand-600 text-white hover:bg-brand-700 shadow-sm",
-  secondary: "bg-navy-800 text-white hover:bg-navy-900 shadow-sm",
+  primary: "bg-brand-600 text-white hover:bg-brand-700",
+  secondary: "bg-navy-800 text-white hover:bg-navy-900",
   outline: "border border-slate-300 bg-white text-navy-800 hover:bg-slate-50",
   ghost: "text-navy-700 hover:bg-navy-50",
-  accent: "bg-accent-500 text-white hover:bg-accent-600 shadow-sm",
+  accent: "bg-accent-500 text-white hover:bg-accent-600",
   danger: "border border-accent-100 bg-white text-accent-600 hover:bg-accent-50",
 };
 const sizeClass: Record<Size, string> = {
@@ -93,7 +93,7 @@ export function ReturnTag({ children }: { children: ReactNode }) {
 
 /* ───────── Card ───────── */
 export function Card({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={cn("rounded-lg border border-slate-200 bg-white shadow-sm", className)}>{children}</div>;
+  return <div className={cn("rounded-md border border-slate-200 bg-white", className)}>{children}</div>;
 }
 
 /* ───────── Form ───────── */
@@ -131,11 +131,31 @@ export function InitialLogo({ text, color, size = "md" }: { text: string; color:
 }
 
 /* ───────── Section heading ───────── */
-export function SectionTitle({ en, title, className }: { en?: string; title: string; className?: string }) {
+export function SectionTitle({
+  title,
+  lead,
+  action,
+  className,
+}: {
+  title: string;
+  lead?: string;
+  action?: { href: string; label: string };
+  className?: string;
+}) {
   return (
-    <div className={cn("mb-8 text-center", className)}>
-      {en && <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-500">{en}</p>}
-      <h2 className="mt-2 text-2xl font-bold text-navy-900 sm:text-3xl">{title}</h2>
+    <div className={cn("mb-6 flex flex-wrap items-end justify-between gap-x-6 gap-y-2", className)}>
+      <div>
+        <h2 className="flex items-center gap-2.5 text-xl font-bold text-navy-900 sm:text-2xl">
+          <span className="h-5 w-1.5 rounded-sm bg-accent-500" aria-hidden />
+          {title}
+        </h2>
+        {lead && <p className="mt-1.5 pl-4 text-sm text-slate-600">{lead}</p>}
+      </div>
+      {action && (
+        <Link href={action.href} className="text-sm font-semibold text-brand-600 hover:underline">
+          {action.label} ›
+        </Link>
+      )}
     </div>
   );
 }

@@ -36,6 +36,7 @@ const extraCss = `:root{color-scheme:light}body{background:#fff;color:#12203d}he
 const code = js.outputFiles[0].text.replace(/<\/script/gi, "<\\/script");
 
 const html = `<title>スポンサーブリッジ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
 <style>${css}${extraCss}</style>
 <div id="root"></div>
 <script>${code}</script>

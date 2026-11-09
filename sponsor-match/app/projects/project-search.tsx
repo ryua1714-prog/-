@@ -58,7 +58,7 @@ function ProjectSearchInner({ initial }: { initial: FilterState }) {
         </aside>
 
         <section>
-          <div className="mb-4 flex flex-col gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mb-4 flex flex-col gap-3 rounded-md border border-slate-200 bg-white px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm text-slate-600">
               検索結果 <span className="text-2xl font-bold text-navy-900">{results.length}</span> 件
             </p>
@@ -73,7 +73,7 @@ function ProjectSearchInner({ initial }: { initial: FilterState }) {
           </div>
 
           {results.length === 0 ? (
-            <div className="rounded-lg border border-dashed border-slate-300 bg-white py-16 text-center">
+            <div className="rounded-md border border-dashed border-slate-300 bg-white py-16 text-center">
               <SearchX className="mx-auto h-10 w-10 text-slate-300" />
               <p className="mt-3 font-semibold text-navy-800">条件に一致する案件が見つかりませんでした</p>
               <p className="mt-1 text-sm text-slate-500">条件を変更して再度お試しください。</p>

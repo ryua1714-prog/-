@@ -67,7 +67,7 @@ export default function PricingPage() {
             <div
               key={p.name}
               className={cn(
-                "relative flex flex-col rounded-xl border bg-white p-6 shadow-sm",
+                "relative flex flex-col rounded-md border bg-white p-6",
                 p.highlight ? "border-brand-500 ring-2 ring-brand-500" : "border-slate-200",
               )}
             >
@@ -93,17 +93,17 @@ export default function PricingPage() {
               </ButtonLink>
             </div>
           ))}
-          <div className="flex flex-col rounded-xl border border-slate-200 bg-navy-50 p-6">
+          <div className="flex flex-col rounded-md border border-slate-200 bg-navy-50 p-6">
             <p className="font-bold text-navy-900">成約手数料</p>
             <p className="mt-1 text-xs text-slate-500">スポンサー契約が成立した場合のみ発生</p>
             <div className="mt-4 space-y-3">
-              <div className="rounded-lg bg-white p-4">
+              <div className="rounded-md bg-white p-4">
                 <p className="text-xs text-slate-500">初年度</p>
                 <p className="text-3xl font-bold text-navy-900">
                   15<span className="text-base">%</span>
                 </p>
               </div>
-              <div className="rounded-lg bg-white p-4">
+              <div className="rounded-md bg-white p-4">
                 <p className="text-xs text-slate-500">次年度以降（契約更新時）</p>
                 <p className="text-3xl font-bold text-navy-900">
                   5<span className="text-base">%</span>
@@ -114,7 +114,7 @@ export default function PricingPage() {
           </div>
         </div>
 
-        <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <div className="mt-8 overflow-x-auto rounded-md border border-slate-200 bg-white">
           <table className="w-full min-w-[560px] text-sm">
             <thead>
               <tr className="bg-navy-800 text-white">
@@ -148,14 +148,14 @@ export default function PricingPage() {
             スポンサー企業プラン
           </h2>
           <div className="mt-6 grid gap-5 md:grid-cols-2">
-            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-md border border-slate-200 bg-white p-6">
               <p className="font-bold text-navy-900">初回システム登録料</p>
               <p className="mt-4 text-4xl font-bold text-navy-900">
                 30,000<span className="ml-1 text-sm font-medium text-slate-500">円（税別・初回のみ）</span>
               </p>
               <p className="mt-3 text-sm text-slate-600">企業アカウントの開設、初回ヒアリング、管理画面の設定を含みます。</p>
             </div>
-            <div className="rounded-xl border-2 border-navy-700 bg-white p-6 shadow-sm">
+            <div className="rounded-md border-2 border-navy-700 bg-white p-6">
               <p className="font-bold text-navy-900">月額掲載・管理料</p>
               <p className="mt-4 text-4xl font-bold text-navy-900">
                 10,000<span className="ml-1 text-sm font-medium text-slate-500">円／月（税別）</span>
@@ -164,7 +164,7 @@ export default function PricingPage() {
             </div>
           </div>
 
-          <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+          <div className="mt-8 overflow-x-auto rounded-md border border-slate-200 bg-white">
             <table className="w-full min-w-[480px] text-sm">
               <thead>
                 <tr className="bg-navy-800 text-white">

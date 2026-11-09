@@ -8,6 +8,13 @@
   }
   body {
     @apply bg-white text-navy-900 antialiased;
+    font-feature-settings: "palt";
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    text-wrap: balance;
   }
 }
 
